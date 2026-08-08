@@ -17,14 +17,14 @@ Then open an issue (or PR against `works.json`) with the work's `id`, what you f
 
 ## 3. Translate or review a chunk
 
-A **chunk** is a passage anchored to Kühn page numbers (typically one chapter or a few pages). The pipeline:
+A **chunk** is a passage anchored to Kühn page numbers (typically one chapter or a few pages). The pipeline — see [HARNESS.md](HARNESS.md) for full details:
 
 1. **Claim** a chunk by opening an issue ("Claim: CML 1.2, Kühn XII 381–403").
-2. **Greek source**: extract from the First1KGreek TEI XML (`data/tlg0057/` in their repo). Keep the Kühn page anchors.
-3. **Draft**: translate into plain, readable English. AI assistance is welcome and normal here; you are responsible for the result. When the Greek is ambiguous, consult Kühn's facing Latin and say so in a note.
-4. **Notes**: flag every uncertainty honestly. Identify drug/plant names via LSJ ([Logeion](https://logeion.uchicago.edu/)) rather than guessing.
-5. **PR**: one HTML file per chunk in `translations/`, following the structure of [`translations/cml-1-1.html`](translations/cml-1-1.html) (Greek and English paired paragraph by paragraph, notes at the end). Mark it `draft — awaiting reviewer`.
-6. **Review**: a second reader with Greek checks the draft against the source; disagreements are argued in the PR with the Greek quoted. Review removes the draft flag.
+2. **Get a packet**: pick an `open` chunk from [`data/chunks.json`](data/chunks.json), or generate one — `python3 tools/make_packet.py --work tlg076 --book 1 --chapter 3 --id cml-1-3 --volume 12`. The packet holds the Greek with Kühn anchors and empty slots for your work.
+3. **Draft**: fill in `eng` per segment — plain, readable English. AI assistance is welcome and normal here; you are responsible for the result. Compare every accessible witness (Kühn's facing Latin, the Arabic tradition where it survives) as **peers** — see the [peer-witness protocol](HARNESS.md#the-peer-witness-protocol).
+4. **Trace and reference**: fill in `trace` per segment — your working, LLM-style: renderings weighed, syntax puzzles, how the witnesses compared — and `refs` with a citation for every witness consulted. We publish the reasoning alongside the result on purpose. Use `notes` for reader-facing color; identify drug/plant names via LSJ ([Logeion](https://logeion.uchicago.edu/)) rather than guessing.
+5. **Validate and PR**: run `python3 tools/validate.py` (CI runs it too), set status to `draft`, and PR the JSON. The page renders automatically at `translations/chunk.html?id=<your-id>`.
+6. **Review**: a second reader with Greek checks the draft against the source; disagreements are argued in the PR with the Greek quoted. Review flips status to `reviewed`.
 
 ### House style
 
