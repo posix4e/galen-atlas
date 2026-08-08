@@ -1376,5 +1376,31 @@
   "english_ref": "Walzer & Frede, Three Treatises (1985)",
   "confidence": "recalled",
   "notes": "Lost in Greek; survives in medieval Latin."
+ },
+ {
+  "id": "x-libprop",
+  "urn": null,
+  "title_lat": "De libris propriis",
+  "title_en": "On My Own Books",
+  "kuhn": "XIX",
+  "survival": "greek",
+  "digitized": null,
+  "english": "full",
+  "english_ref": "P.N. Singer, Galen: Selected Works (1997)",
+  "confidence": "recalled",
+  "notes": "Galen’s own catalog of his writings — the map he left us. Not yet in First1KGreek."
+ },
+ {
+  "id": "x-ordlib",
+  "urn": null,
+  "title_lat": "De ordine librorum suorum",
+  "title_en": "The Order of My Own Books",
+  "kuhn": "XIX",
+  "survival": "greek",
+  "digitized": null,
+  "english": "full",
+  "english_ref": "P.N. Singer, Galen: Selected Works (1997)",
+  "confidence": "recalled",
+  "notes": "In what order to read his works. Not yet in First1KGreek."
  }
 ]
