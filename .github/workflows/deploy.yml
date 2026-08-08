@@ -1,0 +1,63 @@
+name: deploy
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate
+        run: python3 tools/validate.py
+
+      # Deploys need the CLOUDFLARE_API_TOKEN repo secret (Account → Cloudflare
+      # Pages → Edit). Fork PRs don't receive secrets, so they get validation
+      # only — previews run for same-repo branches.
+      - name: Check deploy credentials
+        id: creds
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: echo "have=$([ -n "$CF_TOKEN" ] && echo yes || echo no)" >> "$GITHUB_OUTPUT"
+
+      - name: Build dist
+        if: steps.creds.outputs.have == 'yes'
+        run: |
+          mkdir -p /tmp/dist
+          rsync -a --exclude '.git' --exclude '.github' --exclude '.cache' ./ /tmp/dist/
+
+      - name: Deploy to Cloudflare Pages
+        if: steps.creds.outputs.have == 'yes'
+        id: deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: 7d2737c32f76407d6a6b1c0381f7e91c
+          command: >-
+            pages deploy /tmp/dist --project-name=pergamap
+            --branch=${{ github.event_name == 'push' && 'main' || format('pr-{0}', github.event.pull_request.number) }}
+            --commit-hash=${{ github.sha }}
+
+      - name: Comment preview URL on PR
+        if: github.event_name == 'pull_request' && steps.creds.outputs.have == 'yes'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const url = `${{ steps.deploy.outputs.deployment-url }}`;
+            const marker = '<!-- pergamap-preview -->';
+            const body = `${marker}\n**Preview deployed:** ${url}\n\n(Every push to this PR updates it.)`;
+            const { data: comments } = await github.rest.issues.listComments({
+              ...context.repo, issue_number: context.issue.number });
+            const prev = comments.find(c => c.body.includes(marker));
+            if (prev) {
+              await github.rest.issues.updateComment({ ...context.repo, comment_id: prev.id, body });
+            } else {
+              await github.rest.issues.createComment({ ...context.repo, issue_number: context.issue.number, body });
+            }
