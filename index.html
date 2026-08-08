@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galen Atlas — mapping and translating the Galen nobody can read</title>
+<meta name="description" content="A public map of Galen's surviving works — what exists, in which language, and what has never been translated into English — plus an open project to translate the rest.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="index.html">Galen <span>Atlas</span></a>
+  <nav>
+    <a href="corpus.html">The corpus</a>
+    <a href="roadmap.html">Roadmap</a>
+    <a href="translations/cml-1-1.html">First translation</a>
+    <a href="https://github.com/posix4e/galen-atlas">GitHub</a>
+  </nav>
+</header>
+<main>
+  <h1>Most of Galen has never been translated into English.</h1>
+  <p class="lead">Galen of Pergamon (129 – c. 216 CE) is the largest surviving author of Greco-Roman antiquity: roughly three million words, by a common scholarly estimate about a tenth of all ancient Greek literature that survives from before 350 CE. Much of it can only be read in ancient Greek, medieval Arabic, or the Latin of an 1820s edition.</p>
+
+  <div class="stats" id="stats">
+    <div class="stat"><b id="s-total">–</b><span>works tracked</span></div>
+    <div class="stat"><b id="s-none">–</b><span>confirmed: no English exists</span></div>
+    <div class="stat"><b id="s-unknown">–</b><span>status unverified — help us check</span></div>
+    <div class="stat"><b id="s-some">–</b><span>have at least one English version</span></div>
+  </div>
+
+  <p>The works without English are not the leftovers — they include most of Galen's largest books: the eleven-book <em>On the Powers of Simple Drugs</em>, the seventeen books of compound-drug recipes, the sixteen-book treatise cycle on the pulse, <em>On Antidotes</em>, <em>On Crises</em>, <em>On the Differences of Fevers</em>. Counted by words rather than titles, the untranslated share of Galen is far larger than the numbers above suggest.</p>
+
+  <h2>What this site is</h2>
+  <p>Three things, all in the open:</p>
+  <ol>
+    <li><strong>An atlas.</strong> A <a href="corpus.html">tracking table of the surviving corpus</a>: every work, the language it survives in (Greek, Arabic, Latin, fragments), where the text is digitized, and whether an English translation exists. Each entry is flagged by how well its status has been verified, because half the battle is simply knowing what's missing.</li>
+    <li><strong>A roadmap.</strong> A <a href="roadmap.html">plan for translating the untranslated</a>, starting with texts whose Greek is already digitized, and a public vote on which work gets the first full campaign.</li>
+    <li><strong>A working translation.</strong> Not just a plan: the <a href="translations/cml-1-1.html">first passage is already translated</a> — the opening of <em>On the Composition of Drugs According to Places</em>, Galen's head-to-toe recipe collection, which begins with baldness cures and hair dyes and has waited about 1,800 years for an English version.</li>
+  </ol>
+
+  <div class="notice">
+    <p><strong>Honesty first.</strong> This is an amateur, AI-assisted project, not a critical edition. Translations are made from Kühn's 1826 Greek text, checked against his facing Latin, and published with the Greek alongside so anyone can catch our mistakes. Catalog entries marked “unverified” are exactly that. Corrections are welcome — that's the point of working in public.</p>
+  </div>
+
+  <h2>How to help</h2>
+  <ul>
+    <li><strong>Vote</strong> on the first full translation campaign in the <a href="https://github.com/posix4e/galen-atlas/issues/1">open poll</a>.</li>
+    <li><strong>Verify an entry.</strong> Pick any work marked “unverified” in <a href="corpus.html">the corpus table</a>, find out whether an English translation exists, and file an issue or pull request with your source.</li>
+    <li><strong>Translate a chunk.</strong> If you read Greek (or Arabic, or want to review AI drafts), see <a href="https://github.com/posix4e/galen-atlas/blob/main/CONTRIBUTING.md">CONTRIBUTING</a>.</li>
+  </ul>
+</main>
+<footer class="site">
+  <p>Sources: Greek texts from the <a href="https://github.com/OpenGreekAndLatin/First1KGreek">First Thousand Years of Greek</a> project and the <a href="https://www.graeco-arabic-studies.org/">Digital Corpus for Graeco-Arabic Studies</a> (CC BY-SA), digitized from Karl Gottlob Kühn's <em>Claudii Galeni Opera Omnia</em> (1821–1833, public domain, scans via the <a href="https://archive.org/details/b29339339_0012">Wellcome Library</a>). Site content: CC BY-SA 4.0.</p>
+</footer>
+<script>
+fetch('data/works.json').then(r => r.json()).then(ws => {
+  const n = s => ws.filter(w => w.english === s).length;
+  document.getElementById('s-total').textContent = ws.length;
+  document.getElementById('s-none').textContent = n('none');
+  document.getElementById('s-unknown').textContent = n('unknown');
+  document.getElementById('s-some').textContent = n('full') + n('partial');
+});
+</script>
+</body>
+</html>

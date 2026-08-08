@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The corpus — Galen Atlas</title>
+<meta name="description" content="Tracking table of Galen's surviving works: survival language, digitization, and English translation status.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="index.html">Galen <span>Atlas</span></a>
+  <nav>
+    <a href="corpus.html" class="here">The corpus</a>
+    <a href="roadmap.html">Roadmap</a>
+    <a href="translations/cml-1-1.html">First translation</a>
+    <a href="https://github.com/posix4e/galen-atlas">GitHub</a>
+  </nav>
+</header>
+<main class="wide">
+  <h1>The corpus</h1>
+  <p class="lead">Every work we track, with the language it survives in and whether an English translation is known to exist. This table is a living draft: entries marked <span class="conf">unverified</span> rest on recalled scholarship and need a citation check; entries marked <span class="conf">needs research</span> haven't been checked at all. <a href="https://github.com/posix4e/galen-atlas/issues">Corrections welcome.</a></p>
+
+  <div class="controls">
+    <input type="search" id="q" placeholder="Search titles…" aria-label="Search titles">
+    <button data-f="all" class="on">All</button>
+    <button data-f="none">No English</button>
+    <button data-f="partial">Partial</button>
+    <button data-f="full">Translated</button>
+    <button data-f="unknown">Needs research</button>
+    <button data-f="arabic">Arabic/Latin survivals</button>
+  </div>
+
+  <div class="tablewrap">
+  <table id="t">
+    <thead>
+      <tr><th>Work</th><th>Kühn</th><th>Survives in</th><th>English translation</th><th>Text</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  </div>
+  <p class="crumb" id="count"></p>
+</main>
+<footer class="site">
+  <p>Titles follow the conventional Latin used by the <em>Thesaurus Linguae Graecae</em> and Kühn's edition. “Kühn” gives the volume (and where verified, pages) in <em>Claudii Galeni Opera Omnia</em> (1821–33). “Survives in” is the language of the primary surviving tradition.</p>
+</footer>
+<script>
+const CHIP = { none: 'no English', full: 'translated', partial: 'partial', unknown: 'unknown' };
+const SURV = { greek: 'Greek', arabic: 'Arabic', latin: 'Latin', fragments: 'fragments' };
+const CONF = { checked: '', recalled: 'unverified', unknown: 'needs research' };
+let works = [], filter = 'all', q = '';
+
+function row(w) {
+  const title = w.title_en
+    ? `<strong>${w.title_en}</strong><br><span class="lat">${w.title_lat}</span>`
+    : `<strong class="lat">${w.title_lat}</strong>`;
+  const ref = w.english_ref ? `<span class="ref">${w.english_ref}</span>` : '';
+  const conf = CONF[w.confidence] ? ` <span class="conf">· ${CONF[w.confidence]}</span>` : '';
+  const notes = w.notes ? `<span class="ref">${w.notes}</span>` : '';
+  const link = w.digitized ? `<a href="${w.digitized}">Greek</a>` : '—';
+  return `<tr><td>${title}${notes}</td><td>${w.kuhn || '—'}</td><td>${SURV[w.survival]}</td>
+    <td><span class="chip ${w.english}">${CHIP[w.english]}</span>${conf}${ref}</td><td>${link}</td></tr>`;
+}
+
+function apply() {
+  const qq = q.toLowerCase();
+  const shown = works.filter(w => {
+    if (filter === 'arabic' && !['arabic','latin','fragments'].includes(w.survival)) return false;
+    if (['none','partial','full','unknown'].includes(filter) && w.english !== filter) return false;
+    if (qq && !((w.title_lat||'') + ' ' + (w.title_en||'')).toLowerCase().includes(qq)) return false;
+    return true;
+  });
+  document.querySelector('#t tbody').innerHTML = shown.map(row).join('');
+  document.getElementById('count').textContent = `${shown.length} of ${works.length} works shown.`;
+}
+
+fetch('data/works.json').then(r => r.json()).then(ws => {
+  works = ws.sort((a,b) => (a.title_en||a.title_lat).localeCompare(b.title_en||b.title_lat));
+  apply();
+});
+document.getElementById('q').addEventListener('input', e => { q = e.target.value; apply(); });
+document.querySelectorAll('.controls button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.controls button').forEach(x => x.classList.remove('on'));
+  b.classList.add('on'); filter = b.dataset.f; apply();
+}));
+</script>
+</body>
+</html>
