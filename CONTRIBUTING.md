@@ -1,4 +1,4 @@
-# Contributing to Galen Atlas
+# Contributing to Pergamap
 
 Three ways in, smallest first. No Greek required for the first two.
 
@@ -13,7 +13,7 @@ Then open an issue (or PR against `works.json`) with the work's `id`, what you f
 ## 2. Vote and propose
 
 - Vote for the first full translation campaign in [issue #1](../../issues/1) — 👍 the candidate comments.
-- Propose a different target by commenting there. The criteria (see the [roadmap](https://posix4e.github.io/galen-atlas/roadmap.html)): no existing English, digitized source, finishable, humanly interesting.
+- Propose a different target by commenting there. The criteria (see the [roadmap](https://pergamap.com/roadmap.html)): no existing English, digitized source, finishable, humanly interesting.
 
 ## 3. Translate or review a chunk
 

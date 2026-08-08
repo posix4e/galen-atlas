@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Chunk — Galen Atlas</title>
+<title>Chunk — Pergamap</title>
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <header class="site">
-  <a class="brand" href="../index.html">Galen <span>Atlas</span></a>
+  <a class="brand" href="../index.html">Perga<span>map</span></a>
   <nav>
     <a href="../corpus.html">The corpus</a>
     <a href="../roadmap.html">Roadmap</a>
     <a href="cml-1-1.html">First translation</a>
-    <a href="https://github.com/posix4e/galen-atlas">GitHub</a>
+    <a href="https://github.com/posix4e/pergamap">GitHub</a>
   </nav>
 </header>
 <main id="m">
@@ -36,14 +36,14 @@ const m = document.getElementById('m');
 fetch(`chunks/${id}.json`).then(r => { if (!r.ok) throw 0; return r.json(); }).then(c => {
   const [cls, label] = STATUS[c.status] || ['unknown', c.status];
   const lat = c.witnesses && c.witnesses.kuhn_latin;
-  document.title = `${c.id} — Galen Atlas`;
+  document.title = `${c.id} — Pergamap`;
   let h = `<p class="crumb">Chunk ${esc(c.id)} · ${esc(c.work)} · Kühn ${esc(c.kuhn_range || '')}</p>`;
   h += `<h1 lang="grc">${esc(c.chapter_head || c.id)}</h1>`;
   h += `<p class="lead"><span class="chip ${cls}">${esc(label)}</span></p>`;
   if (c.status === 'open') {
     h += `<div class="notice"><p>This chunk has its Greek prepared but no translation yet.
-      Want it? <a href="https://github.com/posix4e/galen-atlas/issues">Claim it in an issue</a>,
-      then see the <a href="https://github.com/posix4e/galen-atlas/blob/main/HARNESS.md">harness guide</a>.</p></div>`;
+      Want it? <a href="https://github.com/posix4e/pergamap/issues">Claim it in an issue</a>,
+      then see the <a href="https://github.com/posix4e/pergamap/blob/main/HARNESS.md">harness guide</a>.</p></div>`;
   }
   if (lat && lat.scan_url) {
     h += `<p class="crumb">Witness: Kühn's facing Latin — <a href="${esc(lat.scan_url)}">scan</a> (${esc(lat.status)}).</p>`;
@@ -59,7 +59,7 @@ fetch(`chunks/${id}.json`).then(r => { if (!r.ok) throw 0; return r.json(); }).t
   m.innerHTML = h;
 }).catch(() => {
   m.innerHTML = `<h1>Chunk not found</h1><p>No chunk called <code>${esc(id || '(none)')}</code>.
-    See the <a href="../roadmap.html">roadmap</a> or the <a href="https://github.com/posix4e/galen-atlas">repo</a>.</p>`;
+    See the <a href="../roadmap.html">roadmap</a> or the <a href="https://github.com/posix4e/pergamap">repo</a>.</p>`;
 });
 </script>
 </body>

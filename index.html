@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Galen Atlas — mapping and translating the Galen nobody can read</title>
+<title>Pergamap — mapping and translating the Galen nobody can read</title>
 <meta name="description" content="A public map of Galen's surviving works — what exists, in which language, and what has never been translated into English — plus an open project to translate the rest.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="site">
-  <a class="brand" href="index.html">Galen <span>Atlas</span></a>
+  <a class="brand" href="index.html">Perga<span>map</span></a>
   <nav>
     <a href="corpus.html">The corpus</a>
     <a href="roadmap.html">Roadmap</a>
     <a href="translations/cml-1-1.html">First translation</a>
-    <a href="https://github.com/posix4e/galen-atlas">GitHub</a>
+    <a href="https://github.com/posix4e/pergamap">GitHub</a>
   </nav>
 </header>
 <main>
@@ -44,17 +44,17 @@
 
   <h2>How to help</h2>
   <ul>
-    <li><strong>Vote</strong> on the first full translation campaign in the <a href="https://github.com/posix4e/galen-atlas/issues/1">open poll</a>.</li>
+    <li><strong>Vote</strong> on the first full translation campaign in the <a href="https://github.com/posix4e/pergamap/issues/1">open poll</a>.</li>
     <li><strong>Verify an entry.</strong> Pick any work marked “unverified” in <a href="corpus.html">the corpus table</a>, find out whether an English translation exists, and file an issue or pull request with your source.</li>
-    <li><strong>Translate a chunk.</strong> If you read Greek (or Arabic, or want to review AI drafts), see <a href="https://github.com/posix4e/galen-atlas/blob/main/CONTRIBUTING.md">CONTRIBUTING</a>.</li>
+    <li><strong>Translate a chunk.</strong> If you read Greek (or Arabic, or want to review AI drafts), see <a href="https://github.com/posix4e/pergamap/blob/main/CONTRIBUTING.md">CONTRIBUTING</a>.</li>
   </ul>
 
   <h2>How to contribute via pull request</h2>
-  <p>The whole site is a <a href="https://github.com/posix4e/galen-atlas">public repository</a> of plain HTML and one JSON file — no build step, no framework. If you can edit a text file, you can contribute:</p>
+  <p>The whole site is a <a href="https://github.com/posix4e/pergamap">public repository</a> of plain HTML and one JSON file — no build step, no framework. If you can edit a text file, you can contribute:</p>
   <ol>
-    <li><strong>Fork</strong> <a href="https://github.com/posix4e/galen-atlas">posix4e/galen-atlas</a> on GitHub and make a branch.</li>
-    <li><strong>Fixing the catalog?</strong> Edit <a href="https://github.com/posix4e/galen-atlas/blob/main/data/works.json"><code>data/works.json</code></a> — update the work's <code>english</code> / <code>english_ref</code> fields, and set <code>confidence</code> to <code>checked</code> only if you cite where you checked in the pull request.</li>
-    <li><strong>Adding a translation?</strong> Use the <a href="https://github.com/posix4e/galen-atlas/blob/main/HARNESS.md">harness</a>: one command generates a <em>translation packet</em> (the Greek with Kühn anchors, ready for your English), or grab an already-open packet from <code>data/chunks.json</code>. Fill in the translation plus a <em>trace</em> — your working, shown LLM-style, so the reasoning can be checked and not just the result. First claim the chunk in an <a href="https://github.com/posix4e/galen-atlas/issues">issue</a> so two people don't translate the same pages.</li>
+    <li><strong>Fork</strong> <a href="https://github.com/posix4e/pergamap">posix4e/pergamap</a> on GitHub and make a branch.</li>
+    <li><strong>Fixing the catalog?</strong> Edit <a href="https://github.com/posix4e/pergamap/blob/main/data/works.json"><code>data/works.json</code></a> — update the work's <code>english</code> / <code>english_ref</code> fields, and set <code>confidence</code> to <code>checked</code> only if you cite where you checked in the pull request.</li>
+    <li><strong>Adding a translation?</strong> Use the <a href="https://github.com/posix4e/pergamap/blob/main/HARNESS.md">harness</a>: one command generates a <em>translation packet</em> (the Greek with Kühn anchors, ready for your English), or grab an already-open packet from <code>data/chunks.json</code>. Fill in the translation plus a <em>trace</em> — your working, shown LLM-style, so the reasoning can be checked and not just the result. First claim the chunk in an <a href="https://github.com/posix4e/pergamap/issues">issue</a> so two people don't translate the same pages.</li>
     <li><strong>Preview locally</strong> by opening the HTML file in your browser — what you see is what deploys.</li>
     <li><strong>Open the pull request</strong> — one work or one chunk per PR, sources cited. Review happens in the open, arguing from the Greek. Merged means live.</li>
   </ol>
