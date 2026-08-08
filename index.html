@@ -48,6 +48,16 @@
     <li><strong>Verify an entry.</strong> Pick any work marked “unverified” in <a href="corpus.html">the corpus table</a>, find out whether an English translation exists, and file an issue or pull request with your source.</li>
     <li><strong>Translate a chunk.</strong> If you read Greek (or Arabic, or want to review AI drafts), see <a href="https://github.com/posix4e/galen-atlas/blob/main/CONTRIBUTING.md">CONTRIBUTING</a>.</li>
   </ul>
+
+  <h2>How to contribute via pull request</h2>
+  <p>The whole site is a <a href="https://github.com/posix4e/galen-atlas">public repository</a> of plain HTML and one JSON file — no build step, no framework. If you can edit a text file, you can contribute:</p>
+  <ol>
+    <li><strong>Fork</strong> <a href="https://github.com/posix4e/galen-atlas">posix4e/galen-atlas</a> on GitHub and make a branch.</li>
+    <li><strong>Fixing the catalog?</strong> Edit <a href="https://github.com/posix4e/galen-atlas/blob/main/data/works.json"><code>data/works.json</code></a> — update the work's <code>english</code> / <code>english_ref</code> fields, and set <code>confidence</code> to <code>checked</code> only if you cite where you checked in the pull request.</li>
+    <li><strong>Adding a translation?</strong> Copy <a href="https://github.com/posix4e/galen-atlas/blob/main/translations/cml-1-1.html"><code>translations/cml-1-1.html</code></a> as your template: Greek and English in paired blocks, Kühn page anchors kept, honest notes at the end, marked <em>draft</em> until a reviewer signs off. First claim the chunk in an <a href="https://github.com/posix4e/galen-atlas/issues">issue</a> so two people don't translate the same pages.</li>
+    <li><strong>Preview locally</strong> by opening the HTML file in your browser — what you see is what deploys.</li>
+    <li><strong>Open the pull request</strong> — one work or one chunk per PR, sources cited. Review happens in the open, arguing from the Greek. Merged means live.</li>
+  </ol>
 </main>
 <footer class="site">
   <p>Sources: Greek texts from the <a href="https://github.com/OpenGreekAndLatin/First1KGreek">First Thousand Years of Greek</a> project and the <a href="https://www.graeco-arabic-studies.org/">Digital Corpus for Graeco-Arabic Studies</a> (CC BY-SA), digitized from Karl Gottlob Kühn's <em>Claudii Galeni Opera Omnia</em> (1821–1833, public domain, scans via the <a href="https://archive.org/details/b29339339_0012">Wellcome Library</a>). Site content: CC BY-SA 4.0.</p>
