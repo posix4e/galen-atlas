@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title xml:lang="ar">Ǧumal al-maqālah al-ṯāniyah (min kitāb al-quwā l-ṭabīʿīyah)</title>
+				<author>anon.</author>
+				<funder>The Wellcome Trust</funder>
+				<principal>
+					<name>Simon Swain</name>
+					<name>Uwe Vagelpohl</name>
+				</principal>
+			</titleStmt>
+			<respStmt xml:id="Vagelpohl">
+				<resp>transcription, correction, normalisation, XML tagging</resp>
+				<name>Uwe Vagelpohl</name>
+			</respStmt>
+			<publicationStmt>
+				<distributor>A Digital Corpus for Graeco-Arabic Studies (DCGAS)</distributor>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">available under a Creative Commons Attribution-ShareAlike 4.0 International license</licence>
+				</availability>
+				<date>2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<listWit>
+					<witness xml:id="D">
+						<settlement>Teheran</settlement>
+						<repository>Dāniškadā-i Piziškī</repository>
+						<idno type="shelfmark">291</idno>
+						<msItem n="3.1">
+							<locus unit="page" from="237" to="237">p. 237</locus>
+						</msItem>
+					</witness>
+				</listWit>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<samplingDecl>
+				<p>Text transcribed from one manuscript. Paragraphing added.</p>
+			</samplingDecl>
+			<editorialDecl>
+				<correction status="high">
+					<p>Transcript proofread and corrected.</p>
+				</correction>
+				<normalization>
+					<p>Orthography normalised.</p>
+				</normalization>
+				<punctuation>
+					<p>Punctuation added.</p>
+				</punctuation>
+			</editorialDecl>
+			<refsDecl n="text=1" doctype="TEI">
+				<state unit="text"/>
+			</refsDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language xml:id="ar">Arabic</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="ar" xml:id="anon.gal.defacnat-summ.jumal-ar1">
+		<body>
+			<pb unit="page" edRef="#D" n="237"/>
+			<p>
+				بسم اللّه الرحمن الرحيم ربّ يسّر
+			</p>
+			<head>
+				جمل المقالة الثانية
+			</head>
+			<p>
+				إنّ أبقراط يصنّف أعظم الأفعال الطبيعيّة إلی القوّة الجاذبة. وأراسسطراطس لا يعلم أنّه لا يمكن دون هذه القوّة الكلام في تمييز المرار وفي تمييز البول وكذلك لا يمكن الكلام في نفوذ الغذاء إلی البدن ولا في قبوله للغذاء. كلّما أخطأ فيه أراسسطراطس قد أغمض قوله في الأوعية البسيطة الأولی التي يدعها. وكان إغماضه له بالقصد والاعتماد منه لذلك لم يلخّصه. فإنّ أصحاب أراسسطراطس قد خالف بعضهم بعضاً في تلك الأوعية. إنّ القول في قبول البدن الغذاء يعتاص علی أرسسطراطس من جميع الوجوه فإنّ أراسسطراطس لم يقل شيئاً أصلاً في تولّد الدم ولا في تولّد الأخلاط. جملة ما السبب الذي له فعل ذلك أراسسطراطس أنّ معرفة أمر تولّد الأخلاط وقواها من أنفع الأشياء للطبيعة.
+			</p>
+			<p>
+				تمّت الجمل والحمد للّه سدا (؟) وبه أستعين.
+			</p>
+		</body>
+	</text>
+</TEI>

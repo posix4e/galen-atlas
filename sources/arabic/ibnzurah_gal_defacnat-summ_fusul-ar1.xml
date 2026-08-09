@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title xml:lang="ar">Fuṣūl ǧawāmiʿ kitāb al-quwā l-ṭabīʿīyah</title>
+				<author>Ibn Zurʿah</author>
+				<funder>The Wellcome Trust</funder>
+				<principal>
+					<name>Simon Swain</name>
+					<name>Uwe Vagelpohl</name>
+				</principal>
+			</titleStmt>
+			<respStmt xml:id="Vagelpohl">
+				<resp>transcription, correction, normalisation, XML tagging</resp>
+				<name>Uwe Vagelpohl</name>
+			</respStmt>
+			<publicationStmt>
+				<distributor>A Digital Corpus for Graeco-Arabic Studies (DCGAS)</distributor>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">available under a Creative Commons Attribution-ShareAlike 4.0 International license</licence>
+				</availability>
+				<date>2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<listWit>
+					<witness xml:id="T">
+						<abbr type="siglum">T</abbr>
+						<settlement>Teheran</settlement>
+						<repository>Maǧlis</repository>
+						<idno type="shelfmark">6037</idno>
+						<msItem n="6">
+							<locus unit="folio" from="99v" to="101v">fol. 99v–101v</locus>
+						</msItem>
+						<handNote xml:id="T1">annotator of T, same hand</handNote>
+					</witness>
+				</listWit>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<samplingDecl>
+				<p>Text transcribed from one manuscript. Fuṣūl numbering added.</p>
+			</samplingDecl>
+			<editorialDecl>
+				<correction status="high">
+					<p>Transcript proofread and corrected.</p>
+				</correction>
+				<normalization>
+					<p>Orthography normalised.</p>
+				</normalization>
+				<punctuation>
+					<p>Punctuation added.</p>
+				</punctuation>
+			</editorialDecl>
+			<refsDecl n="text=1" doctype="TEI">
+				<state unit="text"/>
+				<state unit="book"/>
+				<state unit="aphorism" n="chunk"/>
+			</refsDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language xml:id="ar">Arabic</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="ar" xml:id="ibnzurah.gal.defacnat-summ.fusul-ar1">
+		<body>
+			<pb unit="folio" edRef="#T" n="99v"/>
+			<div1 type="book" n="1">
+				<head>
+					فصول جوامع المقالة الأولی من كتاب القوی الطبيعيّة وهي
+				</head>
+				<cb n="1">
+					<div2 type="aphorism" n="1">
+						(١) في تصنييف القوی الطبيعيّ منها والنفسانيّ والحيوانيّ
+					</div2>
+					<div2 type="aphorism" n="2">
+						(٢) في تصنيف النفوس بحسب رأي أفلاطن
+					</div2>
+					<div2 type="aphorism" n="3">
+						(٣) في قسمة أنحاء التغيّر
+					</div2>
+					<div2 type="aphorism" n="4">
+						(٤) في قسمة الحركات إلی البسائط الجنسيّة والمركّبات النوعيّة
+					</div2>
+					<div2 type="aphorism" n="5">
+						(٥) في أنّ الآراء في الكيفيّات ثلثة والردّ علی المبطل منها وتصويب المحقّ
+					</div2>
+					<div2 type="aphorism" n="6">
+						(٦) في ذكر الآراء التي كانت في أمر المزاج وأنّها يثنان
+					</div2>
+					<div2 type="aphorism" n="7">
+						(٧) في أنّ الحركة قد تكون بالقياس إلی أمرين فعلاً وانفعالاً
+					</div2>
+					<div2 type="aphorism" n="8">
+						(٨) في اسم الفعل وأنّه يقال علی نحوين
+					</div2>
+					<div2 type="aphorism" n="9">
+						(٩) في تفصيل الأشياء التي منزلتها عند الحركة الطبيعيّة منزلة الأسباب الأربعة
+					</div2>
+					<div2 type="aphorism" n="10">
+						(١٠) في أنّ القوّة أوّلاً سبب للفعل وثانياً لما إليه أدّی الفعل
+					</div2>
+					<div2 type="aphorism" n="11">
+						(١١) في اقتصاص آراء الناس في أمر الأدوات التي تستعملها الطبيعة في أفعالها
+					</div2>
+					<div2 type="aphorism" n="12a">
+						(١٢) في اقتصاص رأي أرسطوطالس في
+					</div2>
+				</cb>
+				<cb n="2">
+					<div2 type="aphorism" n="12b">
+						أمر الكيفيّة وما تكلّم به في معناها في كتبه
+					</div2>
+					<div2 type="aphorism" n="13">
+						(١٣) في أنّ الأفعال الطبيعيّة ثلثة (؟) فيما تستخدمه القوی الثلث الأول الطبيعيّة من القوی الثواني
+					</div2>
+					<div2 type="aphorism" n="14">
+						(١٤) في أنّ القوی المغيّرة قوّتان
+					</div2>
+					<div2 type="aphorism" n="15">
+						(١٥) في أنحاء القوی المغيّرة
+					</div2>
+					<div2 type="aphorism" n="16">
+						(١٦) في تعديد الكيفيّات وتفصيلها
+					</div2>
+					<div2 type="aphorism" n="17">
+						(١٧) في قسمة الكيفيّات علی جهة أخری
+					</div2>
+					<div2 type="aphorism" n="18">
+						(١٨) في قسمة الكيفيّات أيضاً علی نحو آخر
+					</div2>
+					<div2 type="aphorism" n="19">
+						(١٩) في أنّ أفعال الطبيعة الأول ثلثة
+					</div2>
+					<div2 type="aphorism" n="20">
+						(٢٠) في تفصيل أحوال هذه الثلث القوی
+					</div2>
+					<div2 type="aphorism" n="21">
+						(٢١) في ذكر حال القوّة المغيّرة في الكون والبرسه (؟)
+					</div2>
+					<div2 type="aphorism" n="22">
+						(٢٢) في تفصيل أحوال الأشياء المتغيّرة
+					</div2>
+					<div2 type="aphorism" n="23">
+						(٢٣) في ذكر أعضاء الغذاء وما منها جعل لذلك بالذات وما منها كان بطريق العرض
+					</div2>
+					<div2 type="aphorism" n="24">
+						(٢٤) في ذكر الأشياء التي يتبع وجودها وجود الغذاء
+					</div2>
+					<div2 type="aphorism" n="25">
+						(٢٥) في أنّ الغذاء يفسد علی ثلث جهات
+					</div2>
+					<div2 type="aphorism" n="26">
+						(٢٦) في الشروط التي بها يتكامل الغذاء
+					</div2>
+					<div2 type="aphorism" n="27">
+						(٢٧) في أحوال الغذاء فيمن به الاستسقاء اللحميّ
+					</div2>
+					<div2 type="aphorism" n="28">
+						(٢٨) في استعمال بقراط اسم الغذاء وأنّه يقال علی ثلثة أنحاء
+					</div2>
+				</cb>
+				<pb unit="folio" edRef="#T" n="100r"/>
+				<cb n="1">
+					<div2 type="aphorism" n="29">
+						(٢٩) في أنّ الآراء الموثوق بها في الفلسفة والطبّ رأيان
+					</div2>
+					<div2 type="aphorism" n="30">
+						(٣٠) في تبكيت رأيي أسقليبياذس وإفيقورس
+					</div2>
+					<div2 type="aphorism" n="31">
+						(٣١) في ذكر منشأ كلّ واحد ممّا يغشّي الأعضاء الباطنة
+					</div2>
+					<div2 type="aphorism" n="32">
+						(٣٢) في أنّ الآراء في الأدوية المسهلة رأيان
+					</div2>
+					<div2 type="aphorism" n="33">
+						(٣٣) في فسخ رأي أسقليبياذس في أمر الأدوية المسهلة
+					</div2>
+					<div2 type="aphorism" n="34">
+						(٣٤) في ذكر من جحد القوی الطبيعيّة
+					</div2>
+				</cb>
+				<cb n="2">
+					<div2 type="aphorism" n="35">
+						(٣٥) في الردّ علی إفيقورس في أمر القوی الجاذبة بجهات مختلفة
+					</div2>
+					<div2 type="aphorism" n="36">
+						(٣٦) في ظهور القوّة الجاذبة في الأشياء الباطنة في البدن والخارجة عنه
+					</div2>
+					<div2 type="aphorism" n="37">
+						(٣٧) اقتصاص رأي
+						<anchor xml:id="appcrit1begin"/>
+						أرسسطراطس
+						<anchor xml:id="appcrit1end"/>
+						في أمر الهضم
+					</div2>
+					<div2 type="aphorism" n="38">
+						(٣٨) في أنّ الآراء في تمييز البول من الدم خمسة آراء وتصويب رأي المحقّ منها وترذيل المبطل وتسفيهه
+					</div2>
+				</cb>
+				<p>
+					تمّت فصول جوامع المقالة الأولی من كتاب جالينوس في القوی الطبيعيّة وهي ثمانية وثلثون فصلاً.
+				</p>
+			</div1>
+			<div1 type="book" n="2">
+				<head>
+					فصول جوامع المقالة الثانية من كتاب جالينوس في القوی الطبيعيّة
+				</head>
+				<cb n="1">
+					<div2 type="aphorism" n="1">
+						(١) في ذكر الأشياء الكائنة عن القوّة الجاذبة
+					</div2>
+					<div2 type="aphorism" n="2">
+						(٢) في الجهة التي عليها يكون تنفيذ الغذاء بحسب رأي
+						<anchor xml:id="appcrit2begin"/>
+						أرسسطراطس
+						<anchor xml:id="appcrit2end"/>
+					</div2>
+					<div2 type="aphorism" n="3">
+						(٣) في تبكيت رأي
+						<anchor xml:id="appcrit3begin"/>
+						أرسسطراطس
+						<anchor xml:id="appcrit3end"/>
+						فيما رآه في الغذاء بأربع حجج
+					</div2>
+					<div2 type="aphorism" n="4">
+						(٤) في أنّ الآراء في الأسطقسّات رأيان
+					</div2>
+					<div2 type="aphorism" n="5">
+						(٥) في الطريق التي بها يكون تمييز المرّة الصفراء عن الدم بحسب رأي
+						<anchor xml:id="appcrit4begin"/>
+						أرسسطراطس
+						<anchor xml:id="appcrit4end"/>
+					</div2>
+					<div2 type="aphorism" n="6">
+						(٦) في فسخ رأي
+						<anchor xml:id="appcrit5begin"/>
+						أرسسطراطس
+						<anchor xml:id="appcrit5end"/>
+						هذا بثلث حجج
+					</div2>
+					<div2 type="aphorism" n="7">
+						(٧) في أنّ الفاعلين يختلفون بحسب الظهور والخفاء
+					</div2>
+				</cb>
+				<cb n="2">
+					<div2 type="aphorism" n="8">
+						(٨) في أنّ الآراء في المنيّ ودم الحيض رأيان
+					</div2>
+					<div2 type="aphorism" n="9">
+						(٩) في اختلاف تسمية المنيّ بحسب أحوال تغيّره
+					</div2>
+					<div2 type="aphorism" n="10">
+						(١٠) في أنّ في كون الأجنّة دليل علی وجود القوی الطبيعيّة
+					</div2>
+					<div2 type="aphorism" n="11">
+						(١١) في ذكر أحوال الشيء الحاصل في الرحم بحسب تغاييره
+					</div2>
+					<div2 type="aphorism" n="12">
+						(١٢) في الفرق بين الكون والنموّ
+					</div2>
+					<div2 type="aphorism" n="13">
+						(١٣) في الفرق بين الزيادة الكائنة بالصناعة والكائنة بالطبيعة
+					</div2>
+					<div2 type="aphorism" n="14">
+						(١٤) في ذكر اختلاف تزيّد العضو
+					</div2>
+				</cb>
+				<pb unit="folio" edRef="#T" n="100v"/>
+				<cb n="1">
+					<div2 type="aphorism" n="15">
+						(١٥) في أنّ تغايير الغذاء علی ثلثة أنحاء
+					</div2>
+					<div2 type="aphorism" n="16">
+						(١٦) في أنّ
+						<anchor xml:id="appcrit6begin"/>
+						أرسسطراطس
+						<anchor xml:id="appcrit6end"/>
+						ألغی ذكر شيئين من هذه الثلثة
+					</div2>
+					<div2 type="aphorism" n="17">
+						(١٧) في ذكر الأسباب المحدثة للاستسقاء
+					</div2>
+					<div2 type="aphorism" n="18">
+						(١٨) في أنّ الأخلاط المتولّدة عن الهضم الكائن في الكبد أربعة
+					</div2>
+					<div2 type="aphorism" n="19">
+						(١٩) في ردّ جالينوس علی
+						<anchor xml:id="appcrit7begin"/>
+						أرسسطراطس
+						<anchor xml:id="appcrit7end"/>
+						قوله في تولّد المرّة وأين تكون
+					</div2>
+					<div2 type="aphorism" n="20">
+						(٢٠) في حال النڡاس (؟) اللاحقة بالعسل إذا طبخ
+					</div2>
+					<div2 type="aphorism" n="21">
+						(٢١) في ذكر أحوال الكيفيّات المولّدة للأخلاط
+					</div2>
+					<div2 type="aphorism" n="22">
+						(٢٢) في أنّ
+						<anchor xml:id="appcrit8begin"/>
+						أرسسطراطس
+						<anchor xml:id="appcrit8end"/>
+						قد ينظر إلی الاعتراف بأنّ المرض حادث من سوء المزاج
+					</div2>
+					<div2 type="aphorism" n="23">
+						(٢٣) في أنّ كون الخمر يتمّ بأربعة أشياء
+					</div2>
+					<div2 type="aphorism" n="24">
+						(٢٤) في أنّ كلّ واحد من الأخلاط إمّا أن يكون طبيعيّاً أو خارجاً عن الطبيعة
+					</div2>
+				</cb>
+				<cb n="2">
+					<div2 type="aphorism" n="25">
+						(٢٥) في أنّ حال المرّة السوداء هي الحال المقدّم ذكرها
+					</div2>
+					<div2 type="aphorism" n="26">
+						(٢٦) في أنّ المرّة الصفراء هذه حالها أيضاً
+					</div2>
+					<div2 type="aphorism" n="27">
+						(٢٧) في أنّ حكم البلغم وحاله كحال ما تقدّم ذكره من سائر الأخلاط
+					</div2>
+					<div2 type="aphorism" n="28">
+						(٢٨) في ذكر الفضل البلغميّ والطريق التي بها يستفرغ من الأعضاء
+					</div2>
+					<div2 type="aphorism" n="29">
+						(٢٩) الكلام في أنّ الأسباب المولّدة للأخلاط علی العموم وهي الأربعة الأسباب
+					</div2>
+					<div2 type="aphorism" n="30">
+						(٣٠) في أسباب هذه الأخلاط الأربعة علی الخصوص
+					</div2>
+					<div2 type="aphorism" n="31">
+						(٣١) في ذكر ما يجتذبه من الأخلاط سائر البدن وما يجتذبه عضو خاصّ
+					</div2>
+					<div2 type="aphorism" n="32">
+						(٣٢) في ذكر الحال التي توجد للطحال عند البدن
+					</div2>
+					<div2 type="aphorism" n="33">
+						(٣٣) في أنّ المرّة السوداء صنفان
+					</div2>
+					<div2 type="aphorism" n="34">
+						(٣٤) في أنّ أصناف الأخلاط في النوع أحد عشر صنفاً بحسب رأي فركساغورس
+					</div2>
+				</cb>
+				<p>
+					تمّت فصول جوامع المقالة الثانية من القوی الطبيعيّة وهي ثلثة وثلثون فصلاً.
+				</p>
+			</div1>
+			<div1 type="book" n="3">
+				<head>
+					فصول جوامع المقالة
+					<anchor xml:id="appcrit9begin"/>
+					الثالثة
+					<anchor xml:id="appcrit9end"/>
+					من كتاب القوی الطبيعيّة وهي
+				</head>
+				<cb n="1">
+					<div2 type="aphorism" n="1">
+						(١) في أنّ الغذاء يكمل بثلثة معانٍ
+					</div2>
+					<div2 type="aphorism" n="2">
+						(٢) في ذكر القوی الماسكة
+					</div2>
+					<div2 type="aphorism" n="3">
+						(٣) في تفصيل أحوال الرحم في الأوقات المختلفة
+					</div2>
+					<div2 type="aphorism" n="4">
+						(٤) في تفصيل أحوال المعدة في الأوقات المختلفة
+					</div2>
+				</cb>
+				<cb n="2">
+					<div2 type="aphorism" n="5">
+						(٥) في ذكر الوقت الذي تتحرّك فيه القوّة الدافعة في الرحم
+					</div2>
+					<div2 type="aphorism" n="6">
+						(٦) في تعديد الأغشية التي علی الجنين وأنّها ثلثة
+					</div2>
+					<div2 type="aphorism" n="7">
+						(٧) في ذكر أوقات حركة الأجنّة للبروز
+					</div2>
+				</cb>
+				<pb unit="folio" edRef="#T" n="101r"/>
+				<cb n="1">
+					<div2 type="aphorism" n="8">
+						(٨) في أنّ الأشياء العارضة للحمل شيئان
+					</div2>
+					<div2 type="aphorism" n="9">
+						(٩) في أنّ العارض للرحم في وقت الولاد أمران بين (؟) وجود القوّة الدافعة
+					</div2>
+					<div2 type="aphorism" n="10">
+						(١٠) في ذكر حال المعدة إذا كان الغذاء فيها وإذا خرج عنها
+					</div2>
+					<div2 type="aphorism" n="11">
+						(١١) في أنّ
+						<anchor xml:id="appcrit10begin"/>
+						أرسسطراطس
+						<anchor xml:id="appcrit10end"/>
+						يضع انقباض المعدة لثلثة أشياء
+					</div2>
+					<div2 type="aphorism" n="12">
+						(١٢) فيما يظهر بالتشريح من أحوال الأمعاء والاستدلال علی وجود القوّة الماسكة والدافعة
+					</div2>
+					<div2 type="aphorism" n="13">
+						(١٣) في أنّ لبث الغذاء في المعدة وانحداره عنها ليس سببه غلظ أجزاء الغذاء ولا لطفها لكن ذلك للقوّة الماسكة والقوّة الدافعة
+					</div2>
+					<div2 type="aphorism" n="14">
+						(١٤) في أنّ الأجسام المتماسّة قد يفعله بعضها في بعض وينفعل بعضها عن بعض
+					</div2>
+					<div2 type="aphorism" n="15">
+						(١٥) في أنّ كلّ واحد من الأعضاء إنّما يقبل الشيء الملائم له وينافر ما لا يلائمه
+					</div2>
+					<div2 type="aphorism" n="16">
+						(١٦) في تفصيل أحوال ما يرد البدن في فعله وانفعاله
+					</div2>
+					<div2 type="aphorism" n="17">
+						(١٧) في ذكر حال المعدة عند الغذاء وحال الغذاء عندها
+					</div2>
+				</cb>
+				<cb n="2">
+					<div2 type="aphorism" n="18">
+						(١٨) في ذكر الأعضاء التي يكون بها الهضم
+					</div2>
+					<div2 type="aphorism" n="19">
+						(١٩) في الدليل علی أنّ الغذاء يتغيّر في الفم
+					</div2>
+					<div2 type="aphorism" n="20">
+						(٢٠) في الدليل علی أنّ الغذاء قد يتغيّر أيضاً في المعدة
+					</div2>
+					<div2 type="aphorism" n="21">
+						(٢١) في أنّ الغذاء قد يتغيّر في المعدة أكثر من تغيّره في الفم
+					</div2>
+					<div2 type="aphorism" n="22">
+						(٢٢) في أنّ جرم المعدة مؤلّف من طبقتين
+					</div2>
+					<div2 type="aphorism" n="23">
+						(٢٣) في ذكر أحوال طبقتي المعدة
+					</div2>
+					<div2 type="aphorism" n="24">
+						(٢٤) في أنّ الليف ثلثة أجناس وذكر منافعها
+					</div2>
+					<div2 type="aphorism" n="25">
+						(٢٥) في ذكر المواضع التي يوجد الليف فيها
+					</div2>
+					<div2 type="aphorism" n="26">
+						(٢٦) في ذكر ما يفعله الليف الذاهب في العرض
+					</div2>
+					<div2 type="aphorism" n="27">
+						(٢٧) في ذكر الأعضاء ذوات الطبقات
+					</div2>
+					<div2 type="aphorism" n="28">
+						(٢٨) في ذكر الأعضاء ذوات الطبقتين وذوات الطبقة الواحدة والعلل في اختلافها ومنافعها
+					</div2>
+					<div2 type="aphorism" n="29">
+						(٢٩) في ذكر مبادئ الأغشية المغشّية للأعضاء الباطنة
+					</div2>
+					<div2 type="aphorism" n="30">
+						(٣٠) في أنّ حركات العضل تابعة لأوضاع الليف
+					</div2>
+					<div2 type="aphorism" n="31">
+						(٣١) في أنّ جميع الأعضاء لها قوی الشهوة والحركة إلی المشتهی وأنّ بعض ذلك يكون بإرادة وبعضه بغير إرادة
+					</div2>
+					<div2 type="aphorism" n="32">
+						(٣٢) في أنّ حركات الأعضاء بعضها يكون بالإرادة وبعضها بالطبيعة وبعضها مركّبة من ذينك
+					</div2>
+					<div2 type="aphorism" n="33">
+						(٣٣) في الأعضاء التي يكون بها الازدراد والقيء
+					</div2>
+					<div2 type="aphorism" n="34">
+						(٣٤) في أنّ الازدراد يتمّ بأمرين
+					</div2>
+				</cb>
+				<pb unit="folio" edRef="#T" n="101v"/>
+				<cb n="1">
+					<div2 type="aphorism" n="35">
+						(٣٥) فيما يجذبه الشقّ الواقع بالمعدة طولاً وعرضاً من المغذّیً (؟)
+					</div2>
+					<div2 type="aphorism" n="36">
+						(٣٦) في ذكر حال اختلاف الازدراد إذا تمّ بطبقة واحدة
+					</div2>
+					<div2 type="aphorism" n="37">
+						(٣٧) في أنّ الآراء في الازدراد ثلثة
+					</div2>
+					<div2 type="aphorism" n="38">
+						(٣٨) في أنّ ما يندفع عن الأعضاء من الفضول يكون علی وجهين
+					</div2>
+					<div2 type="aphorism" n="39">
+						(٣٩) في أنّ ما يتأدّی به يكون علی ثلثة أضرب
+					</div2>
+					<div2 type="aphorism" n="40">
+						(٤٠) في الوجه الذي عليه يكون دفع الرحم للجنين والمعدة للطعام
+					</div2>
+					<div2 type="aphorism" n="41">
+						(٤١) في ذكر حال الأعضاء في الاجتذاب والدفع
+					</div2>
+					<div2 type="aphorism" n="42">
+						(٤٢) في أنّ المادّة تتحرّك في هذه الطرق الواحدة بأعيانها حركات متضادّة
+					</div2>
+					<div2 type="aphorism" n="43">
+						(٤٣) في ذكر حال المعدة عند حاجتها إلی الغذاء
+					</div2>
+					<div2 type="aphorism" n="44">
+						(٤٤) في أنّ الأعضاء منها ما لا تجويف فيه ومنها ما له تجويف
+					</div2>
+					<div2 type="aphorism" n="45">
+						(٤٥) في أنّ أجزاء الاغتذاء ثلثة
+					</div2>
+					<div2 type="aphorism" n="46">
+						(٤٦) في أنّ أزمان توزيع الغذاء أيضاً ثلثة
+					</div2>
+					<div2 type="aphorism" n="47">
+						(٤٧) في أنّ الغذاء الصائر إلی الكبد غذاءان
+					</div2>
+					<div2 type="aphorism" n="48">
+						(٤٨) في أنّ الأغذية التي تتأدّی من الكبد إلی جملة البدن غذاءان
+					</div2>
+				</cb>
+				<cb n="2">
+					<div2 type="aphorism" n="49">
+						(٤٩) في أنّ للقلب بطنين وحال كلّ واحدة منهما فيما ينشؤ منها ويبرز وما يصل إليها
+					</div2>
+					<div2 type="aphorism" n="50">
+						(٥٠) في أنّ الاجتذاب يكون علی ثلثة أنحاء
+					</div2>
+					<div2 type="aphorism" n="51">
+						(٥١) في أنّ الاجتذاب الذي يكون باضطرار الخلاء والقوّة الطبيعيّة يكون علی نحوين
+					</div2>
+					<div2 type="aphorism" n="52">
+						(٥٢) في ذكر أحوال الشرايين والقلب فيما يجتذبه
+					</div2>
+					<div2 type="aphorism" n="53">
+						(٥٣) في ذكر أقسام الشيء اللطيف في البدن وأنّها ثلثة
+					</div2>
+					<div2 type="aphorism" n="54">
+						(٥٤) في أنّ ما يجتذبه الشرايين من المعدة والأمعاء لغلظ ما فيهما من الغذاء إمّا أن لا يجتذب شيئاً وإمّا أن يكون ما يجتذبه يسيراً
+					</div2>
+					<div2 type="aphorism" n="55">
+						(٥٥) في أنّ بطون القلب بحسب رأي أرسطوطالس ثلثة وبحسب رأي جالينوس بطنان
+					</div2>
+					<div2 type="aphorism" n="56">
+						(٥٦) في قسمة الأعضاء بحسب قربها من طبيعة الدم وبعدها
+					</div2>
+					<div2 type="aphorism" n="57">
+						(٥٧) في أنّ نفوذ الشراب بسهولة وإدراره للبول يحتاج إلی أربعة أشياء
+					</div2>
+				</cb>
+				<p>
+					تمّت فصول جوامع المقالة الثالثة من القوی الطبيعيّة وهي سبعة وخمسون فصلاً.
+				</p>
+			</div1>
+		</body>
+		<back>
+			
+			<listApp>
+				<app from="#appcrit1begin" to="#appcrit1end">
+					<choice>
+						<corr type="correction" resp="#Vagelpohl">
+							أرسسطراطس
+						</corr>
+						<sic wit="#T">
+							ارسطراطس
+						</sic>
+					</choice>
+				</app>
+				<app from="#appcrit2begin" to="#appcrit2end">
+					<choice>
+						<corr type="correction" resp="#Vagelpohl">
+							أرسسطراطس
+						</corr>
+						<sic wit="#T">
+							ارسطراطس
+						</sic>
+					</choice>
+				</app>
+				<app from="#appcrit3begin" to="#appcrit3end">
+					<choice>
+						<corr type="correction" resp="#Vagelpohl">
+							أرسسطراطس
+						</corr>
+						<sic wit="#T">
+							ارسطراطس
+						</sic>
+					</choice>
+				</app>
+				<app from="#appcrit4begin" to="#appcrit4end">
+					<choice>
+						<corr type="correction" resp="#Vagelpohl">
+							أرسسطراطس
+						</corr>
+						<sic wit="#T">
+							ارسطراطس
+						</sic>
+					</choice>
+				</app>
+				<app from="#appcrit5begin" to="#appcrit5end">
+					<choice>
+						<corr type="correction" resp="#Vagelpohl">
+							أرسسطراطس
+						</corr>
+						<sic wit="#T">
+							ارسطراطس
+						</sic>
+					</choice>
+				</app>
+				<app from="#appcrit6begin" to="#appcrit6end">
+					<choice>
+						<corr type="correction" resp="#Vagelpohl">
+							أرسسطراطس
+						</corr>
+						<sic wit="#T">
+							ارسطراطس
+						</sic>
+					</choice>
+				</app>
+				<app from="#appcrit7begin" to="#appcrit7end">
+					<choice>
+						<corr type="correction" resp="#Vagelpohl">
+							أرسسطراطس
+						</corr>
+						<sic wit="#T">
+							ارسطراطس
+						</sic>
+					</choice>
+				</app>
+				<app from="#appcrit8begin" to="#appcrit8end">
+					<choice>
+						<corr type="correction" resp="#Vagelpohl">
+							أرسسطراطس
+						</corr>
+						<sic wit="#T">
+							ارسطراطس
+						</sic>
+					</choice>
+				</app>
+				<app from="#appcrit8begin" to="#appcrit8end">
+					<lem wit="#T1" location="above">
+						قد
+					</lem>
+					<rdg wit="#T"/>
+				</app>
+				<app from="#appcrit9begin" to="#appcrit9end">
+					<choice>
+						<corr type="correction" resp="#Vagelpohl">
+							الثالثة
+						</corr>
+						<sic wit="#T">
+							الثانية
+						</sic>
+					</choice>
+				</app>
+				<app from="#appcrit10begin" to="#appcrit10end">
+					<choice>
+						<corr type="correction" resp="#Vagelpohl">
+							أرسسطراطس
+						</corr>
+						<sic wit="#T">
+							ارسطراطس
+						</sic>
+					</choice>
+				</app>
+			</listApp>
+		</back>
+	</text>
+</TEI>

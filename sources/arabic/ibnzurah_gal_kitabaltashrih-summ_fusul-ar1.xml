@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title xml:lang="ar">Fuṣūl ǧawāmiʿ kitāb al-tašrīḥ li-l-mutaʿallimīn</title>
+				<author>Ibn Zurʿah</author>
+				<funder>The Wellcome Trust</funder>
+				<principal>
+					<name>Simon Swain</name>
+					<name>Uwe Vagelpohl</name>
+				</principal>
+			</titleStmt>
+			<respStmt xml:id="Vagelpohl">
+				<resp>transcription, correction, normalisation, XML tagging</resp>
+				<name>Uwe Vagelpohl</name>
+			</respStmt>
+			<publicationStmt>
+				<distributor>A Digital Corpus for Graeco-Arabic Studies (DCGAS)</distributor>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">available under a Creative Commons Attribution-ShareAlike 4.0 International license</licence>
+				</availability>
+				<date>2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<listWit>
+					<witness xml:id="T">
+						<abbr type="siglum">T</abbr>
+						<settlement>Teheran</settlement>
+						<repository>Maǧlis</repository>
+						<idno type="shelfmark">6037</idno>
+						<msItem n="7-11">
+							<locus unit="folio" from="101v" to="104r">fol. 101v–104r</locus>
+						</msItem>
+					</witness>
+				</listWit>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<samplingDecl>
+				<p>Text transcribed from one manuscript. Fuṣūl numbering added.</p>
+			</samplingDecl>
+			<editorialDecl>
+				<correction status="high">
+					<p>Transcript proofread and corrected.</p>
+				</correction>
+				<normalization>
+					<p>Orthography normalised.</p>
+				</normalization>
+				<punctuation>
+					<p>Punctuation added.</p>
+				</punctuation>
+			</editorialDecl>
+			<refsDecl n="text=1" doctype="TEI">
+				<state unit="text"/>
+				<state unit="book"/>
+				<state unit="aphorism" n="chunk"/>
+			</refsDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language xml:id="ar">Arabic</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="ar" xml:id="ibnzurah.gal.kitabaltashrih-summ.fusul-ar1">
+		<body>
+			<pb unit="folio" edRef="#T" n="101v"/>
+			<div1 type="book" n="1">
+				<head>
+					فصول المقالة في جوامع العظام من كتاب التشريح في التشريح للمتعلّمين وهي
+				</head>
+				<pb unit="folio" edRef="#T" n="102r"/>
+				<cb n="1">
+					<div2 type="aphorism" n="1">
+						(١) في قسمة العظام بحسب الكبر والصغر والتجويف والأصمات (؟) وما له لاحقة وما لا لاحقة له
+					</div2>
+					<div2 type="aphorism" n="2">
+						(٢) في أنّ للطبيعة في اتّخاذ العظام غرضان
+					</div2>
+					<div2 type="aphorism" n="3">
+						(٣) في تعديد الوجوه التي أعدّت الطبيعة لها العظام
+					</div2>
+					<div2 type="aphorism" n="4">
+						(٤) في قسمة <anchor xml:id="appcrit1begin"/>العظام<anchor xml:id="appcrit1end"/> بحسب هشاشتها وصلابتها وتجويفاتها وتخلخلها وتلزّزها
+					</div2>
+					<div2 type="aphorism" n="5">
+						(٥) في قسمة عظام المفاصل
+					</div2>
+					<div2 type="aphorism" n="6">
+						(٦) في أنّ تركيب العظام يكون علی نحوين
+					</div2>
+					<div2 type="aphorism" n="7">
+						(٧) في أنّ اتّصال المفاصل علی العموم يكون علی نحوين وأنّ كلّ واحد منهما ينقسم إلی ثلثة أقسام
+					</div2>
+					<div2 type="aphorism" n="8">
+						(٨) في أنّ الالتحام يكون علی ثلثة أضرب
+					</div2>
+					<div2 type="aphorism" n="9">
+						(٩) في ذكر مناشئ الأعصاب وأنّها ثلثة أنواع
+					</div2>
+					<div2 type="aphorism" n="10">
+						(١٠) في ذكر قحف الرأس وأنّه مركّب من أجزاء ومنافع أجزائه
+					</div2>
+					<div2 type="aphorism" n="11">
+						(١١) في أنّ الأشكال الموجودة للقحف أربعة
+					</div2>
+					<div2 type="aphorism" n="12">
+						(١٢) في أنّ شؤون الرأس الخاصّة بقحفه خمسة والمشتركة اثنان
+					</div2>
+					<div2 type="aphorism" n="13">
+						(١٣) في أنّ أعظم الرأس سبعة
+					</div2>
+					<div2 type="aphorism" n="14">
+						(١٤) في ذكر أشكال عظام الرأس السبعة
+					</div2>
+					<div2 type="aphorism" n="15">
+						(١٥) في أنّ شؤون الرأس منها خاصّة ومنها مشتركة
+					</div2>
+				</cb>
+				<cb n="2">
+					<div2 type="aphorism" n="16">
+						(١٦) في ذكر حدود عظام الرأس
+					</div2>
+					<div2 type="aphorism" n="17">
+						(١٧) في ذكر اختلاف جوهر عظام الرأس
+					</div2>
+					<div2 type="aphorism" n="18">
+						(١٨) في السبب الذي من أجله كان عظما اليافوخ اثنين (؟)
+					</div2>
+					<div2 type="aphorism" n="19">
+						(١٩) في ذكر أسباب ما صلب من عظام الرأس
+					</div2>
+					<div2 type="aphorism" n="20">
+						(٢٠) في الأسباب الذي له صلب العظم الحجريّ
+					</div2>
+					<div2 type="aphorism" n="21">
+						(٢١) في ذكر قوّة صلابة العظم الوتديّ وتكاثفه
+					</div2>
+					<div2 type="aphorism" n="22">
+						(٢٢) في حال وضع العظام الساترة لعضل الصدغين
+					</div2>
+					<div2 type="aphorism" n="23">
+						(٢٣) في ذكر حال دروز اللحي الأعلی
+					</div2>
+					<div2 type="aphorism" n="24">
+						(٢٤) في أنّ عظام اللحي الأعلی أربعة عشر عظماً سوی الوتديّ
+					</div2>
+					<div2 type="aphorism" n="25">
+						(٢٥) في ذكر أحوال أعظم العين الثلثة
+					</div2>
+					<div2 type="aphorism" n="26">
+						(٢٦) في تحديد كلّ واحد من عظام الوجنتين
+					</div2>
+					<div2 type="aphorism" n="27">
+						(٢٧) في تحديد عظام المنخرين
+					</div2>
+					<div2 type="aphorism" n="28">
+						(٢٨) في تحديد عظام الأنف
+					</div2>
+					<div2 type="aphorism" n="29">
+						(٢٩) في ذكر العظام التي فيها معادن الأسنان القواطع
+					</div2>
+					<div2 type="aphorism" n="30">
+						(٣٠) في أنّ اللحي الأعلی مركّب من عظام كثيرة
+					</div2>
+					<div2 type="aphorism" n="31">
+						(٣١) في القسمة علی جهة أخری لعظام اللحي الأعلی وعدّتها
+					</div2>
+					<div2 type="aphorism" n="32">
+						(٣٢) في عدّة الأسنان وأصنافها ومواضعها
+					</div2>
+					<div2 type="aphorism" n="33">
+						(٣٣) في ذكر اختلاف أصول الأسنان
+					</div2>
+					<div2 type="aphorism" n="34">
+						(٣٤) في أنّ اللحي الأسفل مركّب من عظمين
+					</div2>
+					<div2 type="aphorism" n="35">
+						(٣٥) في أنّ لفقار الظهر خمس منافع
+					</div2>
+					<div2 type="aphorism" n="36">
+						(٣٦) في أنّ عظم الصلب ينقسم أربعة أقسام
+					</div2>
+				</cb>
+				<pb unit="folio" edRef="#T" n="102v"/>
+				<cb n="1">
+					<div2 type="aphorism" n="37">
+						(٣٧) في مخالفة الفقرات بعضها بعضاً وأنّ ذلك في ستّة معانٍ
+					</div2>
+					<div2 type="aphorism" n="38">
+						(٣٨) في اختلاف مقادير الفقرات
+					</div2>
+					<div2 type="aphorism" n="39">
+						(٣٩) في اختلاف الفقرات من قبل التجويف
+					</div2>
+					<div2 type="aphorism" n="40">
+						(٤٠) في اختلاف ثخن الفقرات ورقّتها
+					</div2>
+					<div2 type="aphorism" n="41">
+						(٤١) في أنّ أجناس الزوائد الثلثة موجودة للفقار
+					</div2>
+					<div2 type="aphorism" n="42">
+						(٤٢) في اختلاف ثقب الفقرات
+					</div2>
+					<div2 type="aphorism" n="43">
+						(٤٣) في الفاصل (؟) التي بها تتمّ حركة الرأس إلی الجانبين
+					</div2>
+					<div2 type="aphorism" n="44">
+						(٤٤) في ذكر أحوال زوائد الفقار
+					</div2>
+					<div2 type="aphorism" n="45">
+						(٤٥) في أشكال ثقب الفقرات واختلافها
+					</div2>
+					<div2 type="aphorism" n="46">
+						(٤٦) في أحوال فقرات الصدر
+					</div2>
+					<div2 type="aphorism" n="47">
+						(٤٧) في حال زوائد العظم العريض وهو عظم العجز
+					</div2>
+					<div2 type="aphorism" n="48">
+						(٤٨) في تأليف عظم العجز
+					</div2>
+					<div2 type="aphorism" n="49">
+						(٤٩) في أنّ للصدر فعلاً ومنفعة
+					</div2>
+					<div2 type="aphorism" n="50">
+						(٥٠) في عدّة الأضلاع وأنّها أربعة وعشرون وأحوال أوضاعها وأشكالها واتّصالاتها وجواهرها
+					</div2>
+					<div2 type="aphorism" n="51">
+						(٥١) في عدّة عظام القصّ وتركيبها
+					</div2>
+					<div2 type="aphorism" n="52">
+						(٥٢) في منفعة عظم الكتف وشكله واتّصاله بما يتّصل به
+					</div2>
+					<div2 type="aphorism" n="53">
+						(٥٣) في عظم الترقوة ومنفعة اتّصاله بما يتّصل به
+					</div2>
+					<div2 type="aphorism" n="54a">
+						(٥٤) في عظم العضد ومنافعه واتّصالاته من فوق وأسفل
+					</div2>
+				</cb>
+				<cb n="2">
+					<div2 type="aphorism" n="54b">
+						بما يتّصل به
+					</div2>
+					<div2 type="aphorism" n="55">
+						(٥٥) في ذكر الذراع وحال عظميه وما يتّصل به ومنافعه
+					</div2>
+					<div2 type="aphorism" n="56">
+						(٥٦) في تركيب الزند والسبب في تركيبه من عظام كثيرة
+					</div2>
+					<div2 type="aphorism" n="57">
+						(٥٧) في مفصل الرسغ مع الساعد
+					</div2>
+					<div2 type="aphorism" n="58">
+						(٥٨) في تركيب المشط
+					</div2>
+					<div2 type="aphorism" n="59">
+						(٥٩) في حال اتّصال الأصابع بما يتّصل به
+					</div2>
+					<div2 type="aphorism" n="60">
+						(٦٠) في تركيب عظام العجز والمنافع المستفادة بذلك
+					</div2>
+					<div2 type="aphorism" n="61">
+						(٦١) في عظم الفخذ وحاله في تركيبه ومنافعه
+					</div2>
+					<div2 type="aphorism" n="62">
+						(٦٢) في عظام الساق وتأليفها
+					</div2>
+					<div2 type="aphorism" n="63">
+						(٦٣) في منافع القصبة الصغری من الساق
+					</div2>
+					<div2 type="aphorism" n="64">
+						(٦٤) في أنّ القدم مركّبة من ستّة أعظم
+					</div2>
+					<div2 type="aphorism" n="65">
+						(٦٥) في ذكر الأشياء التي تشترك فيها أجزاء الرجل واليد وتختلف والمنافع في أجزائها
+					</div2>
+					<div2 type="aphorism" n="66">
+						(٦٦) في شرح حال الكعب في تركيبه وارتباطه
+					</div2>
+					<div2 type="aphorism" n="67">
+						(٦٧) في ذكر ما الساق مرتبط به
+					</div2>
+					<div2 type="aphorism" n="68">
+						(٦٨) في شرح الحال في عظم الٮقب (؟)
+					</div2>
+					<div2 type="aphorism" n="69">
+						(٦٩) في ذكر باقي عظام الرجل
+					</div2>
+					<div2 type="aphorism" n="70">
+						(٧٠) في ذكر جملة العظام الموجودة في البدن بأسره وتفصّلها بحسب وجودها
+					</div2>
+				</cb>
+				<pb unit="folio" edRef="#T" n="103r"/>
+				<p>
+					تمّت فصول جوامع مقالة جالينوس في تشريح العظام للمتعلّمين وهي سبعون فصلاً.
+				</p>
+			</div1>
+			<div1 type="book" n="2">
+				<head>
+					فصول جوامع مقالة جالينوس في تشريح العضل للمتعلّمين وهي
+				</head>
+				<cb n="1">
+					<div2 type="aphorism" n="1">
+						(١) في شرائط التعليم الفاضل
+					</div2>
+					<div2 type="aphorism" n="2">
+						(٢) في ذكر من تكلّم في تشريح العضل وأنحاء أنظارهم
+					</div2>
+					<div2 type="aphorism" n="3">
+						(٣) في أنّ جالينوس قد كمل فضائل التعاليم الثلثة في هذا الكتاب
+					</div2>
+					<div2 type="aphorism" n="4">
+						(٤) في أنّ جالينوس قد بيّن فعل العضل ومنافعه وتشريحه في كتب عدّة
+					</div2>
+					<div2 type="aphorism" n="5">
+						(٥) في أنّ العضل اللواتي في الوجه تسع سوی العضل المحرّكة للّحي الأسفل والعينين وأوضاعها واتّصالاتها ومنافعها
+					</div2>
+					<div2 type="aphorism" n="6">
+						(٦) في ذكر العضل اللواتي في العينين وأوضاعهنّ وأفعالهنّ
+					</div2>
+					<div2 type="aphorism" n="7">
+						(٧) في ذكر العضل المحرّكة للّحي الأسفل وأوضاعهنّ ومنافعهنّ واختلاف الآراء فيهنّ
+					</div2>
+					<div2 type="aphorism" n="8">
+						(٨) في ذكر العضل المحرّك لدفّة الكتف (؟) وأوضاعهنّ واتّصالاتهنّ وأفعالهنّ
+					</div2>
+					<div2 type="aphorism" n="9">
+						(٩) في ذكر العضل المحرّكة للرأس وأفعالها
+					</div2>
+					<div2 type="aphorism" n="10">
+						(١٠) في تفصيل أفعال العضل المحرّكة للرأس
+					</div2>
+					<div2 type="aphorism" n="11">
+						(١١) في ذكر منافع الحلقوم وتركيبه
+					</div2>
+				</cb>
+				<cb n="2">
+					<div2 type="aphorism" n="12">
+						(١٢) في تركيب الحنجرة ومنافع أجزائها
+					</div2>
+					<div2 type="aphorism" n="13">
+						(١٣) في ذكر العظم الموضوع علی الحنجرة ومنفعته
+					</div2>
+					<div2 type="aphorism" n="14">
+						(١٤) في العضل المحرّك للحلقوم
+					</div2>
+					<div2 type="aphorism" n="15">
+						(١٥) في ذكر عضل الحنجرة وعدّتها ومنافعها
+					</div2>
+					<div2 type="aphorism" n="16">
+						(١٦) في العضل المتّصلة بالعظم الشبيه بالٮود (؟) الخاصّة والمشتركة
+					</div2>
+					<div2 type="aphorism" n="17">
+						(١٧) في العضل المحرّكة للّسان
+					</div2>
+					<div2 type="aphorism" n="18">
+						(١٨) في قسمة عضل اللسان علی جهة أخری
+					</div2>
+					<div2 type="aphorism" n="19">
+						(١٩) في عضل الحلق ومنافعه
+					</div2>
+					<div2 type="aphorism" n="20">
+						(٢٠) في العضل المحرّك للعنق ومنافعه
+					</div2>
+					<div2 type="aphorism" n="21">
+						(٢١) في العضل المحرّك لمفصل الكتف ومنشئهنّ واتّصالاتهنّ ومنافعهنّ
+					</div2>
+					<div2 type="aphorism" n="22">
+						(٢٢) في اختلاف الآراء في العضل المحرّكة لمفصل الكتف
+					</div2>
+					<div2 type="aphorism" n="23">
+						(٢٣) في العضل المحرّك لمفصل المرفق
+					</div2>
+					<div2 type="aphorism" n="24">
+						(٢٤) في العضل السبع عشرة اللواتي في الساعد
+					</div2>
+					<div2 type="aphorism" n="25">
+						(٢٥) في تفصيل حال عشر منهنّ ومن اللواتي في الجانب الوحشيّ واتّصالاتهنّ ومنافعهنّ
+					</div2>
+				</cb>
+				<pb unit="folio" edRef="#T" n="103v"/>
+				<cb n="1">
+					<div2 type="aphorism" n="26">
+						(٢٦) في اختلاف الآراء فه عدّة هذه العشر العضلات المذكورة
+					</div2>
+					<div2 type="aphorism" n="27">
+						(٢٧) في تفصيل السبع العضلات التي في الجانب الأنسيّ من الساعد وأوضاعهنّ ومنافعهنّ
+					</div2>
+					<div2 type="aphorism" n="28">
+						(٢٨) في عدّة عضل الكفّ ومراتبها ومنافعها
+					</div2>
+					<div2 type="aphorism" n="29">
+						(٢٩) في العضل اللواتي تحت الترقوة ووضعهنّ ومنفعتهنّ
+					</div2>
+					<div2 type="aphorism" n="30">
+						(٣٠) في العضل المحرّكة للصدر ووضعهنّ ومنافعهنّ
+					</div2>
+					<div2 type="aphorism" n="31">
+						(٣١) في العضل المحرّكة لفقار الظهر
+					</div2>
+					<div2 type="aphorism" n="32">
+						(٣٢) في عدّة العضل اللواتي علی البطن وأوضاعهنّ ومنفعتهنّ
+					</div2>
+					<div2 type="aphorism" n="33">
+						(٣٣) في عضل الأنثيين ووضعهنّ ومنافعهنّ
+					</div2>
+				</cb>
+				<cb n="2">
+					<div2 type="aphorism" n="34">
+						(٣٤) في عضل المثانة ووضعهنّ ومنافعهنّ
+					</div2>
+					<div2 type="aphorism" n="35">
+						(٣٥) في عضل الإحليل ومنافعهنّ
+					</div2>
+					<div2 type="aphorism" n="36">
+						(٣٦) في عضل المصيرة (؟) وأوضاعهنّ ومنافعهنّ
+					</div2>
+					<div2 type="aphorism" n="37">
+						(٣٧) في عضل الورك وأوضاعهنّ ومنافعهنّ
+					</div2>
+					<div2 type="aphorism" n="38">
+						(٣٨) في أنّ لعظم الفخذ فيما يلي الرأس منه زائدتان
+					</div2>
+					<div2 type="aphorism" n="39">
+						(٣٩) في عضل الركبة وعدّتها ومنافعها وأوضاعها
+					</div2>
+					<div2 type="aphorism" n="40">
+						(٤٠) في العضل المحدقة بالساق وعدّتها وأوضاعها ومنافعها
+					</div2>
+					<div2 type="aphorism" n="41">
+						(٤١) في العضل اللواتي في القدم وأوضاعهنّ وعدّتهنّ ومنافعهنّ
+					</div2>
+					<div2 type="aphorism" n="42">
+						(٤٢) في تفصيل عدّة جملة العضل اللواتي في جميع البدن
+					</div2>
+				</cb>
+				<p>
+					تمّت فصول المقالة في تشريح العضل وهي أحد وأربعون فصلاً.
+				</p>
+			</div1>
+			<div1 type="book" n="3">
+				<head>
+					فصول جوامع مقالة جالينوس في تشريح العصب وهي
+				</head>
+				<cb n="1">
+					<div2 type="aphorism" n="1">
+						(١) في ذكر الأعصاب الناشئة من الدماغ وأوضاعها ومنافعها
+					</div2>
+					<div2 type="aphorism" n="2">
+						(٢) في ذكر أحوال ما ينشؤ من الزوج الأوّل من هذه الأزواج المقدّم ذكرها
+					</div2>
+					<div2 type="aphorism" n="3">
+						(٣) في حال الزوج الثاني فيما ينشؤ منه ومنافعه
+					</div2>
+					<div2 type="aphorism" n="4">
+						(٤) في أحوال الزوج الثالث من العصب وما ينشؤ منه وأفعاله
+					</div2>
+				</cb>
+				<cb n="2">
+					<div2 type="aphorism" n="5">
+						(٥) في حال الزوج الرابع وما ينشؤ منه وأفعاله
+					</div2>
+					<div2 type="aphorism" n="6">
+						(٦) في ذكر الزوج الخامس وما ينشؤ منه ومنافع ذلك
+					</div2>
+					<div2 type="aphorism" n="7">
+						(٧) في ذكر الزوج السادس وما ينشؤ منه ومنافعه وأفعاله
+					</div2>
+					<div2 type="aphorism" n="8">
+						(٨) في ذكر الزوج السابع وما ينشؤ منه ومنافع ذلك
+					</div2>
+					<div2 type="aphorism" n="9">
+						(٩) في ذكر الأعصاب الناشئة من النخاع وعدّتها وأفعالها ومنافعها
+					</div2>
+				</cb>
+				<pb unit="folio" edRef="#T" n="104r"/>
+				<cb n="1">
+					<div2 type="aphorism" n="10">
+						(١٠) في ذكر الثمانية الأزواج الناشئة من العنق ومنافعها
+					</div2>
+					<div2 type="aphorism" n="11">
+						(١١) في ذكر الأعصاب الاثنا عشر الناشئة من فقار الصدر وأوضاعها واتّصالاتها وأفعالها ومنافعها
+					</div2>
+				</cb>
+				<cb n="2">
+					<div2 type="aphorism" n="12">
+						(١٢) في ذكر الخمسة الأزواج العصب الناشئة من القطن وأفعالها ومنافعها
+					</div2>
+					<div2 type="aphorism" n="13">
+						(١٣) في الأعصاب الستّة التي منشؤها من عظم العجز والقصقص وأفعالها ومنافعها
+					</div2>
+				</cb>
+				<p>
+					تمّت فصول المقالة في تشريح العصب وهي ثلثة عشر فصلاً.
+				</p>
+			</div1>
+			<div1 type="book" n="4">
+				<head>
+					فصول جوامع المقالة في تشريح العروق لجالينوس
+				</head>
+				<cb n="1">
+					<div2 type="aphorism" n="1">
+						(١) في ذكر العرقين الناشئين من الكبد
+					</div2>
+					<div2 type="aphorism" n="2">
+						(٢) في ذكر حال العرق المسّی الباب وما يتفرّع منه
+					</div2>
+					<div2 type="aphorism" n="3">
+						(٣) في ذكر حال العرق الناشئ من حدبة الكبد المسمّی قولی (؟) أي الأجوف وما يتفرّع منه
+					</div2>
+					<div2 type="aphorism" n="4">
+						(٤) في ذكر مسلك العرق الأجوف إلی أعالي البدن وذكر الحصّة الأولی منه
+					</div2>
+					<div2 type="aphorism" n="5">
+						(٥) ذكر الحصّة الثانية <anchor xml:id="appcrit2begin"/>من<anchor xml:id="appcrit2end"/> مسلك العرق الأجوف نحو أعالي البدن
+					</div2>
+					<div2 type="aphorism" n="6">
+						(٦) في ذكر الحصّة الثالثة من العرق المسمّی قولی (؟) الصاعد إلی فوق بعد جوازه بالترقوتين صاعداً نحو الرأس وأقسامه
+					</div2>
+					<div2 type="aphorism" n="7">
+						(٧) في أقسام الوداج الظاهر وأوضاعها
+					</div2>
+				</cb>
+				<cb n="2">
+					<div2 type="aphorism" n="8">
+						(٨) في ذكر الوداج العائد وحال ما يتفرّع منه
+					</div2>
+					<div2 type="aphorism" n="9">
+						(٩) في ذكر الحصّة الرابعة من أقسام العرق المسمّی قولی (؟) وحال <supplied resp="#Vagelpohl">ما ينشؤ منه</supplied>
+					</div2>
+					<div2 type="aphorism" n="10">
+						(١٠) في ذكر أقسام العرق الكتفيّ (؟) وأوضاعها
+					</div2>
+					<div2 type="aphorism" n="11">
+						(١١) في أقسام العرق الإبطيّ وأوضاعها
+					</div2>
+					<div2 type="aphorism" n="12">
+						(١٢) في أقسام العرق المسمّی الأوسط وأوضاعها
+					</div2>
+					<div2 type="aphorism" n="13">
+						(١٣) في حال العرق المسمّی قولی (؟) عند منشئه من الكبد وما يتفرّع منه
+					</div2>
+					<div2 type="aphorism" n="14">
+						(١٤) في ذكر الحصّة الأولی من حصص العرق الأجوف في انحطاطه إلی أسفل
+					</div2>
+					<div2 type="aphorism" n="15">
+						(١٥) في ذكر الحصّة الثانية من العرق الأجوف في انحداره إلی أسفل وأقسامه
+					</div2>
+					<div2 type="aphorism" n="16">
+						(١٦) في ذكر الحصّة الثالثة من العرق المسمّی قولی (؟) المنحدرة إلی أسفل وحال ما ينشؤ منها
+					</div2>
+					<div2 type="aphorism" n="17">
+						(١٧) في ذكر العروق الصائرة إلی القدمين
+					</div2>
+				</cb>
+				<p>
+					تمّت فصول جوامع المقالة في تشريح العروق غير الضوارب وهي سبعة عشر فصلاً.
+				</p>
+			</div1>
+			<div1 type="book" n="5">
+				<head>
+					فصول جوامع المقالة في تشريح الشرايين للمتعلّمين وهي
+				</head>
+				<cb n="1">
+					<div2 type="aphorism" n="1">
+						(١) في ذكر الشريانين الناشئين من البطن اليسری من بطون القلب وأوضاعها ومنافعها
+					</div2>
+					<div2 type="aphorism" n="2">
+						(٢) في ذكر قسمي الجزء من الأبهر الشاخصان إلی فوق
+					</div2>
+				</cb>
+				<cb n="2">
+					<div2 type="aphorism" n="3">
+						(٣) في ذكر ما ينشؤ من القسم الناشئ من الأبهر النازل إلی أسفل وأوضاع ذلك
+					</div2>
+					<div2 type="aphorism" n="4">
+						(٤) في ذكر العروق والشرايين الموجودة كلّ واحد منها علی انفراده
+					</div2>
+				</cb>
+				<p>
+					تمّت فصول جوامع المقالة في تشريح الشرايين وهي أربعة فصول والحمد للّه وليّ الحمد ومستحقّه.
+				</p>
+			</div1>
+		</body>
+		<back>
+			<listApp>
+				<app from="#appcrit1begin" to="#appcrit1end">
+					<choice>
+						<corr type="conjecture" resp="#Vagelpohl">العظام</corr>
+						<sic wit="#T">القسمة</sic>
+					</choice>
+				</app>
+				<app from="#appcrit2begin" to="#appcrit2end">
+					<choice>
+						<corr type="correction" resp="#Vagelpohl">من</corr>
+						<sic wit="#T">فی</sic>
+					</choice>
+				</app>
+			</listApp>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title xml:lang="ar">Fuṣūl wa-ṯamarat ǧawāmiʿ kitāb al-usṭuqussāt</title>
+				<author>Ibn Zurʿah</author>
+				<funder>The Wellcome Trust</funder>
+				<principal>
+					<name>Simon Swain</name>
+					<name>Uwe Vagelpohl</name>
+				</principal>
+			</titleStmt>
+			<respStmt xml:id="Vagelpohl">
+				<resp>transcription, correction, normalisation, XML tagging</resp>
+				<name>Uwe Vagelpohl</name>
+			</respStmt>
+			<publicationStmt>
+				<distributor>A Digital Corpus for Graeco-Arabic Studies (DCGAS)</distributor>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">available under a Creative Commons Attribution-ShareAlike 4.0 International license</licence>
+				</availability>
+				<date>2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<listWit>
+					<witness xml:id="T">
+						<abbr type="siglum">T</abbr>
+						<settlement>Teheran</settlement>
+						<repository>Maǧlis</repository>
+						<idno type="shelfmark">6037</idno>
+						<msItem n="4">
+							<locus unit="folio" from="95v" to="96v">fol. 95v-96v</locus>
+						</msItem>
+						<handNote xml:id="T1">annotator of T, same hand</handNote>
+					</witness>
+				</listWit>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<samplingDecl>
+				<p>Text transcribed from one manuscript. Fuṣūl numbering added.</p>
+			</samplingDecl>
+			<editorialDecl>
+				<correction status="high">
+					<p>Transcript proofread and corrected.</p>
+				</correction>
+				<normalization>
+					<p>Orthography normalised.</p>
+				</normalization>
+				<punctuation>
+					<p>Punctuation added.</p>
+				</punctuation>
+			</editorialDecl>
+			<refsDecl n="text=1" doctype="TEI">
+				<state unit="text"/>
+				<state unit="aphorism" n="chunk"/>
+			</refsDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language xml:id="ar">Arabic</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="ar" xml:id="ibnzurah.gal.deelem-summ.fusul-ar1">
+		<body>
+			<pb unit="folio" edRef="#T" n="95v"/>
+			<p>
+				بسم اللّه الرحمن الرحيم
+			</p>
+			<cb n="1">
+				<div1 type="aphorism" n="1">
+					(١) في أنّ الأسطقسّات بحسب القرب والبعد تنقسم ثلثة أقسام
+				</div1>
+				<div1 type="aphorism" n="2">
+					(٢) في حدّ الأسطقسّ وأقسامه وما هو أوّل عند الحسّ وما هو أوّل عند الطبيعة
+				</div1>
+				<div1 type="aphorism" n="3">
+					(٣) في اختلاف أقاويل من تكلّم في الأسطقسّات ونسبة كلّ رأي إلی قائله
+				</div1>
+				<div1 type="aphorism" n="4">
+					(٤) في الفرق بين الأسطقسّ والمبدأ
+				</div1>
+				<div1 type="aphorism" n="5">
+					(٥) في اقتصاص آراء من تكلّم في المبادئ
+				</div1>
+				<div1 type="aphorism" n="6">
+					(٦) في تمييز أقاويل من قال إنّ الأسطقسّات كثيرة
+				</div1>
+				<div1 type="aphorism" n="7">
+					(٧) في قسمة أمراض المتشابهة الأجزاء بحسب رأي إفيقورس
+				</div1>
+				<div1 type="aphorism" n="8">
+					(٨) في قسمة أقاويل من يقول بكثرة الأسطقسّات
+				</div1>
+				<div1 type="aphorism" n="9">
+					(٩) في قسمة أقاويل من قال ٮعٮر (؟) التجربة
+				</div1>
+				<div1 type="aphorism" n="10">
+					(١٠) في أنّ الألم يحدث للأمر عن شيئين
+				</div1>
+				<div1 type="aphorism" n="11">
+					(١١) في ذكر أنحاء التركيب وأنّهما نحوان وأنّ منها ما يتحفّظ
+					<anchor xml:id="appcrit1begin"/>
+					فيه
+					<anchor xml:id="appcrit1end"/>
+					صورة البسائط ومنها ما لا يتحفّظ
+				</div1>
+			</cb>
+			<cb n="2">
+				<div1 type="aphorism" n="12">
+					(١٢) في ذكر الطريق التي بها يوجد الحسّ لما تركيبه عمّا لا حسّ له
+				</div1>
+				<div1 type="aphorism" n="13">
+					(١٣) في السبيل التي بها يتطرّق إلی إدراك الأمور وأنّها البرهان والتجربة
+				</div1>
+				<div1 type="aphorism" n="14">
+					(١٤) في الاستدلال علی أنّ الأسطقسّات ليست واحدة في الصورة علی ما رآه ديمقريطس
+				</div1>
+				<div1 type="aphorism" n="15">
+					(١٥) في أنّه قد يمكننا أن نتطرّق إلی البيان بأنّ الإنسان ليس من شيء واحد من جهات كثيرة غير التي أوردها أبقراط
+				</div1>
+				<div1 type="aphorism" n="16">
+					(١٦) في أنّه بانتقاض رأي ديمقريطس قد انتقض رأي جميع من اعتقد بأنّ المركّبات عن أشياء لا تقبل الانفعال
+				</div1>
+				<div1 type="aphorism" n="17">
+					(١٧) في الاشتراك والاختلاف بين قولي أمبادقليس وأنكساغوراس
+				</div1>
+				<div1 type="aphorism" n="18">
+					(١٨) في أنّ الآراء التي يراها القدماء في الأسطقسّات أربعة
+				</div1>
+				<div1 type="aphorism" n="19">
+					(١٩) ذكر الآراء في المزاج في أنّ أجناس الكيفيّات أربعة
+				</div1>
+			</cb>
+			<pb unit="folio" edRef="#T" n="96r"/>
+			<cb n="1">
+				<div1 type="aphorism" n="20">
+					(٢٠) في أنّ أجناس التركيب اثنان
+				</div1>
+				<div1 type="aphorism" n="21">
+					(٢١) في الساعات (؟) اللازمة للقائلين بأنّ الأسطقسّات غير منفعلة
+				</div1>
+				<div1 type="aphorism" n="22">
+					(٢٢) في القياسين الشرطيّين اللذين بيّن بهما بقراط بأنّ الإنسان ليس من شيء واحد
+				</div1>
+				<div1 type="aphorism" n="23">
+					(٢٣) استقراء يصحّح به ما أورده بقراط في التطرّق إلی بيان ما ادّعاه بقراط من أنّ الأسطقسّ ليس بواحد
+				</div1>
+				<div1 type="aphorism" n="24">
+					(٢٤) في اقتصاص أقاويل من قال بأنّ الأسطقسّ واحد
+				</div1>
+				<div1 type="aphorism" n="25">
+					(٢٥) في تبكيت قول من يری أنّ الأسطقسّ واحد من قول جالينوس
+				</div1>
+				<div1 type="aphorism" n="26">
+					(٢٦) في قسمة رأي القائلين بأنّ الأسطقسّ واحد
+				</div1>
+				<div1 type="aphorism" n="27">
+					(٢٧) في الطريق إلی العلم بأنّ الإنسان من أسطقسّ واحد
+				</div1>
+				<div1 type="aphorism" n="28">
+					(٢٨) في تفصيل أحوال الإنسان بحسب الأسنان
+				</div1>
+				<div1 type="aphorism" n="29">
+					(٢٩) في الاستدلال علی أنّ الإنسان مركّب من الأربعة الأسطقسّات بطريق الاستقراء وقياس النظائر
+				</div1>
+			</cb>
+			<cb n="2">
+				<div1 type="aphorism" n="30">
+					(٣٠) في تفصيل المعاني التي يقال عليها اسم الحارّ والبارد
+				</div1>
+				<div1 type="aphorism" n="31">
+					(٣١) في أنّ الإشارة من بقراط بقوله أنّ الأبدان مركّبة من الحارّ والبارد وليست إشارة إلی الكيفيّات
+				</div1>
+				<div1 type="aphorism" n="32">
+					(٣٢) في أنّ الأبدان قد تتغيّر بذواتها ومن خارج والطريق في مداواة كلّ واحد من التفاهر (؟)
+				</div1>
+				<div1 type="aphorism" n="33">
+					(٣٣) في أنّ الطريق إلی العلم بأنّ تركيب الإنسان عن الأسطقسّات يكون علی نحوين
+				</div1>
+				<div1 type="aphorism" n="34">
+					(٣٤) في أنّ جميع القدماء قد أجمعوا علی أنّ تركيب الأجسام المركّبة عن الأسطقسّات البسائط
+				</div1>
+				<div1 type="aphorism" n="35">
+					(٣٥) في قسمة الكيفيّات بحسب المدركات لها
+				</div1>
+				<div1 type="aphorism" n="36">
+					(٣٦) في قسمة الكيفيّات المختلفة المقدّم ذكرها بحسب تأثيراتها في البدن
+				</div1>
+				<div1 type="aphorism" n="37">
+					(٣٧) في قسمة الكيفيّات الملموسة علی وجه ثانٍ (؟)
+				</div1>
+				<div1 type="aphorism" n="38">
+					(٣٨) في قسمة الكيفيّات أيضاً علی جهة أخری بحسب التقدّم والتأخّر
+				</div1>
+				<div1 type="aphorism" n="39">
+					(٣٩) في قسمة الكيفيّات بجهة أتمّ بحسب فعلها وانفعالها وأنّ منها مولّدة ومنها غير مولّدة ومنها ما له الأمران
+				</div1>
+				<div1 type="aphorism" n="40">
+					(٤٠) فيما تقع عليه التسمية بالكيفيّات الملموسة عموماً وخصوصاً
+				</div1>
+			</cb>
+			<pb unit="folio" edRef="#T" n="96v"/>
+			<cb n="1">
+				<div1 type="aphorism" n="41">
+					(٤١) فيما وسم به القدماء كتبهم في العلم بالأسطقسّات واختلافهم في ذلك
+				</div1>
+				<div1 type="aphorism" n="42">
+					(٤٢) في أنّ آراء القدماء في المزاج ثلثة
+				</div1>
+				<div1 type="aphorism" n="43">
+					(٤٣) في أنّ الاعتقادات في أمر المزاج اعتقادان
+				</div1>
+				<div1 type="aphorism" n="44">
+					(٤٤) في ذكر الحال اللازمة عن تجاوز جسمين مختلفي الكيفيّة في الفعل والانفعال
+				</div1>
+				<div1 type="aphorism" n="45">
+					(٤٥) في قسمة ما بالقوّة بحسب القرب والبعد
+				</div1>
+				<div1 type="aphorism" n="46">
+					(٤٦) في اختلاف أسطقسّات أبداننا بحسب العموم والخصوص
+				</div1>
+				<div1 type="aphorism" n="47">
+					(٤٧) في ذكر الأخلاط واختلاف الآراء فيها
+				</div1>
+				<div1 type="aphorism" n="48">
+					(٤٨) تفصيل أحوال الآراء في الأخلاط في الصحّة والفساد
+				</div1>
+				<div1 type="aphorism" n="49">
+					(٤٩) في احتجاج من ادّعی بأنّ قوام بدن الإنسان من الدم
+				</div1>
+			</cb>
+			<cb n="2">
+				<div1 type="aphorism" n="50">
+					(٥٠) في احتجاج القائلين بأنّ الأبدان مركّبة من الأخلاط الأربعة
+				</div1>
+				<div1 type="aphorism" n="51">
+					(٥١) في الوقوف علی لون الدم
+				</div1>
+				<div1 type="aphorism" n="52">
+					(٥٢) فيما يتبع إعطاء الدواء المسهل إذا أفرط في الاستفراغ
+				</div1>
+				<div1 type="aphorism" n="53">
+					(٥٣) في المثال علی صحّة ما حكاه
+				</div1>
+				<div1 type="aphorism" n="54">
+					(٥٤) في أنّ كلّ دواء مسهل إنّما يستفرغ أوّلاً الخلط المناسب ثمّ يتبعه بما يسهل خروجه
+				</div1>
+				<div1 type="aphorism" n="55">
+					(٥٥) في قسمة الأسطقسّات بحسب حفظها لكيفيّاتها
+				</div1>
+				<div1 type="aphorism" n="56">
+					(٥٦) في أنّ الأخلاط حالها أيضاً مناسبة لحال الأسطقسّات المقدّم ذكرها
+				</div1>
+				<div1 type="aphorism" n="57">
+					(٥٧) في ذكر أحوال الدم أو المنی عند ورودهما إلی الرحم
+				</div1>
+				<div1 type="aphorism" n="58">
+					(٥٨) في أنّ الآراء التي في الدواء المسهل رأيان
+				</div1>
+				<div1 type="aphorism" n="59">
+					(٥٩) في فسخ رأي
+					<anchor xml:id="appcrit2begin"/>
+					أسقليبيادس
+					<anchor xml:id="appcrit2end"/>
+					في فعل الدواء المسهل
+				</div1>
+				<div1 type="aphorism" n="60">
+					(٦٠) في ذكر مواضع الأخلاط من البدن وحالها في الاستفراغ
+				</div1>
+			</cb>
+			<p>
+				تمّت فصول وثمرة جوامع كتاب الأسطقسّات وعدّتها أحد وستّون فصلاً والحمد للّه وليّ الحمد.
+			</p>
+		</body>
+		<back>
+			<listApp>
+				<app from="#appcrit1begin" to="#appcrit1end">
+					<lem wit="#T1" place="below">
+						فيه
+					</lem>
+					<rdg wit="#T"/>
+				</app>
+				<app from="#appcrit2begin" to="#appcrit2end">
+					<choice>
+						<corr type="correction" resp="#Vagelpohl">
+							أسقليبيادس
+						</corr>
+						<sic wit="#T">
+							اسٯلٮٮٮارس
+						</sic>
+					</choice>
+				</app>
+			</listApp>
+		</back>
+	</text>
+</TEI>
