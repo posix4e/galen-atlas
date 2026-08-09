@@ -28,12 +28,12 @@
     <div class="stat"><b id="s-some">–</b><span>have at least one English version</span></div>
   </div>
 
-  <p>The works without English are not the leftovers — they include most of Galen's largest books: the eleven-book <em>On the Powers of Simple Drugs</em>, the seventeen books of compound-drug recipes, the sixteen-book treatise cycle on the pulse, <em>On Antidotes</em>, <em>On Crises</em>, <em>On the Differences of Fevers</em>. Counted by words rather than titles, the untranslated share of Galen is far larger than the numbers above suggest.</p>
+  <p>The untranslated works include most of Galen's largest: the eleven-book <em>On the Powers of Simple Drugs</em>, the seventeen books of compound-drug recipes, the sixteen-book treatise cycle on the pulse, <em>On Antidotes</em>, <em>On Crises</em>, <em>On the Differences of Fevers</em>. Counted by words rather than titles, the untranslated share of Galen is far larger than the head-count above suggests.</p>
 
   <div class="feature">
     <p class="feature-kicker">Method</p>
     <h2 class="feature-h">Reading the Greek against its witnesses</h2>
-    <p>A great deal of Galen survives in more than one line of transmission at once: the Greek direct tradition, and the ninth-century Arabic of Ḥunayn ibn Isḥāq, made from Greek exemplars now lost. These are <strong>independent testimonies to a single lost original</strong>, not a ranking. We translate accordingly — the Greek first, the Arabic and the old Latin set beside it, every divergence recorded rather than smoothed over.</p>
+    <p>A great deal of Galen survives in more than one line of transmission at once: the Greek direct tradition, and the ninth-century Arabic of Ḥunayn ibn Isḥāq, made from Greek exemplars now lost. These are <strong>independent testimonies to a single lost original</strong>, of equal standing. We translate accordingly — the Greek first, the Arabic and the old Latin set beside it, every divergence recorded rather than smoothed over.</p>
     <p>At <em>Aphorisms</em> i.1 the Greek <span lang="grc">καιρὸς ὀξύς</span> hangs between two senses: the critical moment is acute, or the time is short. Ḥunayn's Arabic (<span lang="ar" dir="rtl">الوقت ضيّق</span>, “the time is narrow”) and Galen's own gloss on the line (<span lang="grc">ὀλιγοχρόνιον</span>, “of brief duration”) settle it the same way, from opposite ends of the tradition. <a href="translations/aphorisms-1-1.html">The verse, with its witnesses →</a></p>
   </div>
 
@@ -61,7 +61,7 @@
   <ol>
     <li><strong>Fork</strong> <a href="https://github.com/posix4e/pergamap">posix4e/pergamap</a> on GitHub and make a branch.</li>
     <li><strong>Fixing the catalog?</strong> Edit <a href="https://github.com/posix4e/pergamap/blob/main/data/works.json"><code>data/works.json</code></a> — update the work's <code>english</code> / <code>english_ref</code> fields, and set <code>confidence</code> to <code>checked</code> only if you cite where you checked in the pull request.</li>
-    <li><strong>Adding a translation?</strong> Use the <a href="https://github.com/posix4e/pergamap/blob/main/HARNESS.md">harness</a>: one command generates a <em>translation packet</em> (the Greek with Kühn anchors, ready for your English), or grab an already-open packet from <code>data/chunks.json</code>. Fill in the translation plus a <em>trace</em> — your working, shown LLM-style, so the reasoning can be checked and not just the result. First claim the chunk in an <a href="https://github.com/posix4e/pergamap/issues">issue</a> so two people don't translate the same pages.</li>
+    <li><strong>Adding a translation?</strong> Use the <a href="https://github.com/posix4e/pergamap/blob/main/HARNESS.md">harness</a>: one command generates a <em>translation packet</em> (the Greek with Kühn anchors, ready for your English), or grab an already-open packet from <code>data/chunks.json</code>. Fill in the translation plus a <em>trace</em> — your working set down, so the reasoning stands open to checking. First claim the chunk in an <a href="https://github.com/posix4e/pergamap/issues">issue</a> so two people don't translate the same pages.</li>
     <li><strong>Preview locally</strong> by opening the HTML file in your browser — what you see is what deploys.</li>
     <li><strong>Open the pull request</strong> — one work or one chunk per PR, sources cited. Review happens in the open, arguing from the Greek. Merged means live.</li>
   </ol>

@@ -39,7 +39,7 @@ Or skip step 1 entirely: pick any chunk with status `open` in [`data/chunks.json
 }
 ```
 
-Segmentation is one segment per Kühn page and **provisional** — split or merge segments so they follow the argument, not the page turns.
+Segmentation is one segment per Kühn page and **provisional** — split or merge segments to follow the argument; the page numbers serve only as anchors.
 
 ## Traces: show the working
 
@@ -50,19 +50,19 @@ Every translated segment should carry a `trace` — the translator's reasoning, 
 - which witnesses you consulted (Kühn's Latin, Arabic tradition) and whether they agreed;
 - what you're still unsure about, plainly.
 
-`trace` is the audit trail (how we got here); `notes` are for the reader (what's interesting here). A translation whose reasoning can be checked is worth more than a prettier one that can't. AI-assisted drafts should preserve the model's actual deliberation for the tricky calls, not a post-hoc summary.
+`trace` is the audit trail (how we got here); `notes` are for the reader (what's interesting here). A translation whose reasoning can be checked is worth more than a prettier one that can't. AI-assisted drafts should preserve the model's actual deliberation for the tricky calls, in place of a tidied-up summary written after the fact.
 
 ## The peer-witness protocol
 
-Where a work survives in more than one tradition — Greek manuscripts, Ḥunayn's Arabic, medieval or Renaissance Latin — those traditions are **peer witnesses to a lost original, not a hierarchy**. The surviving Greek copies are mostly 12th–15th century; Ḥunayn's 9th-century Arabic was made from Greek exemplars centuries older than anything behind Kühn's edition. Modern critical editors treat the Arabic tradition as testimony of equal — sometimes superior — standing. So do we.
+Where a work survives in more than one tradition — Greek manuscripts, Ḥunayn's Arabic, medieval or Renaissance Latin — those traditions are **peer witnesses to a lost original, of equal standing**. The surviving Greek copies are mostly 12th–15th century; Ḥunayn's 9th-century Arabic was made from Greek exemplars centuries older than anything behind Kühn's edition. Modern critical editors treat the Arabic tradition as testimony of equal — sometimes superior — standing. So do we.
 
 1. **Enumerate the witnesses** for your work. The packet lists what's known; add what you find.
-2. **Work from all accessible witnesses side by side.** The packet's base text is whichever tradition happens to be well edited and digitized — usually the Greek. That is a fact about accessibility, not authority.
+2. **Work from all accessible witnesses side by side.** The packet's base text is whichever tradition happens to be well edited and digitized — usually the Greek. That reflects only what is available in machine-readable form, and confers no priority among the witnesses.
 3. **Compare every segment against every accessible witness** — not only where the base text looks wrong. Agreement is evidence too; record it.
 4. **Reference what you consulted.** Every consultation goes in the segment's `refs` (and the reasoning in its `trace`), cited precisely enough to re-check: edition, page, or scan URL.
-5. **Divergence is a finding, not a failure.** When witnesses disagree, present the disagreement; if you follow the Arabic against the Greek — or vice versa — the trace argues why.
+5. **Treat divergence as evidence.** When witnesses disagree, present the disagreement; if you follow the Arabic against the Greek — or vice versa — the trace argues why.
 
-Two honest caveats. Access is asymmetric today: for most works the Greek is digitized while the Arabic sits in unedited manuscripts, so the Greek often ends up as the packet's base text by default — treat that as a practical limit to push against, not a ranking. And a translation-witness like Ḥunayn's carries its translator's interpretation — which is also its value: it preserves how a brilliant ninth-century reader, holding better manuscripts than ours, understood the sentence.
+Two honest caveats. Access is asymmetric today: for most works the Greek is digitized while the Arabic sits in unedited manuscripts, so the Greek often ends up as the packet's base text by default — a practical limit to push against, imposed by the tooling rather than by any priority among the witnesses. And a translation-witness like Ḥunayn's carries its translator's interpretation — which is also its value: it preserves how a brilliant ninth-century reader, holding better manuscripts than ours, understood the sentence.
 
 ## Validation
 
