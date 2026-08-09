@@ -35,7 +35,12 @@ jobs:
         id: creds
         env:
           CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        run: echo "have=$([ -n \"$CF_TOKEN\" ] && echo yes || echo no)" >> "$GITHUB_OUTPUT"
+        run: |
+          if [ -n "$CF_TOKEN" ]; then
+            echo "have=yes" >> "$GITHUB_OUTPUT"
+          else
+            echo "have=no" >> "$GITHUB_OUTPUT"
+          fi
       - name: Build deployment directory
         if: steps.creds.outputs.have == 'yes'
         run: |
