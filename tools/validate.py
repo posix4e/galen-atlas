@@ -1,84 +1,405 @@
 #!/usr/bin/env python3
-"""Validate works.json, the chunk registry, and every chunk packet.
+"""Validate Pergamap's versioned catalogue, packets, and vendored witnesses.
 
-Stdlib only, no network — safe for CI. Exit code 1 on any failure.
+The validator uses only the Python standard library and performs no network
+access. ``validate()`` returns a list of errors for unit tests; the command-line
+entry point prints those errors and exits non-zero when any invariant fails.
 """
-import json, pathlib, sys
+
+from __future__ import annotations
+
+import datetime as dt
+import hashlib
+import json
+import pathlib
+import re
+import sys
+import xml.etree.ElementTree as ET
+from collections import Counter
+from urllib.parse import urlparse
+
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-errors = []
+STATUSES = {"open", "claimed", "draft", "reviewed"}
+ENGLISH_STATUSES = {"none", "full", "partial", "unknown"}
+CONFIDENCE = {"checked", "recalled", "unknown"}
+LANGUAGES = {"greek", "arabic", "latin"}
+EXTENTS = {"unspecified", "full", "partial", "fragments", "unknown"}
+HEX40 = re.compile(r"^[0-9a-f]{40}$")
+HEX64 = re.compile(r"^[0-9a-f]{64}$")
+SAFE_ID = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 
 
-def err(msg):
-    errors.append(msg)
+def load_json(path: pathlib.Path, errors: list[str], label: str):
+    try:
+        return json.loads(path.read_text())
+    except FileNotFoundError:
+        errors.append(f"{label}: file is missing")
+    except (OSError, json.JSONDecodeError) as exc:
+        errors.append(f"{label}: cannot read JSON: {exc}")
+    return None
 
 
-def main():
-    works = json.loads((ROOT / 'data' / 'works.json').read_text())
-    ids = set()
-    for w in works:
-        wid = w.get('id', '<missing id>')
-        ids.add(wid)
-        for field in ('title_lat', 'survival', 'english', 'confidence'):
-            if not w.get(field):
-                err(f'works.json {wid}: missing {field}')
-        if w.get('english') not in ('none', 'full', 'partial', 'unknown'):
-            err(f'works.json {wid}: bad english value {w.get("english")!r}')
-        if w.get('survival') not in ('greek', 'arabic', 'latin', 'fragments'):
-            err(f'works.json {wid}: bad survival value {w.get("survival")!r}')
-        if w.get('confidence') not in ('checked', 'recalled', 'unknown'):
-            err(f'works.json {wid}: bad confidence value {w.get("confidence")!r}')
-    if len(ids) != len(works):
-        err('works.json: duplicate ids')
+def is_date(value: object) -> bool:
+    try:
+        dt.date.fromisoformat(str(value))
+        return True
+    except ValueError:
+        return False
 
-    regp = ROOT / 'data' / 'chunks.json'
-    reg = json.loads(regp.read_text()) if regp.exists() else []
-    reg_files = set()
-    for e in reg:
-        f = ROOT / e.get('file', '')
-        reg_files.add(f.resolve())
-        if not f.exists():
-            err(f'chunks.json {e.get("id")}: file {e.get("file")} does not exist')
-        if e.get('status') not in ('open', 'claimed', 'draft', 'reviewed'):
-            err(f'chunks.json {e.get("id")}: bad status {e.get("status")!r}')
-        if e.get('work') not in ids:
-            err(f'chunks.json {e.get("id")}: work {e.get("work")!r} not in works.json')
 
-    chunk_dir = ROOT / 'translations' / 'chunks'
-    for path in sorted(chunk_dir.glob('*.json')) if chunk_dir.exists() else []:
-        if path.resolve() not in reg_files:
-            err(f'{path.name}: chunk file has no registry entry in data/chunks.json')
-        c = json.loads(path.read_text())
-        cid = c.get('id', path.stem)
-        if c.get('id') != path.stem:
-            err(f'{path.name}: id {cid!r} does not match filename')
-        if c.get('status') not in ('open', 'claimed', 'draft', 'reviewed'):
-            err(f'{path.name}: bad status {c.get("status")!r}')
-        if c.get('work') not in ids:
-            err(f'{path.name}: work {c.get("work")!r} not in works.json')
-        segs = c.get('segments', [])
-        if not segs:
-            err(f'{path.name}: no segments')
-        for i, s in enumerate(segs):
-            for field in ('kuhn', 'grc', 'eng', 'trace', 'refs', 'notes'):
-                if field not in s:
-                    err(f'{path.name} segment {i}: missing field {field!r}')
-            if not isinstance(s.get('refs', []), list):
-                err(f'{path.name} segment {i}: refs must be a list of citations')
-            if not s.get('grc', '').strip():
-                err(f'{path.name} segment {i}: empty Greek')
-        if c.get('status') in ('draft', 'reviewed'):
-            untranslated = sum(1 for s in segs if not s.get('eng', '').strip())
-            if untranslated:
-                err(f'{path.name}: status {c["status"]} but {untranslated} segments untranslated')
+def is_safe_url(value: object, *, allow_local: bool = False) -> bool:
+    if not isinstance(value, str) or not value.strip():
+        return False
+    parsed = urlparse(value)
+    if parsed.scheme:
+        return parsed.scheme == "https" and bool(parsed.netloc)
+    return allow_local and not value.startswith(("//", "/")) and ".." not in pathlib.PurePosixPath(value).parts
 
+
+def inside(root: pathlib.Path, relative: object) -> pathlib.Path | None:
+    if not isinstance(relative, str) or not relative:
+        return None
+    candidate = (root / relative).resolve()
+    try:
+        candidate.relative_to(root.resolve())
+    except ValueError:
+        return None
+    return candidate
+
+
+def validate_works(root: pathlib.Path, errors: list[str]):
+    path = root / "data" / "works.json"
+    doc = load_json(path, errors, "data/works.json")
+    if not isinstance(doc, dict):
+        if doc is not None:
+            errors.append("data/works.json: root must be an object")
+        return set(), set(), 0
+    if doc.get("schema_version") != 2:
+        errors.append("data/works.json: schema_version must be 2")
+    if doc.get("status") != "preliminary":
+        errors.append("data/works.json: status must be 'preliminary'")
+    if not is_date(doc.get("updated")):
+        errors.append("data/works.json: updated must be an ISO date")
+
+    source_ids: set[str] = set()
+    sources = doc.get("sources")
+    if not isinstance(sources, list):
+        errors.append("data/works.json: sources must be a list")
+        sources = []
+    for index, source in enumerate(sources):
+        label = f"data/works.json source {index}"
+        if not isinstance(source, dict):
+            errors.append(f"{label}: must be an object")
+            continue
+        sid = source.get("id")
+        if not isinstance(sid, str) or not SAFE_ID.fullmatch(sid):
+            errors.append(f"{label}: invalid id {sid!r}")
+        elif sid in source_ids:
+            errors.append(f"data/works.json: duplicate source id {sid!r}")
+        else:
+            source_ids.add(sid)
+        if not source.get("title"):
+            errors.append(f"{label}: missing title")
+        if not is_safe_url(source.get("url")):
+            errors.append(f"{label}: unsafe or invalid URL {source.get('url')!r}")
+        if not is_date(source.get("accessed")):
+            errors.append(f"{label}: accessed must be an ISO date")
+
+    works = doc.get("works")
+    if not isinstance(works, list):
+        errors.append("data/works.json: works must be a list")
+        return set(), source_ids, 0
+    work_ids: set[str] = set()
+    for index, work in enumerate(works):
+        if not isinstance(work, dict):
+            errors.append(f"data/works.json work {index}: must be an object")
+            continue
+        wid = work.get("id", f"<work {index}>")
+        label = f"data/works.json {wid}"
+        if not isinstance(wid, str) or not SAFE_ID.fullmatch(wid):
+            errors.append(f"{label}: invalid id")
+        elif wid in work_ids:
+            errors.append(f"data/works.json: duplicate work id {wid!r}")
+        else:
+            work_ids.add(wid)
+        titles = work.get("titles")
+        if not isinstance(titles, dict) or not titles.get("latin"):
+            errors.append(f"{label}: titles.latin is required")
+        survival = work.get("survival")
+        if not isinstance(survival, dict):
+            errors.append(f"{label}: survival must be an object")
+        else:
+            languages = survival.get("languages")
+            if not isinstance(languages, list) or any(language not in LANGUAGES for language in languages):
+                errors.append(f"{label}: survival.languages contains an invalid language")
+            if survival.get("extent") not in EXTENTS:
+                errors.append(f"{label}: invalid survival.extent {survival.get('extent')!r}")
+        digital_texts = work.get("digital_texts")
+        if not isinstance(digital_texts, list):
+            errors.append(f"{label}: digital_texts must be a list")
+        else:
+            for text_index, digital in enumerate(digital_texts):
+                if not isinstance(digital, dict) or not digital.get("provider") or not digital.get("language"):
+                    errors.append(f"{label}: digital_texts[{text_index}] is incomplete")
+                elif not is_safe_url(digital.get("url")):
+                    errors.append(f"{label}: digital_texts[{text_index}] has unsafe or invalid URL")
+
+        english = work.get("english")
+        if not isinstance(english, dict):
+            errors.append(f"{label}: english must be an object")
+            continue
+        status = english.get("status")
+        if status not in ENGLISH_STATUSES:
+            errors.append(f"{label}: invalid english.status {status!r}")
+        citations = english.get("citations")
+        if not isinstance(citations, list):
+            errors.append(f"{label}: english.citations must be a list")
+            citations = []
+        if status in {"full", "partial"} and not citations:
+            errors.append(f"{label}: {status} English status requires a citation")
+        for citation_index, citation in enumerate(citations):
+            c_label = f"{label} citation {citation_index}"
+            if not isinstance(citation, dict) or not citation.get("label"):
+                errors.append(f"{c_label}: label is required")
+                continue
+            if citation.get("scope") not in {"full", "partial", "unspecified"}:
+                errors.append(f"{c_label}: invalid scope {citation.get('scope')!r}")
+            if citation.get("url") is not None and not is_safe_url(citation.get("url")):
+                errors.append(f"{c_label}: unsafe or invalid URL {citation.get('url')!r}")
+        verification = english.get("verification")
+        if not isinstance(verification, dict) or verification.get("status") not in CONFIDENCE:
+            errors.append(f"{label}: invalid english.verification")
+            continue
+        refs = verification.get("source_ids")
+        if not isinstance(refs, list) or any(ref not in source_ids for ref in refs):
+            errors.append(f"{label}: verification references an unknown source id")
+        if verification.get("status") == "checked" and not is_date(verification.get("checked_on")):
+            errors.append(f"{label}: checked verification requires checked_on")
+    return work_ids, source_ids, len(works)
+
+
+def validate_chunks(root: pathlib.Path, work_ids: set[str], errors: list[str]) -> int:
+    registry_path = root / "data" / "chunks.json"
+    registry = load_json(registry_path, errors, "data/chunks.json")
+    if not isinstance(registry, dict):
+        if registry is not None:
+            errors.append("data/chunks.json: root must be an object")
+        return 0
+    if registry.get("schema_version") != 2:
+        errors.append("data/chunks.json: schema_version must be 2")
+    if not is_date(registry.get("updated")):
+        errors.append("data/chunks.json: updated must be an ISO date")
+    entries = registry.get("chunks")
+    if not isinstance(entries, list):
+        errors.append("data/chunks.json: chunks must be a list")
+        return 0
+
+    ids: set[str] = set()
+    registry_files: set[pathlib.Path] = set()
+    for index, entry in enumerate(entries):
+        if not isinstance(entry, dict):
+            errors.append(f"data/chunks.json entry {index}: must be an object")
+            continue
+        cid = entry.get("id", f"<entry {index}>")
+        label = f"data/chunks.json {cid}"
+        if not isinstance(cid, str) or not SAFE_ID.fullmatch(cid):
+            errors.append(f"{label}: invalid id")
+        elif cid in ids:
+            errors.append(f"data/chunks.json: duplicate chunk id {cid!r}")
+        else:
+            ids.add(cid)
+        if entry.get("work") not in work_ids:
+            errors.append(f"{label}: work {entry.get('work')!r} is not in works.json")
+        if entry.get("status") not in STATUSES:
+            errors.append(f"{label}: invalid status {entry.get('status')!r}")
+        if not entry.get("kuhn_range"):
+            errors.append(f"{label}: kuhn_range is required")
+        packet_path = inside(root, entry.get("file"))
+        if packet_path is None or packet_path.suffix != ".json":
+            errors.append(f"{label}: unsafe or invalid packet path {entry.get('file')!r}")
+            continue
+        if packet_path in registry_files:
+            errors.append(f"data/chunks.json: duplicate packet file {entry.get('file')!r}")
+        registry_files.add(packet_path)
+        packet = load_json(packet_path, errors, f"{label} packet")
+        if not isinstance(packet, dict):
+            continue
+        if packet.get("schema_version") != 2:
+            errors.append(f"{label}: packet schema_version must be 2")
+        for field in ("id", "work", "kuhn_range", "status"):
+            if packet.get(field) != entry.get(field):
+                errors.append(f"{label}: registry/packet {field} mismatch")
+        contributors = packet.get("contributors")
+        if not isinstance(contributors, dict):
+            errors.append(f"{label}: contributors must be an object")
+            contributors = {}
+        translator = contributors.get("translator")
+        reviewer = contributors.get("reviewer")
+        if packet.get("status") in {"draft", "reviewed"} and (
+            not isinstance(translator, dict) or not translator.get("name")
+        ):
+            errors.append(f"{label}: draft/reviewed packet requires translator attribution")
+        if packet.get("status") == "reviewed" and (
+            not isinstance(reviewer, dict) or not reviewer.get("name")
+        ):
+            errors.append(f"{label}: reviewed packet requires reviewer attribution")
+        source = packet.get("source")
+        if not isinstance(source, dict):
+            errors.append(f"{label}: source must be an object")
+        else:
+            if not is_safe_url(source.get("text_url")):
+                errors.append(f"{label}: source.text_url is unsafe or invalid")
+            if not HEX40.fullmatch(str(source.get("upstream_commit", ""))):
+                errors.append(f"{label}: source.upstream_commit must be a 40-character hash")
+            if not is_date(source.get("retrieved_on")):
+                errors.append(f"{label}: source.retrieved_on must be an ISO date")
+            if not HEX64.fullmatch(str(source.get("sha256", ""))):
+                errors.append(f"{label}: source.sha256 must be a full SHA-256")
+            for field in ("edition", "license"):
+                if not source.get(field):
+                    errors.append(f"{label}: source.{field} is required")
+        segments = packet.get("segments")
+        if not isinstance(segments, list) or not segments:
+            errors.append(f"{label}: packet requires segments")
+            continue
+        for segment_index, segment in enumerate(segments):
+            s_label = f"{label} segment {segment_index}"
+            if not isinstance(segment, dict):
+                errors.append(f"{s_label}: must be an object")
+                continue
+            for field in ("kuhn", "grc", "eng", "rationale", "refs", "notes"):
+                if field not in segment:
+                    errors.append(f"{s_label}: missing {field}")
+            if not str(segment.get("grc", "")).strip():
+                errors.append(f"{s_label}: Greek text is empty")
+            if not isinstance(segment.get("refs"), list):
+                errors.append(f"{s_label}: refs must be a list")
+            if packet.get("status") in {"draft", "reviewed"}:
+                if not str(segment.get("eng", "")).strip():
+                    errors.append(f"{s_label}: translated packet has an empty English segment")
+                if not str(segment.get("rationale", "")).strip():
+                    errors.append(f"{s_label}: translated packet requires rationale")
+                if not segment.get("refs"):
+                    errors.append(f"{s_label}: translated packet requires citations")
+
+    packet_dir = root / "translations" / "chunks"
+    actual_files = {path.resolve() for path in packet_dir.glob("*.json")} if packet_dir.exists() else set()
+    for undeclared in sorted(actual_files - registry_files):
+        errors.append(f"{undeclared.name}: packet file has no registry entry")
+    return len(entries)
+
+
+def validate_arabic(root: pathlib.Path, work_ids: set[str], errors: list[str]) -> int:
+    directory = root / "sources" / "arabic"
+    manifest_path = directory / "manifest.json"
+    if not manifest_path.exists():
+        return 0
+    manifest = load_json(manifest_path, errors, "sources/arabic/manifest.json")
+    if not isinstance(manifest, dict):
+        return 0
+    if manifest.get("schema_version") != 2:
+        errors.append("sources/arabic/manifest.json: schema_version must be 2")
+    source = manifest.get("source")
+    if not isinstance(source, dict):
+        errors.append("sources/arabic/manifest.json: source must be an object")
+    else:
+        if not is_safe_url(source.get("url")):
+            errors.append("sources/arabic/manifest.json: source URL is unsafe or invalid")
+        if not is_date(source.get("retrieved_on")):
+            errors.append("sources/arabic/manifest.json: retrieved_on must be an ISO date")
+        if not source.get("license"):
+            errors.append("sources/arabic/manifest.json: source license is required")
+    texts = manifest.get("texts")
+    if not isinstance(texts, list):
+        errors.append("sources/arabic/manifest.json: texts must be a list")
+        return 0
+    declared: set[str] = set()
+    kinds: Counter[str] = Counter()
+    for index, entry in enumerate(texts):
+        if not isinstance(entry, dict):
+            errors.append(f"Arabic manifest entry {index}: must be an object")
+            continue
+        filename = entry.get("file", f"<entry {index}>")
+        label = f"Arabic manifest {filename}"
+        if not isinstance(filename, str) or pathlib.PurePosixPath(filename).name != filename or not filename.endswith(".xml"):
+            errors.append(f"{label}: unsafe or invalid filename")
+            continue
+        if filename in declared:
+            errors.append(f"Arabic manifest: duplicate filename {filename!r}")
+        declared.add(filename)
+        kind = entry.get("kind")
+        if kind not in {"translation", "summary", "catalogue"}:
+            errors.append(f"{label}: invalid kind {kind!r}")
+        else:
+            kinds[kind] += 1
+        refs = entry.get("work_ids")
+        if not isinstance(refs, list) or any(ref not in work_ids for ref in refs):
+            errors.append(f"{label}: work_ids contains an unknown work")
+        if not is_safe_url(entry.get("source_url")):
+            errors.append(f"{label}: source_url is unsafe or invalid")
+        source_hash = str(entry.get("source_sha256", ""))
+        local_hash = str(entry.get("local_sha256", ""))
+        if not HEX64.fullmatch(source_hash):
+            errors.append(f"{label}: source_sha256 must be a full SHA-256")
+        if not HEX64.fullmatch(local_hash):
+            errors.append(f"{label}: local_sha256 must be a full SHA-256")
+        changes = entry.get("local_changes")
+        if not isinstance(changes, list):
+            errors.append(f"{label}: local_changes must be a list")
+            changes = []
+        if source_hash != local_hash and not changes:
+            errors.append(f"{label}: changed local file requires a local_changes record")
+        if source_hash == local_hash and changes:
+            errors.append(f"{label}: local_changes recorded but source and local hashes match")
+        path = directory / filename
+        if not path.exists():
+            errors.append(f"{label}: file is missing")
+            continue
+        actual_hash = hashlib.sha256(path.read_bytes()).hexdigest()
+        if actual_hash != local_hash:
+            errors.append(f"{label}: local checksum mismatch")
+        try:
+            ET.parse(path)
+        except ET.ParseError as exc:
+            errors.append(f"{label}: XML is not well-formed: {exc}")
+    actual = {path.name for path in directory.glob("*.xml")}
+    for filename in sorted(actual - declared):
+        errors.append(f"Arabic witness {filename}: file is missing from manifest")
+    for filename in sorted(declared - actual):
+        errors.append(f"Arabic manifest {filename}: declared file is missing")
+    expected_counts = manifest.get("counts")
+    if not isinstance(expected_counts, dict):
+        errors.append("sources/arabic/manifest.json: counts must be an object")
+    else:
+        for kind in ("translation", "summary", "catalogue"):
+            if expected_counts.get(kind) != kinds[kind]:
+                errors.append(
+                    f"sources/arabic/manifest.json: {kind} count is {expected_counts.get(kind)!r}, expected {kinds[kind]}"
+                )
+    return len(texts)
+
+
+def validate(root: pathlib.Path = ROOT) -> list[str]:
+    errors: list[str] = []
+    work_ids, _, _ = validate_works(root, errors)
+    validate_chunks(root, work_ids, errors)
+    validate_arabic(root, work_ids, errors)
+    return errors
+
+
+def main() -> None:
+    errors = validate()
     if errors:
-        print(f'FAIL: {len(errors)} problem(s)')
-        for e in errors:
-            print(' -', e)
-        sys.exit(1)
-    print(f'OK: {len(works)} works, {len(reg)} chunks validated')
+        print(f"FAIL: {len(errors)} problem(s)")
+        for error in errors:
+            print(" -", error)
+        raise SystemExit(1)
+    works = json.loads((ROOT / "data" / "works.json").read_text())["works"]
+    chunks = json.loads((ROOT / "data" / "chunks.json").read_text())["chunks"]
+    manifest = json.loads((ROOT / "sources" / "arabic" / "manifest.json").read_text())
+    print(f"OK: {len(works)} works, {len(chunks)} chunks, {len(manifest['texts'])} Arabic witnesses validated")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
