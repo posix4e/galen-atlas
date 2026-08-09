@@ -9,7 +9,7 @@
 <body>
 <header class="site">
   <a class="brand" href="../index.html">Perga<span>map</span></a>
-  <nav>
+  <nav aria-label="Primary">
     <a href="../corpus.html">The corpus</a>
     <a href="../witnesses.html">Witnesses</a>
     <a href="../roadmap.html">Roadmap</a>
@@ -19,49 +19,11 @@
 </header>
 <main id="m">
   <p class="crumb">Loading chunk…</p>
+  <noscript><p class="notice">JavaScript is required to render translation packets. The packet JSON is available in the <a href="https://github.com/posix4e/pergamap/tree/main/translations/chunks">repository</a>.</p></noscript>
 </main>
 <footer class="site">
-  <p>Greek: Kühn via First1KGreek (CC BY-SA). Translations © this project, CC BY-SA 4.0. Each translated segment can carry a <em>trace</em> — the translator's working, published so the reasoning stands open to checking.</p>
+  <p>Greek: Kühn via First1KGreek (CC BY-SA). Translations © this project, CC BY-SA 4.0. Each translated segment carries citations and a concise translation rationale.</p>
 </footer>
-<script>
-const STATUS = {
-  open: ['unknown', 'untranslated — claim it'],
-  claimed: ['unknown', 'claimed — in progress'],
-  draft: ['partial', 'draft — awaiting reviewer'],
-  reviewed: ['full', 'reviewed'],
-};
-const esc = s => s.replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
-const id = new URLSearchParams(location.search).get('id');
-const m = document.getElementById('m');
-
-fetch(`chunks/${id}.json`).then(r => { if (!r.ok) throw 0; return r.json(); }).then(c => {
-  const [cls, label] = STATUS[c.status] || ['unknown', c.status];
-  const lat = c.witnesses && c.witnesses.kuhn_latin;
-  document.title = `${c.id} — Pergamap`;
-  let h = `<p class="crumb">Chunk ${esc(c.id)} · ${esc(c.work)} · Kühn ${esc(c.kuhn_range || '')}</p>`;
-  h += `<h1 lang="grc">${esc(c.chapter_head || c.id)}</h1>`;
-  h += `<p class="lead"><span class="chip ${cls}">${esc(label)}</span></p>`;
-  if (c.status === 'open') {
-    h += `<div class="notice"><p>This chunk has its Greek prepared but no translation yet.
-      Want it? <a href="https://github.com/posix4e/pergamap/issues">Claim it in an issue</a>,
-      then see the <a href="https://github.com/posix4e/pergamap/blob/main/HARNESS.md">harness guide</a>.</p></div>`;
-  }
-  if (lat && lat.scan_url) {
-    h += `<p class="crumb">Witness: Kühn's facing Latin — <a href="${esc(lat.scan_url)}">scan</a> (${esc(lat.status)}).</p>`;
-  }
-  for (const s of c.segments) {
-    h += `<div class="pair"><div class="grc" lang="grc"><span class="kp">[${esc(s.kuhn)}]</span> ${esc(s.grc)}</div>`;
-    h += `<div class="eng">${s.eng ? esc(s.eng) : '<span class="todo">— not yet translated —</span>'}`;
-    if (s.trace) h += `<details class="trace"><summary>show the working</summary><div>${esc(s.trace)}</div></details>`;
-    if (s.refs && s.refs.length) h += `<p class="seg-note">Witnesses cited: ${s.refs.map(esc).join(' · ')}</p>`;
-    if (s.notes) h += `<p class="seg-note">${esc(s.notes)}</p>`;
-    h += `</div></div>`;
-  }
-  m.innerHTML = h;
-}).catch(() => {
-  m.innerHTML = `<h1>Chunk not found</h1><p>No chunk called <code>${esc(id || '(none)')}</code>.
-    See the <a href="../roadmap.html">roadmap</a> or the <a href="https://github.com/posix4e/pergamap">repo</a>.</p>`;
-});
-</script>
+<script src="../assets/js/chunk.js" defer></script>
 </body>
 </html>

@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Arabic witnesses — Pergamap</title>
-<meta name="description" content="The Galen-related Arabic texts held here for collation against the Greek: Ḥunayn ibn Isḥāq's translations, the Alexandrian summaries, and the Risāla.">
+<meta name="description" content="Galen-related Arabic translations, summaries, epitomes, and catalogues held for source comparison, with explicit provenance.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="site">
   <a class="brand" href="index.html">Perga<span>map</span></a>
-  <nav>
+  <nav aria-label="Primary">
     <a href="corpus.html">The corpus</a>
-    <a href="witnesses.html" class="here">Witnesses</a>
+    <a href="witnesses.html" class="here" aria-current="page">Witnesses</a>
     <a href="roadmap.html">Roadmap</a>
     <a href="translations/aphorisms-1-1.html">Triangulated verse</a>
     <a href="https://github.com/posix4e/pergamap">GitHub</a>
@@ -20,30 +20,32 @@
 </header>
 <main class="wide">
   <h1>Arabic witnesses</h1>
-  <p class="lead">Ḥunayn ibn Isḥāq and his circle rendered Galen into Syriac and Arabic at Baghdad in the ninth century, working from Greek exemplars earlier than any witness to the direct tradition now surviving. Where a work comes down in both lines, the two are independent testimonies of equal standing. These are the Galen-related Arabic texts we hold for collation, taken from the <a href="https://www.graeco-arabic-studies.org/">Digital Corpus for Graeco-Arabic Studies</a> under CC BY-SA.</p>
+  <p class="lead">Ḥunayn ibn Isḥāq and his circle rendered Galen into Syriac and Arabic at Baghdad in the ninth century, sometimes from Greek exemplars older than surviving direct witnesses. These versions are valuable but mediated evidence whose weight depends on translation technique, manuscript history, and the passage. These files come from the <a href="https://www.graeco-arabic-studies.org/">Digital Corpus for Graeco-Arabic Studies</a> under CC BY-SA 4.0.</p>
 
   <div class="stats">
     <div class="stat"><b id="s-transl">–</b><span>translations</span></div>
-    <div class="stat"><b id="s-summ">–</b><span>Alexandrian summaries</span></div>
+    <div class="stat"><b id="s-summ">–</b><span>summaries and epitomes</span></div>
     <div class="stat"><b id="s-cat">–</b><span>catalogues of Ḥunayn</span></div>
     <div class="stat"><b id="s-chars">–</b><span>Arabic characters held</span></div>
   </div>
 
   <div class="controls">
     <input type="search" id="q" placeholder="Search titles…" aria-label="Search titles">
-    <button data-f="all" class="on">All</button>
-    <button data-f="translation">Translations</button>
-    <button data-f="summary">Summaries</button>
-    <button data-f="catalogue">Catalogues</button>
+    <button type="button" data-f="all" class="on" aria-pressed="true">All</button>
+    <button type="button" data-f="translation" aria-pressed="false">Translations</button>
+    <button type="button" data-f="summary" aria-pressed="false">Summaries</button>
+    <button type="button" data-f="catalogue" aria-pressed="false">Catalogues</button>
   </div>
 
   <div class="tablewrap">
   <table id="t">
+    <caption>Arabic source files, provenance, and edition anchors</caption>
     <thead><tr><th>Text</th><th>Kind</th><th>On Galen's</th><th>Anchored to</th><th>Extent</th><th>Files</th></tr></thead>
     <tbody></tbody>
   </table>
   </div>
-  <p class="crumb" id="count"></p>
+  <p class="crumb" id="count" role="status" aria-live="polite">Loading witness manifest…</p>
+  <noscript><p class="notice">JavaScript is required for filtering. Read the complete data in <a href="sources/arabic/manifest.json">manifest.json</a>.</p></noscript>
 
   <h2>Collating them</h2>
   <p>The commentaries are the tractable case. The Arabic of the commentary on the <em>Aphorisms</em> carries page anchors to the same Kühn pagination as the Greek, together with a numbered marker at each Hippocratic lemma, so the two traditions collate lemma by lemma without conjecture. Treatises are coarser: they paginate to their own printed editions — Sālim, Iskandar, Lyons — and mark Kühn only at chapter divisions. See <a href="translations/aphorisms-1-1.html">a verse collated in this way</a>, and the <a href="https://github.com/posix4e/pergamap/blob/main/HARNESS.md">harness</a> for the procedure.</p>
@@ -54,56 +56,6 @@
 <footer class="site">
   <p>Texts from the <a href="https://www.graeco-arabic-studies.org/">Digital Corpus for Graeco-Arabic Studies</a> (Harvard, Tufts, Warwick; Mellon and Wellcome), CC BY-SA 4.0, retrieved 9 August 2026. Provenance, source URLs and checksums for every file are in <a href="https://github.com/posix4e/pergamap/blob/main/sources/arabic/manifest.json"><code>sources/arabic/manifest.json</code></a>.</p>
 </footer>
-<script>
-const KIND = { translation: 'translation', summary: 'summary', catalogue: 'catalogue' };
-const ED = {
-  edKuhn: 'Kühn', edKuhn17b: 'Kühn XVIIb', edKuhn18a: 'Kühn XVIIIa', edSalim: 'Sālim',
-  edIskandar: 'Iskandar', edLyons: 'Lyons', edBadawi: 'Badawī', edBach: 'Bachmann',
-  edBerg: 'Bergsträsser', edBies: 'Biesterfeldt', edMeyer: 'Meyerhof', edMuller: 'Müller',
-};
-let texts = [], filter = 'all', q = '';
-const esc = s => String(s == null ? '' : s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
-
-function row(t) {
-  const head = t.title_la || t.title_ar || t.file;
-  const sub = t.title_la && t.title_ar ? t.title_ar : null;
-  const by = t.author && t.author !== 'Galen' ? `<span class="ref">${esc(t.author)}</span>` : '';
-  const title = `<strong>${esc(head)}</strong>` +
-    (sub ? `<span class="ref">${esc(sub)}</span>` : '') + by;
-  const eds = (t.editions_referenced || []).map(e => ED[e] || e).join(', ') || '—';
-  const ext = t.arabic_chars ? `${Math.round(t.arabic_chars / 1000)}k chars` : '—';
-  return `<tr><td>${title}</td><td><span class="chip unknown">${esc(KIND[t.kind] || t.kind)}</span></td>
-    <td class="lat">${esc(t.of_work || '—')}</td><td class="lat">${esc(eds)}</td><td>${ext}</td>
-    <td><a href="sources/arabic/${esc(t.file)}">TEI</a> · <a href="${esc(t.source_url)}">source</a></td></tr>`;
-}
-
-function apply() {
-  const qq = q.toLowerCase();
-  const shown = texts.filter(t => {
-    if (filter !== 'all' && t.kind !== filter) return false;
-    if (qq && !`${t.title_la || ''} ${t.title_ar || ''} ${t.of_work || ''} ${t.author || ''} ${t.file}`.toLowerCase().includes(qq)) return false;
-    return true;
-  });
-  document.querySelector('#t tbody').innerHTML = shown.map(row).join('');
-  document.getElementById('count').textContent = `${shown.length} of ${texts.length} files shown.`;
-}
-
-fetch('sources/arabic/manifest.json').then(r => r.json()).then(m => {
-  texts = m.texts.sort((a, b) => (a.title_la || a.file).localeCompare(b.title_la || b.file));
-  document.getElementById('s-transl').textContent = m.counts.translation;
-  document.getElementById('s-summ').textContent = m.counts.summary;
-  document.getElementById('s-cat').textContent = m.counts.catalogue;
-  // the whole Aphorisms commentary is also present split in two; count its text once
-  const split = texts.filter(t => /_pt[12]-/.test(t.file)).reduce((n, t) => n + t.arabic_chars, 0);
-  const total = texts.reduce((n, t) => n + t.arabic_chars, 0) - split;
-  document.getElementById('s-chars').textContent = (total / 1e6).toFixed(1) + 'M';
-  apply();
-});
-document.getElementById('q').addEventListener('input', e => { q = e.target.value; apply(); });
-document.querySelectorAll('.controls button').forEach(b => b.addEventListener('click', () => {
-  document.querySelectorAll('.controls button').forEach(x => x.classList.remove('on'));
-  b.classList.add('on'); filter = b.dataset.f; apply();
-}));
-</script>
+<script src="assets/js/witnesses.js" defer></script>
 </body>
 </html>

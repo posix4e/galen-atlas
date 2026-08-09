@@ -10,10 +10,10 @@
 <body>
 <header class="site">
   <a class="brand" href="index.html">Perga<span>map</span></a>
-  <nav>
+  <nav aria-label="Primary">
     <a href="corpus.html">The corpus</a>
     <a href="witnesses.html">Witnesses</a>
-    <a href="roadmap.html" class="here">Roadmap</a>
+    <a href="roadmap.html" class="here" aria-current="page">Roadmap</a>
     <a href="translations/aphorisms-1-1.html">Triangulated verse</a>
     <a href="https://github.com/posix4e/pergamap">GitHub</a>
   </nav>
@@ -34,18 +34,17 @@
   <p>Publish the <a href="corpus.html">atlas</a>, with translation status flagged by confidence, and open it to corrections. The unglamorous foundation: you can't plan a rescue without a map.</p>
 
   <h2>Phase 1 — Pilot: the hair &amp; scalp book <span class="chip partial">begun</span></h2>
-  <p>Book 1 of <em>On the Composition of Drugs According to Places</em> (Kühn XII 378–497): Galen's remedies for baldness, falling hair, <em>hair dye</em>, depilatories, dandruff, lice, and scalp sores — ten chapters, self-contained, vivid, and never in English. The <a href="translations/cml-1-1.html">preface is translated</a>; nine chapters of actual recipes follow, chunk by chunk.</p>
+  <p>Book 1 of <em>On the Composition of Drugs According to Places</em> (Kühn XII 378–497): Galen's remedies for baldness, falling hair, <em>hair dye</em>, depilatories, dandruff, lice, and scalp sores. The <a href="translations/chunk.html?id=cml-1-1">preface is available as an unreviewed project draft</a>; the remaining chapters follow in manageable, source-pinned chunks.</p>
 
-  <h2>Phase 2 — First full campaign <span class="chip unknown">vote open</span></h2>
-  <p>The first sustained, multi-book translation effort, chosen by public vote. Candidates on the ballot:</p>
+  <h2>Phase 2 — First full campaign <span class="chip unknown">ballot under revision</span></h2>
+  <p>The first sustained translation effort will be chosen publicly after every candidate is rechecked against current translation catalogues. The provisional candidates are:</p>
   <ul>
     <li><em>On the Composition of Drugs According to Places</em> — continue past Book 1 (eyes, ears, teeth, chest… ten books of ancient pharmacy).</li>
     <li><em>On Antidotes</em> — theriac, mithridatium, and the emperor's daily dose; the founding text of the antidote tradition.</li>
-    <li>The pulse tetralogy — sixteen books that built a thousand years of diagnosis by pulse, none in English.</li>
     <li><em>On Crises</em> — how a Roman doctor predicted the turning point of a disease.</li>
     <li><em>On the Differences of Fevers</em> — the fever theory that ruled medicine into the 19th century.</li>
   </ul>
-  <p><a href="https://github.com/posix4e/pergamap/issues/1"><strong>Cast your vote →</strong></a></p>
+  <p><a href="https://github.com/posix4e/pergamap/issues/1"><strong>Follow the ballot revision →</strong></a></p>
 
   <h2>Phase 3 — The Arabic frontier <span class="chip unknown">later</span></h2>
   <p>Works lost in Greek that survive in the Arabic of Ḥunayn ibn Isḥāq's ninth-century Baghdad workshop — some translated by scholars already, some (like <em>On Medical Names</em>) still without English. These need published Arabic editions and more careful hands; they come after the pipeline is proven on Greek.</p>
@@ -53,10 +52,11 @@
   <h2>How a campaign runs</h2>
   <ol>
     <li>The source text is split into <strong>chunks</strong> — passages anchored to Kühn page numbers.</li>
-    <li>Each chunk gets a draft English translation (AI-assisted), comparing every surviving witness as peers — the Greek, Kühn's facing Latin, and the Arabic tradition where it exists — with each consultation cited.</li>
-    <li>Draft, source text, the translator's <em>reasoning traces</em> (the working, shown LLM-style), and notes are published side by side, flagged as a draft until a human reviewer signs off.</li>
+    <li>Each chunk gets an AI-assisted draft that compares accessible witnesses while weighing their translation technique, manuscript history, and relevance to the passage.</li>
+    <li>Draft, source text, citations, concise <em>translation rationale</em>, and notes are published side by side, flagged as a draft until a qualified human reviewer signs off.</li>
     <li>Anyone can challenge a rendering by opening an issue pointing at the Greek — the fastest way to improve the text.</li>
   </ol>
+  <div class="notice medical-warning"><p><strong>Historical text only.</strong> Ancient remedies may be toxic or unsafe. Translations are not medical advice and must not be used as treatment instructions.</p></div>
   <p class="crumb">Details for contributors: <a href="https://github.com/posix4e/pergamap/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>.</p>
 </main>
 <footer class="site">

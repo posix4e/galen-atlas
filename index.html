@@ -9,8 +9,8 @@
 </head>
 <body>
 <header class="site">
-  <a class="brand" href="index.html">Perga<span>map</span></a>
-  <nav>
+  <a class="brand" href="index.html" aria-current="page">Perga<span>map</span></a>
+  <nav aria-label="Primary">
     <a href="corpus.html">The corpus</a>
     <a href="witnesses.html">Witnesses</a>
     <a href="roadmap.html">Roadmap</a>
@@ -19,23 +19,25 @@
   </nav>
 </header>
 <main>
-  <h1>Most of Galen has never been translated into English.</h1>
-  <p class="lead">Galen of Pergamon (129 – c. 216 CE) is the largest surviving author of Greco-Roman antiquity: roughly three million words, by a common scholarly estimate about a tenth of all ancient Greek literature that survives from before 350 CE. Much of it can only be read in ancient Greek, medieval Arabic, or the Latin of an 1820s edition.</p>
+  <h1>Much of Galen remains inaccessible in English.</h1>
+  <p class="lead">Galen of Pergamon (129 – c. 216 CE) is the largest surviving author of Greco-Roman antiquity, with millions of words preserved and a corpus commonly estimated at about a tenth of surviving Greek literature from before 350 CE. Much of it remains available only in ancient Greek, medieval Arabic, or Latin editions.</p>
 
   <div class="stats" id="stats">
     <div class="stat"><b id="s-total">–</b><span>works tracked</span></div>
     <div class="stat"><b id="s-none">–</b><span>no English translation known</span></div>
-    <div class="stat"><b id="s-unknown">–</b><span>status unverified — help us check</span></div>
+    <div class="stat"><b id="s-unknown">–</b><span>translation status needs research</span></div>
     <div class="stat"><b id="s-some">–</b><span>have at least one English version</span></div>
   </div>
+  <p id="stats-error" class="error" role="alert" hidden>The catalogue statistics could not be loaded.</p>
+  <noscript><p class="notice">JavaScript is required for live totals. The complete schema-v2 catalogue is available in <a href="data/works.json">works.json</a>.</p></noscript>
 
-  <p>The untranslated works include most of Galen's largest: the eleven-book <em>On the Powers of Simple Drugs</em>, the seventeen books of compound-drug recipes, the sixteen-book treatise cycle on the pulse, <em>On Antidotes</em>, <em>On Crises</em>, <em>On the Differences of Fevers</em>. Counted by words rather than titles, the untranslated share of Galen is far larger than the head-count above suggests.</p>
+  <p>Substantial pharmacological and clinical works remain without a known complete English version. The catalogue is preliminary and source-backed corrections are part of the project, so campaign targets are rechecked before translation begins.</p>
 
   <div class="feature">
     <p class="feature-kicker">Method</p>
     <h2 class="feature-h">Reading the Greek against its witnesses</h2>
-    <p>A great deal of Galen survives in more than one line of transmission at once: the Greek direct tradition, and the ninth-century Arabic of Ḥunayn ibn Isḥāq, made from Greek exemplars now lost. These are <strong>independent testimonies to a single lost original</strong>, of equal standing. We translate accordingly — the Greek first, the Arabic and the old Latin set beside it, every divergence recorded rather than smoothed over. The <a href="witnesses.html">Arabic witnesses we hold</a> are listed with their provenance.</p>
-    <p>At <em>Aphorisms</em> i.1 the Greek <span lang="grc">καιρὸς ὀξύς</span> hangs between two senses: the critical moment is acute, or the time is short. Ḥunayn's Arabic (<span lang="ar" dir="rtl">الوقت ضيّق</span>, “the time is narrow”) and Galen's own gloss on the line (<span lang="grc">ὀλιγοχρόνιον</span>, “of brief duration”) settle it the same way, from opposite ends of the tradition. <a href="translations/aphorisms-1-1.html">The verse, with its witnesses →</a></p>
+    <p>A great deal of Galen survives in more than one line of transmission: the Greek direct tradition, Arabic translations made from now-lost Greek exemplars, and old Latin versions. Each can preserve independent versional evidence; its weight depends on translation technique, manuscript history, and the passage. We set accessible witnesses beside the base text and record divergences rather than smoothing them over. The <a href="witnesses.html">Arabic witnesses we hold</a> are listed with their provenance.</p>
+    <p>At <em>Aphorisms</em> i.1 the Greek <span lang="grc">καιρὸς ὀξύς</span> hangs between two senses: the critical moment is acute, or the time is short. Ḥunayn's Arabic (<span lang="ar" dir="rtl">الوقت ضيّق</span>, “the time is narrow”) and Galen's own gloss (<span lang="grc">ὀλιγοχρόνιον</span>, “of brief duration”) independently support the temporal reading. <a href="translations/aphorisms-1-1.html">The verse, with its witnesses →</a></p>
   </div>
 
   <h2>What this site is</h2>
@@ -43,12 +45,13 @@
   <ol>
     <li><strong>An atlas.</strong> A <a href="corpus.html">tracking table of the surviving corpus</a>: each work, the language it survives in (Greek, Arabic, Latin, fragments), where the text is digitized, and whether an English translation exists. Each entry is flagged by how well its status has been verified, because half the battle is simply knowing what's missing. Coverage today: the 97 works digitized by the First1KGreek project plus 11 added by hand; roughly two dozen more surviving works are still to be entered.</li>
     <li><strong>A roadmap.</strong> A <a href="roadmap.html">plan for translating the untranslated</a>, starting with texts whose Greek is already digitized, and a public vote on which work gets the first full campaign.</li>
-    <li><strong>Working translations.</strong> A <a href="translations/aphorisms-1-1.html">verse of the <em>Commentary on the Aphorisms</em></a>, the Greek collated with Ḥunayn's independent Arabic; and the <a href="translations/cml-1-1.html">opening of the compound-drug book on the scalp</a>, hitherto without an English rendering.</li>
+    <li><strong>Working translations.</strong> A <a href="translations/aphorisms-1-1.html">verse of the <em>Commentary on the Aphorisms</em></a>, the Greek collated with Ḥunayn's Arabic; and the <a href="translations/chunk.html?id=cml-1-1">opening of the compound-drug book on the scalp</a>, published as an unreviewed project draft.</li>
   </ol>
 
   <div class="notice">
-    <p><strong>Honesty first.</strong> This is an amateur, AI-assisted project, not a critical edition. Translations are made from the Greek, checked against every independent witness we can reach — Kühn's facing Latin, and Ḥunayn's Arabic where it survives — and published with the source alongside so anyone can catch our mistakes. Catalog entries marked “unverified” are exactly that. Corrections are welcome — that's the point of working in public.</p>
+    <p><strong>Honesty first.</strong> This is an amateur, AI-assisted project, not a critical edition. Drafts are published with their source, citations, uncertainty, and translation rationale so readers can catch mistakes. The catalogue is preliminary; “unverified” and “needs research” mean exactly that.</p>
   </div>
+  <div class="notice medical-warning"><p><strong>Historical text only.</strong> Ancient remedies may be toxic or unsafe. Pergamap is not medical advice; do not prepare or use remedies described in these texts.</p></div>
 
   <h2>How to help</h2>
   <ul>
@@ -58,26 +61,18 @@
   </ul>
 
   <h2>How to contribute via pull request</h2>
-  <p>The whole site is a <a href="https://github.com/posix4e/pergamap">public repository</a> of plain HTML and one JSON file — no build step, no framework. If you can edit a text file, you can contribute:</p>
+  <p>The whole site is a <a href="https://github.com/posix4e/pergamap">public repository</a> of plain HTML, JavaScript, and versioned JSON — no framework or production build step.</p>
   <ol>
     <li><strong>Fork</strong> <a href="https://github.com/posix4e/pergamap">posix4e/pergamap</a> on GitHub and make a branch.</li>
     <li><strong>Fixing the catalog?</strong> Edit <a href="https://github.com/posix4e/pergamap/blob/main/data/works.json"><code>data/works.json</code></a> — update the work's <code>english</code> / <code>english_ref</code> fields, and set <code>confidence</code> to <code>checked</code> only if you cite where you checked in the pull request.</li>
-    <li><strong>Adding a translation?</strong> Use the <a href="https://github.com/posix4e/pergamap/blob/main/HARNESS.md">harness</a>: one command generates a <em>translation packet</em> (the Greek with Kühn anchors, ready for your English), or grab an already-open packet from <code>data/chunks.json</code>. Fill in the translation plus a <em>trace</em> — your working set down, so the reasoning stands open to checking. First claim the chunk in an <a href="https://github.com/posix4e/pergamap/issues">issue</a> so two people don't translate the same pages.</li>
-    <li><strong>Preview locally</strong> by opening the HTML file in your browser — what you see is what deploys.</li>
+    <li><strong>Adding a translation?</strong> Use the <a href="https://github.com/posix4e/pergamap/blob/main/HARNESS.md">harness</a> to generate a manageable, source-pinned packet. Fill in the English, citations, and a concise translation rationale. First claim the range in an <a href="https://github.com/posix4e/pergamap/issues">issue</a>.</li>
+    <li><strong>Preview locally</strong> with <code>python3 -m http.server 8000</code>; opening files through <code>file://</code> cannot load the JSON datasets.</li>
     <li><strong>Open the pull request</strong> — one work or one chunk per PR, sources cited. Review happens in the open, arguing from the Greek. Merged means live.</li>
   </ol>
 </main>
 <footer class="site">
   <p>Sources: Greek texts from the <a href="https://github.com/OpenGreekAndLatin/First1KGreek">First Thousand Years of Greek</a> project and the <a href="https://www.graeco-arabic-studies.org/">Digital Corpus for Graeco-Arabic Studies</a> (CC BY-SA), digitized from Karl Gottlob Kühn's <em>Claudii Galeni Opera Omnia</em> (1821–1833, public domain, scans via the <a href="https://archive.org/details/b29339339_0012">Wellcome Library</a>). Site content: CC BY-SA 4.0.</p>
 </footer>
-<script>
-fetch('data/works.json').then(r => r.json()).then(ws => {
-  const n = s => ws.filter(w => w.english === s).length;
-  document.getElementById('s-total').textContent = ws.length;
-  document.getElementById('s-none').textContent = n('none');
-  document.getElementById('s-unknown').textContent = n('unknown');
-  document.getElementById('s-some').textContent = n('full') + n('partial');
-});
-</script>
+<script src="assets/js/index.js" defer></script>
 </body>
 </html>
