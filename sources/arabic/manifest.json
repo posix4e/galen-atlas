@@ -1,486 +1,670 @@
 {
- "description": "Galen-related Arabic texts from the Digital Corpus for Graeco-Arabic Studies (DCGAS)",
- "source": "https://www.graeco-arabic-studies.org/",
- "licence": "CC BY-SA 4.0 (stated in each TEI header)",
- "retrieved": "2026-08-09",
- "url_pattern": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/{stem}.xml",
- "note_duplicate": "gal_inhippaphor-transl-ar1.xml is the whole Aphorisms commentary; _pt1 and _pt2 are the same text split. Count once.",
- "counts": {
-  "translation": 17,
-  "summary": 16,
-  "catalogue": 2
- },
- "texts": [
-  {
-   "file": "anon_gal_adglauc-summ_alexsumm-ar1.xml",
-   "kind": "summary",
-   "author": "anon.",
-   "title_la": null,
-   "title_ar": "Ǧawāmiʿ al-Iskandarānīyin li-kitāb ilā Ġlawqun ʿalā l-šarḥ wa-l-talḫīṣ",
-   "of_work": "Ad Glauconem de methodo medendi",
-   "arabic_chars": 166741,
-   "editions_referenced": [
-    "edSalim"
-   ],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/anon_gal_adglauc-summ_alexsumm-ar1.xml",
-   "sha256": "abd549a48950c4d8"
+  "schema_version": 2,
+  "description": "Galen-related Arabic texts from the Digital Corpus for Graeco-Arabic Studies (DCGAS)",
+  "source": {
+    "id": "dcgas",
+    "title": "Digital Corpus for Graeco-Arabic Studies",
+    "url": "https://www.graeco-arabic-studies.org/",
+    "license": "CC BY-SA 4.0",
+    "retrieved_on": "2026-08-09",
+    "url_pattern": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/{stem}.xml"
   },
-  {
-   "file": "anon_gal_decris-summ_alexsumm-ar1.xml",
-   "kind": "summary",
-   "author": "anon.",
-   "title_la": null,
-   "title_ar": "Ǧawāmiʿ min kitāb Ǧālīnūs fī l-buḥrān",
-   "of_work": "De crisibus",
-   "arabic_chars": 38281,
-   "editions_referenced": [],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/anon_gal_decris-summ_alexsumm-ar1.xml",
-   "sha256": "abfe41b2b5afd406"
+  "counts": {
+    "translation": 17,
+    "summary": 16,
+    "catalogue": 2
   },
-  {
-   "file": "anon_gal_defacnat-summ_alexsumm-ar1.xml",
-   "kind": "summary",
-   "author": "anon.",
-   "title_la": null,
-   "title_ar": "Ǧawāmiʿ kitāb Ǧālīnūs fī l-quwā l-ṭabīʿīyah ʿalā raʾī al-Iskandarānīyīn",
-   "of_work": "De naturalibus facultatibus",
-   "arabic_chars": 54268,
-   "editions_referenced": [],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/anon_gal_defacnat-summ_alexsumm-ar1.xml",
-   "sha256": "3699d9673b14b4c9"
-  },
-  {
-   "file": "anon_gal_defacnat-summ_jumal-ar1.xml",
-   "kind": "summary",
-   "author": "anon.",
-   "title_la": null,
-   "title_ar": "Ǧumal al-maqālah al-ṯāniyah (min kitāb al-quwā l-ṭabīʿīyah)",
-   "of_work": "De naturalibus facultatibus",
-   "arabic_chars": 595,
-   "editions_referenced": [],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/anon_gal_defacnat-summ_jumal-ar1.xml",
-   "sha256": "410b0bc716ea761c"
-  },
-  {
-   "file": "anon_gal_depulsadtir-summ_alexsumm-ar1.xml",
-   "kind": "summary",
-   "author": "anon.",
-   "title_la": null,
-   "title_ar": "Ǧawāmiʿ al-Iskandarānīyīn li-kitāb Ǧālīnūs fī l-nabḍ al-ṣaġīr ilā Ṭūṯrun ʿalā l-šarḥ wa-l-talḫīṣ",
-   "of_work": "De pulsibus ad tirones",
-   "arabic_chars": 45978,
-   "editions_referenced": [],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/anon_gal_depulsadtir-summ_alexsumm-ar1.xml",
-   "sha256": "b526f1bd73cf89a0"
-  },
-  {
-   "file": "anon_gal_desectis-summ_alexsumm-ar1.xml",
-   "kind": "summary",
-   "author": "anon.",
-   "title_la": null,
-   "title_ar": "Ǧawāmiʿ kitāb Ǧālīnūs fī firaq al-ṭibb ʿalā l-šarḥ wa-l-talḫīṣ li-l-Iskandarānīyīn",
-   "of_work": "De sectis ad eos qui introducuntur",
-   "arabic_chars": 32099,
-   "editions_referenced": [],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/anon_gal_desectis-summ_alexsumm-ar1.xml",
-   "sha256": "42c7f34d1e02e500"
-  },
-  {
-   "file": "anon_gal_detemp-summ_jumal-ar1.xml",
-   "kind": "summary",
-   "author": "anon.",
-   "title_la": null,
-   "title_ar": "Ǧumal mā fī l-maqālah al-ūlā min kitāb Ǧālīnūs fī l-mizāǧ",
-   "of_work": "De temperamentis",
-   "arabic_chars": 739,
-   "editions_referenced": [],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/anon_gal_detemp-summ_jumal-ar1.xml",
-   "sha256": "a87c5d90db09460d"
-  },
-  {
-   "file": "anon_gal_detemp-summ_jumaljawami-ar1.xml",
-   "kind": "summary",
-   "author": "anon.",
-   "title_la": null,
-   "title_ar": "Ǧumal wa-ǧawāmiʿ fī taʿarruf al-mizāǧ",
-   "of_work": "De temperamentis",
-   "arabic_chars": 12293,
-   "editions_referenced": [],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/anon_gal_detemp-summ_jumaljawami-ar1.xml",
-   "sha256": "b82b1224108b250c"
-  },
-  {
-   "file": "anon_gal_protr-summ_mukhtasar-ar1.xml",
-   "kind": "summary",
-   "author": "anon.",
-   "title_la": null,
-   "title_ar": "Muḫtaṣar maqāl Ǧālīnūs fī l-ḥaṯṯ ʿalā taʿallum al-ʿulūm wa-l-ṣināʿāt",
-   "of_work": "Adhortatio ad artes addiscendas",
-   "arabic_chars": 3513,
-   "editions_referenced": [
-    "edBadawi"
-   ],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/anon_gal_protr-summ_mukhtasar-ar1.xml",
-   "sha256": "b83e4531ce2987c9"
-  },
-  {
-   "file": "gal_adglauc-transl-ar1.xml",
-   "kind": "translation",
-   "author": "Galen",
-   "title_la": "Ad Glauconem de methodo medendi",
-   "title_ar": "Kitāb ilā Iġlawqun fī l-taʾattī li-šifāʾ al-amrāḍ",
-   "of_work": "Ad Glauconem de methodo medendi",
-   "arabic_chars": 123308,
-   "editions_referenced": [
-    "edKuhn"
-   ],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_adglauc-transl-ar1.xml",
-   "sha256": "643a2aff9869c192"
-  },
-  {
-   "file": "gal_arsmed-transl-ar1.xml",
-   "kind": "translation",
-   "author": "Galen",
-   "title_la": "Ars medica",
-   "title_ar": "Kitāb al-ṣināʿah al-ṣaġīrah",
-   "of_work": "Ars medica",
-   "arabic_chars": 83228,
-   "editions_referenced": [
-    "edKuhn",
-    "edSalim"
-   ],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_arsmed-transl-ar1.xml",
-   "sha256": "fb02f18c04c22132"
-  },
-  {
-   "file": "gal_decausiscontent-transl-ar1.xml",
-   "kind": "translation",
-   "author": "Galen",
-   "title_la": "De causis contentivis",
-   "title_ar": "Kitāb Ǧālīnūs fī l-asbāb al-māsikah",
-   "of_work": "De causis contentivis",
-   "arabic_chars": 16080,
-   "editions_referenced": [
-    "edLyons"
-   ],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_decausiscontent-transl-ar1.xml",
-   "sha256": "b9f5eaa1abb02150"
-  },
-  {
-   "file": "gal_deelem-transl-ar1.xml",
-   "kind": "translation",
-   "author": "Galen",
-   "title_la": "De elementis secundum Hippocratem",
-   "title_ar": "Kitāb Ǧālīnūs fī l-usṭuqussāt ʿalā raʾī Abuqrāṭ",
-   "of_work": "De elementis ex Hippocrate",
-   "arabic_chars": 66246,
-   "editions_referenced": [
-    "edKuhn",
-    "edSalim"
-   ],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_deelem-transl-ar1.xml",
-   "sha256": "f501cd46489f11e5"
-  },
-  {
-   "file": "gal_denominibusmedicis-transl-ar1.xml",
-   "kind": "translation",
-   "author": "Galen",
-   "title_la": "De nominibus medicis",
-   "title_ar": "Kitāb Ǧālīnūs fī l-asmāʾ al-ṭibbīyah",
-   "of_work": "De nominibus medicis",
-   "arabic_chars": 49955,
-   "editions_referenced": [
-    "edMeyer"
-   ],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_denominibusmedicis-transl-ar1.xml",
-   "sha256": "a3ff29790ef01814"
-  },
-  {
-   "file": "gal_deoptmedcogn-transl-ar1.xml",
-   "kind": "translation",
-   "author": "Galen",
-   "title_la": "De optimo medico cognoscendo",
-   "title_ar": "Kitāb Ǧālīnūs fī l-miḥnat allatī yuʿraf bihā afāḍil al-aṭibbāʾ",
-   "of_work": "De optimo medico cognoscendo",
-   "arabic_chars": 50781,
-   "editions_referenced": [
-    "edIskandar"
-   ],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_deoptmedcogn-transl-ar1.xml",
-   "sha256": "9b8bb5c156985426"
-  },
-  {
-   "file": "gal_departartismed-transl-ar1.xml",
-   "kind": "translation",
-   "author": "Galen",
-   "title_la": "De partibus artis medicativae",
-   "title_ar": "Maqālat Ǧālīnūs fī aǧzāʾ al-ṭibb",
-   "of_work": "De partibus artis medicativae",
-   "arabic_chars": 19111,
-   "editions_referenced": [
-    "edLyons"
-   ],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_departartismed-transl-ar1.xml",
-   "sha256": "9932843a52568d73"
-  },
-  {
-   "file": "gal_departhomoeomdiff-transl-ar1.xml",
-   "kind": "translation",
-   "author": "Galen",
-   "title_la": "De partium homoeomerium differentia",
-   "title_ar": "Kitāb Ǧālīnūs fī iḫtilāf al-aʿḍāʾ al-mutašābihat al-aǧzāʾ",
-   "of_work": "De partium homoeomerium differentia",
-   "arabic_chars": 17425,
-   "editions_referenced": [
-    "edStrohmaier"
-   ],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_departhomoeomdiff-transl-ar1.xml",
-   "sha256": "a305c20748dcaf2f"
-  },
-  {
-   "file": "gal_depulsadtir-transl-ar1.xml",
-   "kind": "translation",
-   "author": "Galen",
-   "title_la": "De pulsibus ad tirones",
-   "title_ar": "Kitāb Ǧālīnūs fī l-nabḍ li-l-mutaʿallimīn",
-   "of_work": "De pulsibus ad tirones",
-   "arabic_chars": 31354,
-   "editions_referenced": [
-    "edKuhn",
-    "edSalim"
-   ],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_depulsadtir-transl-ar1.xml",
-   "sha256": "cbf2e96e605aa6f7"
-  },
-  {
-   "file": "gal_desectis-transl-ar1.xml",
-   "kind": "translation",
-   "author": "Galen",
-   "title_la": "De sectis ad eos qui introducuntur",
-   "title_ar": "Kitāb Ǧālīnūs fī firaq al-ṭibb li-l-mutaʿallimīn",
-   "of_work": "De sectis ad eos qui introducuntur",
-   "arabic_chars": 32883,
-   "editions_referenced": [
-    "edKuhn",
-    "edSalim"
-   ],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_desectis-transl-ar1.xml",
-   "sha256": "40357fcabbdc7736"
-  },
-  {
-   "file": "gal_inhippaphor-transl-ar1.xml",
-   "kind": "translation",
-   "author": "Galen",
-   "title_la": "In Hippocratis Aphorismos",
-   "title_ar": "Tafsīr kitāb al-fuṣūl",
-   "of_work": "In Hippocratis Aphorismos",
-   "arabic_chars": 483533,
-   "editions_referenced": [
-    "edKuhn"
-   ],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_inhippaphor-transl-ar1.xml",
-   "sha256": "50b3bff0dcaec2da"
-  },
-  {
-   "file": "gal_inhippaphor_pt1-transl-ar1.xml",
-   "kind": "translation",
-   "author": "Galen",
-   "title_la": "In Hippocratis Aphorismos (bk. 1–5)",
-   "title_ar": "Tafsīr kitāb al-fuṣūl",
-   "of_work": "In Hippocratis Aphorismos",
-   "arabic_chars": 358985,
-   "editions_referenced": [
-    "edKuhn17b"
-   ],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_inhippaphor_pt1-transl-ar1.xml",
-   "sha256": "a9f0e42b7a2b1528"
-  },
-  {
-   "file": "gal_inhippaphor_pt2-transl-ar1.xml",
-   "kind": "translation",
-   "author": "Galen",
-   "title_la": "In Hippocratis Aphorismos (bk. 6–7)",
-   "title_ar": "Tafsīr kitāb al-fuṣūl",
-   "of_work": "In Hippocratis Aphorismos",
-   "arabic_chars": 124548,
-   "editions_referenced": [
-    "edKuhn18a"
-   ],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_inhippaphor_pt2-transl-ar1.xml",
-   "sha256": "2fe121ef5a5a095e"
-  },
-  {
-   "file": "gal_inhippdeoffmed-transl-ar1.xml",
-   "kind": "translation",
-   "author": "Galen",
-   "title_la": "In Hippocratis De officina medici",
-   "title_ar": "Šarḥ Ǧālīnūs li-kitāb Abuqrāṭ al-musammā Qāṭīṭriyūn",
-   "of_work": "In Hippocratis De officina medici",
-   "arabic_chars": 67125,
-   "editions_referenced": [
-    "edKuhn",
-    "edLyons"
-   ],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_inhippdeoffmed-transl-ar1.xml",
-   "sha256": "5aad72a152141785"
-  },
-  {
-   "file": "gal_quodanimimores-transl-ar1.xml",
-   "kind": "translation",
-   "author": "Galen",
-   "title_la": "Quod animi mores corporis temperamenta sequantur",
-   "title_ar": "Kitāb Ǧālīnūs fī anna quwā l-nafs tābiʿah li-mizāǧ al-badan",
-   "of_work": "Quod animi mores corporis temperamenta sequantur",
-   "arabic_chars": 38956,
-   "editions_referenced": [
-    "edBies",
-    "edKuhn"
-   ],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_quodanimimores-transl-ar1.xml",
-   "sha256": "424ac40b0ca708f4"
-  },
-  {
-   "file": "gal_quodoptimusmedicus-transl-ar1.xml",
-   "kind": "translation",
-   "author": "Galen",
-   "title_la": "Quod optimus medicus sit quoque philosophus",
-   "title_ar": "Maqālat Ǧālīnūs fī annahū yaǧib an yakūn al-ṭabīb al-faḍil faylasūf",
-   "of_work": "Quod optimus medicus sit quoque philosophus",
-   "arabic_chars": 7281,
-   "editions_referenced": [
-    "edBach",
-    "edMuller"
-   ],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_quodoptimusmedicus-transl-ar1.xml",
-   "sha256": "7dfb430cbfa972d1"
-  },
-  {
-   "file": "hunayn_gal_devictuatt-summ_jawami-ar1.xml",
-   "kind": "summary",
-   "author": "Ḥunayn ibn Isḥāq",
-   "title_la": null,
-   "title_ar": "Ǧawāmiʿ maqālat Ǧālīnūs fī l-tadbīr al-mulaṭṭif",
-   "of_work": "De victu attenuante",
-   "arabic_chars": 12690,
-   "editions_referenced": [],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/hunayn_gal_devictuatt-summ_jawami-ar1.xml",
-   "sha256": "de1b553bd63c059c"
-  },
-  {
-   "file": "hunayn_kutublamyadhkur-orig-ar1.xml",
-   "kind": "catalogue",
-   "author": "Ḥunayn ibn Isḥāq",
-   "title_la": null,
-   "title_ar": "Maqālah fī ḏikr al-kutub allatī lam yaḏkurhā Ǧālīnūs fī fihrist kutubihī",
-   "of_work": null,
-   "arabic_chars": 4584,
-   "editions_referenced": [
-    "edBerg"
-   ],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/hunayn_kutublamyadhkur-orig-ar1.xml",
-   "sha256": "f9101e8171d80e93"
-  },
-  {
-   "file": "hunayn_risalah-orig-ar1.xml",
-   "kind": "catalogue",
-   "author": "Ḥunayn ibn Isḥāq",
-   "title_la": null,
-   "title_ar": "al-Risālah",
-   "of_work": null,
-   "arabic_chars": 51192,
-   "editions_referenced": [
-    "edBerg"
-   ],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/hunayn_risalah-orig-ar1.xml",
-   "sha256": "865f4f1c16cea5df"
-  },
-  {
-   "file": "ibnridwan_gal_inhippaphor-summ_fawaid-ar1.xml",
-   "kind": "summary",
-   "author": "Ibn Riḍwān",
-   "title_la": null,
-   "title_ar": "Taʿālīq li-fawāʾid min kitāb al-fuṣūl li-Abuqrāṭ tafsīr Ǧālīnūs",
-   "of_work": "In Hippocratis Aphorismos",
-   "arabic_chars": 39764,
-   "editions_referenced": [],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/ibnridwan_gal_inhippaphor-summ_fawaid-ar1.xml",
-   "sha256": "c65732a9105f9cf4"
-  },
-  {
-   "file": "ibnridwan_gal_inhippdeoffmed-summ_fawaid-ar1.xml",
-   "kind": "summary",
-   "author": "Ibn Riḍwān",
-   "title_la": null,
-   "title_ar": "Fawāʾid min kitāb Qāṭīṭriyūn tafsīr Ǧālīnūs",
-   "of_work": "In Hippocratis De officina medici",
-   "arabic_chars": 13508,
-   "editions_referenced": [
-    "edLyons"
-   ],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/ibnridwan_gal_inhippdeoffmed-summ_fawaid-ar1.xml",
-   "sha256": "56ffa00ca5912962"
-  },
-  {
-   "file": "ibnzurah_gal_deelem-summ_fusul-ar1.xml",
-   "kind": "summary",
-   "author": "Ibn Zurʿah",
-   "title_la": null,
-   "title_ar": "Fuṣūl wa-ṯamarat ǧawāmiʿ kitāb al-usṭuqussāt",
-   "of_work": "De elementis ex Hippocrate",
-   "arabic_chars": 2989,
-   "editions_referenced": [],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/ibnzurah_gal_deelem-summ_fusul-ar1.xml",
-   "sha256": "abf4225be715e0ec"
-  },
-  {
-   "file": "ibnzurah_gal_defacnat-summ_fusul-ar1.xml",
-   "kind": "summary",
-   "author": "Ibn Zurʿah",
-   "title_la": null,
-   "title_ar": "Fuṣūl ǧawāmiʿ kitāb al-quwā l-ṭabīʿīyah",
-   "of_work": "De naturalibus facultatibus",
-   "arabic_chars": 5888,
-   "editions_referenced": [],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/ibnzurah_gal_defacnat-summ_fusul-ar1.xml",
-   "sha256": "e3b1cdd3b4ac752c"
-  },
-  {
-   "file": "ibnzurah_gal_detemp-summ_fusul-ar1.xml",
-   "kind": "summary",
-   "author": "Ibn Zurʿah",
-   "title_la": null,
-   "title_ar": "Fuṣūl ǧawāmiʿ kitāb al-mizāǧ li-Ǧālīnūs",
-   "of_work": "De temperamentis",
-   "arabic_chars": 5951,
-   "editions_referenced": [],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/ibnzurah_gal_detemp-summ_fusul-ar1.xml",
-   "sha256": "c0a8e90ac9083762"
-  },
-  {
-   "file": "ibnzurah_gal_kitabaltashrih-summ_fusul-ar1.xml",
-   "kind": "summary",
-   "author": "Ibn Zurʿah",
-   "title_la": null,
-   "title_ar": "Fuṣūl ǧawāmiʿ kitāb al-tašrīḥ li-l-mutaʿallimīn",
-   "of_work": "De anatomicis administrationibus",
-   "arabic_chars": 6084,
-   "editions_referenced": [],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/ibnzurah_gal_kitabaltashrih-summ_fusul-ar1.xml",
-   "sha256": "c15acf7c64ff362d"
-  },
-  {
-   "file": "psgal_dediaetainmorbisacutis-transl-ar1.xml",
-   "kind": "translation",
-   "author": "pseudo-Galen",
-   "title_la": "De diaeta in morbis acutis secundum Hippocratem",
-   "title_ar": "Kitāb Ǧālīnūs fī tadbīr al-amrāḍ al-ḥāddah ʿalā raʾī Abuqrāṭ",
-   "of_work": "De diaeta in morbis acutis (ps.-Galen)",
-   "arabic_chars": 20756,
-   "editions_referenced": [
-    "edLyons"
-   ],
-   "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/psgal_dediaetainmorbisacutis-transl-ar1.xml",
-   "sha256": "d586b0ca57d78025"
-  }
- ]
+  "duplicates": [
+    {
+      "whole": "gal_inhippaphor-transl-ar1.xml",
+      "parts": [
+        "gal_inhippaphor_pt1-transl-ar1.xml",
+        "gal_inhippaphor_pt2-transl-ar1.xml"
+      ],
+      "counting": "whole_only"
+    }
+  ],
+  "texts": [
+    {
+      "file": "anon_gal_adglauc-summ_alexsumm-ar1.xml",
+      "kind": "summary",
+      "author": "anon.",
+      "title_latin": null,
+      "title_arabic": "Ǧawāmiʿ al-Iskandarānīyin li-kitāb ilā Ġlawqun ʿalā l-šarḥ wa-l-talḫīṣ",
+      "of_work": "Ad Glauconem de methodo medendi",
+      "work_ids": [
+        "tlg067"
+      ],
+      "arabic_characters": 166741,
+      "edition_ids": [
+        "edSalim"
+      ],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/anon_gal_adglauc-summ_alexsumm-ar1.xml",
+      "source_sha256": "abd549a48950c4d806e295395708cb3bd145a53b7e3dd32aef4c8ece0958c152",
+      "local_sha256": "abd549a48950c4d806e295395708cb3bd145a53b7e3dd32aef4c8ece0958c152",
+      "local_changes": []
+    },
+    {
+      "file": "anon_gal_decris-summ_alexsumm-ar1.xml",
+      "kind": "summary",
+      "author": "anon.",
+      "title_latin": null,
+      "title_arabic": "Ǧawāmiʿ min kitāb Ǧālīnūs fī l-buḥrān",
+      "of_work": "De crisibus",
+      "work_ids": [
+        "tlg064"
+      ],
+      "arabic_characters": 38281,
+      "edition_ids": [],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/anon_gal_decris-summ_alexsumm-ar1.xml",
+      "source_sha256": "abfe41b2b5afd4060c5a7421492bb092da3df7538d149dec1bb7e0e4036a9866",
+      "local_sha256": "abfe41b2b5afd4060c5a7421492bb092da3df7538d149dec1bb7e0e4036a9866",
+      "local_changes": []
+    },
+    {
+      "file": "anon_gal_defacnat-summ_alexsumm-ar1.xml",
+      "kind": "summary",
+      "author": "anon.",
+      "title_latin": null,
+      "title_arabic": "Ǧawāmiʿ kitāb Ǧālīnūs fī l-quwā l-ṭabīʿīyah ʿalā raʾī al-Iskandarānīyīn",
+      "of_work": "De naturalibus facultatibus",
+      "work_ids": [
+        "tlg010"
+      ],
+      "arabic_characters": 54268,
+      "edition_ids": [],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/anon_gal_defacnat-summ_alexsumm-ar1.xml",
+      "source_sha256": "3699d9673b14b4c9f0a0a13b239b4c9c3a9c61de96111de3bef10c9ab7263816",
+      "local_sha256": "3699d9673b14b4c9f0a0a13b239b4c9c3a9c61de96111de3bef10c9ab7263816",
+      "local_changes": []
+    },
+    {
+      "file": "anon_gal_defacnat-summ_jumal-ar1.xml",
+      "kind": "summary",
+      "author": "anon.",
+      "title_latin": null,
+      "title_arabic": "Ǧumal al-maqālah al-ṯāniyah (min kitāb al-quwā l-ṭabīʿīyah)",
+      "of_work": "De naturalibus facultatibus",
+      "work_ids": [
+        "tlg010"
+      ],
+      "arabic_characters": 595,
+      "edition_ids": [],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/anon_gal_defacnat-summ_jumal-ar1.xml",
+      "source_sha256": "410b0bc716ea761cadd347f273b7d0ca1e3d2ebe8249ab5e514a578d77b4138a",
+      "local_sha256": "410b0bc716ea761cadd347f273b7d0ca1e3d2ebe8249ab5e514a578d77b4138a",
+      "local_changes": []
+    },
+    {
+      "file": "anon_gal_depulsadtir-summ_alexsumm-ar1.xml",
+      "kind": "summary",
+      "author": "anon.",
+      "title_latin": null,
+      "title_arabic": "Ǧawāmiʿ al-Iskandarānīyīn li-kitāb Ǧālīnūs fī l-nabḍ al-ṣaġīr ilā Ṭūṯrun ʿalā l-šarḥ wa-l-talḫīṣ",
+      "of_work": "De pulsibus ad tirones",
+      "work_ids": [
+        "tlg058"
+      ],
+      "arabic_characters": 45978,
+      "edition_ids": [],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/anon_gal_depulsadtir-summ_alexsumm-ar1.xml",
+      "source_sha256": "b526f1bd73cf89a021398af6a717dd0e885d9d4ffc0ef489f40d1b8061490844",
+      "local_sha256": "b526f1bd73cf89a021398af6a717dd0e885d9d4ffc0ef489f40d1b8061490844",
+      "local_changes": []
+    },
+    {
+      "file": "anon_gal_desectis-summ_alexsumm-ar1.xml",
+      "kind": "summary",
+      "author": "anon.",
+      "title_latin": null,
+      "title_arabic": "Ǧawāmiʿ kitāb Ǧālīnūs fī firaq al-ṭibb ʿalā l-šarḥ wa-l-talḫīṣ li-l-Iskandarānīyīn",
+      "of_work": "De sectis ad eos qui introducuntur",
+      "work_ids": [
+        "tlg004"
+      ],
+      "arabic_characters": 32099,
+      "edition_ids": [],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/anon_gal_desectis-summ_alexsumm-ar1.xml",
+      "source_sha256": "42c7f34d1e02e5000a020d1b68b8eb742116085f14049234586a099f9518132f",
+      "local_sha256": "42c7f34d1e02e5000a020d1b68b8eb742116085f14049234586a099f9518132f",
+      "local_changes": []
+    },
+    {
+      "file": "anon_gal_detemp-summ_jumal-ar1.xml",
+      "kind": "summary",
+      "author": "anon.",
+      "title_latin": null,
+      "title_arabic": "Ǧumal mā fī l-maqālah al-ūlā min kitāb Ǧālīnūs fī l-mizāǧ",
+      "of_work": "De temperamentis",
+      "work_ids": [
+        "tlg009"
+      ],
+      "arabic_characters": 739,
+      "edition_ids": [],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/anon_gal_detemp-summ_jumal-ar1.xml",
+      "source_sha256": "a87c5d90db09460dcef0378f430728d0898f05bb18b998da42dc3479266f96fd",
+      "local_sha256": "552a844107fc6136097a42889aad81fa0c395c16d74231e3a80cb684583ec0df",
+      "local_changes": [
+        {
+          "type": "xml_well_formedness",
+          "description": "Inserted the missing closing div1 before body; textual content is unchanged."
+        }
+      ]
+    },
+    {
+      "file": "anon_gal_detemp-summ_jumaljawami-ar1.xml",
+      "kind": "summary",
+      "author": "anon.",
+      "title_latin": null,
+      "title_arabic": "Ǧumal wa-ǧawāmiʿ fī taʿarruf al-mizāǧ",
+      "of_work": "De temperamentis",
+      "work_ids": [
+        "tlg009"
+      ],
+      "arabic_characters": 12293,
+      "edition_ids": [],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/anon_gal_detemp-summ_jumaljawami-ar1.xml",
+      "source_sha256": "b82b1224108b250cd4fb5dfee9007f63974ee09a98576e1b761d741a4f7fd509",
+      "local_sha256": "b82b1224108b250cd4fb5dfee9007f63974ee09a98576e1b761d741a4f7fd509",
+      "local_changes": []
+    },
+    {
+      "file": "anon_gal_protr-summ_mukhtasar-ar1.xml",
+      "kind": "summary",
+      "author": "anon.",
+      "title_latin": null,
+      "title_arabic": "Muḫtaṣar maqāl Ǧālīnūs fī l-ḥaṯṯ ʿalā taʿallum al-ʿulūm wa-l-ṣināʿāt",
+      "of_work": "Adhortatio ad artes addiscendas",
+      "work_ids": [
+        "tlg001"
+      ],
+      "arabic_characters": 3513,
+      "edition_ids": [
+        "edBadawi"
+      ],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/anon_gal_protr-summ_mukhtasar-ar1.xml",
+      "source_sha256": "b83e4531ce2987c99a7ed65d8b467602cf751c660d3774fb7521ecde6eaca339",
+      "local_sha256": "b83e4531ce2987c99a7ed65d8b467602cf751c660d3774fb7521ecde6eaca339",
+      "local_changes": []
+    },
+    {
+      "file": "gal_adglauc-transl-ar1.xml",
+      "kind": "translation",
+      "author": "Galen",
+      "title_latin": "Ad Glauconem de methodo medendi",
+      "title_arabic": "Kitāb ilā Iġlawqun fī l-taʾattī li-šifāʾ al-amrāḍ",
+      "of_work": "Ad Glauconem de methodo medendi",
+      "work_ids": [
+        "tlg067"
+      ],
+      "arabic_characters": 123308,
+      "edition_ids": [
+        "edKuhn"
+      ],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_adglauc-transl-ar1.xml",
+      "source_sha256": "643a2aff9869c192d439288ccea1d400c77f5ab58435ae7d2fc2a6358e83e396",
+      "local_sha256": "643a2aff9869c192d439288ccea1d400c77f5ab58435ae7d2fc2a6358e83e396",
+      "local_changes": []
+    },
+    {
+      "file": "gal_arsmed-transl-ar1.xml",
+      "kind": "translation",
+      "author": "Galen",
+      "title_latin": "Ars medica",
+      "title_arabic": "Kitāb al-ṣināʿah al-ṣaġīrah",
+      "of_work": "Ars medica",
+      "work_ids": [
+        "tlg007"
+      ],
+      "arabic_characters": 83228,
+      "edition_ids": [
+        "edKuhn",
+        "edSalim"
+      ],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_arsmed-transl-ar1.xml",
+      "source_sha256": "fb02f18c04c221329017c4cebb253827874eca26f775a4cfe017c234e3ee911d",
+      "local_sha256": "fb02f18c04c221329017c4cebb253827874eca26f775a4cfe017c234e3ee911d",
+      "local_changes": []
+    },
+    {
+      "file": "gal_decausiscontent-transl-ar1.xml",
+      "kind": "translation",
+      "author": "Galen",
+      "title_latin": "De causis contentivis",
+      "title_arabic": "Kitāb Ǧālīnūs fī l-asbāb al-māsikah",
+      "of_work": "De causis contentivis",
+      "work_ids": [],
+      "arabic_characters": 16080,
+      "edition_ids": [
+        "edLyons"
+      ],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_decausiscontent-transl-ar1.xml",
+      "source_sha256": "b9f5eaa1abb02150e31ab51d99f3d41e59a67e22b8c5e67af5144f7609ad20bd",
+      "local_sha256": "b9f5eaa1abb02150e31ab51d99f3d41e59a67e22b8c5e67af5144f7609ad20bd",
+      "local_changes": []
+    },
+    {
+      "file": "gal_deelem-transl-ar1.xml",
+      "kind": "translation",
+      "author": "Galen",
+      "title_latin": "De elementis secundum Hippocratem",
+      "title_arabic": "Kitāb Ǧālīnūs fī l-usṭuqussāt ʿalā raʾī Abuqrāṭ",
+      "of_work": "De elementis ex Hippocrate",
+      "work_ids": [
+        "tlg008"
+      ],
+      "arabic_characters": 66246,
+      "edition_ids": [
+        "edKuhn",
+        "edSalim"
+      ],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_deelem-transl-ar1.xml",
+      "source_sha256": "f501cd46489f11e5f5b7eb548758e6d95482b41c1802291f493b947191a57ba0",
+      "local_sha256": "f501cd46489f11e5f5b7eb548758e6d95482b41c1802291f493b947191a57ba0",
+      "local_changes": []
+    },
+    {
+      "file": "gal_denominibusmedicis-transl-ar1.xml",
+      "kind": "translation",
+      "author": "Galen",
+      "title_latin": "De nominibus medicis",
+      "title_arabic": "Kitāb Ǧālīnūs fī l-asmāʾ al-ṭibbīyah",
+      "of_work": "De nominibus medicis",
+      "work_ids": [
+        "x-nomin"
+      ],
+      "arabic_characters": 49955,
+      "edition_ids": [
+        "edMeyer"
+      ],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_denominibusmedicis-transl-ar1.xml",
+      "source_sha256": "a3ff29790ef01814d263de1439a7803b722f7557fba97fd5dbc3173e13e4abcf",
+      "local_sha256": "a3ff29790ef01814d263de1439a7803b722f7557fba97fd5dbc3173e13e4abcf",
+      "local_changes": []
+    },
+    {
+      "file": "gal_deoptmedcogn-transl-ar1.xml",
+      "kind": "translation",
+      "author": "Galen",
+      "title_latin": "De optimo medico cognoscendo",
+      "title_arabic": "Kitāb Ǧālīnūs fī l-miḥnat allatī yuʿraf bihā afāḍil al-aṭibbāʾ",
+      "of_work": "De optimo medico cognoscendo",
+      "work_ids": [
+        "x-optmed"
+      ],
+      "arabic_characters": 50781,
+      "edition_ids": [
+        "edIskandar"
+      ],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_deoptmedcogn-transl-ar1.xml",
+      "source_sha256": "9b8bb5c156985426dde7e3ef22128dd0e52ba9f0d81d266c3a91ba264c725a28",
+      "local_sha256": "9b8bb5c156985426dde7e3ef22128dd0e52ba9f0d81d266c3a91ba264c725a28",
+      "local_changes": []
+    },
+    {
+      "file": "gal_departartismed-transl-ar1.xml",
+      "kind": "translation",
+      "author": "Galen",
+      "title_latin": "De partibus artis medicativae",
+      "title_arabic": "Maqālat Ǧālīnūs fī aǧzāʾ al-ṭibb",
+      "of_work": "De partibus artis medicativae",
+      "work_ids": [
+        "x-partmed"
+      ],
+      "arabic_characters": 19111,
+      "edition_ids": [
+        "edLyons"
+      ],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_departartismed-transl-ar1.xml",
+      "source_sha256": "9932843a52568d73d3ef2d6e56ad08860d58b40f6efcadecb79f687d719761ed",
+      "local_sha256": "9932843a52568d73d3ef2d6e56ad08860d58b40f6efcadecb79f687d719761ed",
+      "local_changes": []
+    },
+    {
+      "file": "gal_departhomoeomdiff-transl-ar1.xml",
+      "kind": "translation",
+      "author": "Galen",
+      "title_latin": "De partium homoeomerium differentia",
+      "title_arabic": "Kitāb Ǧālīnūs fī iḫtilāf al-aʿḍāʾ al-mutašābihat al-aǧzāʾ",
+      "of_work": "De partium homoeomerium differentia",
+      "work_ids": [],
+      "arabic_characters": 17425,
+      "edition_ids": [
+        "edStrohmaier"
+      ],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_departhomoeomdiff-transl-ar1.xml",
+      "source_sha256": "a305c20748dcaf2f29f6391a1efcb04489945928e123a460ea5933028334dafa",
+      "local_sha256": "a305c20748dcaf2f29f6391a1efcb04489945928e123a460ea5933028334dafa",
+      "local_changes": []
+    },
+    {
+      "file": "gal_depulsadtir-transl-ar1.xml",
+      "kind": "translation",
+      "author": "Galen",
+      "title_latin": "De pulsibus ad tirones",
+      "title_arabic": "Kitāb Ǧālīnūs fī l-nabḍ li-l-mutaʿallimīn",
+      "of_work": "De pulsibus ad tirones",
+      "work_ids": [
+        "tlg058"
+      ],
+      "arabic_characters": 31354,
+      "edition_ids": [
+        "edKuhn",
+        "edSalim"
+      ],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_depulsadtir-transl-ar1.xml",
+      "source_sha256": "cbf2e96e605aa6f723c07fc634a034c310af05b1f7cb087217dc38a7ca87c54e",
+      "local_sha256": "cbf2e96e605aa6f723c07fc634a034c310af05b1f7cb087217dc38a7ca87c54e",
+      "local_changes": []
+    },
+    {
+      "file": "gal_desectis-transl-ar1.xml",
+      "kind": "translation",
+      "author": "Galen",
+      "title_latin": "De sectis ad eos qui introducuntur",
+      "title_arabic": "Kitāb Ǧālīnūs fī firaq al-ṭibb li-l-mutaʿallimīn",
+      "of_work": "De sectis ad eos qui introducuntur",
+      "work_ids": [
+        "tlg004"
+      ],
+      "arabic_characters": 32883,
+      "edition_ids": [
+        "edKuhn",
+        "edSalim"
+      ],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_desectis-transl-ar1.xml",
+      "source_sha256": "40357fcabbdc77361628b9e68094472a4110a41a27cc0c003ba359517cae7785",
+      "local_sha256": "40357fcabbdc77361628b9e68094472a4110a41a27cc0c003ba359517cae7785",
+      "local_changes": []
+    },
+    {
+      "file": "gal_inhippaphor-transl-ar1.xml",
+      "kind": "translation",
+      "author": "Galen",
+      "title_latin": "In Hippocratis Aphorismos",
+      "title_arabic": "Tafsīr kitāb al-fuṣūl",
+      "of_work": "In Hippocratis Aphorismos",
+      "work_ids": [
+        "tlg092"
+      ],
+      "arabic_characters": 483533,
+      "edition_ids": [
+        "edKuhn"
+      ],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_inhippaphor-transl-ar1.xml",
+      "source_sha256": "50b3bff0dcaec2daa2ddfab15c233273cf4fc569c55980d8fde79209854d535e",
+      "local_sha256": "50b3bff0dcaec2daa2ddfab15c233273cf4fc569c55980d8fde79209854d535e",
+      "local_changes": []
+    },
+    {
+      "file": "gal_inhippaphor_pt1-transl-ar1.xml",
+      "kind": "translation",
+      "author": "Galen",
+      "title_latin": "In Hippocratis Aphorismos (bk. 1–5)",
+      "title_arabic": "Tafsīr kitāb al-fuṣūl",
+      "of_work": "In Hippocratis Aphorismos",
+      "work_ids": [
+        "tlg092"
+      ],
+      "arabic_characters": 358985,
+      "edition_ids": [
+        "edKuhn17b"
+      ],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_inhippaphor_pt1-transl-ar1.xml",
+      "source_sha256": "a9f0e42b7a2b15281930a8d7a15ab957c8e231a567f62f80a214c93fcca89b13",
+      "local_sha256": "a9f0e42b7a2b15281930a8d7a15ab957c8e231a567f62f80a214c93fcca89b13",
+      "local_changes": []
+    },
+    {
+      "file": "gal_inhippaphor_pt2-transl-ar1.xml",
+      "kind": "translation",
+      "author": "Galen",
+      "title_latin": "In Hippocratis Aphorismos (bk. 6–7)",
+      "title_arabic": "Tafsīr kitāb al-fuṣūl",
+      "of_work": "In Hippocratis Aphorismos",
+      "work_ids": [
+        "tlg092"
+      ],
+      "arabic_characters": 124548,
+      "edition_ids": [
+        "edKuhn18a"
+      ],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_inhippaphor_pt2-transl-ar1.xml",
+      "source_sha256": "2fe121ef5a5a095ef4dd0b3f3af8ac623c4d82ea9a81c4c5a43719593f876a05",
+      "local_sha256": "2fe121ef5a5a095ef4dd0b3f3af8ac623c4d82ea9a81c4c5a43719593f876a05",
+      "local_changes": []
+    },
+    {
+      "file": "gal_inhippdeoffmed-transl-ar1.xml",
+      "kind": "translation",
+      "author": "Galen",
+      "title_latin": "In Hippocratis De officina medici",
+      "title_arabic": "Šarḥ Ǧālīnūs li-kitāb Abuqrāṭ al-musammā Qāṭīṭriyūn",
+      "of_work": "In Hippocratis De officina medici",
+      "work_ids": [
+        "tlg101"
+      ],
+      "arabic_characters": 67125,
+      "edition_ids": [
+        "edKuhn",
+        "edLyons"
+      ],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_inhippdeoffmed-transl-ar1.xml",
+      "source_sha256": "5aad72a1521417855a851c88fbb5b20383b2a75526cfc877e6117048c33327ea",
+      "local_sha256": "5aad72a1521417855a851c88fbb5b20383b2a75526cfc877e6117048c33327ea",
+      "local_changes": []
+    },
+    {
+      "file": "gal_quodanimimores-transl-ar1.xml",
+      "kind": "translation",
+      "author": "Galen",
+      "title_latin": "Quod animi mores corporis temperamenta sequantur",
+      "title_arabic": "Kitāb Ǧālīnūs fī anna quwā l-nafs tābiʿah li-mizāǧ al-badan",
+      "of_work": "Quod animi mores corporis temperamenta sequantur",
+      "work_ids": [
+        "tlg027"
+      ],
+      "arabic_characters": 38956,
+      "edition_ids": [
+        "edBies",
+        "edKuhn"
+      ],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_quodanimimores-transl-ar1.xml",
+      "source_sha256": "424ac40b0ca708f4602e6073636905863da8d08c24ced9f293819986fba7b0f0",
+      "local_sha256": "424ac40b0ca708f4602e6073636905863da8d08c24ced9f293819986fba7b0f0",
+      "local_changes": []
+    },
+    {
+      "file": "gal_quodoptimusmedicus-transl-ar1.xml",
+      "kind": "translation",
+      "author": "Galen",
+      "title_latin": "Quod optimus medicus sit quoque philosophus",
+      "title_arabic": "Maqālat Ǧālīnūs fī annahū yaǧib an yakūn al-ṭabīb al-faḍil faylasūf",
+      "of_work": "Quod optimus medicus sit quoque philosophus",
+      "work_ids": [
+        "tlg003"
+      ],
+      "arabic_characters": 7281,
+      "edition_ids": [
+        "edBach",
+        "edMuller"
+      ],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_quodoptimusmedicus-transl-ar1.xml",
+      "source_sha256": "7dfb430cbfa972d1e3a6298a6c80c21365f53c8111f5f191ebad96395c95dda1",
+      "local_sha256": "7dfb430cbfa972d1e3a6298a6c80c21365f53c8111f5f191ebad96395c95dda1",
+      "local_changes": []
+    },
+    {
+      "file": "hunayn_gal_devictuatt-summ_jawami-ar1.xml",
+      "kind": "summary",
+      "author": "Ḥunayn ibn Isḥāq",
+      "title_latin": null,
+      "title_arabic": "Ǧawāmiʿ maqālat Ǧālīnūs fī l-tadbīr al-mulaṭṭif",
+      "of_work": "De victu attenuante",
+      "work_ids": [
+        "tlg019"
+      ],
+      "arabic_characters": 12690,
+      "edition_ids": [],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/hunayn_gal_devictuatt-summ_jawami-ar1.xml",
+      "source_sha256": "de1b553bd63c059cb00924065754dd2cddb616b23d6e760d7f44755d89943b56",
+      "local_sha256": "de1b553bd63c059cb00924065754dd2cddb616b23d6e760d7f44755d89943b56",
+      "local_changes": []
+    },
+    {
+      "file": "hunayn_kutublamyadhkur-orig-ar1.xml",
+      "kind": "catalogue",
+      "author": "Ḥunayn ibn Isḥāq",
+      "title_latin": null,
+      "title_arabic": "Maqālah fī ḏikr al-kutub allatī lam yaḏkurhā Ǧālīnūs fī fihrist kutubihī",
+      "of_work": null,
+      "work_ids": [],
+      "arabic_characters": 4584,
+      "edition_ids": [
+        "edBerg"
+      ],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/hunayn_kutublamyadhkur-orig-ar1.xml",
+      "source_sha256": "f9101e8171d80e9330ec2441a5a6e23517ef4dbdf843af46cd6b4c1491cf2328",
+      "local_sha256": "f9101e8171d80e9330ec2441a5a6e23517ef4dbdf843af46cd6b4c1491cf2328",
+      "local_changes": []
+    },
+    {
+      "file": "hunayn_risalah-orig-ar1.xml",
+      "kind": "catalogue",
+      "author": "Ḥunayn ibn Isḥāq",
+      "title_latin": null,
+      "title_arabic": "al-Risālah",
+      "of_work": null,
+      "work_ids": [],
+      "arabic_characters": 51192,
+      "edition_ids": [
+        "edBerg"
+      ],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/hunayn_risalah-orig-ar1.xml",
+      "source_sha256": "865f4f1c16cea5dfcf0a1867d6a60f7a543f93e68309df256df0741a12232246",
+      "local_sha256": "865f4f1c16cea5dfcf0a1867d6a60f7a543f93e68309df256df0741a12232246",
+      "local_changes": []
+    },
+    {
+      "file": "ibnridwan_gal_inhippaphor-summ_fawaid-ar1.xml",
+      "kind": "summary",
+      "author": "Ibn Riḍwān",
+      "title_latin": null,
+      "title_arabic": "Taʿālīq li-fawāʾid min kitāb al-fuṣūl li-Abuqrāṭ tafsīr Ǧālīnūs",
+      "of_work": "In Hippocratis Aphorismos",
+      "work_ids": [
+        "tlg092"
+      ],
+      "arabic_characters": 39764,
+      "edition_ids": [],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/ibnridwan_gal_inhippaphor-summ_fawaid-ar1.xml",
+      "source_sha256": "c65732a9105f9cf4b4bdc3ff8feed028fc433dd73203b64860c876df7cf7688b",
+      "local_sha256": "c65732a9105f9cf4b4bdc3ff8feed028fc433dd73203b64860c876df7cf7688b",
+      "local_changes": []
+    },
+    {
+      "file": "ibnridwan_gal_inhippdeoffmed-summ_fawaid-ar1.xml",
+      "kind": "summary",
+      "author": "Ibn Riḍwān",
+      "title_latin": null,
+      "title_arabic": "Fawāʾid min kitāb Qāṭīṭriyūn tafsīr Ǧālīnūs",
+      "of_work": "In Hippocratis De officina medici",
+      "work_ids": [
+        "tlg101"
+      ],
+      "arabic_characters": 13508,
+      "edition_ids": [
+        "edLyons"
+      ],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/ibnridwan_gal_inhippdeoffmed-summ_fawaid-ar1.xml",
+      "source_sha256": "56ffa00ca59129627bd08d95114653004d04de3901a4152be891989a9792d89b",
+      "local_sha256": "56ffa00ca59129627bd08d95114653004d04de3901a4152be891989a9792d89b",
+      "local_changes": []
+    },
+    {
+      "file": "ibnzurah_gal_deelem-summ_fusul-ar1.xml",
+      "kind": "summary",
+      "author": "Ibn Zurʿah",
+      "title_latin": null,
+      "title_arabic": "Fuṣūl wa-ṯamarat ǧawāmiʿ kitāb al-usṭuqussāt",
+      "of_work": "De elementis ex Hippocrate",
+      "work_ids": [
+        "tlg008"
+      ],
+      "arabic_characters": 2989,
+      "edition_ids": [],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/ibnzurah_gal_deelem-summ_fusul-ar1.xml",
+      "source_sha256": "abf4225be715e0ec23396c360a248e974b1b556f3b3be573f95b170d1527e629",
+      "local_sha256": "abf4225be715e0ec23396c360a248e974b1b556f3b3be573f95b170d1527e629",
+      "local_changes": []
+    },
+    {
+      "file": "ibnzurah_gal_defacnat-summ_fusul-ar1.xml",
+      "kind": "summary",
+      "author": "Ibn Zurʿah",
+      "title_latin": null,
+      "title_arabic": "Fuṣūl ǧawāmiʿ kitāb al-quwā l-ṭabīʿīyah",
+      "of_work": "De naturalibus facultatibus",
+      "work_ids": [
+        "tlg010"
+      ],
+      "arabic_characters": 5888,
+      "edition_ids": [],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/ibnzurah_gal_defacnat-summ_fusul-ar1.xml",
+      "source_sha256": "e3b1cdd3b4ac752c6051355acfd1a1247f5455829b424f000b7311abe90dd3a6",
+      "local_sha256": "e3b1cdd3b4ac752c6051355acfd1a1247f5455829b424f000b7311abe90dd3a6",
+      "local_changes": []
+    },
+    {
+      "file": "ibnzurah_gal_detemp-summ_fusul-ar1.xml",
+      "kind": "summary",
+      "author": "Ibn Zurʿah",
+      "title_latin": null,
+      "title_arabic": "Fuṣūl ǧawāmiʿ kitāb al-mizāǧ li-Ǧālīnūs",
+      "of_work": "De temperamentis",
+      "work_ids": [
+        "tlg009"
+      ],
+      "arabic_characters": 5951,
+      "edition_ids": [],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/ibnzurah_gal_detemp-summ_fusul-ar1.xml",
+      "source_sha256": "c0a8e90ac908376291a8aac859b82cad267052b0d8bc990396c4f7ff8837e7e3",
+      "local_sha256": "c0a8e90ac908376291a8aac859b82cad267052b0d8bc990396c4f7ff8837e7e3",
+      "local_changes": []
+    },
+    {
+      "file": "ibnzurah_gal_kitabaltashrih-summ_fusul-ar1.xml",
+      "kind": "summary",
+      "author": "Ibn Zurʿah",
+      "title_latin": null,
+      "title_arabic": "Fuṣūl ǧawāmiʿ kitāb al-tašrīḥ li-l-mutaʿallimīn",
+      "of_work": "De anatomicis administrationibus",
+      "work_ids": [
+        "tlg011"
+      ],
+      "arabic_characters": 6084,
+      "edition_ids": [],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/ibnzurah_gal_kitabaltashrih-summ_fusul-ar1.xml",
+      "source_sha256": "c15acf7c64ff362d04e4613b20b70c40645c87e5c8517afc890c6b8822925f0a",
+      "local_sha256": "c15acf7c64ff362d04e4613b20b70c40645c87e5c8517afc890c6b8822925f0a",
+      "local_changes": []
+    },
+    {
+      "file": "psgal_dediaetainmorbisacutis-transl-ar1.xml",
+      "kind": "translation",
+      "author": "pseudo-Galen",
+      "title_latin": "De diaeta in morbis acutis secundum Hippocratem",
+      "title_arabic": "Kitāb Ǧālīnūs fī tadbīr al-amrāḍ al-ḥāddah ʿalā raʾī Abuqrāṭ",
+      "of_work": "De diaeta in morbis acutis (ps.-Galen)",
+      "work_ids": [],
+      "arabic_characters": 20756,
+      "edition_ids": [
+        "edLyons"
+      ],
+      "source_url": "https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/psgal_dediaetainmorbisacutis-transl-ar1.xml",
+      "source_sha256": "d586b0ca57d7802537cf68c342ff82c9f5b33194675fe70153ecbaaef5612595",
+      "local_sha256": "d586b0ca57d7802537cf68c342ff82c9f5b33194675fe70153ecbaaef5612595",
+      "local_changes": []
+    }
+  ]
 }

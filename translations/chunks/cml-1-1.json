@@ -1,0 +1,113 @@
+{
+  "schema_version": 2,
+  "id": "cml-1-1",
+  "work": "tlg076",
+  "title": "The preface: on hair, fields, and doctors who make things worse",
+  "chapter_head": "Book 1, chapter 1",
+  "kuhn_range": "12.378–12.381",
+  "status": "draft",
+  "contributors": {
+    "translator": {
+      "name": "Pergamap project",
+      "identifier": "https://github.com/posix4e",
+      "method": "AI-assisted project draft"
+    },
+    "reviewer": null
+  },
+  "source": {
+    "text_url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/bfea9acd07ee1b7cea70cdd927c8f092d5637695/data/tlg0057/tlg076/tlg0057.tlg076.1st1K-grc1.xml",
+    "upstream_commit": "bfea9acd07ee1b7cea70cdd927c8f092d5637695",
+    "retrieved_on": "2026-08-09",
+    "sha256": "495e189a0ebb34820f74b3d544cc61fe98cd426273addebc073a9610d7f2af20",
+    "edition": "Kühn, Claudii Galeni Opera Omnia (1821–1833), via First1KGreek",
+    "license": "CC BY-SA 4.0"
+  },
+  "witnesses": {
+    "kuhn_latin": {
+      "status": "consulted",
+      "note": "Cross-read against Kühn's facing Latin.",
+      "scan_url": "https://archive.org/details/b29339339_0012"
+    },
+    "arabic": {
+      "status": "not_identified",
+      "note": "No aligned Arabic witness has yet been identified for this draft."
+    }
+  },
+  "segmentation": "six argument-level paragraphs spanning Kühn XII 378–381",
+  "notes": [
+    "“Constitution” (κρᾶσις, krasis) is literally “mixture” — the individual blend of hot, cold, wet, and dry that Galen believes defines each body. The same word gives the title of his On Temperaments (περὶ κράσεων), cited a few lines later.",
+    "“The seven books published before this one” almost certainly means his On the Composition of Drugs by Kind (seven books in its first edition) — Galen ordered his pharmacology as simples → compounds by kind → compounds by place. Worth a specialist's check.",
+    "“Demeter's grains” (δημητρίων σπερμάτων) — ordinary Greek for cereal crops, but the touch of the goddess's name keeps the farming image warm. The scalp is cultivated land; body hair is wild upland grass; nature grows it “κατά τι συμβεβηκός” — incidentally, a byproduct.",
+    "Alopecia and ophiasis: ἀλωπεκία is named from the fox (ἀλώπηξ), an animal proverbially prone to mange; ὀφίασις from the snake (ὄφις), for bald patches that creep in winding bands. Both words are still in dermatology today — alopecia, and the serpentine ophiasis pattern of hair loss. λεύκη (\"the white disease\") covers conditions that blanch skin and hair, roughly vitiligo and its neighbors.",
+    "“Help — or do no harm” (ὠφελέειν ἢ μὴ βλάπτειν) is a near-verbatim quotation of Hippocrates, Epidemics I — the Ionic dialect form ὠφελέειν shows Galen quoting his source's own words. Notably, the famous maxim is not from the Hippocratic Oath.",
+    "The grumble is the thesis. The preface's real argument: colleagues who prescribe hair-loss drugs “without method” (χωρὶς μεθόδου) sometimes make patients incurably bald. Chapter 2 opens the case file: what alopecia is, and the recipes — with Galen's verdicts."
+  ],
+  "segments": [
+    {
+      "kuhn": "12.378–12.379",
+      "grc": "Ὅτι μὲν οὐ μόνον τὸ θεραπευόμενον πάθος ἐνδείκνυται τὴν θεραπείαν, ἀλλ’ ἥ τε τοῦ κάμνοντος κρᾶσις ἥ τε τοῦ πάσχοντος μορίου φύσις οὐ μικρὸν συνενδείκνυται, δέδεικται πρόσθεν ἐν τοῖς τῆς θεραπευτικῆς μεθόδου γράμμασιν, ὥσπερ γε καὶ ὅπως ἄν τις ἐκ τῶν ἁπλῶν φαρμάκων σύνθετον αὐτὸς ποιοῖ διὰ συντόμου μὲν ἐν ἐκείνοις, πλατύτερον δ’ ἐν τοῖς πρὸ τούτου βιβλίοις ἑπτὰ τὴν μέθοδον ἅπασαν ἐδήλωσα.",
+      "eng": "That it is not only the ailment under treatment that points to the treatment — that the patient's constitution, and the nature of the affected part, contribute no small indication of their own — I have shown before, in my books on the Method of Healing; just as I have also set out the whole method of how one may compound a medicine oneself from simple drugs: briefly there, and more fully in the seven books published before this one.",
+      "rationale": "The Greek says only ἐν τοῖς πρὸ τούτου βιβλίοις ἑπτὰ — “in the seven books before this one.” First instinct was the Method of Healing, but that has fourteen books. On the Composition of Drugs by Kind has seven, and Galen's pharmacological sequence (simples → compounds by kind → compounds by place) fits. Kühn's Latin (“in septem libris ante hunc editis”) confirms the count but not the referent. Rendered literally; identification hedged to the note.",
+      "refs": [
+        "Kühn, Claudii Galeni Opera Omnia XII 378–12.379, via First1KGreek.",
+        "Kühn's facing Latin, Wellcome Library scan of volume XII."
+      ],
+      "notes": ""
+    },
+    {
+      "kuhn": "12.379",
+      "grc": "νυνὶ δὲ τὰς καθ’ ἕκαστον μέρος τοῦ σώματος ἁρμοττούσας δυνάμεις φαρμάκων, ὅπως ἄν τις αὐτός τε κατασκευάζοι μεθόδῳ καὶ ταῖς ὑπὸ τῶν ἔμπροσθεν ἰατρῶν εὑρημέναις ὀρθῶς χρῷτο, πρόκειται διελθεῖν ἀπὸ τῆς κεφαλῆς ἀρξαμένοις, ὡς καὶ τοῖς πρὸ ἡμῶν ἅπασιν ἔδοξεν. συμβαίνει δ’ αὐτῇ τὰ μὲν πλεῖστα τῶν παθῶν κοινὰ τοῖς ἄλλοις πᾶσι μέρεσιν, τὸ δὲ τῶν τριχῶν πάθος ὀλίγοις κεκοινώνηται, διότι καὶ τὸ τετριχῶσθαι κατὰ πρῶτον λόγον οὐ πολλοῖς ὑπάρχει.",
+      "eng": "Now my task is to go through the drug-powers suited to each part of the body — how to prepare them yourself, by method, and how to use correctly the ones discovered by physicians before us — beginning from the head, as everyone before us also saw fit to do. Most of the head's ailments it shares with all the other parts; but ailments of the hair it shares with few, since being hairy, in the primary sense, belongs to few parts.",
+      "rationale": "Literally “according to the first account.” Candidates: “properly speaking,” “as a primary feature,” “in the strict sense.” The phrase returns in ¶3 opposite κατά τι συμβεβηκός (“as a byproduct/accident”) — a per se vs. per accidens contrast in Aristotle's vocabulary. Chose “in the primary sense” / “as a primary aim” to keep both halves of the contrast audibly paired in English.",
+      "refs": [
+        "Kühn, Claudii Galeni Opera Omnia XII 379, via First1KGreek.",
+        "Kühn's facing Latin, Wellcome Library scan of volume XII."
+      ],
+      "notes": ""
+    },
+    {
+      "kuhn": "12.379–12.380",
+      "grc": "γένεσις μὲν γὰρ ταῖς θριξὶν, οἵαπερ ἡ τῶν ἐκ τῆς γῆς φυομένων, ὡς ἐν τοῖς περὶ κράσεων ὑπομνήμασιν ἐδείχθη. καθάπερ δὲ ἐν τούτοις τὰ μὲν κατὰ τέχνην καὶ προαίρεσιν τοῦ γεωργοῦ, τὰ δὲ κατὰ τὰς φυσικὰς αἰτίας γεννᾶται, τὸν αὐτὸν τρόπον κᾀν τοῖς τῶν ζώων σώμασιν ἀρούρᾳ μέν τινι πυροὺς ἢ κριθὰς ἤ τι τῶν ἄλλων δημητρίων σπερμάτων ἐν αὐτῇ φυομένων ἐχούσῃ τῆς κεφαλῆς ἐοικυίας, ταῖς δ’ ἄλλαις πόαις ὅσαι κατὰ τἀνώτερα χωρία φύονται τῶν ἐν ὅλῳ τῷ σώματι τριχῶν ὁμοίαν ἐχουσῶν τὴν γένεσιν. οὐ γὰρ κατὰ πρῶτον λόγον ἡ φύσις αὐτὰς εἴωθε γεννᾷν, ἀλλὰ κατά τι συμβεβηκός.",
+      "eng": "For hair comes into being the way things grow out of the earth, as was shown in my treatise On Temperaments. And just as there some things grow by the skill and deliberate choice of the farmer, and others from natural causes, so it is in the bodies of animals: the head is like a plowed field with wheat, or barley, or some other of Demeter's grains growing in it, while the hair over the rest of the body springs up the way wild grasses do in the uplands. For nature does not usually produce that hair as a primary aim, but as a kind of byproduct.",
+      "rationale": "The whole image hangs on a genitive absolute (τῆς κεφαλῆς ἐοικυίας… “the head resembling…”) with a dative participle chain inside it (ἀρούρᾳ… ἐχούσῃ — “a field having wheat… growing in it”). Misparse risk: attaching ἐχούσῃ to the head instead of the field. Cross-checked against Kühn's Latin, which maps field=head, wild-grass=body-hair. Broke the one Greek sentence into two English ones rather than force a 60-word monster.",
+      "refs": [
+        "Kühn, Claudii Galeni Opera Omnia XII 379–12.380, via First1KGreek.",
+        "Kühn's facing Latin, Wellcome Library scan of volume XII."
+      ],
+      "notes": ""
+    },
+    {
+      "kuhn": "12.380",
+      "grc": "αἵ γε μὴν κατά τε βλέφαρα καὶ τὰς ὀφρῦς ἐδείκνυντο χρείαν οὐ μικρὰν παρέχουσαι τοῖς ζώοις. αἱ δ’ ἐπὶ τῶν γενείων τε καὶ τῶν αἰδοίων ἕνεκα μικροτέρων χρειῶν γεγονέναι δοκοῦσι, διὸ καὶ τὰ πάθη μάλιστα μὲν τῶν ἐν ὀφθαλμοῖς τε καὶ ταῖς ὀφρύσιν ἐπὶ τὴν ἑαυτῶν θεραπείαν ἡμᾶς προτρέπει, δεύτερα δ’ ἐπ’ αὐτοῖς τῶν κατὰ τὴν κεφαλὴν, εἶτα γενείων τε καὶ αἰδοίων.",
+      "eng": "The hairs of the eyelids and eyebrows, however, have been shown to do animals no small service; those of the chin and the private parts seem to exist for lesser uses. And so it is above all the ailments of the lashes and brows that urge us to their treatment; second after them, those of the hair of the head; then of the beard and the private parts.",
+      "rationale": "The repeated χρεία vocabulary distinguishes the protective service of lashes and brows from the lesser uses of beard and pubic hair. The English keeps Galen's ranked sequence without adding a modern physiological claim.",
+      "refs": [
+        "Kühn, Claudii Galeni Opera Omnia XII 380, via First1KGreek.",
+        "Kühn's facing Latin, Wellcome Library scan of volume XII."
+      ],
+      "notes": ""
+    },
+    {
+      "kuhn": "12.380",
+      "grc": "ἔστι δὲ τὰ πάθη τῶν τριχῶν ἥ τε παντελὴς ἀπώλεια καὶ ἡ κατὰ χρόαν ὑπαλλαγὴ, καθάπερ ἐν ταῖς καλουμέναις λεύκαις γίνεται, καὶ πρὸς τούτοις ἐν ἀλωπεκίαις τε καὶ ὀφιάσεσιν οὐ μικρὰ καὶ ἀπρεπὴς ἅμα βλάβη γίγνεται τῶν τριχῶν. ἔνιοι μὲν οὖν ὑπέσχοντο καθάπερ ταύτας, οὕτω καὶ τὰς ἀρχομένας φαλακρώσεις κωλύειν αὐξηθῆναι. εἰσὶ δ’ οἳ τοῦτο μὲν ἀδύνατον εἶναί φασιν, ἐπὶ δὲ τὴν τῶν ἀλωπεκιῶν τε καὶ ὀφιάσεων ἀφικόμενοι θεραπείαν ἔγραψαν φάρμακα δι’ ὧν ἐπαγγέλλονται τελέως αὐτὰς ἰάσασθαι.",
+      "eng": "The ailments of hair are these: total loss; change of color, as happens in the condition called leukē, \"the white disease\"; and besides these, in alopecia (\"fox-mange\") and ophiasis (\"snake-baldness\") the hair suffers harm that is serious and unsightly at once. Now, some men have promised to cure these — and, likewise, to stop a beginning baldness from advancing. Others say that this last is impossible; but coming to the treatment of alopecia and ophiasis, they have written up drugs by which they profess to cure them completely.",
+      "rationale": "οὐ μικρὰ καὶ ἀπρεπὴς ἅμα βλάβη: litotes (“not small”) plus ἀπρεπής (“unseemly”) joined by ἅμα (“at the same time”). Weighed “disfiguring,” which is stronger than ἀπρεπής warrants. Kept the double predicate and the ἅμα in “serious and unsightly at once” — Galen is making a two-count charge: medical harm and social harm.",
+      "refs": [
+        "Kühn, Claudii Galeni Opera Omnia XII 380, via First1KGreek.",
+        "Kühn's facing Latin, Wellcome Library scan of volume XII."
+      ],
+      "notes": ""
+    },
+    {
+      "kuhn": "12.380–12.381",
+      "grc": "καὶ δὴ καὶ χρώμενοι τοῖς γεγραμμένοις ὑπ’ αὐτῶν φαρμάκοις οἱ πολλοὶ τῶν ἰατρῶν οὐ μόνον ἀποτυγχάνουσιν ἐνίοτε μεγάλως, ἀλλὰ καὶ βλάπτουσιν ἰσχυρῶς, ὡς ἀνίατον ἐργάζεσθαι τὴν διάθεσιν, ὅπερ αὐτοῖς συμβαίνει καὶ κατ’ ἄλλα φάρμακα πολλὰ, χωρὶς μεθόδου χρωμένοις. ἐγὼ δ’ ὅπερ Ἱπποκράτης ἐκέλευσεν, ἀεὶ πεπείραμαι πράττειν ἐπὶ τῶν τῆς τέχνης ἔργων, ὡς τὸ προσφερόμενον βοήθημα, καθάπερ ἐκεῖνος ἔγραψεν, ὠφελέειν ἢ μὴ βλάπτειν. ὅτι δ’ ἡ χωρὶς μεθόδου τῶν φαρμάκων χρῆσις οὐ μόνον οὐδὲν ὀνίνησιν, ἀλλὰ καὶ βλάπτει πολλάκις, ἔνεστί σοι μαθεῖν ἐντεῦθεν· ἤδη γὰρ αὐτοῦ τοῦ προκειμένου καιρὸς ἄρξασθαι.",
+      "eng": "And in fact most doctors, using the drugs these men have written down, not only fail — sometimes spectacularly — but do such violent harm that they render the condition incurable; which is just what happens to them with many other drugs too, when they use them without method. As for me, I have always tried, in the works of the art, to do what Hippocrates commanded: that the remedy applied should, as he wrote, help — or do no harm. And that using drugs without method not only does no good but often does harm, you will be able to learn from what follows. For now it is time to begin the task before us.",
+      "rationale": "The infinitive ὠφελέειν is Ionic dialect, not Galen's Attic — he is quoting his source verbatim, which pins the reference to Epidemics I (the maxim is not in the Oath, despite its reputation). Set off with an em-dash and italics to mark quoted cadence. καθάπερ ἐκεῖνος ἔγραψεν (“as he wrote”) confirms Galen is citing, not paraphrasing.",
+      "refs": [
+        "Kühn, Claudii Galeni Opera Omnia XII 380–12.381, via First1KGreek.",
+        "Kühn's facing Latin, Wellcome Library scan of volume XII."
+      ],
+      "notes": ""
+    }
+  ]
+}
