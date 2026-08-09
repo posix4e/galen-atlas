@@ -57,6 +57,9 @@ header.site nav { display: flex; flex-wrap: wrap; gap: 1.1rem; font-size: 0.95re
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
 header.site nav a { color: var(--muted); text-decoration: none; }
 header.site nav a:hover, header.site nav a.here { color: var(--accent); }
+a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible {
+  outline: 3px solid var(--accent); outline-offset: 3px;
+}
 main { max-width: 46rem; margin: 0 auto; padding: 2.2rem 1.2rem 4rem; }
 main.wide { max-width: 72rem; }
 h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 0.6rem; }
@@ -92,6 +95,8 @@ p.lead { font-size: 1.18rem; color: var(--muted); margin-top: 0; }
 .controls button.on { background: var(--accent); border-color: var(--accent); color: var(--bg); }
 .tablewrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; }
 table { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 0.95rem; }
+caption { text-align: left; padding: 0.7rem 0.9rem; color: var(--muted); background: var(--bg2);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 0.85rem; }
 th { text-align: left; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted);
   padding: 0.7rem 0.9rem; border-bottom: 1px solid var(--border); background: var(--bg2); }
@@ -111,6 +116,9 @@ td .ref { color: var(--muted); font-size: 0.82rem; display: block; margin-top: 0
 footer.site { border-top: 1px solid var(--border); margin-top: 3rem; padding: 1.4rem 1.2rem 2.4rem;
   color: var(--muted); font-size: 0.85rem; max-width: 46rem; margin-left: auto; margin-right: auto; }
 .notice { border-left: 3px solid var(--accent); padding: 0.2rem 0 0.2rem 1rem; color: var(--muted); margin: 1.6rem 0; }
+.medical-warning { background: var(--warn-soft); border-color: var(--warn); color: var(--text); padding: 0.65rem 1rem; }
+.medical-warning p { margin: 0; }
+.error { color: var(--none); }
 .feature { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 1.4rem 1.6rem; margin: 2rem 0; }
 .feature-kicker { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin: 0 0 0.2rem; }
@@ -123,3 +131,17 @@ details.trace div { border-left: 3px solid var(--border); padding: 0.3rem 0 0.3r
   margin-top: 0.4rem; white-space: pre-wrap; }
 .eng .todo { color: var(--muted); font-style: italic; }
 .seg-note { font-size: 0.88rem; color: var(--muted); margin-top: 0.4rem; }
+.witnesses { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem 1.6rem; margin: 1.6rem 0; }
+@media (max-width: 720px) { .witnesses { grid-template-columns: 1fr; } }
+.wit { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; }
+.wit h3 { margin: 0 0 0.2rem; font-size: 1rem; }
+.wit .prov, .prov { font-size: 0.8rem; color: var(--muted);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin-bottom: 0.7rem; }
+.grc, .ara { font-size: 1.12rem; line-height: 1.8; }
+.ara { direction: rtl; text-align: right; font-family: 'Geeza Pro', 'Noto Naskh Arabic', 'Times New Roman', serif; }
+.translit { font-size: 0.9rem; color: var(--muted); font-style: italic; margin-top: 0.5rem; line-height: 1.6; }
+.verdict { background: var(--accent-soft); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 1rem 1.2rem; margin: 1.8rem 0; }
+.translation-label { margin-bottom: 0.3rem; }
+.eng-final { font-size: 1.25rem; line-height: 1.7; margin: 0.4rem 0; }
+.crux { background: var(--good-soft); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin: 1.4rem 0; }
+.crux b { color: var(--good); }

@@ -1,53 +1,60 @@
-name: deploy
+name: ci
 on:
   push:
     branches: [main]
   pull_request:
 
+concurrency:
+  group: pergamap-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+      - name: Validate data and sources
+        run: python3 tools/validate.py
+      - name: Run unit tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Check static site
+        run: python3 tools/check_site.py
+
   deploy:
+    needs: validate
     runs-on: ubuntu-latest
     permissions:
       contents: read
       pull-requests: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Validate
-        run: python3 tools/validate.py
-
-      # Deploys need the CLOUDFLARE_API_TOKEN repo secret (Account → Cloudflare
-      # Pages → Edit). Fork PRs don't receive secrets, so they get validation
-      # only — previews run for same-repo branches.
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - name: Check deploy credentials
         id: creds
         env:
           CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        run: echo "have=$([ -n "$CF_TOKEN" ] && echo yes || echo no)" >> "$GITHUB_OUTPUT"
-
-      - name: Build dist
+        run: echo "have=$([ -n \"$CF_TOKEN\" ] && echo yes || echo no)" >> "$GITHUB_OUTPUT"
+      - name: Build deployment directory
         if: steps.creds.outputs.have == 'yes'
         run: |
-          mkdir -p /tmp/dist
-          rsync -a --exclude '.git' --exclude '.github' --exclude '.cache' ./ /tmp/dist/
-
+          mkdir -p /tmp/pergamap-dist
+          rsync -a --exclude '.git' --exclude '.github' --exclude '.cache' --exclude '__pycache__' ./ /tmp/pergamap-dist/
       - name: Deploy to Cloudflare Pages
         if: steps.creds.outputs.have == 'yes'
         id: deploy
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@9acf94ace14e7dc412b076f2c5c20b8ce93c79cd # v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 7d2737c32f76407d6a6b1c0381f7e91c
           command: >-
-            pages deploy /tmp/dist --project-name=pergamap
+            pages deploy /tmp/pergamap-dist --project-name=pergamap
             --branch=${{ github.event_name == 'push' && 'main' || format('pr-{0}', github.event.pull_request.number) }}
             --commit-hash=${{ github.sha }}
-
       - name: Comment preview URL on PR
         if: github.event_name == 'pull_request' && steps.creds.outputs.have == 'yes'
-        uses: actions/github-script@v7
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
         with:
           script: |
             const url = `${{ steps.deploy.outputs.deployment-url }}`;
@@ -55,9 +62,9 @@ jobs:
             const body = `${marker}\n**Preview deployed:** ${url}\n\n(Every push to this PR updates it.)`;
             const { data: comments } = await github.rest.issues.listComments({
               ...context.repo, issue_number: context.issue.number });
-            const prev = comments.find(c => c.body.includes(marker));
-            if (prev) {
-              await github.rest.issues.updateComment({ ...context.repo, comment_id: prev.id, body });
+            const previous = comments.find(comment => comment.body.includes(marker));
+            if (previous) {
+              await github.rest.issues.updateComment({ ...context.repo, comment_id: previous.id, body });
             } else {
               await github.rest.issues.createComment({ ...context.repo, issue_number: context.issue.number, body });
             }

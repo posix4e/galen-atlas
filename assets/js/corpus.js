@@ -1,0 +1,115 @@
+"use strict";
+
+const CHIP = { none: "no English", full: "translated", partial: "partial", unknown: "unknown" };
+const LANGUAGE = { greek: "Greek", arabic: "Arabic", latin: "Latin" };
+const CONFIDENCE = { checked: "", recalled: "unverified", unknown: "needs research" };
+let works = [];
+let activeFilter = "all";
+let query = "";
+
+const body = document.querySelector("#t tbody");
+const count = document.getElementById("count");
+const search = document.getElementById("q");
+const buttons = [...document.querySelectorAll(".controls button")];
+
+function node(tag, className, text) {
+  const result = document.createElement(tag);
+  if (className) result.className = className;
+  if (text !== undefined) result.textContent = text;
+  return result;
+}
+
+function safeUrl(value) {
+  try {
+    const parsed = new URL(value, document.baseURI);
+    return parsed.origin === location.origin || parsed.protocol === "https:" ? parsed.href : null;
+  } catch {
+    return null;
+  }
+}
+
+function addRow(work) {
+  const row = document.createElement("tr");
+  const titleCell = row.appendChild(document.createElement("td"));
+  titleCell.appendChild(node("strong", "", work.titles.english || work.titles.latin));
+  if (work.titles.english) {
+    titleCell.appendChild(document.createElement("br"));
+    titleCell.appendChild(node("span", "lat", work.titles.latin));
+  }
+  if (work.notes) titleCell.appendChild(node("span", "ref", work.notes));
+  row.appendChild(node("td", "", work.kuhn || "—"));
+
+  const languages = (work.survival.languages || []).map((language) => LANGUAGE[language] || language);
+  const survival = languages.length ? languages.join(", ") : work.survival.extent;
+  row.appendChild(node("td", "", survival || "unknown"));
+
+  const englishCell = row.appendChild(document.createElement("td"));
+  englishCell.appendChild(node("span", `chip ${work.english.status}`, CHIP[work.english.status] || work.english.status));
+  const confidence = CONFIDENCE[work.english.verification.status];
+  if (confidence) englishCell.appendChild(node("span", "conf", ` · ${confidence}`));
+  work.english.citations.forEach((citation) => {
+    const reference = node("span", "ref");
+    const url = citation.url && safeUrl(citation.url);
+    if (url) {
+      const link = node("a", "", citation.label);
+      link.href = url;
+      reference.appendChild(link);
+    } else {
+      reference.textContent = citation.label;
+    }
+    englishCell.appendChild(reference);
+  });
+
+  const textCell = row.appendChild(document.createElement("td"));
+  const digital = work.digital_texts.find((item) => safeUrl(item.url));
+  if (digital) {
+    const link = node("a", "", digital.language === "greek" ? "Greek" : "Text");
+    link.href = safeUrl(digital.url);
+    textCell.appendChild(link);
+  } else {
+    textCell.textContent = "—";
+  }
+  body.appendChild(row);
+}
+
+function apply() {
+  const normalized = query.toLocaleLowerCase();
+  const shown = works.filter((work) => {
+    if (activeFilter === "arabic" && !work.survival.languages.some((value) => ["arabic", "latin"].includes(value)) && work.survival.extent !== "fragments") return false;
+    if (["none", "partial", "full", "unknown"].includes(activeFilter) && work.english.status !== activeFilter) return false;
+    const haystack = `${work.titles.latin || ""} ${work.titles.english || ""}`.toLocaleLowerCase();
+    return !normalized || haystack.includes(normalized);
+  });
+  body.replaceChildren();
+  shown.forEach(addRow);
+  count.textContent = `${shown.length} of ${works.length} works shown.`;
+}
+
+fetch("data/works.json")
+  .then((response) => {
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    return response.json();
+  })
+  .then((documentData) => {
+    if (documentData.schema_version !== 2 || !Array.isArray(documentData.works)) throw new Error("Unsupported catalogue schema");
+    works = [...documentData.works].sort((a, b) => (a.titles.english || a.titles.latin).localeCompare(b.titles.english || b.titles.latin));
+    apply();
+  })
+  .catch(() => {
+    count.textContent = "The catalogue could not be loaded. The raw JSON remains available on GitHub.";
+    count.classList.add("error");
+  });
+
+search.addEventListener("input", (event) => {
+  query = event.target.value;
+  apply();
+});
+buttons.forEach((button) => button.addEventListener("click", () => {
+  buttons.forEach((candidate) => {
+    const selected = candidate === button;
+    candidate.classList.toggle("on", selected);
+    candidate.setAttribute("aria-pressed", String(selected));
+  });
+  activeFilter = button.dataset.f;
+  apply();
+}));
