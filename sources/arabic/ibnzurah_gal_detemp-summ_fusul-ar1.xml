@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title xml:lang="ar">Fuṣūl ǧawāmiʿ kitāb al-mizāǧ li-Ǧālīnūs</title>
+				<author>Ibn Zurʿah</author>
+				<funder>The Wellcome Trust</funder>
+				<principal>
+					<name>Simon Swain</name>
+					<name>Uwe Vagelpohl</name>
+				</principal>
+			</titleStmt>
+			<respStmt xml:id="Vagelpohl">
+				<resp>transcription, correction, normalisation, XML tagging</resp>
+				<name>Uwe Vagelpohl</name>
+			</respStmt>
+			<publicationStmt>
+				<distributor>A Digital Corpus for Graeco-Arabic Studies (DCGAS)</distributor>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">available under a Creative Commons Attribution-ShareAlike 4.0 International license</licence>
+				</availability>
+				<date>2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<listWit>
+					<witness xml:id="T">
+						<abbr type="siglum">T</abbr>
+						<settlement>Teheran</settlement>
+						<repository>Maǧlis</repository>
+						<idno type="shelfmark">6037</idno>
+						<msItem n="5">
+							<locus unit="folio" from="96v" to="99r">fol. 96v–99r</locus>
+						</msItem>
+						<handNote xml:id="T1">annotator of T, same hand</handNote>
+					</witness>
+				</listWit>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<samplingDecl>
+				<p>Text transcribed from one manuscript. Fuṣūl numbering added.</p>
+			</samplingDecl>
+			<editorialDecl>
+				<correction status="high">
+					<p>Transcript proofread and corrected.</p>
+				</correction>
+				<normalization>
+					<p>Orthography normalised.</p>
+				</normalization>
+				<punctuation>
+					<p>Punctuation added.</p>
+				</punctuation>
+			</editorialDecl>
+			<refsDecl n="text=1" doctype="TEI">
+				<state unit="text"/>
+				<state unit="book"/>
+				<state unit="aphorism" n="chunk"/>
+			</refsDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language xml:id="ar">Arabic</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="ar" xml:id="ibnzurah.gal.detemp-summ.fusul-ar1">
+		<body>
+			<pb unit="folio" edRef="#T" n="96v"/>
+			<div1 type="book" n="1">
+				<head>
+					فصول جوامع المقالة الأولی من كتاب المزاج لجالينوس وهي هذه:
+				</head>
+				<cb n="1">
+					<div2 type="aphorism" n="1">
+						(١) في ذكر أقسام المزاج الجنية (؟) والنوعيّة
+					</div2>
+					<div2 type="aphorism" n="2">
+						(٢) في أنّ مقادير الأسطقسّات ليس
+						<anchor xml:id="appcrit1begin"/>
+						بمساوٍ
+						<anchor xml:id="appcrit1end"/>
+						في المركّبات عنها
+					</div2>
+				</cb>
+				<cb n="2">
+					<div2 type="aphorism" n="3">
+						(٣) في قسمة المزاج بحسب الاعتدال والانحراف عنه
+					</div2>
+					<div2 type="aphorism" n="4">
+						(٤) في صفه الإنسان المعتدل المزاج إمّا في جملته أو في أعضائه
+					</div2>
+				</cb>
+				<pb unit="folio" edRef="#T" n="97r"/>
+				<cb n="1">
+					<div2 type="aphorism" n="5">
+						(٥) في تفصيل ما يقال عليه الحارّ والبارد
+					</div2>
+					<div2 type="aphorism" n="6">
+						(٦) في ذكر ما كان للقدماء من الآراء في المزاج
+					</div2>
+					<div2 type="aphorism" n="7">
+						(٧) في تفصيل الأقاويل الثلثة في الأمزجة وتصديق المحقّ منها وإبطال المبطل
+					</div2>
+					<div2 type="aphorism" n="8">
+						(٨) في حجّة الذين اعتقدوا بأنّ الأمزجة أربعة
+					</div2>
+					<div2 type="aphorism" n="9">
+						(٩) فيما احتجّ به القائلون بأنّ الأمزجة اثنان
+					</div2>
+					<div2 type="aphorism" n="10">
+						(١٠) فيما ردّ به القائلون بأنّ الأمزجة أربعة علی من قال بأنّها اثنان
+					</div2>
+					<div2 type="aphorism" n="11">
+						(١١) في تصفّح حجج القائلين بأنّ الأمزجة أربعة
+					</div2>
+					<div2 type="aphorism" n="12">
+						(١٢) فيما يحدث من تركيب هذا آلت (؟) من الكيفيّات
+					</div2>
+					<div2 type="aphorism" n="13">
+						(١٣) في احتجاج
+						<anchor xml:id="appcrit2begin"/>
+						أثيناوس
+						<anchor xml:id="appcrit2end"/>
+						بأنّ فصل الربيع هو حارّ رطب
+					</div2>
+					<div2 type="aphorism" n="14">
+						(١٤) في مناقضات جالينوس لحجج
+						<anchor xml:id="appcrit3begin"/>
+						أثيناوس
+						<anchor xml:id="appcrit3end"/>
+						في أنّ الربيع حارّ رطب
+					</div2>
+					<div2 type="aphorism" n="15">
+						(١٥) في أنّ المزاج الحارّ الرطب ليس بمعتدل ولا (؟) ليس بجالب للأمراض بل هو غير معتدل وجالب للأمراض
+					</div2>
+					<div2 type="aphorism" n="16">
+						(١٦) في تفصيل ما يدلّ عليه اسم الحارّ
+					</div2>
+					<div2 type="aphorism" n="17">
+						(١٧) في أنّ المزاج يقال علی نحوين
+					</div2>
+					<div2 type="aphorism" n="18">
+						(١٨) في السبب الذي من أجله يقال في كلّ حيوان إنّه حارّ رطب
+					</div2>
+				</cb>
+				<cb n="2">
+					<div2 type="aphorism" n="19">
+						(١٩) فيما يقال إنّه حارّ علی جهة المقايسة في صفة المعتدل المزاج
+					</div2>
+					<div2 type="aphorism" n="20">
+						(٢٠) في أنّ ما يقال في الحارّ ينبغي أن يقال مثله في البارد واليابس والرطب
+					</div2>
+					<div2 type="aphorism" n="21">
+						(٢١) في أنّه قد يقال في شخص معيّن إنّه حارّ علی نحو ما
+					</div2>
+					<div2 type="aphorism" n="22">
+						(٢٢) في أنّ الكيفيّات الموجودة في الأجسام إمّا أن تكون خالصة أو مشوبة
+					</div2>
+					<div2 type="aphorism" n="23">
+						(٢٣) النتيجة فيما تقرّر عنده من أمر الأمزجة
+					</div2>
+					<div2 type="aphorism" n="24">
+						(٢٤) في قسمة الأمزجة المختلفة في النوع وأنّها تسعة وأنّ منها ما يختلف بحسب الزيادة والنقصان وهي غير متناهية
+					</div2>
+					<div2 type="aphorism" n="25">
+						(٢٥) في أنّ الكلام في المزاج المعتدل يتقدّم باقي الكلام في الأمزجة وأنّ ذلك علی ثلثة أنحاء
+					</div2>
+					<div2 type="aphorism" n="26">
+						(٢٦) في صفة المزاج المعتدل
+					</div2>
+					<div2 type="aphorism" n="27">
+						(٢٧) في أنّ الاعتدال في المزاج موجود للإنسان
+						<anchor xml:id="appcrit4begin"/>
+						وحده
+						<anchor xml:id="appcrit4end"/>
+						من سائر الحيوان
+					</div2>
+					<div2 type="aphorism" n="28">
+						(٢٨) في أنّ جلدة الراحة أعدل مزاجاً من جميع الأشياء الحسّاسة
+					</div2>
+					<div2 type="aphorism" n="29">
+						(٢٩) في تعادل الكيفيّات الموجودة في جلدة الراحة وأنّ الاستدلال علی ذلك قد يتعرّف بالقياس والحسّ
+					</div2>
+				</cb>
+				<pb unit="folio" edRef="#T" n="97v"/>
+				<cb n="1">
+					<div2 type="aphorism" n="30">
+						(٣٠) في الطريق التي بها يعقل (؟) المزاج المعتدل
+					</div2>
+					<div2 type="aphorism" n="31">
+						(٣١) في أنّ طبيعة الشيء متولّدة عن المزاج وأنّ فعل الطبيعة في الممتزج ينفذ فيه ويسري في سائره والصناعة تلقاه من خارج وتفعل في ظاهره
+					</div2>
+					<div2 type="aphorism" n="32">
+						(٣٢) في أنّ الاعتدال في الأعضاء الآليّة تابع للاعتدال في المتشابهة الأجزاء
+					</div2>
+					<div2 type="aphorism" n="33">
+						(٣٣) في أنّ الأشياء المؤثّرة في المزاج شيئان
+					</div2>
+					<div2 type="aphorism" n="34">
+						(٣٤) في أنّ الآراء التي كانت في أمر القوی رأيان
+					</div2>
+					<div2 type="aphorism" n="35">
+						(٣٥) في أنّ الكيفيّات الأربع إمّا أن يكون وجودها بالقوّة أو بالفعل
+					</div2>
+					<div2 type="aphorism" n="36">
+						(٣٦) في تمييز حظوظ الأعضاء من الحرارة بحسب اللمس
+					</div2>
+					<div2 type="aphorism" n="37">
+						(٣٧) في تمييز مقادير حال الأعضاء في البرد بتوسّط جلدة الكفّ
+					</div2>
+				</cb>
+				<cb n="2">
+					<div2 type="aphorism" n="38">
+						(٣٨) في أنّ الأعضاء الكثيرة المشاركة للدم أسخن جدّاً
+					</div2>
+					<div2 type="aphorism" n="39">
+						(٣٩) في اختبار حال الشيء الرطب بحسب جلدة الراحة
+					</div2>
+					<div2 type="aphorism" n="40">
+						(٤٠) في اختبار الأيبس بحسب جلدة الراحة
+					</div2>
+					<div2 type="aphorism" n="41">
+						(٤١) في اختبار مقادير ما في البدن من الأعضاء الحارّة والباردة والمتوسّطة بينهما وتعديل كلّ صنف منها
+					</div2>
+					<div2 type="aphorism" n="42">
+						(٤٢) في تعديد الأعضاء الرطبة والتي يغلب عليها اليبس والمتوسّطة في الإنسان
+					</div2>
+					<div2 type="aphorism" n="43">
+						(٤٣) في السبب الفاعل والمادّيّ للسمين
+					</div2>
+					<div2 type="aphorism" n="44">
+						(٤٤) في ذكر أحوال ما يجمد وعمّاذا ينحلّ
+					</div2>
+					<div2 type="aphorism" n="45">
+						(٤٥) في أقسام العصب
+					</div2>
+					<div2 type="aphorism" n="46">
+						(٤٦) في أنّ السمين والشحم دون باقي الأعضاء انعقادهما بالبرد
+					</div2>
+				</cb>
+				<p>
+					تمّت فصول جوامع المقالة الأولی من كتاب المزاج لجالينوس وهي ثمانية وأربعون فصلاً.
+				</p>
+			</div1>
+			<div1 type="book" n="2">
+				<head>
+					فصول جوامع المقالة الثانية من المزاج وهي
+				</head>
+				<cb n="1">
+					<div2 type="aphorism" n="1">
+						(١) في الاستدلال علی اعتدال البدن من الأحوال البدنيّة والنفسانيّة والطبيعيّة
+					</div2>
+					<div2 type="aphorism" n="2">
+						(٢) في ذكر أحوال الأبدان بحسب اختلاف الأسنان
+					</div2>
+				</cb>
+				<cb n="2">
+					<div2 type="aphorism" n="3">
+						(٣) في أنّ الشيوخ أيبس بالطبع وأرطب بالعرض
+					</div2>
+					<div2 type="aphorism" n="4">
+						(٤) في تفصيل أحوال الأسنان في قوّة الحرارة وضعفها
+					</div2>
+				</cb>
+				<pb unit="folio" edRef="#T" n="98r"/>
+				<cb n="1">
+					<div2 type="aphorism" n="5">
+						(٥) فيما احتجّ به القائلون بأنّ الصبيان
+						<anchor xml:id="appcrit5begin"/>
+						أحرّ
+						<anchor xml:id="appcrit5end"/>
+						مزاجاً من الشبّان
+					</div2>
+					<div2 type="aphorism" n="6">
+						(٦) في ٮصره (؟) من يری أنّ الشباب أقوی حرارة من مزاج الصبيان وذكر حججهم
+					</div2>
+					<div2 type="aphorism" n="7">
+						(٧) فيما ردّ به جالينوس علی كلّ الرأيين
+					</div2>
+					<div2 type="aphorism" n="8">
+						(٨) في أنّ الأشياء التي بها يتمّ كوننا وهي حارّة ثلثة
+					</div2>
+					<div2 type="aphorism" n="9">
+						(٩) في ذكر ما يغلب من الأسطقسّات علی كلّ واحد من أمزجة الأسنان
+					</div2>
+					<div2 type="aphorism" n="10">
+						(١٠) في أنّ الصبيّ إذا قيس بالإنسان المطلق وإذا قيست
+						<anchor xml:id="appcrit6begin"/>
+						أجزاؤه
+						<anchor xml:id="appcrit6end"/>
+						بعضها ببعض قيل فيه إنّه معتدل
+					</div2>
+					<div2 type="aphorism" n="11">
+						(١١) في أنّ الشبّان مسبون (؟) إلی الاعتدال في كلتي المتضادّتين في الكيفيّات الأربع
+					</div2>
+					<div2 type="aphorism" n="12">
+						(١٢) في تفصيل أحوال وجود الكيفيّات الأربع
+					</div2>
+					<div2 type="aphorism" n="13">
+						(١٣) في الاستدلال علی مزاج جملة البدن من خمسة أشياء
+					</div2>
+					<div2 type="aphorism" n="14">
+						(١٤) في الاستدلال علی مزاج كلّ واحد من الأعضاء
+					</div2>
+					<div2 type="aphorism" n="15">
+						(١٥) في أنّ سمن البدن تابع
+						<anchor xml:id="appcrit7begin"/>
+						إمّا
+						<anchor xml:id="appcrit7end"/>
+						للمزاج الطبيعيّ وإمّا للمزاج المكتسب
+					</div2>
+					<div2 type="aphorism" n="16">
+						(١٦) في ذكر أسباب الشحم الهيولانيّة والفاعلة
+					</div2>
+					<div2 type="aphorism" n="17">
+						(١٧) في ذكر أحوال الأبدان النحيفة والجسميّة (؟) وأمزجتها
+					</div2>
+				</cb>
+				<cb n="2">
+					<div2 type="aphorism" n="18">
+						(١٨) في ذكر أسباب الشعر الأربعة أعني المادّيّ والفاعل والآليّ والذاتيّ(؟)
+					</div2>
+					<div2 type="aphorism" n="19">
+						(١٩) في أسباب قلّة الشحم
+					</div2>
+					<div2 type="aphorism" n="20">
+						(٢٠) في الاستدلال علی كثرة الدم وقلّته في البدن
+					</div2>
+					<div2 type="aphorism" n="21">
+						(٢١) في ذكر أحوال الدم إذا غلبت عليه الدهانة والدسومة
+					</div2>
+					<div2 type="aphorism" n="22">
+						(٢٢) في ذكر اختلاف أصناف من غلظ بدنه
+					</div2>
+					<div2 type="aphorism" n="23">
+						(٢٣) فيما تدلّ عليه زيادة اللحم والشحم ونقصانهما في البدن
+					</div2>
+					<div2 type="aphorism" n="24">
+						(٢٤) في قسمة أصناف ما يتحلّل من البدن وأحوال البدن بحسبها
+					</div2>
+					<div2 type="aphorism" n="25">
+						(٢٥) في الأسباب المقوّمة لتولّد الشعر في البدن
+					</div2>
+					<div2 type="aphorism" n="26">
+						(٢٦) في ذكر أمزجة الأبدان بحسب أحوال الشعر فيها
+					</div2>
+					<div2 type="aphorism" n="27">
+						(٢٧) في الاستدلال من الشعر علی مزاج البدن
+					</div2>
+					<div2 type="aphorism" n="28">
+						(٢٨) في أسباب جعودة الشعر
+					</div2>
+					<div2 type="aphorism" n="29">
+						(٢٩) ذكر أسباب اختلاف ألوان الشعر
+					</div2>
+					<div2 type="aphorism" n="30">
+						(٣٠) الأسباب في اختلاف دقّة الشعر وغلظه
+					</div2>
+					<div2 type="aphorism" n="31">
+						(٣١) الأسباب في اختلاف الشعر بحسب اختلاف البلدان والأمم
+					</div2>
+					<div2 type="aphorism" n="32">
+						(٣٢) الأسباب في اختلاف الشعر بحسب الأسنان
+					</div2>
+					<div2 type="aphorism" n="33">
+						(٣٣) في علّة تولّد الشعر في الرأس
+					</div2>
+				</cb>
+				<pb unit="folio" edRef="#T" n="98v"/>
+				<cb n="1">
+					<div2 type="aphorism" n="34">
+						(٣٤) ذكر الحال التي يوجبها تساوي المزاج ولا تساويه
+					</div2>
+					<div2 type="aphorism" n="35">
+						(٣٥) فيما يوجبه تساوي المزاج للأعضاء والأجزاء وما يوجبه اختلافها
+					</div2>
+					<div2 type="aphorism" n="36">
+						(٣٦) في الاستدلال المأخوذ من سعة الصدر وضيقه
+					</div2>
+					<div2 type="aphorism" n="37">
+						(٣٧) في الاستدلال بحال ظاهر البدن علی الأمزجة بحسب طبائع البلدان
+					</div2>
+					<div2 type="aphorism" n="38">
+						(٣٨) في أنّ الحرارة تقال علی ضربين طبيعيّة وعرضيّة
+					</div2>
+					<div2 type="aphorism" n="39">
+						(٣٩) في أحوال الأبدان بحسب أمزجة البلدان والأوقات
+					</div2>
+					<div2 type="aphorism" n="40">
+						(٤٠) في حال الحرارة في الأشياء المتعفّنة
+					</div2>
+					<div2 type="aphorism" n="41">
+						(٤١) في الاستدلال علی مزاج جملة البدن وعلی مزاج كلّ واحد من الأعضاء
+					</div2>
+					<div2 type="aphorism" n="42">
+						(٤٢) في ذكر منافذ المرارة والمواضع التي تنصبّ إليها والمنافع في ذلك والمضارّ
+					</div2>
+					<div2 type="aphorism" n="43">
+						(٤٣) في التفرقة بين أحوال من يعرض له فساد الطعام لمزاج المعدة أو لمرار ينصبّ إليها
+					</div2>
+				</cb>
+				<cb n="2">
+					<div2 type="aphorism" n="44">
+						(٤٤) في المناسبة بين أحوال الأغذية والمعدة
+					</div2>
+					<div2 type="aphorism" n="45">
+						(٤٥) في أنّ فساد الطعام في المعدة يكون علی نحوين
+					</div2>
+					<div2 type="aphorism" n="46">
+						(٤٦) في أنّ ما يتولّد في البدن من الفضول يدلّ علی مزاج البدن وليس مزاج البدن دالّاً علی ما يتولّد في البدن من الفضول
+					</div2>
+					<div2 type="aphorism" n="47">
+						(٤٧) في أنّه ليس يجب أن يجعل الاستدلال علی مزاج جملة البدن من حال خلقة بعض أعضائه
+					</div2>
+					<div2 type="aphorism" n="48">
+						(٤٨) في أنّ الآراء في القوّة المخلفة (؟) رأيان
+					</div2>
+					<div2 type="aphorism" n="49">
+						(٤٩) في الأسباب التي عنها يكون البدن بارداً يابساً
+					</div2>
+					<div2 type="aphorism" n="50">
+						(٥٠) في الاستدلال علی المزاج السوداويّ بحسب حال الشعر
+					</div2>
+					<div2 type="aphorism" n="51">
+						(٥١) في أنّ ما يدلّ علی الشيء يكون علی نحوين إمّا بالذات أو بطريق العرض
+					</div2>
+					<div2 type="aphorism" n="52">
+						(٥٢) في أنّ ما يفعل الشيء يكون فعله إمّا بالذات أو بطريق العرض
+					</div2>
+				</cb>
+				<p>
+					تمّت فصول جوامع المقالة الثانية من كتاب المزاج لجالينوس وهي ثلثة وخمسون فصلاً.
+				</p>
+			</div1>
+			<div1 type="book" n="3">
+				<head>
+					فصول جوامع المقالة الثالثة من كتاب المزاج لجالينوس وهي
+				</head>
+				<cb n="1">
+					<div2 type="aphorism" n="1">
+						(١) في الأنحاء التي يوقع عليها اسم الحارّ
+					</div2>
+					<div2 type="aphorism" n="2">
+						(٢) في الأنحاء التي يقال عليها ما بالقوّة
+					</div2>
+				</cb>
+				<cb n="2">
+					<div2 type="aphorism" n="3">
+						(٣) في أنّ ما بالقوّة ٮٯاٮل (؟) شيئان أحدهما ذاتيّ والآخر عرضيّ
+					</div2>
+				</cb>
+				<pb unit="folio" edRef="#T" n="99r"/>
+				<cb n="1">
+					<div2 type="aphorism" n="4">
+						(٤) في الأنحاء التي يقال عليها في الشيء إنّه مسخن لنا
+					</div2>
+					<div2 type="aphorism" n="5">
+						(٥) في اختلاف أصناف الأشياء التي تورد علی البدن وتأثيره فيها وتأثّره عنها
+					</div2>
+					<div2 type="aphorism" n="6">
+						(٦) قسمة لذلك أيضاً علی جهة أخری
+					</div2>
+					<div2 type="aphorism" n="7">
+						(٧) في أنّ أجناس الأدوية أربعة
+					</div2>
+					<div2 type="aphorism" n="8">
+						(٨) في قسمة الحارّ والبارد والأنحاء التي يقال عليها
+					</div2>
+					<div2 type="aphorism" n="9">
+						(٩) في قسمة ما يسخن أو يبرّد بالقوّة
+					</div2>
+					<div2 type="aphorism" n="10">
+						(١٠) في ذكر القانون في الانتفاع والاستضرار بكلّ ما يتناول
+					</div2>
+					<div2 type="aphorism" n="11">
+						(١١) في أنّ كلّ ما يفعل يحتاج إلی أن يكون فاعلاً إلی ثلثة أشياء
+					</div2>
+					<div2 type="aphorism" n="12">
+						(١٢) في قسمة أحوال الغذاء واعتداله ولا اعتداله في الكمّيّة والكيفيّة
+					</div2>
+					<div2 type="aphorism" n="13">
+						(١٣) في قسمة الأغذية بحسب سرعة استحالتها وتزيّدها في جوهر الحرارة
+					</div2>
+					<div2 type="aphorism" n="14">
+						(١٤) في ذكر الأغذية بحسب سرعة تغيّرها
+						<anchor xml:id="appcrit8begin"/>
+						وبطئه
+						<anchor xml:id="appcrit8end"/>
+					</div2>
+					<div2 type="aphorism" n="15">
+						(١٥) في قسمة الأشربة بحسب ما يتناول منها بالمقدار المعتدل وغير المعتدل
+					</div2>
+					<div2 type="aphorism" n="16">
+						(١٦) في قسمة الأشربة بحسب فعلها الإسخان من داخل ومن خارج
+					</div2>
+				</cb>
+				<cb n="2">
+					<div2 type="aphorism" n="17">
+						(١٧) في ذكر أحوال الأجسام المتلاقية وفعلها وانفعالها بعضها عن بعض
+					</div2>
+					<div2 type="aphorism" n="18">
+						(١٨) في ذكر أحوال ما يرد علی البدن
+					</div2>
+					<div2 type="aphorism" n="19">
+						(١٩) في الأنحاء التي من أجلها يقال في البدن إنّه حارّ
+					</div2>
+					<div2 type="aphorism" n="20">
+						(٢٠) في تصنيف استحالة الأجسام بعضها إلی بعض وأنّ منها ما يكون بمتوسّط ومنها ما يكون بغير متوسّط
+					</div2>
+					<div2 type="aphorism" n="21">
+						(٢١) في تفصيل أحوال الأشياء الواردة علی البدن في الموافقة والمنافرة بجهة أخری
+					</div2>
+					<div2 type="aphorism" n="22">
+						(٢٢) في تقسيم الأدوية الحارّة بالقوّة
+					</div2>
+					<div2 type="aphorism" n="23">
+						(٢٣) في تقسيم الأشياء المسخنة بالذات والعرض
+					</div2>
+					<div2 type="aphorism" n="24">
+						(٢٤) في تقسيم الأشياء المبرّدة بالذات وبالعرض
+					</div2>
+					<div2 type="aphorism" n="25">
+						(٢٥) القانون في اختبار الدواء هل هو مسخن أو مبرّد
+					</div2>
+					<div2 type="aphorism" n="26">
+						(٢٦) في كيفيّة استعمال الأدوية بحسب القصد بالتبريد بها أو الإسخان
+					</div2>
+					<div2 type="aphorism" n="27">
+						(٢٧) في تقسيم الأشياء المسخنة بالذات أو بالعرض
+					</div2>
+					<div2 type="aphorism" n="28">
+						(٢٨) في أنّ الدواء يقال حارّاً أو بارداً علی نحوين
+					</div2>
+				</cb>
+				<p>
+					تمّت فصول جوامع المقالة الثالثة من كتاب المزاج وهي خمسة وعشرون فصلاً.
+				</p>
+			</div1>
+		</body>
+		<back>
+			<listApp>
+				<app from="#appcrit1begin" to="#appcrit1end">
+					<choice>
+						<corr type="correction" resp="#Vagelpohl">بمساوٍ</corr>
+						<sic wit="#T">ٮمساوي</sic>
+					</choice>
+				</app>
+				<app from="#appcrit2begin" to="#appcrit2end">
+					<choice>
+						<corr type="reading" resp="#Vagelpohl">أثيناوس</corr>
+						<sic wit="#T">اٮٮٮاوس</sic>
+					</choice>
+				</app>
+				<app from="#appcrit3begin" to="#appcrit3end">
+					<choice>
+						<corr type="correction" resp="#Vagelpohl">أثيناوس</corr>
+						<sic wit="#T">اٮٮٮاوس</sic>
+					</choice>
+				</app>
+				<app from="#appcrit4begin" to="#appcrit4end">
+					<add wit="#T" cause="dittography">من	</add>
+				</app>
+				<app from="#appcrit5begin" to="#appcrit5end">
+					<choice>
+						<corr type="correction" resp="#Vagelpohl">أحرّ</corr>
+						<sic wit="#T">احری</sic>
+					</choice>
+				</app>
+				<app from="#appcrit6begin" to="#appcrit6end">
+					<choice>
+						<corr type="correction" resp="#Vagelpohl">أجزاؤه</corr>
+						<sic wit="#T">اجرايه</sic>
+					</choice>
+				</app>
+				<app from="#appcrit7begin" to="#appcrit7end">
+					<lem wit="#T1" place="above">إمّا</lem>
+					<rdg wit="#T"/>
+				</app>
+				<app from="#appcrit8begin" to="#appcrit8end">
+					<choice>
+						<corr type="correction" resp="#Vagelpohl">وبطئه</corr>
+						<sic wit="#T">وبطوه</sic>
+					</choice>
+				</app>
+			</listApp>
+		</back>
+	</text>
+</TEI>

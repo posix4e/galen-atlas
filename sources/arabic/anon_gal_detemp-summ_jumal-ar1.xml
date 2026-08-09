@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title xml:lang="ar">Ǧumal mā fī l-maqālah al-ūlā min kitāb Ǧālīnūs fī l-mizāǧ</title>
+				<author>anon.</author>
+				<funder>The Wellcome Trust</funder>
+				<principal>
+					<name>Simon Swain</name>
+					<name>Uwe Vagelpohl</name>
+				</principal>
+			</titleStmt>
+			<respStmt xml:id="Vagelpohl">
+				<resp>transcription, correction, normalisation, XML tagging</resp>
+				<name>Uwe Vagelpohl</name>
+			</respStmt>
+			<publicationStmt>
+				<distributor>A Digital Corpus for Graeco-Arabic Studies (DCGAS)</distributor>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">available under a Creative Commons Attribution-ShareAlike 4.0 International license</licence>
+				</availability>
+				<date>2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<listWit>
+					<witness xml:id="A">
+						<abbr type="siglum">A</abbr>
+						<settlement>Istanbul</settlement>
+						<repository>Süleymaniye</repository>
+						<idno type="shelfmark">Ayasofya 3593</idno>
+						<msItem n="2">
+							<locus unit="folio" from="18r">fol. 18r</locus>
+						</msItem>
+						<handNote xml:id="A1">annotator of A, same hand</handNote>
+					</witness>
+					<witness xml:id="B">
+						<abbr type="siglum">B</abbr>
+						<settlement>Madrid</settlement>
+						<repository>Biblioteca Nacional</repository>
+						<idno type="shelfmark">5011</idno>
+						<msItem n="2.1">
+							<locus unit="folio" from="42v">fol. 42v in marg.</locus>
+						</msItem>
+					</witness>
+					<witness xml:id="E">
+						<abbr type="siglum">E</abbr>
+						<settlement>Madrid</settlement>
+						<repository>Escorial</repository>
+						<idno type="shelfmark">árabe 874</idno>
+						<msItem n="2">
+							<locus unit="folio" from="56v">fol. 56v</locus>
+						</msItem>
+						<handNote xml:id="E2">annotator of E, different hand</handNote>
+					</witness>
+				</listWit>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<samplingDecl>
+				<p>Text collated from three manuscript. Paragraphing added. Ǧumlah numbering added.</p>
+			</samplingDecl>
+			<editorialDecl>
+				<correction status="high">
+					<p>Transcript proofread and corrected.</p>
+				</correction>
+				<normalization>
+					<p>Orthography normalised.</p>
+				</normalization>
+				<punctuation>
+					<p>Punctuation added.</p>
+				</punctuation>
+			</editorialDecl>
+			<refsDecl n="text=1" doctype="TEI">
+				<state unit="text"/>
+				<state unit="sentence" n="chunk"/>
+			</refsDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language xml:id="ar">Arabic</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="ar" xml:id="anon.gal.detemp-summ.jumal-ar1">
+		<body>
+			<pb unit="folio" edRef="#A" n="18r"/>
+			<pb unit="folio" edRef="#B" n="42v"/>
+			<pb unit="folio" edRef="#E" n="56v"/>
+			<div1 type="sentence" n="0">
+			<head>
+				<anchor xml:id="appcrit1begin"/>
+				جمل ما في المقالة الأولی
+				<anchor xml:id="appcrit1end"/>
+				<anchor xml:id="appcrit2begin"/>
+				من كتاب جالينوس في المزاج ترجمه
+				<anchor xml:id="appcrit3begin"/>
+				حنين
+				<anchor xml:id="appcrit2end"/>
+			</head>
+			<div1 type="sentence" n="1">
+				الجملة
+				<anchor xml:id="appcrit4begin"/>
+				الأولی يذكر فيها
+				<anchor xml:id="appcrit4end"/>
+				أنّ أصناف المزاج تسعة
+			</div1>
+			<div1 type="sentence" n="2">
+				<anchor xml:id="appcrit5begin"/>
+				والثانية أنّه ينبغي أن يقال إنّ أفضلها هو المعتدل فيما بين الحارّ والبارد والرطب
+				<anchor xml:id="appcrit5end"/>
+				واليابس
+			</div1>
+			<div1 type="sentence" n="3">
+				والثالثة أنّ من هذه الأصناف التسعة
+				<anchor xml:id="appcrit6begin"/>
+				واحداً معتدلاً
+				<anchor xml:id="appcrit6end"/>
+				<anchor xml:id="appcrit7begin"/>
+				و
+				<anchor xml:id="appcrit7end"/>
+				أربعة
+				<anchor xml:id="appcrit8begin"/>
+				بسيطة
+				<anchor xml:id="appcrit8end"/>
+				رديئة
+				<anchor xml:id="appcrit9begin"/>
+				وهي
+				<anchor xml:id="appcrit9end"/>
+				الحارّ والبارد والرطب واليابس
+				<anchor xml:id="appcrit10begin"/>
+				ومنها أربعة
+				<anchor xml:id="appcrit10end"/>
+				مركّبة
+				<anchor xml:id="appcrit11begin"/>
+				رديئة
+				<anchor xml:id="appcrit11end"/>
+				<anchor xml:id="appcrit12end"/>
+				أحدها المزاج الحارّ اليابس والثاني الحارّ الرطب والثالث البارد اليابس والرابع البارد الرطب
+			</div1>
+			<div1 type="sentence" n="4">
+				والرابعة كيف قال بعض الأطبّاء إنّ المزاج المعتدل هو
+				<anchor xml:id="appcrit13begin"/>
+				المزاج
+				<anchor xml:id="appcrit13end"/>
+				الحارّ الرطب
+			</div1>
+			<div1 type="sentence" n="5">
+				والخامسة في تعرّف مزاج الحيوان مطلقاً
+			</div1>
+			<div1 type="sentence" n="6">
+				والسادسة في تعرّف مزاج الأعضاء مطلقاً
+			</div1>
+			<div1 type="sentence" n="7">
+				والسابعة في
+				<anchor xml:id="appcrit14begin"/>
+				تعرّف
+				<anchor xml:id="appcrit14end"/>
+				مزاج الناس مطلقاً
+			</div1>
+			<div1 type="sentence" n="8">
+				<anchor xml:id="appcrit15begin"/>
+				والثامنة يخبر فيها بأعلام أمزجة تؤخذ من أعضاء الناس
+				<anchor xml:id="appcrit15end"/>
+			</div1>
+		</body>
+		<back>
+			<listApp>
+				<app from="#appcrit1begin" to="#appcrit1end">
+					<lem wit="#A #E">جمل – الأولی</lem>
+					<rdg wit="#B"/>
+				</app>
+				<app from="#appcrit2begin" to="#appcrit2end">
+					<lem wit="#E">من – حنين</lem>
+					<rdg wit="#A #B"/>
+				</app>
+				<app from="#appcrit3begin" to="#appcrit2end">
+					<lem wit="#A #B"/>
+					<rdg wit="#E">قَال جَالينوس</rdg>
+				</app>
+				<app from="#appcrit4begin" to="#appcrit4end">
+					<lem wit="#B">يذكر فيها</lem>
+					<rdg wit="#A #E"/>
+				</app>
+				<app from="#appcrit5begin" to="#appcrit5end">
+					<lem wit="#A #E">والثانية – والرطب</lem>
+					<rdg wit="#B" cause="cut off"/>
+				</app>
+				<app from="#appcrit6begin" to="#appcrit6end">
+					<lem wit="#B">واحداً معتدلاً</lem>
+					<rdg wit="#A #E"/>
+					<rdg wit="#E">
+						<add hand="#E2" place="margin">وَاحِدٌ معتدِل</add>
+					</rdg>
+				</app>
+				<app from="#appcrit7begin" to="#appcrit7end">
+					<lem wit="#B #E">و</lem>
+					<rdg wit="#A"/>
+				</app>
+				<app from="#appcrit8begin" to="#appcrit8end">
+					<lem wit="#A #B">بسيطة</lem>
+					<rdg wit="#E">مفْردة</rdg>
+				</app>
+				<app from="#appcrit9begin" to="#appcrit9end">
+					<lem wit="#B #E"/>
+					<rdg wit="#A">المزاٮج</rdg>
+				</app>
+				<app from="#appcrit10begin" to="#appcrit10end">
+					<lem wit="#B">ومنها أربعة</lem>
+					<rdg wit="#A">واربَعَةً</rdg>
+					<rdg wit="#E"/>
+					<rdg wit="#E">
+						<add hand="#E2" place="margin">وَارٮعة</add>
+					</rdg>
+				</app>
+				<app from="#appcrit11begin" to="#appcrit11end">
+					<lem wit="#B">رديئة</lem>
+					<rdg wit="#A #E"/>
+					<rdg wit="#E">
+						<add hand="#E2" place="margin">رديئة</add>
+					</rdg>
+				</app>
+				<app from="#appcrit9begin" to="#appcrit12end">
+					<lem wit="#A #B">وهي – رديئة</lem>
+					<rdg wit="#E"/>
+					<rdg wit="#E">
+						<add hand="#E2" place="margin">وهي – رديئة</add>
+					</rdg>
+				</app>
+				<app from="#appcrit13begin" to="#appcrit13end">
+					<lem wit="#A #B">المزاج</lem>
+					<rdg wit="#E"/>
+				</app>
+				<app from="#appcrit14begin" to="#appcrit14end">
+					<lem wit="#A #B">تعرّف</lem>
+					<rdg wit="#E"/>
+				</app>
+				<app from="#appcrit15begin" to="#appcrit15end">
+					<lem wit="#B">والثامنة – الناس</lem>
+					<rdg wit="#A #E"/>
+					<rdg wit="#A">
+						<add hand="#A1" place="margin">والثامنة – الناس</add>
+					</rdg>
+					<rdg wit="#E">
+						<add hand="#E2" place="margin">بأعلام – الناس</add>
+					</rdg>
+				</app>
+			</listApp>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,1262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title xml:lang="ar">Ǧawāmiʿ maqālat Ǧālīnūs fī l-tadbīr al-mulaṭṭif</title>
+				<author>Ḥunayn ibn Isḥāq</author>
+				<funder>The Wellcome Trust</funder>
+				<principal>
+					<name>Simon Swain</name>
+					<name>Uwe Vagelpohl</name>
+				</principal>
+			</titleStmt>
+			<respStmt xml:id="Vagelpohl">
+				<resp>transcription, normalisation, correction, XML tagging</resp>
+				<name>Uwe Vagelpohl</name>
+			</respStmt>
+			<publicationStmt>
+				<distributor>A Digital Corpus for Graeco-Arabic Studies (DCGAS)</distributor>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">available under a Creative Commons Attribution-ShareAlike 4.0 International license</licence>
+				</availability>
+				<date>2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<listWit>
+					<witness xml:id="A">
+						<settlement>Istanbul</settlement>
+						<repository>Süleymaniye</repository>
+						<idno type="shelfmark">Ayasofya 3631</idno>
+						<msItem n="15">
+							<locus unit="folio" from="110v" to="115r">fol. 110v-115r</locus>
+							<handNote xml:id="A1">annotator of A, same hand</handNote>
+						</msItem>
+					</witness>
+					<witness xml:id="M">
+						<settlement>Oxford</settlement>
+						<repository>Bodleian</repository>
+						<idno type="shelfmark">Marsh 663</idno>
+						<msItem n="21">
+							<locus unit="page" from="265" to="271">p. 265-271</locus>
+						</msItem>
+					</witness>
+				</listWit>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<samplingDecl>
+				<p>Text collated from two manuscript (with A as the base manuscript). Numerous slight textual differences made it difficult to reconstruct an "original" version. The text therefore largely corresponds to A unless M offers improvements that affect the sense and consistency of the text. Paragraphing added.</p>
+			</samplingDecl>
+			<editorialDecl>
+				<correction status="high">
+					<p>Transcript proofread and corrected.</p>
+				</correction>
+				<normalization>
+					<p>Orthography normalised.</p>
+				</normalization>
+				<punctuation>
+					<p>Punctuation added.</p>
+				</punctuation>
+			</editorialDecl>
+			<refsDecl n="text=1" doctype="TEI">
+				<state unit="text"/>
+			</refsDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language xml:id="ar">Arabic</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="ar" xml:id="hunayn.gal.devictuatt-summ.jawami-ar1">
+		<body>
+			<pb unit="folio" edRef="#A" n="110v"/>
+			<pb unit="page" edRef="#M" n="265"/>
+			<p>
+				بسم اللّه الرحمن <anchor xml:id="appcrit1begin"/>الرحيم<anchor xml:id="appcrit1end"/>
+			</p>
+			<head>
+				جوامع <anchor xml:id="appcrit2begin"/>مقالة<anchor xml:id="appcrit2end"/> جالينوس في التدبير الملطّف <anchor xml:id="appcrit3begin"/>إخراج حنين ابن إسحق <anchor xml:id="appcrit4begin"/>المتطبّب<anchor xml:id="appcrit4end"/><anchor xml:id="appcrit3end"/>
+			</head>
+			<p>
+				إنّ أكثر الأمراض المزمنة يكون شفاؤها بالتدبير الملطّف وذلك أنّها إن كانت يسيرة الخطر فقد نبرئها من غير أن نحتاج معه إلی شيء من الأدوية. من ذلك <anchor xml:id="appcrit5begin"/>أنّه<anchor xml:id="appcrit5end"/> قد يشفي <anchor xml:id="appcrit6begin"/>وجع<anchor xml:id="appcrit6end"/> الكلی وأوجاع المفاصل والرئة <anchor xml:id="appcrit7begin"/>ويحلّ ورم<anchor xml:id="appcrit7end"/> الطحال <anchor xml:id="appcrit8begin"/>وأورام الكبد<anchor xml:id="appcrit8end"/> ويشفي الصرع في ابتداء حدوثه وإن كانت الأمراض عظيمة الخطر <anchor xml:id="appcrit9begin"/>فإنّها<anchor xml:id="appcrit9end"/> قد يؤمن خطرها ويضعف عاديتها. ومن شأن التدبير الملطّف إذا استعمل في الوقت الموافق وبالمقدار الذي ينبغي أن <anchor xml:id="appcrit10begin"/>ينقّی<anchor xml:id="appcrit10end"/> جميع الأبدان المملوءة من الأخلاط الباردة الغليظة اللزجة وإذا استعمل في غير الوقت الموافق وعلی غير المقدار الذي ينبغي فلا يؤمن منه أن يؤدّي البدن إلی حال فساد الأخلاط.
+			</p>
+			<p>
+				وأجناس ما هو من النبات ملطّف أربعة وذلك أنّ منه حرّيفاً مثل الخردل والحرف والبصل ومنه عطريّاً مثل الشاهشفرم والأترجّ والخوخ ومنه <anchor xml:id="appcrit11begin"/>مالحاً<anchor xml:id="appcrit11end"/> مثل السلق ومنه <anchor xml:id="appcrit12begin"/>مرّاً<anchor xml:id="appcrit12end"/> مثل الهندباء والشاهترج. وإنّ النبات قد يختلف بحسب جوهره وبحسب الزمان الذي يكون فيه وبحسب الموضع الذي ينبت فيه وبحسب مكثه علی وجه الأرض وبحسب الصنعة التي تتّخذ <anchor xml:id="appcrit13begin"/>منها<anchor xml:id="appcrit13end"/>. أمّا <pb unit="page" edRef="#M" n="266"/> بحسب جوهره فإنّ ما كان جوهره من النبات حارّاً يابساً لطيفاً فهو أشدّ تلطيفاً وما كان أقلّ حرارة <anchor xml:id="appcrit14begin"/>وأقلّ يبساً<anchor xml:id="appcrit14end"/> فهو أقلّ تلطيفاً. وأمّا بحسب <pb unit="folio" edRef="#A" n="111r"/> الزمان فإنّ ما كان منه جافّاً فهو أشدّ تلطيفاً وما كان منه طريّاً فهو أقلّ تلطيفاً. وأمّا بحسب الموضع الذي ينبت فيه فإنّ ما كان منه ينبت في مواضع <anchor xml:id="appcrit15begin"/>مرتفعة يابسة فهو أشدّ تلطيفاً وما كان منه ينبت في مواضع<anchor xml:id="appcrit15end"/> <anchor xml:id="appcrit16begin"/>منخفضة<anchor xml:id="appcrit16end"/> كثيرة الأنداء فهو أقلّ تلطيفاً. وأمّا بحسب مكثه علی وجه الأرض <anchor xml:id="appcrit17begin"/>فإنّ ما<anchor xml:id="appcrit17end"/> كان من النبات قد كمل فهو أقلّ تلطيفاً وما كان منه لم <anchor xml:id="appcrit18begin"/>يكمل<anchor xml:id="appcrit18end"/> لكنّه حين <anchor xml:id="appcrit19begin"/>طلع<anchor xml:id="appcrit19end"/> فهو أشدّ تلطيفاً. <anchor xml:id="appcrit20begin"/>وأمّا بحسب الصنعة التي يتّخذ منها فإنّ ما كان منه مطيّباً بالخلّ والعسل والتوابل الحارّة اليابسة والمرّيّ فهو أشدّ تلطيفاً<anchor xml:id="appcrit20end"/> وكلّما كانت هذه أغلب عليه <anchor xml:id="appcrit21begin"/>كان<anchor xml:id="appcrit21end"/> <anchor xml:id="appcrit22begin"/>تلطيفها<anchor xml:id="appcrit22end"/> أشدّ وما كان منه <anchor xml:id="appcrit23begin"/>يتّخذ<anchor xml:id="appcrit23end"/> بالزيت واللبن والسمّاق فهو أقلّ تلطيفاً <anchor xml:id="appcrit24begin"/>وكلّما كانت هذه فيه أكثر كان أقلّ تلطيفاً<anchor xml:id="appcrit24end"/>.
+			</p>
+			<p>
+				وإنّ أجناس الحبوب والتوابل التي يغتذی بها أربعة أجناس وذلك أنّ منها ما يؤكل من غير أن يصلح بشيء من الصنعة مثل السمسم والخشخاش والشهدانج <anchor xml:id="appcrit25begin"/>ومنها<anchor xml:id="appcrit25end"/> ما <anchor xml:id="appcrit26begin"/>يطيّب به<anchor xml:id="appcrit26end"/> الأطعمة مثل الكمّون <anchor xml:id="appcrit27begin"/>والكزبرة<anchor xml:id="appcrit27end"/> والفلفل <anchor xml:id="appcrit28begin"/>ومنها<anchor xml:id="appcrit28end"/> ما يتّخذ منه الخبز مثل الحنطة والشعير <anchor xml:id="appcrit29begin"/>ومنها<anchor xml:id="appcrit29end"/> ما يؤكل بعد أن يصلح بالطبخ مثل الباقلّی والحمّص والعدس. وإنّما يصلح من هذه الأربعة الأجناس <anchor xml:id="appcrit30begin"/>للتدبير<anchor xml:id="appcrit30end"/> الملطّف التوابل وأمّا الحبوب فليس <anchor xml:id="appcrit31begin"/>منها شيء<anchor xml:id="appcrit31end"/> يصلح للتدبير الملطّف وذلك أنّ بعضها يولّد خلطاً <anchor xml:id="appcrit32begin"/>غليظاً<anchor xml:id="appcrit32end"/> مثل اللوبياء والباقلّی والحمّص والعدس وبعضها يولّد كيموساً رديئاً مثل الحلبة. وأمّا الحنطة والشعير فيصلحان للتدبير الملطّف <anchor xml:id="appcrit33begin"/>في بعض الأوقات<anchor xml:id="appcrit33end"/> <anchor xml:id="appcrit34begin"/>أمّا<anchor xml:id="appcrit34end"/> الحنطة <anchor xml:id="appcrit35begin"/>فإذا<anchor xml:id="appcrit35end"/> اتّخذ منها <anchor xml:id="appcrit36begin"/>الخبز<anchor xml:id="appcrit36end"/> بعد أن يحمرّ ويجعل فيه الملح وينضج وذلك <pb unit="folio" edRef="#A" n="111v"/> أنّه إذا كان بهذه الحال ولّد خلطاً <anchor xml:id="appcrit37begin"/>محموداً<anchor xml:id="appcrit37end"/> معتدلاً في اللطافة وأمّا الشعير فإنّه يلطّف <anchor xml:id="appcrit38begin"/>وخاصّة<anchor xml:id="appcrit38end"/> إذا اتّخذ منه <anchor xml:id="appcrit39begin"/>الحساء<anchor xml:id="appcrit39end"/> وجعل فيه توابل حارّة مثل الفلفل وما أشبهه.
+			</p>
+			<p>
+				وإنّ جميع البزور فيها قوّة من النبات الذي <anchor xml:id="appcrit40begin"/>هو<anchor xml:id="appcrit40end"/> له <anchor xml:id="appcrit41begin"/>بزر<anchor xml:id="appcrit41end"/>. وإنّ كلّ بزر فهو أيبس من النبات الذي <anchor xml:id="appcrit42begin"/>هو<anchor xml:id="appcrit42end"/> له بزر يابساً كان ذلك النبات أو <anchor xml:id="appcrit43begin"/>رطباً<anchor xml:id="appcrit43end"/> وكلّ نبات حارّ فبزره أشدّ حرارة منه <anchor xml:id="appcrit44begin"/>وأمّا ما<anchor xml:id="appcrit44end"/> كان من النبات <anchor xml:id="appcrit45begin"/>بارداً<anchor xml:id="appcrit45end"/> فبزره أقلّ برداً منه وذلك أنّا <anchor xml:id="appcrit46begin"/>قد<anchor xml:id="appcrit46end"/> نجد بزر الخشخاش <anchor xml:id="appcrit47begin"/>والخسّ<anchor xml:id="appcrit47end"/> أقلّ برداً من الخشخاش والخسّ. <anchor xml:id="appcrit48begin"/>وأمّا<anchor xml:id="appcrit48end"/> ما كان من الحنطة رزيناً متكاثفاً أحمر فالخلط المتولّد عنه غليظ وما كان <anchor xml:id="appcrit49begin"/>منه<anchor xml:id="appcrit49end"/> علی ضدّ ذلك <anchor xml:id="appcrit50begin"/>أعني أن<anchor xml:id="appcrit50end"/> يكون خفيفاً متخلخلاً أبيض الجوف يكون الخلط المتولّد عنه ألطف. وينبغي أن يخلط بالشعير إذا استعمل في الأمراض التي تكون في الصدر والرئة <anchor xml:id="appcrit51begin"/>عسل أو سكّر<anchor xml:id="appcrit51end"/> لتكون تنقيته لهذه الأعضاء أشدّ. وأمّا في أوجاع <pb unit="page" edRef="#M" n="267"/> الكبد والطحال فليس ينبغي أن يخلط <anchor xml:id="appcrit52begin"/>معه<anchor xml:id="appcrit52end"/> شيء من العسل ولا السكّر وذلك أنّه إن كان في شيء من هذه الأعضاء <anchor xml:id="appcrit53begin"/>غلظ<anchor xml:id="appcrit53end"/> زاد فيه وإنّما ينبغي حينئذٍ أن يخلط به السكنجبين.
+			</p>
+			<p>
+				الذي يصلح للتدبير الملطّف من جميع الحيوان بالجملة <anchor xml:id="appcrit54begin"/>كلّ<anchor xml:id="appcrit54end"/> ما كان <anchor xml:id="appcrit55begin"/>لحمه<anchor xml:id="appcrit55end"/> رطباً متخلخلاً ولم يكن صلباً لزجاً. وإنّ أكثر الغذاء <anchor xml:id="appcrit56begin"/>الملطّف<anchor xml:id="appcrit56end"/> إنّما يوجد فيما كان من الحيوان <anchor xml:id="appcrit57begin"/>يطير<anchor xml:id="appcrit57end"/> وخاصّة <anchor xml:id="appcrit58begin"/>فيما<anchor xml:id="appcrit58end"/> كان مأواه الجبال <anchor xml:id="appcrit59begin"/>وذلك بحسب<anchor xml:id="appcrit59end"/> <anchor xml:id="appcrit60begin"/>علائه<anchor xml:id="appcrit60end"/> وكثرة حركته وما يستنشقه من الهواء وأقلّه <anchor xml:id="appcrit61begin"/>في لحوم<anchor xml:id="appcrit61end"/> الحيوان المشّاء خلا لحوم الجداء وذلك أنّك لا تجد في <anchor xml:id="appcrit62begin"/>شيء من لحوم<anchor xml:id="appcrit62end"/> الحيوان المشّاء ما يتولّد <anchor xml:id="appcrit63begin"/>عنه<anchor xml:id="appcrit63end"/> <anchor xml:id="appcrit64begin"/>خلط<anchor xml:id="appcrit64end"/> لطيف. وأمّا <anchor xml:id="appcrit65begin"/>لحوم<anchor xml:id="appcrit65end"/> <pb unit="folio" edRef="#A" n="112r"/> السمك فهي <anchor xml:id="appcrit66begin"/>كأنّها<anchor xml:id="appcrit66end"/> متوسّطة فيما بين هذين الصنفين من الحيوان أعني <anchor xml:id="appcrit67begin"/>ما كان طائراً وما كان مشّاء<anchor xml:id="appcrit67end"/>. <anchor xml:id="appcrit68begin"/>وإنّه قد<anchor xml:id="appcrit68end"/> ينفع في تلطيف <anchor xml:id="appcrit69begin"/>كلّ اللحوم<anchor xml:id="appcrit69end"/> أن <anchor xml:id="appcrit70begin"/>يتحرّك<anchor xml:id="appcrit70end"/> ذلك الحيوان الذي يراد أكله <anchor xml:id="appcrit71begin"/>قبل ذبحه <anchor xml:id="appcrit72begin"/>بعنف<anchor xml:id="appcrit72end"/><anchor xml:id="appcrit71end"/> وأن يترك ذلك اللحم يوماً واحداً ثمّ يؤكل. وأمّا في تلطيف <anchor xml:id="appcrit73begin"/>لحوم<anchor xml:id="appcrit73end"/> السمك <anchor xml:id="appcrit74begin"/>خاصّة<anchor xml:id="appcrit74end"/> <anchor xml:id="appcrit75begin"/>فتصبّره<anchor xml:id="appcrit75end"/> في الملح.
+			</p>
+			<p>
+				<anchor xml:id="appcrit76begin"/>
+				وإنّ ما يؤكل<anchor xml:id="appcrit76end"/> من <anchor xml:id="appcrit77begin"/>لحوم<anchor xml:id="appcrit77end"/> الطير يضرب لونه إلی <anchor xml:id="appcrit78begin"/>البياض فهو ألطف وكلّ ما كان يضرب لونه إلی<anchor xml:id="appcrit78end"/> السواد فهو أغلظ. و<anchor xml:id="appcrit79begin"/>إنّ<anchor xml:id="appcrit79end"/> العضل من جميع <anchor xml:id="appcrit80begin"/>أعضاء<anchor xml:id="appcrit80end"/> الحيوان فقط يصلح للتدبير الملطّف <anchor xml:id="appcrit81begin"/>وذلك بسبب الحركة<anchor xml:id="appcrit81end"/>. وأمّا الدماغ والبطون فليس <anchor xml:id="appcrit82begin"/>منها<anchor xml:id="appcrit82end"/> شيء يصلح <anchor xml:id="appcrit83begin"/>لاستعمال التدبير<anchor xml:id="appcrit83end"/> الملطّف وذلك لقلّة حركتها وكثرة الفضول التي فيها <anchor xml:id="appcrit84begin"/>ولغلظ<anchor xml:id="appcrit84end"/> الخلط المتولّد عنها وخاصّة الكبد والطحال والكلی.
+			</p>
+			<p>
+				وإنّ أفضل السمك ما كان <anchor xml:id="appcrit85begin"/>مأواه<anchor xml:id="appcrit85end"/> <anchor xml:id="appcrit86begin"/>علی<anchor xml:id="appcrit86end"/> الصخور ويكون الماء الذي يأويه نقيّاً بحريّاً كان أو نهريّاً وأفضل <anchor xml:id="appcrit87begin"/>جميع<anchor xml:id="appcrit87end"/> السمك الباقي ما لم يكن صلب اللحم ولا لزجاً.
+			</p>
+			<p>
+				وإنّ الزيت إن ألقي علی السمك <anchor xml:id="appcrit88begin"/>من بعد أن يطبخ أو يصلق نقص لطافته وإن قلي به السمك<anchor xml:id="appcrit88end"/> زاد في تلطيفه وذلك أنّ جميع الأدهان إذا هي <anchor xml:id="appcrit89begin"/>لقيت<anchor xml:id="appcrit89end"/> اللحوم من غير أن يخالطها شي آخر <anchor xml:id="appcrit90begin"/>يبّستها<anchor xml:id="appcrit90end"/>. <anchor xml:id="appcrit91begin"/>و<anchor xml:id="appcrit91end"/>قد بيّن في كتابه في الأدوية <anchor xml:id="appcrit92begin"/>البسيطة<anchor xml:id="appcrit92end"/> أنّ الدهن إذا أدنی من أبداننا من غير أن يسخن فإنّه يحفظ الحرارة الغريزيّه التي فيها علی ما <anchor xml:id="appcrit94begin"/>يصادفها<anchor xml:id="appcrit94end"/> إلّا أنّه قد يزيد في رطوبتها وإن <anchor xml:id="appcrit95begin"/>أدنی<anchor xml:id="appcrit95end"/> بعد أن يسخن فإنّه يسخن ويجفّف.
+			</p>
+			<p>
+				وإنّ أفضل <anchor xml:id="appcrit96begin"/>اتّخاذ<anchor xml:id="appcrit96end"/> السمك لينال <anchor xml:id="appcrit97begin"/>البدن منه<anchor xml:id="appcrit97end"/> غذاء لطيفاً المطبوخ لأنّ <anchor xml:id="appcrit98begin"/>الطبخ يحلّ<anchor xml:id="appcrit98end"/> فضوله بسرعة وذلك أنّ الماء الذي يطبخ به يمنع النار من تجفّف جلده وإذا جفّ جلده <anchor xml:id="appcrit99begin"/>احتقنت<anchor xml:id="appcrit99end"/> فيه الفضول <anchor xml:id="appcrit100begin"/>فلم<anchor xml:id="appcrit100end"/> <anchor xml:id="appcrit101begin"/>تنحلّ<anchor xml:id="appcrit101end"/> ويزيد أيضاً في <anchor xml:id="appcrit102begin"/>رطوبته<anchor xml:id="appcrit102end"/> <anchor xml:id="appcrit103begin"/>جرم<anchor xml:id="appcrit103end"/> السمك كلّه <pb unit="folio" edRef="#A" n="112v"/> فيصير ذلك <anchor xml:id="appcrit104begin"/>سبباً<anchor xml:id="appcrit104end"/> <anchor xml:id="appcrit105begin"/>لتحلّله<anchor xml:id="appcrit105end"/>. وما يطيّب به أيضاً من التوابل <anchor xml:id="appcrit106begin"/>ويطبخ<anchor xml:id="appcrit106end"/> معه من البقول الحرّيفة <anchor xml:id="appcrit107begin"/>يصير<anchor xml:id="appcrit107end"/> سبباً لتحلّل الفضول بمداخله قواها جرمه. ومن بعد المطبوخ المصلوق وقد <anchor xml:id="appcrit108begin"/>يتّفقان<anchor xml:id="appcrit108end"/> في المنفعة التي ينالها السمك من الماء وأمّا فيما يناله من التوابل فليس يستويان وذلك <anchor xml:id="appcrit109begin"/>أنّ<anchor xml:id="appcrit109end"/> <anchor xml:id="appcrit110begin"/>أقوی<anchor xml:id="appcrit110end"/> ما يطيّب <anchor xml:id="appcrit111begin"/>به<anchor xml:id="appcrit111end"/> السمك من بعد <pb unit="page" edRef="#M" n="268"/> النضج لا يداخل جرمه مثل <anchor xml:id="appcrit112begin"/>مداخلتها<anchor xml:id="appcrit112end"/> إذا طبخ معها. ومن بعد المصلوق المقلوّ والمقلوّ قد يفضل المطبوخ والمصلوق بسبب عدمه <anchor xml:id="appcrit113begin"/>للماء<anchor xml:id="appcrit113end"/> وبسبب ما فيه من الزيت الذي هو سبب تحلّله ولكن لمّا كان قد <anchor xml:id="appcrit114begin"/>قبل<anchor xml:id="appcrit114end"/> كيفيّة رديئة من <anchor xml:id="appcrit115begin"/>القلي<anchor xml:id="appcrit115end"/> وما يلقی عليه من كثرة الزيت صار أقلّ <anchor xml:id="appcrit116begin"/>فضيلة<anchor xml:id="appcrit116end"/> من المصلوق والمطبوخ. ثمّ من بعد المقلوّ <anchor xml:id="appcrit117begin"/>من السمك<anchor xml:id="appcrit117end"/> المشويّ وإنّما صار المشويّ <anchor xml:id="appcrit118begin"/>من السمك<anchor xml:id="appcrit118end"/> أقلّ <anchor xml:id="appcrit119begin"/>فضيلة<anchor xml:id="appcrit119end"/> من جميع ما يتّخذ من السمك بسبب قلّة الزيت الذي يستعمل <anchor xml:id="appcrit120begin"/>فيه<anchor xml:id="appcrit120end"/> <anchor xml:id="appcrit121begin"/>لأنّ<anchor xml:id="appcrit121end"/> النار إذا هي لقيت الأجزاء الخارجة منه جفّفتها ومنعت الفضول <anchor xml:id="appcrit122begin"/>التي<anchor xml:id="appcrit122end"/> في <anchor xml:id="appcrit123begin"/>داخل لحمه<anchor xml:id="appcrit123end"/> أن <anchor xml:id="appcrit124begin"/>تتحلّل<anchor xml:id="appcrit124end"/> وذلك <anchor xml:id="appcrit125begin"/>أنّ جلده يتقدّم فيجفّ ويمنع لفضول التي في لحمه أن يحلّل ولذلك حدثت له الدهومة<anchor xml:id="appcrit125end"/> وخاصّة ما دام حارّاً.
+			</p>
+			<p>
+				وإنّ الخلط المتولّد من البيض المصلوق غليظ ولذلك ينبغي أن يحذره من كان <anchor xml:id="appcrit126begin"/>محتاجاً<anchor xml:id="appcrit126end"/> إلی التدبير الملطّف <anchor xml:id="appcrit127begin"/>وأمّا<anchor xml:id="appcrit127end"/> <anchor xml:id="appcrit128begin"/>البيض<anchor xml:id="appcrit128end"/> النيمٮرست (؟) فالخلط المتولّد <anchor xml:id="appcrit129begin"/>عنه<anchor xml:id="appcrit129end"/> متوسّط بين اللطيف والغليظ ولذلك لا يقال إنّه ينفع أو يضرّ من كان محتاجاً إلی التدبير الملطّف.
+			</p>
+			<p>
+				وإنّ أصول النبات منها ما يولّد خلطاً غليظاً وخاصّة ما كان منها مزاجه بارداً رطباً مثل الفطر ثمّ من <anchor xml:id="appcrit130begin"/>بعده<anchor xml:id="appcrit130end"/> ما كانت الرطوبة أغلب فيه من <anchor xml:id="appcrit131begin"/>البرد<anchor xml:id="appcrit131end"/> مثل <anchor xml:id="appcrit132begin"/>اللفت<anchor xml:id="appcrit132end"/> ثمّ ما كانت البرودة أغلب <anchor xml:id="appcrit133begin"/>فيه<anchor xml:id="appcrit133end"/> من الرطوبة مثل الكمأة <pb unit="folio" edRef="#A" n="113r"/> ومنها ما يولّد خلطاً لطيفاً وخاصّة ما كان منها حارّاً يابساً مثل الثوم ثمّ ما كانت الحرارة <anchor xml:id="appcrit134begin"/>أغلب فيه<anchor xml:id="appcrit134end"/> <anchor xml:id="appcrit135begin"/>من اليبوسة<anchor xml:id="appcrit135end"/> مثل البصل والفجل ثمّ ما كانت اليبوسة أغلب <anchor xml:id="appcrit136begin"/>فيه<anchor xml:id="appcrit136end"/> من الحرارة مثل أصول السلق.
+			</p>
+			<p>
+				ولمّا كانت جميع الفواكه لا تصلح للتدبير الملطّف <anchor xml:id="appcrit137begin"/>و<anchor xml:id="appcrit137end"/>كان أبعدها منه ما <anchor xml:id="appcrit138begin"/>كان<anchor xml:id="appcrit138end"/> مقبضاً <anchor xml:id="appcrit139begin"/>صلباً<anchor xml:id="appcrit139end"/> مثل الزعرور والنبق والعنّاب والسفرجل وحبّ الآس وما كان من الرمّان <anchor xml:id="appcrit140begin"/>مقبضاً<anchor xml:id="appcrit140end"/>. ويصلح <anchor xml:id="appcrit141begin"/>منها<anchor xml:id="appcrit141end"/> ما كان حلواً ليس بالصلب وذلك <anchor xml:id="appcrit142begin"/>أنّه<anchor xml:id="appcrit142end"/> قد يليّن البطن مثل التوت والإجّاص والخرنوب <anchor xml:id="appcrit143begin"/>الشاميّ<anchor xml:id="appcrit143end"/> الرطب والتين الرطب والعنب النضيج <anchor xml:id="appcrit144begin"/>و<anchor xml:id="appcrit144end"/>ما كان يصلح منه <anchor xml:id="appcrit145begin"/>بعد<anchor xml:id="appcrit145end"/> أن ينقّی. وأقربها كلّها من أن يقال <anchor xml:id="appcrit146begin"/>إنّه<anchor xml:id="appcrit146end"/> <anchor xml:id="appcrit147begin"/>قد<anchor xml:id="appcrit147end"/> <anchor xml:id="appcrit148begin"/>ينتفع به<anchor xml:id="appcrit148end"/> في التدبير <anchor xml:id="appcrit149begin"/>الملطّف<anchor xml:id="appcrit149end"/> ما كان حرّيفاً مثل <anchor xml:id="appcrit150begin"/>قشر<anchor xml:id="appcrit150end"/> الأترجّ <anchor xml:id="appcrit151begin"/>ثمّ ما كان بعده لطيفاً حامضاً مثل حمّاض الأترجّ<anchor xml:id="appcrit151end"/> <anchor xml:id="appcrit152begin"/>والرمّان الحامض<anchor xml:id="appcrit152end"/>. وما كان من الفواكه يمكن بقاؤها خارجاً فإنّه قد يبقی أيضاً داخل البدن ولا يفسد مثل <anchor xml:id="appcrit153begin"/>جنس<anchor xml:id="appcrit153end"/> من التفّاح <anchor xml:id="appcrit154begin"/>والكمّثری والعنب<anchor xml:id="appcrit154end"/> <anchor xml:id="appcrit155begin"/>و<anchor xml:id="appcrit155end"/>ما كان منها لا يمكن أن يبقی خارجاً فليس يمكن <anchor xml:id="appcrit156begin"/>أيضاً<anchor xml:id="appcrit156end"/> أن يبقی داخلاً من غير أن يفسد مثل التفّاح الربيعيّ والمشمش. وما كان من الفواكه اليابسة قابضاً فهو أبعدها من التلطيف مثل <anchor xml:id="appcrit157begin"/>الخرنوب والبلّوط<anchor xml:id="appcrit157end"/> والعنّاب اليابس والزعرور والزبيب <anchor xml:id="appcrit158begin"/>المقبض<anchor xml:id="appcrit158end"/>. <pb unit="page" edRef="#M" n="269"/> وما كان منها حلواً فقد يصلح للتدبير <anchor xml:id="appcrit159begin"/>الملطّف<anchor xml:id="appcrit159end"/> إلّا أنّه لا يصلح للأورام التي تكون في الكبد والطحال مثل التين اليابس والزبيب المنزوع العجم. وأقربها كلّها إلی <anchor xml:id="appcrit160begin"/>التدبير الملطّف<anchor xml:id="appcrit160end"/> ما كان منها مرّاً مثل اللوز المرّ ثمّ ما كان <anchor xml:id="appcrit161begin"/>منها<anchor xml:id="appcrit161end"/> جلّاء مثل <anchor xml:id="appcrit162begin"/>الفستق والجوز<anchor xml:id="appcrit162end"/> وبقي <anchor xml:id="appcrit163begin"/>البندق<anchor xml:id="appcrit163end"/> من قبل أنّه أصلبها كلّها وليس فيه شيء من الجلاء. وجعل الزيتون متوسّطاً فيما بين ما كان من الفواكه <anchor xml:id="appcrit164begin"/>ملطّفاً<anchor xml:id="appcrit164end"/> أو مغلظاً.
+			</p>
+			<p>
+				<pb unit="folio" edRef="#A" n="113v"/>
+				وإنّ ما كان يكبس <anchor xml:id="appcrit165begin"/>بالخلّ <anchor xml:id="appcrit166begin"/>والملح<anchor xml:id="appcrit166end"/><anchor xml:id="appcrit165end"/> إن كان غليظاً لطف مثل لحوم الخنزير <anchor xml:id="appcrit167begin"/>والسنانير<anchor xml:id="appcrit167end"/> وإن كان لطيفاً زاد في تلطيفه حتّی يصير ملطّفاً للأخلاط الغليظة اللزجة مثل السمك المتخلخل إذا ملح.
+			</p>
+			<p>
+				وإنّ العسل قد ينتفع به كسائر الأشياء الحلوة بسبب ما يعين علی <anchor xml:id="appcrit168begin"/>ما يقذف من<anchor xml:id="appcrit168end"/> الصدر والرئة وينتفع به خاصّة بسبب ما <anchor xml:id="appcrit169begin"/>يتولّد<anchor xml:id="appcrit169end"/> من الخلط <anchor xml:id="appcrit170begin"/>الغليظ<anchor xml:id="appcrit170end"/>. وقد يضرّ كسائر الأشياء الحلوة المضرّة بالصلابة الكائنة في الكبد والطحال وذلك أنّه يزيد فيها وأنّه لمّا كان جذب هذه الأعضاء للأشياء الحلوة <anchor xml:id="appcrit171begin"/>من<anchor xml:id="appcrit171end"/> المعدة جذباً قويّاً صارت الأشياء الحلوة تملأ ما كان من العروق ضيّقاً وتسدّها وتلجح فيها وخاصّة التي في الكبد <anchor xml:id="appcrit172begin"/>في<anchor xml:id="appcrit172end"/> <anchor xml:id="appcrit173begin"/>الموضع<anchor xml:id="appcrit173end"/> الذي تتلاقی فيه العروق التي تنبت من حدبتها والتي تنبت من جانبها المقعّر ولذلك <anchor xml:id="appcrit174begin"/>قد<anchor xml:id="appcrit174end"/> ينبغي أن <anchor xml:id="appcrit175begin"/>يكسر<anchor xml:id="appcrit175end"/> عادية العسل بأن يخلط معه <anchor xml:id="appcrit176begin"/>شيئاً<anchor xml:id="appcrit176end"/> من الخلّ <anchor xml:id="appcrit177begin"/>لأنّه<anchor xml:id="appcrit177end"/> <anchor xml:id="appcrit178begin"/>حينئذٍ يصير<anchor xml:id="appcrit178end"/> نافعاً للكبد والطحال. ولذلك صار السكنجبين من أنفع الأشياء في التدبير الملطّف لأنّه ليس كسائر الأشياء الملطّفة ولا يولّد خلطاً رديئاً ولا يضرّ بالمعدة ولا توجد فيه حال أخری ضارّة وإنّ خلّ العنصل <anchor xml:id="appcrit179begin"/>والشراب<anchor xml:id="appcrit179end"/> المتّخذ منه والسكنجبين من الأشياء التي في غاية التلطيف لما كان من الأخلاط غليظاً لزجاً وإن وقع في شيء من <anchor xml:id="appcrit180begin"/>استعمال<anchor xml:id="appcrit180end"/> التدبير <anchor xml:id="appcrit181begin"/>الملطّف<anchor xml:id="appcrit181end"/> <anchor xml:id="appcrit182begin"/>خطاء<anchor xml:id="appcrit182end"/> أصلحته هذه الأشياء.
+			</p>
+			<p>
+				وإنّ ما كان من <anchor xml:id="appcrit183begin"/>الخمر<anchor xml:id="appcrit183end"/> أسود غليظاً <anchor xml:id="appcrit184begin"/>مقبضاً<anchor xml:id="appcrit184end"/> كان أو حلواً <anchor xml:id="appcrit185begin"/>فالخلط<anchor xml:id="appcrit185end"/> المتولّد <anchor xml:id="appcrit186begin"/>عنه<anchor xml:id="appcrit186end"/> غليظ ولذلك <anchor xml:id="appcrit187begin"/>قد<anchor xml:id="appcrit187end"/> ينبغي أن يجتنبه من يحتاج إلی التدبير الملطّف. وما كان منها لطيفاً <anchor xml:id="appcrit188begin"/>أبيض<anchor xml:id="appcrit188end"/> فهو لا محالة غير حلو وذلك أنّك لا تجد شيئاً من الخمور التي ألوانها بيض <anchor xml:id="appcrit189begin"/>حلواً<anchor xml:id="appcrit189end"/>. وما كان <anchor xml:id="appcrit190begin"/>علی هذا الوصف<anchor xml:id="appcrit190end"/> فهو ملطّف للأخلاط <pb unit="folio" edRef="#A" n="114r"/> الغليظة <anchor xml:id="appcrit191begin"/>منقٍّ<anchor xml:id="appcrit191end"/> للدم <anchor xml:id="appcrit192begin"/>بإدراره للبول<anchor xml:id="appcrit192end"/> <anchor xml:id="appcrit193begin"/>وهو<anchor xml:id="appcrit193end"/> وحده دون سائر الخمور يصلح <anchor xml:id="appcrit194begin"/>للتدبير<anchor xml:id="appcrit194end"/> الملطّف. <anchor xml:id="appcrit195begin"/>و<anchor xml:id="appcrit195end"/>ما كان <anchor xml:id="appcrit196begin"/>من الخمور<anchor xml:id="appcrit196end"/> أحمر اللون <anchor xml:id="appcrit197begin"/>حلواً<anchor xml:id="appcrit197end"/> صافياً فهو متوسّط فيما بين الصنفين الأوّلين في جميع أحواله <anchor xml:id="appcrit198begin"/>أعني<anchor xml:id="appcrit198end"/> في اللون <anchor xml:id="appcrit199begin"/>والقوام<anchor xml:id="appcrit199end"/> <anchor xml:id="appcrit200begin"/>والطعم<anchor xml:id="appcrit200end"/> <anchor xml:id="appcrit201begin"/>وفي الخلط<anchor xml:id="appcrit201end"/> المتولّد <anchor xml:id="appcrit202begin"/>عنها<anchor xml:id="appcrit202end"/> أيضاً في هذا الحدّ <anchor xml:id="appcrit203begin"/>ولذلك<anchor xml:id="appcrit203end"/> ليس يضرّ ولا ينفع في <anchor xml:id="appcrit204begin"/>استعمال<anchor xml:id="appcrit204end"/> التدبير الملطّف لكن قد <pb unit="page" edRef="#M" n="270"/> ينفع في <anchor xml:id="appcrit205begin"/>جميع<anchor xml:id="appcrit205end"/> الأوجاع المزمنة التي في الصدر والرئة غاية المنفعة لأنّه يعين علی قذف ما في <anchor xml:id="appcrit206begin"/>هذه<anchor xml:id="appcrit206end"/> الأعضاء. وذلك أنّه لمّا كانت <anchor xml:id="appcrit207begin"/>جميع<anchor xml:id="appcrit207end"/> الأشياء الباردة اليابسة الغليظة قد تحدث السعال الشديد بسبب عنف نفوذها وكانت <anchor xml:id="appcrit208begin"/>بسبب هذه<anchor xml:id="appcrit208end"/> لا يؤمن أن يهتك بعض العروق وجب أن يسخن ويرطّب ويقطع. وقد يفعل هذه الثلاث <anchor xml:id="appcrit209begin"/>خصال<anchor xml:id="appcrit209end"/> ما <anchor xml:id="appcrit210begin"/>كانت<anchor xml:id="appcrit210end"/> من الخمور <anchor xml:id="appcrit211begin"/>حارّة<anchor xml:id="appcrit211end"/> وخاصّة ما <anchor xml:id="appcrit212begin"/>كانت سود الألوان صادقة<anchor xml:id="appcrit212end"/> الحلاوة <anchor xml:id="appcrit213begin"/>و<anchor xml:id="appcrit213end"/>ليس <anchor xml:id="appcrit214begin"/>فيها<anchor xml:id="appcrit214end"/> شيء من القبض. وما كان <anchor xml:id="appcrit215begin"/>فيها<anchor xml:id="appcrit215end"/> قبض <anchor xml:id="appcrit216begin"/>قد<anchor xml:id="appcrit216end"/> يجفّف الرطوبة ولذلك <anchor xml:id="appcrit217begin"/>قد<anchor xml:id="appcrit217end"/> ينبغي أن يخلط معها شيء من الأدوية الملطّفة. وأمّا ما كان من <anchor xml:id="appcrit218begin"/>الأوجاع في الرأس<anchor xml:id="appcrit218end"/> <anchor xml:id="appcrit219begin"/>والجوف<anchor xml:id="appcrit219end"/> فغير نافع أمّا <anchor xml:id="appcrit220begin"/>ما<anchor xml:id="appcrit220end"/> كان منها في الرأس فلكثرة ما يرتقي <anchor xml:id="appcrit221begin"/>إليه<anchor xml:id="appcrit221end"/> من بخار ما كان من الخمور حارّاً <anchor xml:id="appcrit222begin"/>وذلك<anchor xml:id="appcrit222end"/> أنّ أكثر هذه الخمور <anchor xml:id="appcrit223begin"/>حارّة<anchor xml:id="appcrit223end"/> <anchor xml:id="appcrit224begin"/>ولهذا<anchor xml:id="appcrit224end"/> صارت <anchor xml:id="appcrit225begin"/>مضرّته<anchor xml:id="appcrit225end"/> بوجع الرأس والصرع والجنون وجميع <anchor xml:id="appcrit226begin"/>الأعراض<anchor xml:id="appcrit226end"/> الفادحة في الفكر. وأمّا الكبد والطحال <anchor xml:id="appcrit227begin"/>فإنّ<anchor xml:id="appcrit227end"/> تسدّدهما من الخمور <anchor xml:id="appcrit228begin"/>الحلوة يكون<anchor xml:id="appcrit228end"/> علی ما بيّنّا <anchor xml:id="appcrit229begin"/>في<anchor xml:id="appcrit229end"/> قولنا في العسل <anchor xml:id="appcrit230begin"/>فإنّه<anchor xml:id="appcrit230end"/> قد <anchor xml:id="appcrit231begin"/>يساوي<anchor xml:id="appcrit231end"/> <anchor xml:id="appcrit232begin"/>الشهد<anchor xml:id="appcrit232end"/> المتّخذ من <anchor xml:id="appcrit233begin"/>التمر<anchor xml:id="appcrit233end"/> أو <anchor xml:id="appcrit234begin"/>أردأ<anchor xml:id="appcrit234end"/> منه وكان أن يكون بمنزلة العسل الرديء. وتساوي الخمرة السوداء الحلوة العصير إلّا <anchor xml:id="appcrit235begin"/>أنّها<anchor xml:id="appcrit235end"/> أردأ منه كما أنّ العسل المتّخذ من <anchor xml:id="appcrit236begin"/>التمر<anchor xml:id="appcrit236end"/> أردأ <pb unit="folio" edRef="#A" n="114v"/> من العصير.
+			</p>
+			<p>
+				وإنّ التين اليابس قد يولّد خلطاً لطيفاً وأمّا الرطب النضيج منه فيولّد خلطاً متوسّطاً وأمّا ما كان منه غير نضيج فيولّد خلطاً غليظاً.
+			</p>
+			<p>
+				<anchor xml:id="appcrit237begin"/>
+				وإنّ<anchor xml:id="appcrit237end"/> مائيّة اللبن <anchor xml:id="appcrit238begin"/>ملطّفة<anchor xml:id="appcrit238end"/> للبطن ولذلك <anchor xml:id="appcrit239begin"/>قد<anchor xml:id="appcrit239end"/> ينتفع بها في استعمال التدبير الملطّف <anchor xml:id="appcrit240begin"/>وأمّا الجبنيّة التي فيه فتولّد خلطاً غليظاً ولذلك ينبغي أن يجتنب في التدبير الملطّف<anchor xml:id="appcrit240end"/> واللبن بأسره مائل إلی الغلظ. وينبغي متی <anchor xml:id="appcrit241begin"/>احتجنا<anchor xml:id="appcrit241end"/> أن نستعمل منه شيئاً في التدبير الملطّف أن نخلط معه إمّا شيئاً من العسل <anchor xml:id="appcrit242begin"/>وإمّا<anchor xml:id="appcrit242end"/> من الملح أو <anchor xml:id="appcrit243begin"/>هما<anchor xml:id="appcrit243end"/> جميعاً. وإنّ اللبن نافع <anchor xml:id="appcrit244begin"/>لأوجاع<anchor xml:id="appcrit244end"/> الصدر <anchor xml:id="appcrit245begin"/>والرئة<anchor xml:id="appcrit245end"/> وأمّا أوجاع الكبد والطحال التي تحتاج إلی التدبير الملطّف فغير نافع. <anchor xml:id="appcrit246begin"/>وإنّ<anchor xml:id="appcrit246end"/> ما كان من الألبان الغالب <anchor xml:id="appcrit247begin"/>عليه<anchor xml:id="appcrit247end"/> الجبنيّة فهو <anchor xml:id="appcrit248begin"/>أغلظها<anchor xml:id="appcrit248end"/> مثل لبن <anchor xml:id="appcrit249begin"/>البقر<anchor xml:id="appcrit249end"/> والضأن وما كان <anchor xml:id="appcrit250begin"/>منه<anchor xml:id="appcrit250end"/> الغالب عليه المائيّة فهو ألطفها مثل ألبان الأتن. <anchor xml:id="appcrit251begin"/>ولذلك<anchor xml:id="appcrit251end"/> <anchor xml:id="appcrit252begin"/>قد ينبغي<anchor xml:id="appcrit252end"/> متی احتجنا <anchor xml:id="appcrit253begin"/>أن نستعمل<anchor xml:id="appcrit253end"/> <anchor xml:id="appcrit254begin"/>في التدبير الملطّف شيئاً من الألبان<anchor xml:id="appcrit254end"/> أن نستعمله ولا نطبخه <anchor xml:id="appcrit255begin"/>فإنّ مائيّته تذهب بالطبخ<anchor xml:id="appcrit255end"/> وتبقی <anchor xml:id="appcrit256begin"/>جبنيّته<anchor xml:id="appcrit256end"/> بعد أن نخلط فيه <anchor xml:id="appcrit257begin"/>كما قلنا<anchor xml:id="appcrit257end"/> شيء من <anchor xml:id="appcrit258begin"/>الملح أو العسل أو جميعاً<anchor xml:id="appcrit258end"/>. وما كان متوسّطاً فيما بين هذين فهو أيضاً متوسّط في فعله مثل لبن <anchor xml:id="appcrit259begin"/>المعز<anchor xml:id="appcrit259end"/>.
+			</p>
+			<p>
+				فقد أتينا علی ذكر الأغذية الملطّفة <pb unit="page" edRef="#M" n="271"/> ليستعملها من أراد التدبير الملطّف <anchor xml:id="appcrit260begin"/>وعلی ذكر الأغذية المغلظة ليجتنبها من أراد التدبير الملطّف<anchor xml:id="appcrit260end"/> <anchor xml:id="appcrit261begin"/>وعلی<anchor xml:id="appcrit261end"/> ذكر الأغذية المتوسّطة حتّی <anchor xml:id="appcrit262begin"/>ما<anchor xml:id="appcrit262end"/> حصل <anchor xml:id="appcrit263begin"/>فهمها<anchor xml:id="appcrit263end"/> المستعمل للتدبير الملطّف لم <anchor xml:id="appcrit264begin"/>يتجنّبها<anchor xml:id="appcrit264end"/> علی أنّها غير موافقة <anchor xml:id="appcrit265begin"/>ولم يستعملها علی أنّها موافقة<anchor xml:id="appcrit265end"/>. وإن عرض للمريض أن يشتهي منها شيئاً لم يمنعه ويستعملها <anchor xml:id="appcrit266begin"/>المريد<anchor xml:id="appcrit266end"/> للتدبير الملطّف <anchor xml:id="appcrit267begin"/>ولا يكثر استعماله لها<anchor xml:id="appcrit267end"/> لأنّك إن استعملت حينئذٍ من الأغذية <anchor xml:id="appcrit268begin"/>ما هو يسير<anchor xml:id="appcrit268end"/> الغلظ لم يضرّ ذلك شيئاً مثل لحوم <anchor xml:id="appcrit269begin"/>العصافير<anchor xml:id="appcrit269end"/> والخنازير الجبليّة <anchor xml:id="appcrit270begin"/>و<anchor xml:id="appcrit270end"/>خاصّة <anchor xml:id="appcrit271begin"/>كراعانها<anchor xml:id="appcrit271end"/> <pb unit="folio" edRef="#A" n="115r"/> وخراطيمها وآذانها <anchor xml:id="appcrit272begin"/>وشبه ذلك<anchor xml:id="appcrit272end"/>. وأمّا جميع الأغذية الباقية فإنّا تركنا ذكرها لأنّها <anchor xml:id="appcrit273begin"/>كلّها<anchor xml:id="appcrit273end"/> تولّد خلطاً غليظاً <anchor xml:id="appcrit274begin"/>وقد ينبغي لمن أراد<anchor xml:id="appcrit274end"/> <anchor xml:id="appcrit275begin"/>استعمال<anchor xml:id="appcrit275end"/> التدبير الملطّف أن يجتنبها <anchor xml:id="appcrit276begin"/>كلّها<anchor xml:id="appcrit276end"/>.
+			</p>
+			<p>
+				<anchor xml:id="appcrit277begin"/>
+				تمّت مقالة<anchor xml:id="appcrit277end"/> جالينوس في التدبير الملطّف <anchor xml:id="appcrit278begin"/>استخراج الحسن ترجمة حنين بن إسحق المتطبّب<anchor xml:id="appcrit278end"/>.
+			</p>
+			<p>
+				<anchor xml:id="appcrit279begin"/>
+				والحمد للّه وحده وصلّی اللّه علی سيّدنا محمّد مٮٮٮٮاله (؟) وسلّم تسليماً<anchor xml:id="appcrit279end"/>.
+			</p>
+		</body>
+		<back>
+			<app from="#appcrit1begin" to="#appcrit1end">
+				<add wit="#M">اللّه المُعين</add>
+			</app>
+			<app from="#appcrit2begin" to="#appcrit2end">
+				<lem wit="#A">مقالة</lem>
+				<rdg wit="#M">كٮاب</rdg>
+			</app>
+			<app from="#appcrit3begin" to="#appcrit3end">
+				<lem wit="#A">إخراج حنين يبن إسحق المتطبّب</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit4begin" to="#appcrit4end">
+				<add wit="#M">قال</add>
+			</app>
+			<app from="#appcrit5begin" to="#appcrit5end">
+				<lem wit="#A">أنّه</lem>
+				<rdg wit="#M">انا</rdg>
+			</app>
+			<app from="#appcrit6begin" to="#appcrit6end">
+				<lem wit="#A">وجع</lem>
+				<rdg wit="#M">من علل</rdg>
+			</app>
+			<app from="#appcrit7begin" to="#appcrit7end">
+				<lem wit="#A">ويحلّ ورم</lem>
+				<rdg wit="#M">وورم</rdg>
+			</app>
+			<app from="#appcrit8begin" to="#appcrit8end">
+				<lem wit="#A">وأورام الكبد</lem>
+				<rdg wit="#M">والكبد</rdg>
+			</app>
+			<app from="#appcrit9begin" to="#appcrit9end">
+				<lem wit="#A">فإنّها</lem>
+				<rdg wit="#M">ڡانه</rdg>
+			</app>
+			<app from="#appcrit10begin" to="#appcrit10end">
+				<lem wit="#A">ينقّي</lem>
+				<rdg wit="#M">ينفع</rdg>
+			</app>
+			<app from="#appcrit11begin" to="#appcrit11end">
+				<lem wit="#A">مالحاً</lem>
+				<rdg wit="#M">مالح</rdg>
+			</app>
+			<app from="#appcrit12begin" to="#appcrit12end">
+				<lem wit="#A">مرّاً</lem>
+				<rdg wit="#M">مُرّ</rdg>
+			</app>
+			<app from="#appcrit13begin" to="#appcrit13end">
+				<lem wit="#A">منها</lem>
+				<rdg wit="#M">منه</rdg>
+			</app>
+			<app from="#appcrit14begin" to="#appcrit14end">
+				<lem wit="#A">وأقلّ يبساً</lem>
+				<rdg wit="#M">ويُبسًا</rdg>
+			</app>
+			<app from="#appcrit15begin" to="#appcrit15end">
+				<lem wit="#A">مرتفعة – مواضع</lem>
+				<rdg cause="saut du même au même" wit="#M"/>
+			</app>
+			<app from="#appcrit16begin" to="#appcrit16end">
+				<lem wit="#A">منخفضة</lem>
+				<rdg wit="#M">مٮحفطه</rdg>
+			</app>
+			<app from="#appcrit17begin" to="#appcrit17end">
+				<lem wit="#A">فإنّ ما</lem>
+				<rdg wit="#M">فما</rdg>
+			</app>
+			<app from="#appcrit18begin" to="#appcrit18end">
+				<add wit="#M">و</add>
+			</app>
+			<app from="#appcrit19begin" to="#appcrit19end">
+				<lem wit="#A">طلع</lem>
+				<rdg wit="#M">كمل</rdg>
+			</app>
+			<app from="#appcrit20begin" to="#appcrit20end">
+				<lem wit="#A">وأمّا – تلطيفاً</lem>
+				<rdg cause="saut du même au même" wit="#M"/>
+			</app>
+			<app from="#appcrit21begin" to="#appcrit21end">
+				<lem wit="#A">كان</lem>
+				<rdg wit="#M">ٮكون</rdg>
+			</app>
+			<app from="#appcrit22begin" to="#appcrit22end">
+				<lem wit="#A">تلطيفها</lem>
+				<rdg wit="#M">تلطيفه</rdg>
+			</app>
+			<app from="#appcrit23begin" to="#appcrit23end">
+				<lem wit="#A">يتّخذ</lem>
+				<rdg wit="#M">مٮحذًّا</rdg>
+			</app>
+			<app from="#appcrit24begin" to="#appcrit24end">
+				<lem wit="#A">وكلّما – تلطيفاً</lem>
+				<rdg cause="saut du même au même" wit="#M"/>
+			</app>
+			<app from="#appcrit25begin" to="#appcrit25end">
+				<lem wit="#M">ومنها</lem>
+				<rdg wit="#A">ومنه</rdg>
+			</app>
+			<app from="#appcrit26begin" to="#appcrit26end">
+				<lem wit="#M">يطيّب به</lem>
+				<rdg wit="#A">ٮطٮٮه</rdg>
+			</app>
+			<app from="#appcrit27begin" to="#appcrit27end">
+				<lem wit="#A">والكزبرة</lem>
+				<rdg wit="#M">والكزويا</rdg>
+			</app>
+			<app from="#appcrit28begin" to="#appcrit28end">
+				<lem wit="#M">ومنها</lem>
+				<rdg wit="#A">ومنه</rdg>
+			</app>
+			<app from="#appcrit29begin" to="#appcrit29end">
+				<lem wit="#M">ومنها</lem>
+				<rdg wit="#A">ومنه</rdg>
+			</app>
+			<app from="#appcrit30begin" to="#appcrit30end">
+				<lem wit="#M">للتدبير</lem>
+				<rdg wit="#A">التدٮير</rdg>
+			</app>
+			<app from="#appcrit31begin" to="#appcrit31end">
+				<lem wit="#A">منها شيء</lem>
+				<rdg wit="#M">شيٍ منها</rdg>
+			</app>
+			<app from="#appcrit32begin" to="#appcrit32end">
+				<lem wit="#A">غليظاً</lem>
+				<rdg wit="#M">بلغمٮًّا</rdg>
+			</app>
+			<app from="#appcrit33begin" to="#appcrit33end">
+				<lem wit="#A">في بعض الأوقات</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit34begin" to="#appcrit34end">
+				<lem wit="#M"></lem>
+				<rdg wit="#A"></rdg>
+			</app>
+			<app from="#appcrit35begin" to="#appcrit35end">
+				<lem wit="#A">فإذا</lem>
+				<rdg wit="#M">فانه اذا</rdg>
+			</app>
+			<app from="#appcrit36begin" to="#appcrit36end">
+				<lem wit="#A">الخبز</lem>
+				<rdg wit="#M">حُبزًا</rdg>
+			</app>
+			<app from="#appcrit37begin" to="#appcrit37end">
+				<lem wit="#M">محموداً</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit38begin" to="#appcrit38end">
+				<lem wit="#A">وخاصّة</lem>
+				<rdg wit="#M">وٮخاصه</rdg>
+			</app>
+			<app from="#appcrit39begin" to="#appcrit39end">
+				<lem wit="#A">الحساء</lem>
+				<rdg wit="#M">احسا</rdg>
+			</app>
+			<app from="#appcrit40begin" to="#appcrit40end">
+				<lem wit="#A">هو</lem>
+				<rdg wit="#M">هی</rdg>
+			</app>
+			<app from="#appcrit41begin" to="#appcrit41end">
+				<lem wit="#A">بزر</lem>
+				<rdg wit="#M">بزور</rdg>
+			</app>
+			<app from="#appcrit42begin" to="#appcrit42end">
+				<lem wit="#A">هو</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit43begin" to="#appcrit43end">
+				<lem wit="#A">رطباً</lem>
+				<rdg wit="#M">حارًا</rdg>
+			</app>
+			<app from="#appcrit44begin" to="#appcrit44end">
+				<lem wit="#A">وأمّا ما</lem>
+				<rdg wit="#M">وما</rdg>
+			</app>
+			<app from="#appcrit45begin" to="#appcrit45end">
+				<lem wit="#A">بارداً</lem>
+				<rdg wit="#M">ٮارد</rdg>
+			</app>
+			<app from="#appcrit46begin" to="#appcrit46end">
+				<lem wit="#A">قد</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit47begin" to="#appcrit47end">
+				<lem wit="#A">والخسّ</lem>
+				<rdg wit="#M">وبزر الخسّ</rdg>
+			</app>
+			<app from="#appcrit48begin" to="#appcrit48end">
+				<lem wit="#A">وأمّا</lem>
+				<rdg wit="#M">وكل</rdg>
+			</app>
+			<app from="#appcrit49begin" to="#appcrit49end">
+				<lem wit="#A">منه</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit50begin" to="#appcrit50end">
+				<lem wit="#A">أعني أن</lem>
+				<rdg wit="#M">ٮان</rdg>
+			</app>
+			<app from="#appcrit51begin" to="#appcrit51end">
+				<lem wit="#A">عسل أو سكّر</lem>
+				<rdg wit="#M">العسل والسُكّر</rdg>
+			</app>
+			<app from="#appcrit52begin" to="#appcrit52end">
+				<lem wit="#A">معه</lem>
+				<rdg wit="#M">به</rdg>
+			</app>
+			<app from="#appcrit53begin" to="#appcrit53end">
+				<lem wit="#A">غلظ</lem>
+				<rdg wit="#M">غُلظًا</rdg>
+			</app>
+			<app from="#appcrit54begin" to="#appcrit54end">
+				<lem wit="#A">كلّ</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit55begin" to="#appcrit55end">
+				<lem wit="#A">لحمه</lem>
+				<rdg wit="#M">لحمًا</rdg>
+			</app>
+			<app from="#appcrit56begin" to="#appcrit56end">
+				<lem wit="#A">الملطّف</lem>
+				<rdg wit="#M">اللطيف</rdg>
+			</app>
+			<app from="#appcrit57begin" to="#appcrit57end">
+				<lem wit="#A">يطير</lem>
+				<rdg wit="#M">طاير</rdg>
+			</app>
+			<app from="#appcrit58begin" to="#appcrit58end">
+				<lem wit="#A">فيما</lem>
+				<rdg wit="#M">ما</rdg>
+			</app>
+			<app from="#appcrit59begin" to="#appcrit59end">
+				<lem wit="#A">وذلك بحسب</lem>
+				<rdg wit="#M">ٮسبب</rdg>
+			</app>
+			<app from="#appcrit60begin" to="#appcrit60end">
+				<lem wit="#M">علائه</lem>
+				<rdg wit="#A">غذايه</rdg>
+			</app>
+			<app from="#appcrit61begin" to="#appcrit61end">
+				<lem wit="#A">في لحوم</lem>
+				<rdg wit="#M">من</rdg>
+			</app>
+			<app from="#appcrit62begin" to="#appcrit62end">
+				<lem wit="#A">شيء من لحوم</lem>
+				<rdg wit="#M">لحم شيٍ من</rdg>
+			</app>
+			<app from="#appcrit63begin" to="#appcrit63end">
+				<lem wit="#A">عنه</lem>
+				<rdg wit="#M">منه</rdg>
+			</app>
+			<app from="#appcrit64begin" to="#appcrit64end">
+				<lem wit="#A">خلط</lem>
+				<rdg wit="#M">لحم</rdg>
+			</app>
+			<app from="#appcrit65begin" to="#appcrit65end">
+				<lem wit="#A">لحوم</lem>
+				<rdg wit="#M">لحم</rdg>
+			</app>
+			<app from="#appcrit66begin" to="#appcrit66end">
+				<lem wit="#A">كأنّها</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit67begin" to="#appcrit67end">
+				<lem wit="#A">ما كان طائراً وما كان مشّاء</lem>
+				<rdg wit="#M">الطاير والمشّا</rdg>
+			</app>
+			<app from="#appcrit68begin" to="#appcrit68end">
+				<lem wit="#A">وإنّه قد</lem>
+				<rdg wit="#M">وقد</rdg>
+			</app>
+			<app from="#appcrit69begin" to="#appcrit69end">
+				<lem wit="#A">كلّ اللحوم</lem>
+				<rdg wit="#M">اللحم</rdg>
+			</app>
+			<app from="#appcrit70begin" to="#appcrit70end">
+				<lem wit="#A">يتحرّك</lem>
+				<rdg wit="#M">ٮحرك</rdg>
+			</app>
+			<app from="#appcrit71begin" to="#appcrit71end">
+				<lem wit="#A">قبل ذبحه بعنف</lem>
+				<rdg wit="#M">بعنفٍ قبل ذبحه</rdg>
+			</app>
+			<app from="#appcrit72begin" to="#appcrit72end">
+				<add wit="#A">ٯٮل اں ٮدٮح</add>
+			</app>
+			<app from="#appcrit73begin" to="#appcrit73end">
+				<lem wit="#A">لحوم</lem>
+				<rdg wit="#M">لحم</rdg>
+			</app>
+			<app from="#appcrit74begin" to="#appcrit74end">
+				<lem wit="#A">خاصّة</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit75begin" to="#appcrit75end">
+				<lem wit="#A">فتصبّره</lem>
+				<rdg wit="#M">فان ٮصير</rdg>
+			</app>
+			<app from="#appcrit76begin" to="#appcrit76end">
+				<lem wit="#A">وإنّ ما يؤكل</lem>
+				<rdg wit="#M">وما كان</rdg>
+			</app>
+			<app from="#appcrit77begin" to="#appcrit77end">
+				<lem wit="#A">لحوم</lem>
+				<rdg wit="#M">لحم</rdg>
+			</app>
+			<app from="#appcrit78begin" to="#appcrit78end">
+				<lem wit="#A">البياض – إلی</lem>
+				<rdg cause="saut du même au même" wit="#M"/>
+			</app>
+			<app from="#appcrit79begin" to="#appcrit79end">
+				<lem wit="#A">إنّ</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit80begin" to="#appcrit80end">
+				<lem wit="#A">أعضاء</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit81begin" to="#appcrit81end">
+				<lem wit="#A">وذلك بسبب الحركة</lem>
+				<rdg wit="#M">والعضل من حمٮع الحيوان ٮسبب الحركه الطف</rdg>
+			</app>
+			<app from="#appcrit82begin" to="#appcrit82end">
+				<lem wit="#A">منها</lem>
+				<rdg wit="#M">فيها</rdg>
+			</app>
+			<app from="#appcrit83begin" to="#appcrit83end">
+				<lem wit="#A">لاستعمال التدبير</lem>
+				<rdg wit="#M">لتدٮير</rdg>
+			</app>
+			<app from="#appcrit84begin" to="#appcrit84end">
+				<lem wit="#A">ولغلظ</lem>
+				<rdg wit="#M">وعلظ</rdg>
+			</app>
+			<app from="#appcrit85begin" to="#appcrit85end">
+				<lem wit="#M">مأواه</lem>
+				<rdg wit="#A">ماوه</rdg>
+			</app>
+			<app from="#appcrit86begin" to="#appcrit86end">
+				<lem wit="#A">علی</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit87begin" to="#appcrit87end">
+				<lem wit="#M">جميع</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit88begin" to="#appcrit88end">
+				<lem wit="#A">من – السمك</lem>
+				<rdg cause="saut du même au même" wit="#M"/>
+			</app>
+			<app from="#appcrit89begin" to="#appcrit89end">
+				<lem wit="#M">لقيت</lem>
+				<rdg wit="#A">كڡٮٮ</rdg>
+			</app>
+			<app from="#appcrit90begin" to="#appcrit90end">
+				<lem wit="#M">يبّستها</lem>
+				<rdg wit="#A">ٮٮسها</rdg>
+			</app>
+			<app from="#appcrit91begin" to="#appcrit91end">
+				<add wit="#M">انه</add>
+			</app>
+			<app from="#appcrit92begin" to="#appcrit92end">
+				<lem wit="#A">البسيطة</lem>
+				<rdg wit="#M">المفرده</rdg>
+			</app>
+			<app from="#appcrit92begin" to="#appcrit92end">
+				<add wit="#M">و</add>
+			</app>
+			<app from="#appcrit94begin" to="#appcrit94end">
+				<add wit="#M">عليه</add>
+			</app>
+			<app from="#appcrit95begin" to="#appcrit95end">
+				<lem wit="#A">أدنی</lem>
+				<rdg wit="#M">ادهن به</rdg>
+			</app>
+			<app from="#appcrit96begin" to="#appcrit96end">
+				<lem wit="#A">اتّخاذ</lem>
+				<rdg wit="#M">ما اٮخد من</rdg>
+			</app>
+			<app from="#appcrit97begin" to="#appcrit97end">
+				<lem wit="#A">البدن منه</lem>
+				<rdg wit="#M">منه البدن</rdg>
+			</app>
+			<app from="#appcrit98begin" to="#appcrit98end">
+				<lem wit="#A">الطبخ يحلّ</lem>
+				<rdg wit="#M">المطبوح تنحلّ عنه</rdg>
+			</app>
+			<app from="#appcrit99begin" to="#appcrit99end">
+				<lem wit="#M">احتقنت</lem>
+				<rdg wit="#A">احٮٮاٮ</rdg>
+			</app>
+			<app from="#appcrit100begin" to="#appcrit100end">
+				<lem wit="#M">فلم</lem>
+				<rdg wit="#A">ولم</rdg>
+			</app>
+			<app from="#appcrit101begin" to="#appcrit101end">
+				<lem wit="#A">تنحلّ</lem>
+				<rdg wit="#M">ٮٮحلل</rdg>
+			</app>
+			<app from="#appcrit102begin" to="#appcrit102end">
+				<lem wit="#A">رطوبته</lem>
+				<rdg wit="#M">رطوبه</rdg>
+			</app>
+			<app from="#appcrit103begin" to="#appcrit103end">
+				<lem wit="#A">جرم</lem>
+				<rdg wit="#M">جسم</rdg>
+			</app>
+			<app from="#appcrit104begin" to="#appcrit104end">
+				<lem wit="#A">سبباً</lem>
+				<rdg wit="#M">سُمًّا</rdg>
+			</app>
+			<app from="#appcrit105begin" to="#appcrit105end">
+				<lem wit="#A">لتحلّله</lem>
+				<rdg wit="#M">ٮتحلله</rdg>
+			</app>
+			<app from="#appcrit106begin" to="#appcrit106end">
+				<lem wit="#A">ويطبخ</lem>
+				<rdg wit="#M">وٮجعل</rdg>
+			</app>
+			<app from="#appcrit107begin" to="#appcrit107end">
+				<lem wit="#A">يصير</lem>
+				<rdg wit="#M">ڡٮصير</rdg>
+			</app>
+			<app from="#appcrit108begin" to="#appcrit108end">
+				<lem wit="#M">يتّفقان</lem>
+				<rdg wit="#A">ٮٮڡعان</rdg>
+			</app>
+			<app from="#appcrit109begin" to="#appcrit109end">
+				<lem wit="#A">أنّ</lem>
+				<rdg wit="#M">لان</rdg>
+			</app>
+			<app from="#appcrit110begin" to="#appcrit110end">
+				<lem wit="#A">أقوی</lem>
+				<rdg wit="#M">ٯوي</rdg>
+			</app>
+			<app from="#appcrit111begin" to="#appcrit111end">
+				<lem wit="#M">به</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit112begin" to="#appcrit112end">
+				<lem wit="#A">مداخلتها</lem>
+				<rdg wit="#M">مداخلته</rdg>
+			</app>
+			<app from="#appcrit113begin" to="#appcrit113end">
+				<lem wit="#A">للماء</lem>
+				<rdg wit="#M">الما</rdg>
+			</app>
+			<app from="#appcrit114begin" to="#appcrit114end">
+				<lem wit="#A">قبل</lem>
+				<rdg wit="#M">ٮقبل</rdg>
+			</app>
+			<app from="#appcrit115begin" to="#appcrit115end">
+				<lem wit="#M">القلي</lem>
+				<rdg wit="#A">المقلا</rdg>
+			</app>
+			<app from="#appcrit116begin" to="#appcrit116end">
+				<lem wit="#M">فضيلة</lem>
+				<rdg wit="#A">ڡصله</rdg>
+			</app>
+			<app from="#appcrit117begin" to="#appcrit117end">
+				<lem wit="#A">من السمك</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit118begin" to="#appcrit118end">
+				<lem wit="#A">من السمك</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit119begin" to="#appcrit119end">
+				<lem wit="#M">فضيلة</lem>
+				<rdg wit="#A">ڡصولا</rdg>
+			</app>
+			<app from="#appcrit120begin" to="#appcrit120end">
+				<lem wit="#M">فيه</lem>
+				<rdg wit="#A">منه</rdg>
+			</app>
+			<app from="#appcrit121begin" to="#appcrit121end">
+				<lem wit="#M">لأنّ</lem>
+				<rdg wit="#A">ڡلاں</rdg>
+			</app>
+			<app from="#appcrit122begin" to="#appcrit122end">
+				<lem wit="#A">التي</lem>
+				<rdg wit="#M">الذی</rdg>
+			</app>
+			<app from="#appcrit123begin" to="#appcrit123end">
+				<lem wit="#A">داخل لحمه</lem>
+				<rdg wit="#M">داخله</rdg>
+			</app>
+			<app from="#appcrit124begin" to="#appcrit124end">
+				<lem wit="#M">تتحلّل</lem>
+				<rdg wit="#A">ٮحلل</rdg>
+			</app>
+			<app from="#appcrit125begin" to="#appcrit125end">
+				<lem wit="#A"></lem>
+				<rdg wit="#M"></rdg>
+			</app>
+			<app from="#appcrit126begin" to="#appcrit126end">
+				<lem wit="#A">محتاجاً</lem>
+				<rdg wit="#M">ٮحتاج</rdg>
+			</app>
+			<app from="#appcrit127begin" to="#appcrit127end">
+				<lem wit="#M">وأمّا</lem>
+				<rdg wit="#A">واٮما</rdg>
+			</app>
+			<app from="#appcrit128begin" to="#appcrit128end">
+				<lem wit="#M">البيض</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit129begin" to="#appcrit129end">
+				<lem wit="#A">عنه</lem>
+				<rdg wit="#M">منه</rdg>
+			</app>
+			<app from="#appcrit130begin" to="#appcrit130end">
+				<lem wit="#A">بعده</lem>
+				<rdg wit="#M">بعد</rdg>
+			</app>
+			<app from="#appcrit131begin" to="#appcrit131end">
+				<lem wit="#A">البرد</lem>
+				<rdg wit="#M">البروده</rdg>
+			</app>
+			<app from="#appcrit132begin" to="#appcrit132end">
+				<lem wit="#A">اللفت</lem>
+				<rdg wit="#M">القطف</rdg>
+			</app>
+			<app from="#appcrit133begin" to="#appcrit133end">
+				<lem wit="#A">فيه</lem>
+				<rdg wit="#M">عليه</rdg>
+			</app>
+			<app from="#appcrit134begin" to="#appcrit134end">
+				<lem wit="#A">أغلب فيه</lem>
+				<rdg wit="#M">فٮه اعلب</rdg>
+			</app>
+			<app from="#appcrit135begin" to="#appcrit135end">
+				<lem wit="#M">من اليبوسة</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit136begin" to="#appcrit136end">
+				<lem wit="#A">فيه</lem>
+				<rdg wit="#M">عليه</rdg>
+			</app>
+			<app from="#appcrit137begin" to="#appcrit137end">
+				<lem wit="#M">و</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit138begin" to="#appcrit138end">
+				<add wit="#A">مٮه</add>
+			</app>
+			<app from="#appcrit139begin" to="#appcrit139end">
+				<lem wit="#M">صلباً</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit140begin" to="#appcrit140end">
+				<lem wit="#A">مقبضاً</lem>
+				<rdg wit="#M">قابضًا</rdg>
+			</app>
+			<app from="#appcrit141begin" to="#appcrit141end">
+				<lem wit="#A">منها</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit142begin" to="#appcrit142end">
+				<lem wit="#A">أنّه</lem>
+				<rdg wit="#M">انها</rdg>
+			</app>
+			<app from="#appcrit143begin" to="#appcrit143end">
+				<lem wit="#A">الشاميّ</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit144begin" to="#appcrit144end">
+				<lem wit="#M">و</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit145begin" to="#appcrit145end">
+				<lem wit="#A">بعد</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit146begin" to="#appcrit146end">
+				<lem wit="#M">إنّه</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit147begin" to="#appcrit147end">
+				<lem wit="#A">قد</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit148begin" to="#appcrit148end">
+				<lem wit="#A">ينتفع به</lem>
+				<rdg wit="#M">ينفع</rdg>
+			</app>
+			<app from="#appcrit149begin" to="#appcrit149end">
+				<add wit="#M">و</add>
+			</app>
+			<app from="#appcrit150begin" to="#appcrit150end">
+				<lem wit="#A">قشر</lem>
+				<rdg wit="#M">قشور</rdg>
+			</app>
+			<app from="#appcrit151begin" to="#appcrit151end">
+				<lem wit="#A">ثمّ – الأترجّ</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit152begin" to="#appcrit152end">
+				<lem wit="#A">والرمّان الحامض</lem>
+				<rdg wit="#M">وما كان من الرمان حامضًا</rdg>
+			</app>
+			<app from="#appcrit153begin" to="#appcrit153end">
+				<lem wit="#A">جنس</lem>
+				<rdg wit="#M">جنسين</rdg>
+			</app>
+			<app from="#appcrit154begin" to="#appcrit154end">
+				<lem wit="#A">والكمّثری والعنب</lem>
+				<rdg wit="#M">والعنب والكمثری</rdg>
+			</app>
+			<app from="#appcrit155begin" to="#appcrit155end">
+				<lem wit="#M">و</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit156begin" to="#appcrit156end">
+				<lem wit="#M">أيضاً</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit157begin" to="#appcrit157end">
+				<lem wit="#A">الخرنوب والبلّوط</lem>
+				<rdg wit="#M">البلوط والخربوب</rdg>
+			</app>
+			<app from="#appcrit158begin" to="#appcrit158end">
+				<lem wit="#A">المقبض</lem>
+				<rdg wit="#M">القابض</rdg>
+			</app>
+			<app from="#appcrit159begin" to="#appcrit159end">
+				<lem wit="#M">الملطّف</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit160begin" to="#appcrit160end">
+				<lem wit="#A">التدبير الملطّف</lem>
+				<rdg wit="#M">الٮلطٮف</rdg>
+			</app>
+			<app from="#appcrit161begin" to="#appcrit161end">
+				<lem wit="#M">منها</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit162begin" to="#appcrit162end">
+				<lem wit="#A">الفستق والجوز</lem>
+				<rdg wit="#M">الجوز والفستق</rdg>
+			</app>
+			<app from="#appcrit163begin" to="#appcrit163end">
+				<add wit="#A">و</add>
+			</app>
+			<app from="#appcrit164begin" to="#appcrit164end">
+				<lem wit="#M">ملطّفاً</lem>
+				<rdg wit="#A">مُطلقا</rdg>
+			</app>
+			<app from="#appcrit165begin" to="#appcrit165end">
+				<lem wit="#M">بالخلّ والملح</lem>
+				<rdg wit="#A">ٮالملح</rdg>
+			</app>
+			<app from="#appcrit166begin" to="#appcrit166end">
+				<add wit="#M">فانه</add>
+			</app>
+			<app from="#appcrit167begin" to="#appcrit167end">
+				<lem wit="#M">والسنانير</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit168begin" to="#appcrit168end">
+				<lem wit="#A">ما يقذف من</lem>
+				<rdg wit="#M">نفث ما في</rdg>
+			</app>
+			<app from="#appcrit169begin" to="#appcrit169end">
+				<lem wit="#A">يتولّد</lem>
+				<rdg wit="#M">يُولد</rdg>
+			</app>
+			<app from="#appcrit170begin" to="#appcrit170end">
+				<lem wit="#A">الغليظ</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit171begin" to="#appcrit171end">
+				<lem wit="#A">من</lem>
+				<rdg wit="#M">هي</rdg>
+			</app>
+			<app from="#appcrit172begin" to="#appcrit172end">
+				<lem wit="#M">في</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit173begin" to="#appcrit173end">
+				<lem wit="#A">الموضع</lem>
+				<rdg wit="#M">المواضع</rdg>
+			</app>
+			<app from="#appcrit174begin" to="#appcrit174end">
+				<lem wit="#A">قد</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit175begin" to="#appcrit175end">
+				<add wit="#M">من</add>
+			</app>
+			<app from="#appcrit176begin" to="#appcrit176end">
+				<lem wit="#A">شيئاً</lem>
+				<rdg wit="#M">شی</rdg>
+			</app>
+			<app from="#appcrit177begin" to="#appcrit177end">
+				<lem wit="#A">لأنّه</lem>
+				<rdg wit="#M">ڡانه</rdg>
+			</app>
+			<app from="#appcrit178begin" to="#appcrit178end">
+				<lem wit="#A">حينئذٍ يصير</lem>
+				<rdg wit="#M">ٮصير حينيّذٍ</rdg>
+			</app>
+			<app from="#appcrit179begin" to="#appcrit179end">
+				<lem wit="#M">والشراب</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit180begin" to="#appcrit180end">
+				<lem wit="#M">استعمال</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit181begin" to="#appcrit181end">
+				<lem wit="#M">الملطّف</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit182begin" to="#appcrit182end">
+				<lem wit="#A">خطاء</lem>
+				<rdg wit="#M">خلطا</rdg>
+			</app>
+			<app from="#appcrit183begin" to="#appcrit183end">
+				<lem wit="#M">الخمر</lem>
+				<rdg wit="#A">الحمور</rdg>
+			</app>
+			<app from="#appcrit184begin" to="#appcrit184end">
+				<lem wit="#A">مقبضاً</lem>
+				<rdg wit="#M">قابضًا</rdg>
+			</app>
+			<app from="#appcrit185begin" to="#appcrit185end">
+				<lem wit="#M">فالخلط</lem>
+				<rdg wit="#A">الخلط</rdg>
+			</app>
+			<app from="#appcrit186begin" to="#appcrit186end">
+				<lem wit="#M">عنه</lem>
+				<rdg wit="#A">عنها</rdg>
+			</app>
+			<app from="#appcrit187begin" to="#appcrit187end">
+				<lem wit="#A">قد</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit188begin" to="#appcrit188end">
+				<lem wit="#M">أبيض</lem>
+				<rdg wit="#A">ايضًا</rdg>
+			</app>
+			<app from="#appcrit189begin" to="#appcrit189end">
+				<lem wit="#A">حلواً</lem>
+				<rdg wit="#M">حاره</rdg>
+			</app>
+			<app from="#appcrit190begin" to="#appcrit190end">
+				<lem wit="#A">علی هذا الوصف</lem>
+				<rdg wit="#M">كذلك</rdg>
+			</app>
+			<app from="#appcrit191begin" to="#appcrit191end">
+				<lem wit="#A">منقٍّ</lem>
+				<rdg wit="#M">منقی</rdg>
+			</app>
+			<app from="#appcrit192begin" to="#appcrit192end">
+				<lem wit="#A">بإدراره للبول</lem>
+				<rdg wit="#M">ٮادرار البول</rdg>
+			</app>
+			<app from="#appcrit193begin" to="#appcrit193end">
+				<lem wit="#M">وهو</lem>
+				<rdg wit="#A"/>
+				<add hand="#A1" place="above">وهو</add>
+			</app>
+			<app from="#appcrit194begin" to="#appcrit194end">
+				<lem wit="#A">للتدبير</lem>
+				<rdg wit="#M">لٮدٮير</rdg>
+			</app>
+			<app from="#appcrit195begin" to="#appcrit195end">
+				<add wit="#M">اما</add>
+			</app>
+			<app from="#appcrit196begin" to="#appcrit196end">
+				<lem wit="#A">من الخمور</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit197begin" to="#appcrit197end">
+				<lem wit="#M">حلواً</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit198begin" to="#appcrit198end">
+				<lem wit="#A">أعني</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit199begin" to="#appcrit199end">
+				<lem wit="#M">والقوام</lem>
+				<rdg wit="#A">وڡی القوه</rdg>
+			</app>
+			<app from="#appcrit200begin" to="#appcrit200end">
+				<lem wit="#A">والطعم</lem>
+				<rdg wit="#M">وڡی الطبع</rdg>
+			</app>
+			<app from="#appcrit201begin" to="#appcrit201end">
+				<lem wit="#A">وفي الخلط</lem>
+				<rdg wit="#M">والحلط</rdg>
+			</app>
+			<app from="#appcrit202begin" to="#appcrit202end">
+				<lem wit="#A">عنها</lem>
+				<rdg wit="#M">عنه</rdg>
+			</app>
+			<app from="#appcrit203begin" to="#appcrit203end">
+				<lem wit="#M">ولذلك</lem>
+				<rdg wit="#A">وكذلك</rdg>
+			</app>
+			<app from="#appcrit204begin" to="#appcrit204end">
+				<lem wit="#A">استعمال</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit205begin" to="#appcrit205end">
+				<lem wit="#A">جميع</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit206begin" to="#appcrit206end">
+				<lem wit="#A">هذه</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit207begin" to="#appcrit207end">
+				<lem wit="#M">جميع</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit208begin" to="#appcrit208end">
+				<lem wit="#A">بسبب هذه</lem>
+				<rdg wit="#M">بهذا السٮب</rdg>
+			</app>
+			<app from="#appcrit209begin" to="#appcrit209end">
+				<lem wit="#A">خصال</lem>
+				<rdg wit="#M">خلال</rdg>
+			</app>
+			<app from="#appcrit210begin" to="#appcrit210end">
+				<lem wit="#A">كانت</lem>
+				<rdg wit="#M">كان</rdg>
+			</app>
+			<app from="#appcrit211begin" to="#appcrit211end">
+				<lem wit="#A">حارّة</lem>
+				<rdg wit="#M">حلوًا</rdg>
+			</app>
+			<app from="#appcrit212begin" to="#appcrit212end">
+				<lem wit="#A">كانت سود الألوان صادقة</lem>
+				<rdg wit="#M">كان اسود اللون صادق</rdg>
+			</app>
+			<app from="#appcrit213begin" to="#appcrit213end">
+				<lem wit="#A">و</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit214begin" to="#appcrit214end">
+				<lem wit="#A">فيها</lem>
+				<rdg wit="#M">فٮه</rdg>
+			</app>
+			<app from="#appcrit215begin" to="#appcrit215end">
+				<lem wit="#A">فيها</lem>
+				<rdg wit="#M">فٮه</rdg>
+			</app>
+			<app from="#appcrit216begin" to="#appcrit216end">
+				<lem wit="#A">قد</lem>
+				<rdg wit="#M">فانه</rdg>
+			</app>
+			<app from="#appcrit217begin" to="#appcrit217end">
+				<lem wit="#A">قد</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit218begin" to="#appcrit218end">
+				<lem wit="#A">الأوجاع في الرأس</lem>
+				<rdg wit="#M"></rdg>
+			</app>
+			<app from="#appcrit219begin" to="#appcrit219end">
+				<lem wit="#A">والجوف</lem>
+				<rdg wit="#M">او الجوف</rdg>
+			</app>
+			<app from="#appcrit220begin" to="#appcrit220end">
+				<lem wit="#M">ما</lem>
+				<rdg wit="#A">لما</rdg>
+			</app>
+			<app from="#appcrit221begin" to="#appcrit221end">
+				<lem wit="#A">إليه</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit222begin" to="#appcrit222end">
+				<lem wit="#M">وذلك</lem>
+				<rdg wit="#A">ولذلك</rdg>
+			</app>
+			<app from="#appcrit223begin" to="#appcrit223end">
+				<lem wit="#M">حارّة</lem>
+				<rdg wit="#A">مٮحده</rdg>
+			</app>
+			<app from="#appcrit224begin" to="#appcrit224end">
+				<lem wit="#A">ولهذا</lem>
+				<rdg wit="#M">ولذلك</rdg>
+			</app>
+			<app from="#appcrit225begin" to="#appcrit225end">
+				<lem wit="#M">مضرّته</lem>
+				<rdg wit="#A">مُضِره</rdg>
+			</app>
+			<app from="#appcrit226begin" to="#appcrit226end">
+				<lem wit="#A">الأعراض</lem>
+				<rdg wit="#M">الامراض</rdg>
+			</app>
+			<app from="#appcrit227begin" to="#appcrit227end">
+				<lem wit="#A">فإنّ</lem>
+				<rdg wit="#M">فانه</rdg>
+			</app>
+			<app from="#appcrit228begin" to="#appcrit228end">
+				<lem wit="#A">الحلوة يكون</lem>
+				<rdg wit="#M">ما كان حُلوًا</rdg>
+			</app>
+			<app from="#appcrit229begin" to="#appcrit229end">
+				<lem wit="#A">في</lem>
+				<rdg wit="#M">من</rdg>
+			</app>
+			<app from="#appcrit230begin" to="#appcrit230end">
+				<lem wit="#M">فإنّه</lem>
+				<rdg wit="#A">وانّه</rdg>
+			</app>
+			<app from="#appcrit231begin" to="#appcrit231end">
+				<lem wit="#A">يساوي</lem>
+				<rdg wit="#M">ساوي</rdg>
+			</app>
+			<app from="#appcrit232begin" to="#appcrit232end">
+				<lem wit="#A">الشهد</lem>
+				<rdg wit="#M">النٮٮذ</rdg>
+			</app>
+			<app from="#appcrit233begin" to="#appcrit233end">
+				<lem wit="#A">التمر</lem>
+				<rdg wit="#M">الٮين</rdg>
+			</app>
+			<app from="#appcrit234begin" to="#appcrit234end">
+				<lem wit="#M">أردأ</lem>
+				<rdg wit="#A">
+					<subst>
+						<del hand="#A1" rend="unmarked">ارادی</del>
+						<add hand="#A1" place="body">أردأ</add>
+					</subst>
+				</rdg>
+			</app>
+			<app from="#appcrit235begin" to="#appcrit235end">
+				<add wit="#M">اٮضا</add>
+			</app>
+			<app from="#appcrit236begin" to="#appcrit236end">
+				<lem wit="#A">التمر</lem>
+				<rdg wit="#M">العصٮر</rdg>
+			</app>
+			<app from="#appcrit237begin" to="#appcrit237end">
+				<lem wit="#A">وإنّ</lem>
+				<rdg wit="#M">واما</rdg>
+			</app>
+			<app from="#appcrit238begin" to="#appcrit238end">
+				<lem wit="#A">ملطّفة</lem>
+				<rdg wit="#M">ڡملطفه</rdg>
+			</app>
+			<app from="#appcrit239begin" to="#appcrit239end">
+				<lem wit="#A">قد</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit240begin" to="#appcrit240end">
+				<lem wit="#M">وأمّا – الملطّف</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit241begin" to="#appcrit241end">
+				<lem wit="#A">احتجنا</lem>
+				<rdg wit="#M">احتجت</rdg>
+			</app>
+			<app from="#appcrit242begin" to="#appcrit242end">
+				<lem wit="#A">وإمّا</lem>
+				<rdg wit="#M">او</rdg>
+			</app>
+			<app from="#appcrit243begin" to="#appcrit243end">
+				<lem wit="#M">هما</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit244begin" to="#appcrit244end">
+				<lem wit="#A">لأوجاع</lem>
+				<rdg wit="#M">من اوجاع</rdg>
+			</app>
+			<app from="#appcrit245begin" to="#appcrit245end">
+				<lem wit="#M">والرئة</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit246begin" to="#appcrit246end">
+				<lem wit="#A">وإنّ</lem>
+				<rdg wit="#M">واما</rdg>
+			</app>
+			<app from="#appcrit247begin" to="#appcrit247end">
+				<lem wit="#A">عليه</lem>
+				<rdg wit="#M">عليها</rdg>
+			</app>
+			<app from="#appcrit248begin" to="#appcrit248end">
+				<lem wit="#A">أغلظها</lem>
+				<rdg wit="#M">اغلظ</rdg>
+			</app>
+			<app from="#appcrit249begin" to="#appcrit249end">
+				<lem wit="#M">البقر</lem>
+				<rdg wit="#A">المعز</rdg>
+			</app>
+			<app from="#appcrit250begin" to="#appcrit250end">
+				<lem wit="#A">منه</lem>
+				<rdg wit="#M">منها</rdg>
+			</app>
+			<app from="#appcrit251begin" to="#appcrit251end">
+				<lem wit="#M">ولذلك</lem>
+				<rdg wit="#A">وكذلك</rdg>
+			</app>
+			<app from="#appcrit252begin" to="#appcrit252end">
+				<lem wit="#A">قد ينبغي</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit253begin" to="#appcrit253end">
+				<lem wit="#A">أن نستعمل</lem>
+				<rdg wit="#M">الی استعمال</rdg>
+			</app>
+			<app from="#appcrit254begin" to="#appcrit254end">
+				<lem wit="#A">في التدبير الملطّف شيئاً من الاألبان</lem>
+				<rdg wit="#M">شی من الالبان ڡی الٮدٮٮر الملطف</rdg>
+			</app>
+			<app from="#appcrit255begin" to="#appcrit255end">
+				<lem wit="#A">فإنّ مائيّته تذهب بالطبخ</lem>
+				<rdg wit="#M">لان الطٮخ ٮدهب ماٮٮته</rdg>
+			</app>
+			<app from="#appcrit256begin" to="#appcrit256end">
+				<lem wit="#A">جبنيّته</lem>
+				<rdg wit="#M">حٮنٮذ</rdg>
+			</app>
+			<app from="#appcrit257begin" to="#appcrit257end">
+				<lem wit="#A">كما قلنا</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit258begin" to="#appcrit258end">
+				<lem wit="#A">الملح أو العسل أو جميعاً</lem>
+				<rdg wit="#M">العسل او الملح او حميعهما</rdg>
+			</app>
+			<app from="#appcrit258begin" to="#appcrit258end">
+				<add wit="#M">علی ما تقدم</add>
+			</app>
+			<app from="#appcrit259begin" to="#appcrit259end">
+				<lem wit="#A">المعز</lem>
+				<rdg wit="#M">الماعز</rdg>
+			</app>
+			<app from="#appcrit260begin" to="#appcrit260end">
+				<lem wit="#A">وعلی – الملطّف</lem>
+				<rdg cause="saut du même au même" wit="#M"/>
+			</app>
+			<app from="#appcrit261begin" to="#appcrit261end">
+				<lem wit="#A">وعلی</lem>
+				<rdg wit="#M">علی ما</rdg>
+			</app>
+			<app from="#appcrit262begin" to="#appcrit262end">
+				<lem wit="#M">ما</lem>
+				<rdg wit="#A">مٮی</rdg>
+			</app>
+			<app from="#appcrit263begin" to="#appcrit263end">
+				<lem wit="#A">فهمها</lem>
+				<rdg wit="#M">فٮها</rdg>
+			</app>
+			<app from="#appcrit264begin" to="#appcrit264end">
+				<lem wit="#A">يتجنّبها</lem>
+				<rdg wit="#M">ٮجتنبها</rdg>
+			</app>
+			<app from="#appcrit265begin" to="#appcrit265end">
+				<lem wit="#A">ولم – موافقة</lem>
+				<rdg cause="saut du même au même" wit="#M"/>
+			</app>
+			<app from="#appcrit266begin" to="#appcrit266end">
+				<lem wit="#A">المريد</lem>
+				<rdg wit="#M">المستعمل</rdg>
+			</app>
+			<app from="#appcrit267begin" to="#appcrit267end">
+				<lem wit="#A">ولا يكثر استعماله لها</lem>
+				<rdg wit="#M">اذا اثر اسٮعمالها</rdg>
+			</app>
+			<app from="#appcrit268begin" to="#appcrit268end">
+				<lem wit="#A">ما هو يسير</lem>
+				<rdg wit="#M">شی ٮسٮره</rdg>
+			</app>
+			<app from="#appcrit269begin" to="#appcrit269end">
+				<lem wit="#A">العصافير</lem>
+				<rdg wit="#M">السنانير</rdg>
+			</app>
+			<app from="#appcrit270begin" to="#appcrit270end">
+				<lem wit="#A">و</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit271begin" to="#appcrit271end">
+				<lem wit="#A">كراعانها</lem>
+				<rdg wit="#M">كرعانها</rdg>
+			</app>
+			<app from="#appcrit272begin" to="#appcrit272end">
+				<lem wit="#M">وشبه ذلك</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit273begin" to="#appcrit273end">
+				<lem wit="#A">كلّها</lem>
+				<rdg wit="#M"/>
+			</app>
+			<app from="#appcrit274begin" to="#appcrit274end">
+				<lem wit="#A">وقد ينبغي لمن أراد</lem>
+				<rdg wit="#M">وٮحب علی من يرٮد</rdg>
+			</app>
+			<app from="#appcrit275begin" to="#appcrit275end">
+				<lem wit="#M">استعمال</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit276begin" to="#appcrit276end">
+				<lem wit="#A">كلّها</lem>
+				<rdg wit="#M">جميعها</rdg>
+			</app>
+			<app from="#appcrit277begin" to="#appcrit277end">
+				<lem wit="#A">تمّت مقالة</lem>
+				<rdg wit="#M">تم كتاب جوامع</rdg>
+			</app>
+			<app from="#appcrit278begin" to="#appcrit278end">
+				<lem wit="#M">اتسخراج – المتطبّب</lem>
+				<rdg wit="#A"/>
+			</app>
+			<app from="#appcrit279begin" to="#appcrit279end">
+				<lem wit="#A">والحمد – تسليماً</lem>
+				<rdg wit="#M"/>
+			</app>
+		</back>
+	</text>
+</TEI>
