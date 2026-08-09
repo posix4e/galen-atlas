@@ -49,8 +49,9 @@ function render(packet) {
   document.title = `${packet.id} — Pergamap`;
   document.getElementById("canonical").href = `https://pergamap.com/translations/chunk?id=${encodeURIComponent(packet.id)}`;
   main.appendChild(node("p", "crumb", `Chunk ${packet.id} · ${packet.work} · Kühn ${packet.kuhn_range || ""}`));
-  const heading = node("h1", "", packet.title || packet.chapter_head || packet.id);
-  heading.lang = "grc";
+  const headingText = packet.title || packet.chapter_head || packet.id;
+  const heading = node("h1", "", headingText);
+  if (/[Ͱ-Ͽἀ-῿]/.test(headingText)) heading.lang = "grc";
   main.appendChild(heading);
   const [statusClass, statusLabel] = STATUS[packet.status] || ["unknown", packet.status];
   const lead = main.appendChild(node("p", "lead"));
