@@ -47,6 +47,7 @@ function renderError(id) {
 function render(packet) {
   main.replaceChildren();
   document.title = `${packet.id} — Pergamap`;
+  document.getElementById("canonical").href = `https://pergamap.com/translations/chunk?id=${encodeURIComponent(packet.id)}`;
   main.appendChild(node("p", "crumb", `Chunk ${packet.id} · ${packet.work} · Kühn ${packet.kuhn_range || ""}`));
   const heading = node("h1", "", packet.title || packet.chapter_head || packet.id);
   heading.lang = "grc";

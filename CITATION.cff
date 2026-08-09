@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use the Pergamap catalogue or translations, cite this repository and the underlying editions identified in each record."
+title: "Pergamap: an open atlas and translation workspace for Galen"
+type: dataset
+authors:
+  - family-names: "posix4e"
+version: "0.1.0"
+date-released: 2026-08-09
+repository-code: "https://github.com/posix4e/pergamap"
+url: "https://pergamap.com/"
+license: CC-BY-SA-4.0
+keywords:
+  - Galen
+  - ancient medicine
+  - Greek
+  - Arabic
+  - translation
+  - digital humanities

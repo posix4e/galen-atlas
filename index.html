@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pergamap — mapping and translating the Galen nobody can read</title>
 <meta name="description" content="A public map of Galen's surviving works — what exists, in which language, and what has never been translated into English — plus an open project to translate the rest.">
+<meta property="og:title" content="Pergamap — an open atlas and translation workspace for Galen">
+<meta property="og:description" content="A preliminary, source-aware map of Galen's surviving works, witnesses, and English translation coverage.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pergamap">
+<link rel="canonical" href="https://pergamap.com/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/ld+json" href="/data/catalogue-metadata.json" title="Pergamap dataset metadata">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -55,7 +62,7 @@
 
   <h2>How to help</h2>
   <ul>
-    <li><strong>Vote</strong> on the first full translation campaign in the <a href="https://github.com/posix4e/pergamap/issues/1">open poll</a>.</li>
+    <li><strong>Follow</strong> the <a href="https://github.com/posix4e/pergamap/issues/1">ballot revision</a> while candidate translation status is rechecked.</li>
     <li><strong>Verify an entry.</strong> Pick any work marked “unverified” in <a href="corpus.html">the corpus table</a>, find out whether an English translation exists, and file an issue or pull request with your source.</li>
     <li><strong>Translate a chunk.</strong> If you read Greek (or Arabic, or want to review AI drafts), see <a href="https://github.com/posix4e/pergamap/blob/main/CONTRIBUTING.md">CONTRIBUTING</a>.</li>
   </ul>
@@ -64,14 +71,14 @@
   <p>The whole site is a <a href="https://github.com/posix4e/pergamap">public repository</a> of plain HTML, JavaScript, and versioned JSON — no framework or production build step.</p>
   <ol>
     <li><strong>Fork</strong> <a href="https://github.com/posix4e/pergamap">posix4e/pergamap</a> on GitHub and make a branch.</li>
-    <li><strong>Fixing the catalog?</strong> Edit <a href="https://github.com/posix4e/pergamap/blob/main/data/works.json"><code>data/works.json</code></a> — update the work's <code>english</code> / <code>english_ref</code> fields, and set <code>confidence</code> to <code>checked</code> only if you cite where you checked in the pull request.</li>
+    <li><strong>Fixing the catalogue?</strong> Edit <a href="https://github.com/posix4e/pergamap/blob/main/data/works.json"><code>data/works.json</code></a> — update <code>english.status</code>, add a structured citation, and set <code>english.verification.status</code> to <code>checked</code> only with a dated source reference.</li>
     <li><strong>Adding a translation?</strong> Use the <a href="https://github.com/posix4e/pergamap/blob/main/HARNESS.md">harness</a> to generate a manageable, source-pinned packet. Fill in the English, citations, and a concise translation rationale. First claim the range in an <a href="https://github.com/posix4e/pergamap/issues">issue</a>.</li>
     <li><strong>Preview locally</strong> with <code>python3 -m http.server 8000</code>; opening files through <code>file://</code> cannot load the JSON datasets.</li>
     <li><strong>Open the pull request</strong> — one work or one chunk per PR, sources cited. Review happens in the open, arguing from the Greek. Merged means live.</li>
   </ol>
 </main>
 <footer class="site">
-  <p>Sources: Greek texts from the <a href="https://github.com/OpenGreekAndLatin/First1KGreek">First Thousand Years of Greek</a> project and the <a href="https://www.graeco-arabic-studies.org/">Digital Corpus for Graeco-Arabic Studies</a> (CC BY-SA), digitized from Karl Gottlob Kühn's <em>Claudii Galeni Opera Omnia</em> (1821–1833, public domain, scans via the <a href="https://archive.org/details/b29339339_0012">Wellcome Library</a>). Site content: CC BY-SA 4.0.</p>
+  <p>Sources: Greek texts from the <a href="https://github.com/OpenGreekAndLatin/First1KGreek">First Thousand Years of Greek</a> project and Arabic texts from the <a href="https://www.graeco-arabic-studies.org/">Digital Corpus for Graeco-Arabic Studies</a>, with Kühn's public-domain edition available via the <a href="https://archive.org/details/b29339339_0012">Wellcome Library</a>. Site content: <a href="LICENSE">CC BY-SA 4.0</a>; see the <a href="NOTICE.md">provenance notice</a>.</p>
 </footer>
 <script src="assets/js/index.js" defer></script>
 </body>
