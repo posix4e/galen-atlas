@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aphorism I.1, triangulated — Pergamap</title>
+<meta name="description" content="Galen's Commentary on Hippocrates' Aphorisms I.1 — the famous 'life is short, art is long' — translated by triangulating the Greek against Ḥunayn ibn Isḥāq's independent 9th-century Arabic.">
+<link rel="stylesheet" href="../style.css">
+<style>
+.witnesses { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem 1.6rem; margin: 1.6rem 0; }
+@media (max-width: 720px) { .witnesses { grid-template-columns: 1fr; } }
+.wit { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; }
+.wit h3 { margin: 0 0 0.2rem; font-size: 1rem; }
+.wit .prov { font-size: 0.8rem; color: var(--muted); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin-bottom: 0.7rem; }
+.grc, .ara { font-size: 1.12rem; line-height: 1.8; }
+.ara { direction: rtl; text-align: right; font-family: 'Geeza Pro', 'Noto Naskh Arabic', 'Times New Roman', serif; }
+.translit { font-size: 0.9rem; color: var(--muted); font-style: italic; margin-top: 0.5rem; line-height: 1.6; }
+.verdict { background: var(--accent-soft); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 1rem 1.2rem; margin: 1.8rem 0; }
+.eng-final { font-size: 1.25rem; line-height: 1.7; margin: 0.4rem 0; }
+.crux { background: var(--good-soft); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin: 1.4rem 0; }
+.crux b { color: var(--good); }
+</style>
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="../index.html">Perga<span>map</span></a>
+  <nav>
+    <a href="../corpus.html">The corpus</a>
+    <a href="../roadmap.html">Roadmap</a>
+    <a href="aphorisms-1-1.html" class="here">Triangulated verse</a>
+    <a href="https://github.com/posix4e/pergamap">GitHub</a>
+  </nav>
+</header>
+<main>
+  <p class="crumb">Galen · Commentary on Hippocrates' Aphorisms · Book 1, lemma 1 · Kühn XVIIb 345</p>
+  <h1>“Life is short, the art long” — read through two witnesses</h1>
+  <p class="lead">The most quoted sentence in Greek medicine, and a small lesson in why one text isn't enough. Here the Greek is checked against an <strong>independent</strong> witness — Ḥunayn ibn Isḥāq's ninth-century Arabic, translated from a Greek manuscript centuries older than any behind our printed Greek. They were copied down a thousand miles and seven hundred years apart, from different exemplars: where they agree, we can be confident; where they diverge, we learn something.</p>
+
+  <h2>The two witnesses</h2>
+  <div class="witnesses">
+    <div class="wit">
+      <h3>Greek</h3>
+      <p class="prov">Direct Byzantine tradition, as printed by Kühn (1829) from medieval manuscripts</p>
+      <p class="grc" lang="grc">Ὁ βίος βραχύς, ἡ δὲ τέχνη μακρή, ὁ δὲ καιρὸς ὀξύς, ἡ δὲ πεῖρα σφαλερή, ἡ δὲ κρίσις χαλεπή. δεῖ δὲ οὐ μόνον ἑωυτὸν παρέχειν τὰ δέοντα ποιέοντα, ἀλλὰ καὶ τὸν νοσέοντα καὶ τοὺς παρεόντας καὶ τὰ ἔξωθεν.</p>
+    </div>
+    <div class="wit">
+      <h3>Arabic</h3>
+      <p class="prov">Ḥunayn ibn Isḥāq, Baghdad, 9th c. — from an older, independent Greek exemplar</p>
+      <p class="ara" lang="ar" dir="rtl">قال أبقراط: العمر قصير والصناعة طويلة والوقت ضيّق والتجربة خطر والقضاء عسر، وقد ينبغي لك أن لا تقتصر على توخّي فعل ما ينبغي دون أن يكون ما يفعله المريض ومن يحضره كذلك والأشياء التي من خارج.</p>
+      <p class="translit">Qāla Abuqrāṭ: al-ʿumr qaṣīr, wa-l-ṣināʿa ṭawīla, wa-l-waqt <b>ḍayyiq</b>, wa-l-tajriba khaṭar, wa-l-qaḍāʾ ʿusr…</p>
+    </div>
+  </div>
+
+  <div class="verdict">
+    <p class="prov" style="margin-bottom:.3rem">Our triangulated English</p>
+    <p class="eng-final">“Life is short, the art long, <strong>the moment brief</strong>, experience treacherous, judgment hard. And one must be ready not only to do what is needed oneself, but to have the patient, the attendants, and the outward circumstances do their part as well.”</p>
+  </div>
+
+  <div class="crux">
+    <p>The whole verse is easy except the third clause. Greek <b lang="grc">ὁ καιρὸς ὀξύς</b> is a notorious crux: <em>kairos</em> means both “the fleeting opportunity” and “the critical moment,” and <em>oxys</em> means “sharp / acute.” Read alone, it tempts you toward “the crisis is acute.”</p>
+    <p>Two independent voices say otherwise. Ḥunayn rendered it <b lang="ar" dir="rtl">الوقت ضيّق</b> — <em>“the time is narrow.”</em> He heard it as the <b>scarcity of time</b>, not the sharpness of a crisis. And Galen, commenting on his own text, spells the sense out: the <em>kairos</em> for nearly every medical action is <b lang="grc">ὀλιγοχρόνιον</b> — <b>“of little duration”</b> — and only therefore called “sharp,” because the body changes so fast that the window closes. The independent Arabic and the author's own gloss land on the same reading. So we translate for <b>brevity of time</b>, and record why.</p>
+  </div>
+
+  <h2>The verse in full</h2>
+  <div class="pair">
+    <div class="grc" lang="grc">Ὁ βίος βραχύς, ἡ δὲ τέχνη μακρή, ὁ δὲ καιρὸς ὀξύς, ἡ δὲ πεῖρα σφαλερή, ἡ δὲ κρίσις χαλεπή.</div>
+    <div class="eng">Life is short, the art long, the moment brief, experience treacherous, judgment hard.</div>
+  </div>
+  <div class="pair">
+    <div class="grc" lang="grc">δεῖ δὲ οὐ μόνον ἑωυτὸν παρέχειν τὰ δέοντα ποιέοντα, ἀλλὰ καὶ τὸν νοσέοντα καὶ τοὺς παρεόντας καὶ τὰ ἔξωθεν.</div>
+    <div class="eng">And one must be ready not only to do what is needed oneself, but also [to secure the same from] the patient, the attendants, and the outward circumstances.</div>
+  </div>
+
+  <h2>The working — translation trace</h2>
+  <ul class="notes">
+    <li><strong>καιρὸς ὀξύς → “the moment brief”</strong> — the crux, resolved by triangulation. Witness 2 (Ḥunayn) reads <em>ḍayyiq</em>, “narrow/tight [of time].” The author (Galen) glosses <em>kairos</em> as <em>oligochronion</em>, “short-lived,” and explains <em>oxys</em> (“sharp”) as a consequence of that brevity, not a separate “acute crisis” sense. Both independent of each other; both against the “critical moment is acute” reading. This is exactly the modern scholarly consensus (cf. the Loeb “opportunity fleeting”) — but here it is <em>demonstrated</em> from the witnesses rather than asserted.</li>
+    <li><strong>τέχνη → “art,” ṣināʿa → “craft.”</strong> Both witnesses use their ordinary word for a skilled discipline; the famous rendering “art” is retained, with the note that Galen means a systematic <em>craft</em>, not fine art.</li>
+    <li><strong>πεῖρα → “experience,” tajriba → “trial/experiment.”</strong> The two witnesses agree closely; both carry the double sense of hands-on experience and the risky <em>experiment</em> on a patient — hence “treacherous.”</li>
+    <li><strong>Independence check.</strong> These two witnesses do not share a source: the Greek descends through Byzantine copyists to Kühn's 1829 print; the Arabic descends through Ḥunayn's Baghdad workshop from a separate, older Greek manuscript. Their agreement on four of five clauses is meaningful; their divergence on the fifth is where the light gets in.</li>
+    <li><strong>A third witness, wanted.</strong> A fully independent third line — the medieval Latin <em>Articella</em>, or the Syriac — would let a divergence be <em>voted</em> rather than argued. Neither is digitized in our corpus yet; when one is, it slots into the same alignment.</li>
+  </ul>
+
+  <p class="crumb">Greek: <a href="https://github.com/OpenGreekAndLatin/First1KGreek">First1KGreek</a> (tlg0057.tlg092, Kühn XVIIb). Arabic: <a href="https://www.graeco-arabic-studies.org/">Digital Corpus for Graeco-Arabic Studies</a>, Ḥunayn ibn Isḥāq (CC BY-SA). Both witnesses carry the same Kühn page and lemma anchors, so they align mechanically — see the <a href="https://github.com/posix4e/pergamap/blob/main/HARNESS.md">harness</a>. Amateur, AI-assisted; the reasoning is shown so you can check it.</p>
+</main>
+<footer class="site">
+  <p>Greek and Arabic under CC BY-SA; translation © Pergamap, CC BY-SA 4.0. A demonstration of method, not a critical edition.</p>
+</footer>
+</body>
+</html>
