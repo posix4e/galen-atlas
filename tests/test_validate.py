@@ -128,6 +128,43 @@ class ValidatorTests(unittest.TestCase):
                 }
             ],
         }
+        self.transmission = {
+            "schema_version": 1,
+            "updated": "2026-08-10",
+            "status": "curated",
+            "methodology": {
+                "scope": "Fixture scope",
+                "direct_relation": "Fixture direct relation",
+                "influence_relation": "Fixture influence relation",
+            },
+            "sources": [
+                {
+                    "id": "transmission-source",
+                    "title": "Transmission source",
+                    "publisher": "Example",
+                    "url": "https://example.test/transmission",
+                    "accessed": "2026-08-10",
+                }
+            ],
+            "upstream": [],
+            "receptions": [
+                {
+                    "id": "later-version",
+                    "title": "Later version",
+                    "date": "12th century",
+                    "language": "latin",
+                    "kind": "translation",
+                    "relation": "translation-from-arabic",
+                    "certainty": "documented",
+                    "work_ids": ["tlg001"],
+                    "witness_files": ["sample.xml"],
+                    "description": "A source-backed fixture route.",
+                    "url": "https://example.test/later",
+                    "source_ids": ["transmission-source"],
+                }
+            ],
+            "context": [],
+        }
         self.save()
 
     def tearDown(self):
@@ -138,6 +175,7 @@ class ValidatorTests(unittest.TestCase):
         write_json(self.root / "data" / "chunks.json", self.registry)
         write_json(self.root / "translations" / "chunks" / "sample-1.json", self.packet)
         write_json(self.root / "sources" / "arabic" / "manifest.json", self.manifest)
+        write_json(self.root / "data" / "transmission.json", self.transmission)
 
     def assert_error_contains(self, phrase):
         errors = validate.validate(self.root)
@@ -197,6 +235,16 @@ class ValidatorTests(unittest.TestCase):
         self.manifest["texts"][0]["local_sha256"] = digest
         self.save()
         self.assert_error_contains("XML is not well-formed")
+
+    def test_transmission_unknown_work(self):
+        self.transmission["receptions"][0]["work_ids"] = ["missing-work"]
+        self.save()
+        self.assert_error_contains("work_ids contains an unknown work")
+
+    def test_transmission_unknown_witness(self):
+        self.transmission["receptions"][0]["witness_files"] = ["missing.xml"]
+        self.save()
+        self.assert_error_contains("witness_files contains an unknown Arabic file")
 
     def test_repository_data_is_valid(self):
         self.assertEqual(validate.validate(validate.ROOT), [])

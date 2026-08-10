@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Galen's texts traveled — Pergamap</title>
+<meta name="description" content="An interactive, source-backed map of Galen's Greek works, Arabic witnesses, and documented Hebrew, Latin, German, and English branches.">
+<meta property="og:title" content="How Galen's texts traveled — Pergamap">
+<meta property="og:description" content="Follow Galen's works through Arabic witnesses into Hebrew, Latin, and modern editions—and distinguish direct translation from broader influence.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pergamap">
+<meta property="og:image" content="https://pergamap.com/assets/og-transmission.jpg">
+<meta property="og:image:alt" content="A branching line connects Greek and Arabic manuscript fragments to Hebrew and Latin fragments beside the title How Galen's Texts Traveled.">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://pergamap.com/transmission">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/json" href="/data/transmission.json" title="Pergamap transmission-map data">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="index.html">Perga<span>map</span></a>
+  <nav aria-label="Primary">
+    <a href="corpus.html">The corpus</a>
+    <a href="transmission.html" class="here" aria-current="page">Text map</a>
+    <a href="witnesses.html">Witnesses</a>
+    <a href="roadmap.html">Roadmap</a>
+    <a href="translations/aphorisms-1-1.html">Triangulated verse</a>
+    <a href="https://github.com/posix4e/pergamap">GitHub</a>
+  </nav>
+</header>
+<main class="map-page">
+  <p class="eyebrow">Transmission atlas · 2nd century to the present</p>
+  <h1>How Galen's texts traveled</h1>
+  <p class="lead">Choose any catalogued work to follow the branch we can document: an ancient source when relevant, Galen's text, the Arabic translations or summaries held by Pergamap, and later Hebrew, Latin, German, English, or digital editions. Empty branches are shown honestly; absence from this map is not proof that no witness exists.</p>
+
+  <div class="stats map-stats" aria-label="Map coverage">
+    <div class="stat"><b id="map-work-count">–</b><span>catalogued works</span></div>
+    <div class="stat"><b id="map-arabic-count">–</b><span>Arabic source files</span></div>
+    <div class="stat"><b id="map-linked-count">–</b><span>files linked to a work</span></div>
+    <div class="stat"><b id="map-branch-count">–</b><span>documented later branches</span></div>
+  </div>
+
+  <div class="map-key" aria-label="Relationship key">
+    <span><i class="key-line direct" aria-hidden="true"></i> documented textual route</span>
+    <span><i class="key-line influence" aria-hidden="true"></i> broader influence, not direct descent</span>
+    <span><i class="key-dot local" aria-hidden="true"></i> text held locally</span>
+  </div>
+
+  <section class="map-explorer" aria-labelledby="explorer-heading">
+    <div class="map-controls">
+      <div>
+        <h2 id="explorer-heading">Explore every branch</h2>
+        <p id="map-status" class="crumb" role="status" aria-live="polite">Loading the transmission map…</p>
+      </div>
+      <label class="search-label" for="map-search">Find a work or witness</label>
+      <input type="search" id="map-search" placeholder="Try Aphorisms, pulse, Arabic…" autocomplete="off">
+      <div class="controls compact" aria-label="Filter map entries">
+        <button type="button" data-map-filter="all" class="on" aria-pressed="true">All</button>
+        <button type="button" data-map-filter="arabic" aria-pressed="false">Has Arabic</button>
+        <button type="button" data-map-filter="international" aria-pressed="false">Later branches</button>
+        <button type="button" data-map-filter="arabic-only" aria-pressed="false">Arabic-only</button>
+      </div>
+    </div>
+
+    <div class="map-workspace">
+      <aside class="map-index" aria-label="Works and Arabic-only records">
+        <div id="map-list" class="map-list"></div>
+      </aside>
+
+      <div class="map-branch">
+        <div class="branch-heading">
+          <div>
+            <p class="eyebrow" id="selected-kicker">Selected branch</p>
+            <h2 id="selected-title">Loading…</h2>
+            <p id="selected-subtitle" class="branch-subtitle"></p>
+          </div>
+          <div id="selected-links" class="branch-links"></div>
+        </div>
+
+        <div class="tree-stages" id="tree-stages" aria-label="Historical transmission branch">
+          <section class="tree-stage" aria-labelledby="stage-source-title">
+            <header><span>Before Galen</span><b id="stage-source-title">Source text</b></header>
+            <div id="stage-source" class="tree-nodes"></div>
+          </section>
+          <section class="tree-stage" aria-labelledby="stage-galen-title">
+            <header><span>2nd–3rd c.</span><b id="stage-galen-title">Galenic work</b></header>
+            <div id="stage-galen" class="tree-nodes"></div>
+          </section>
+          <section class="tree-stage" aria-labelledby="stage-arabic-title">
+            <header><span>8th–14th c.</span><b id="stage-arabic-title">Arabic versions</b></header>
+            <div id="stage-arabic" class="tree-nodes"></div>
+          </section>
+          <section class="tree-stage" aria-labelledby="stage-later-title">
+            <header><span>11th c.–today</span><b id="stage-later-title">Later branches</b></header>
+            <div id="stage-later" class="tree-nodes"></div>
+          </section>
+        </div>
+
+        <aside id="node-detail" class="node-detail" aria-live="polite" aria-labelledby="detail-title">
+          <p class="eyebrow" id="detail-kind">How to read this</p>
+          <h3 id="detail-title">Select a node for its evidence</h3>
+          <p id="detail-description">Each connection is labeled by relationship and backed by the sources listed with the node.</p>
+          <div id="detail-links" class="detail-links"></div>
+        </aside>
+      </div>
+    </div>
+    <p id="map-error" class="error" role="alert" hidden>The transmission data could not be loaded. The raw datasets remain available below.</p>
+    <noscript><p class="notice">JavaScript is required for the interactive map. You can inspect <a href="data/works.json">the full works catalogue</a>, <a href="sources/arabic/manifest.json">the Arabic manifest</a>, and <a href="data/transmission.json">the cited relationship data</a> directly.</p></noscript>
+  </section>
+
+  <section aria-labelledby="afterlives-title">
+    <p class="eyebrow">Influence is not descent</p>
+    <h2 id="afterlives-title">The books people are more likely to recognize</h2>
+    <p>These works help orient the story, but the broken connector matters: they reorganize, debate, teach, or transmit Galenic medicine rather than copy one specific Pergamap witness. Treating them as direct descendants would flatten the history.</p>
+    <div id="context-cards" class="context-grid"></div>
+  </section>
+
+  <section aria-labelledby="international-title">
+    <p class="eyebrow">The short answer</p>
+    <h2 id="international-title">Yes—Arabic Galen has substantial international branches</h2>
+    <p>The clearest routes currently in this map include Arabic <em>Ars medica</em> into both Latin and Hebrew; Arabic Galen on the pulse and the Hippocratic <em>Aphorisms</em> into Latin; an Arabic Alexandrian summary into Hebrew; and Arabic-only or Arabic-complete works made accessible in modern English and German. These are textual routes, not a general claim that every Latin or Hebrew Galen came through Arabic—many translations were made directly from Greek.</p>
+  </section>
+
+  <section aria-labelledby="map-sources-title">
+    <p class="eyebrow">Evidence</p>
+    <h2 id="map-sources-title">Sources and limits</h2>
+    <p>The local Greek and Arabic links come from Pergamap's versioned datasets. Later connections are deliberately selective and cite library catalogues, scholarly repositories, or specialist transmission databases. Dates often describe a translation or surviving witness, not the date of the lost exemplar.</p>
+    <p>Many Arabic versions were translated directly from Greek, while others passed through Syriac. Because the local manifest does not encode that source-language route uniformly, this map does not insert a Syriac stage unless a cited record documents it for the specific work.</p>
+    <div id="map-sources" class="source-grid"></div>
+  </section>
+</main>
+<footer class="site">
+  <p>Transmission data is a curated research aid, not a complete stemma codicum. Corrections with sources are welcome on <a href="https://github.com/posix4e/pergamap">GitHub</a>.</p>
+</footer>
+<script src="assets/js/transmission.js" defer></script>
+</body>
+</html>

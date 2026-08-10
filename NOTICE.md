@@ -9,3 +9,5 @@ Pergamap's original site text, catalogue arrangement, metadata, and project tran
 - Vendored Arabic TEI comes from the [Digital Corpus for Graeco-Arabic Studies](https://www.graeco-arabic-studies.org/) under CC BY-SA 4.0. The Arabic manifest records source URLs and full source/local checksums. One file has a documented markup-only repair that leaves its textual content unchanged.
 
 Bibliographic facts and citations remain attributable to their authors and publishers. Pergamap's CC license does not replace or broaden third-party permissions.
+
+The transmission map's later-language relationships cite the scholarly repositories, specialist databases, and library catalogues named in `data/transmission.json`. The social-preview artwork for that page was generated for Pergamap with OpenAI image generation and is distributed with the project's original site content.

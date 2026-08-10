@@ -24,6 +24,18 @@ STATUSES = {"open", "claimed", "draft", "reviewed"}
 ENGLISH_STATUSES = {"none", "full", "partial", "unknown"}
 CONFIDENCE = {"checked", "recalled", "unknown"}
 LANGUAGES = {"greek", "arabic", "latin"}
+TRANSMISSION_LANGUAGES = LANGUAGES | {"hebrew", "english", "german", "multilingual"}
+TRANSMISSION_RELATIONS = {
+    "commented-on-by-galen",
+    "translation-from-arabic",
+    "translation-from-arabic-or-latin",
+    "modern-translation-from-arabic",
+    "bilingual-edition",
+    "teaching-collection",
+    "galenic-synthesis",
+    "arabic-latin-synthesis",
+}
+TRANSMISSION_KINDS = {"translation", "edition", "digital-project"}
 EXTENTS = {"unspecified", "full", "partial", "fragments", "unknown"}
 HEX40 = re.compile(r"^[0-9a-f]{40}$")
 HEX64 = re.compile(r"^[0-9a-f]{64}$")
@@ -290,14 +302,14 @@ def validate_chunks(root: pathlib.Path, work_ids: set[str], errors: list[str]) -
     return len(entries)
 
 
-def validate_arabic(root: pathlib.Path, work_ids: set[str], errors: list[str]) -> int:
+def validate_arabic(root: pathlib.Path, work_ids: set[str], errors: list[str]) -> set[str]:
     directory = root / "sources" / "arabic"
     manifest_path = directory / "manifest.json"
     if not manifest_path.exists():
-        return 0
+        return set()
     manifest = load_json(manifest_path, errors, "sources/arabic/manifest.json")
     if not isinstance(manifest, dict):
-        return 0
+        return set()
     if manifest.get("schema_version") != 2:
         errors.append("sources/arabic/manifest.json: schema_version must be 2")
     source = manifest.get("source")
@@ -313,7 +325,7 @@ def validate_arabic(root: pathlib.Path, work_ids: set[str], errors: list[str]) -
     texts = manifest.get("texts")
     if not isinstance(texts, list):
         errors.append("sources/arabic/manifest.json: texts must be a list")
-        return 0
+        return set()
     declared: set[str] = set()
     kinds: Counter[str] = Counter()
     for index, entry in enumerate(texts):
@@ -377,14 +389,137 @@ def validate_arabic(root: pathlib.Path, work_ids: set[str], errors: list[str]) -
                 errors.append(
                     f"sources/arabic/manifest.json: {kind} count is {expected_counts.get(kind)!r}, expected {kinds[kind]}"
                 )
-    return len(texts)
+    return declared
+
+
+def validate_transmission(
+    root: pathlib.Path, work_ids: set[str], witness_files: set[str], errors: list[str]
+) -> int:
+    path = root / "data" / "transmission.json"
+    document = load_json(path, errors, "data/transmission.json")
+    if not isinstance(document, dict):
+        if document is not None:
+            errors.append("data/transmission.json: root must be an object")
+        return 0
+    if document.get("schema_version") != 1:
+        errors.append("data/transmission.json: schema_version must be 1")
+    if document.get("status") != "curated":
+        errors.append("data/transmission.json: status must be 'curated'")
+    if not is_date(document.get("updated")):
+        errors.append("data/transmission.json: updated must be an ISO date")
+    methodology = document.get("methodology")
+    if not isinstance(methodology, dict) or any(
+        not methodology.get(field) for field in ("scope", "direct_relation", "influence_relation")
+    ):
+        errors.append("data/transmission.json: methodology is incomplete")
+
+    source_ids: set[str] = set()
+    sources = document.get("sources")
+    if not isinstance(sources, list) or not sources:
+        errors.append("data/transmission.json: sources must be a non-empty list")
+        sources = []
+    for index, source in enumerate(sources):
+        label = f"data/transmission.json source {index}"
+        if not isinstance(source, dict):
+            errors.append(f"{label}: must be an object")
+            continue
+        sid = source.get("id")
+        if not isinstance(sid, str) or not SAFE_ID.fullmatch(sid):
+            errors.append(f"{label}: invalid id {sid!r}")
+        elif sid in source_ids:
+            errors.append(f"data/transmission.json: duplicate source id {sid!r}")
+        else:
+            source_ids.add(sid)
+        for field in ("title", "publisher"):
+            if not source.get(field):
+                errors.append(f"{label}: {field} is required")
+        if not is_safe_url(source.get("url")):
+            errors.append(f"{label}: unsafe or invalid URL {source.get('url')!r}")
+        if not is_date(source.get("accessed")):
+            errors.append(f"{label}: accessed must be an ISO date")
+
+    node_ids: set[str] = set()
+
+    def validate_common(item, label: str, allowed_relations: set[str]):
+        if not isinstance(item, dict):
+            errors.append(f"{label}: must be an object")
+            return False
+        item_id = item.get("id")
+        if not isinstance(item_id, str) or not SAFE_ID.fullmatch(item_id):
+            errors.append(f"{label}: invalid id {item_id!r}")
+        elif item_id in node_ids:
+            errors.append(f"data/transmission.json: duplicate node id {item_id!r}")
+        else:
+            node_ids.add(item_id)
+        for field in ("title", "date", "description"):
+            if not item.get(field):
+                errors.append(f"{label}: {field} is required")
+        if item.get("language") not in TRANSMISSION_LANGUAGES:
+            errors.append(f"{label}: invalid language {item.get('language')!r}")
+        if item.get("relation") not in allowed_relations:
+            errors.append(f"{label}: invalid relation {item.get('relation')!r}")
+        if not is_safe_url(item.get("url")):
+            errors.append(f"{label}: unsafe or invalid URL {item.get('url')!r}")
+        refs = item.get("source_ids")
+        if not isinstance(refs, list) or not refs:
+            errors.append(f"{label}: source_ids must be a non-empty list")
+        elif any(ref not in source_ids for ref in refs):
+            errors.append(f"{label}: source_ids contains an unknown source")
+        return True
+
+    upstream = document.get("upstream")
+    if not isinstance(upstream, list):
+        errors.append("data/transmission.json: upstream must be a list")
+        upstream = []
+    for index, item in enumerate(upstream):
+        label = f"data/transmission.json upstream {index}"
+        if not validate_common(item, label, {"commented-on-by-galen"}):
+            continue
+        refs = item.get("work_ids")
+        if not isinstance(refs, list) or not refs or any(ref not in work_ids for ref in refs):
+            errors.append(f"{label}: work_ids contains an unknown work")
+
+    receptions = document.get("receptions")
+    if not isinstance(receptions, list):
+        errors.append("data/transmission.json: receptions must be a list")
+        receptions = []
+    direct_relations = {
+        "translation-from-arabic",
+        "translation-from-arabic-or-latin",
+        "modern-translation-from-arabic",
+        "bilingual-edition",
+    }
+    for index, item in enumerate(receptions):
+        label = f"data/transmission.json reception {index}"
+        if not validate_common(item, label, direct_relations):
+            continue
+        if item.get("kind") not in TRANSMISSION_KINDS:
+            errors.append(f"{label}: invalid kind {item.get('kind')!r}")
+        if item.get("certainty") != "documented":
+            errors.append(f"{label}: certainty must be 'documented'")
+        refs = item.get("work_ids")
+        if not isinstance(refs, list) or not refs or any(ref not in work_ids for ref in refs):
+            errors.append(f"{label}: work_ids contains an unknown work")
+        files = item.get("witness_files")
+        if not isinstance(files, list) or any(filename not in witness_files for filename in files):
+            errors.append(f"{label}: witness_files contains an unknown Arabic file")
+
+    context = document.get("context")
+    if not isinstance(context, list):
+        errors.append("data/transmission.json: context must be a list")
+        context = []
+    influence_relations = {"teaching-collection", "galenic-synthesis", "arabic-latin-synthesis"}
+    for index, item in enumerate(context):
+        validate_common(item, f"data/transmission.json context {index}", influence_relations)
+    return len(receptions)
 
 
 def validate(root: pathlib.Path = ROOT) -> list[str]:
     errors: list[str] = []
     work_ids, _, _ = validate_works(root, errors)
     validate_chunks(root, work_ids, errors)
-    validate_arabic(root, work_ids, errors)
+    witness_files = validate_arabic(root, work_ids, errors)
+    validate_transmission(root, work_ids, witness_files, errors)
     return errors
 
 

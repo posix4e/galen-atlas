@@ -2,7 +2,7 @@
 
 **Much of Galen remains inaccessible in English.** Galen of Pergamon (129 – c. 216 CE) is the largest surviving author of Greco-Roman antiquity, with millions of words preserved. This project is:
 
-1. **An atlas** — [`data/works.json`](data/works.json) tracks the corpus: known survival languages, digitized texts, English translations, citations, and verification status. Coverage today: the 97 works digitized by First1KGreek plus 11 added by hand; roughly two dozen more surviving works still need entries.
+1. **An atlas** — [`data/works.json`](data/works.json) tracks the corpus: known survival languages, digitized texts, English translations, citations, and verification status. The [interactive transmission map](https://pergamap.com/transmission) joins all 108 records to the local Arabic manifest and a curated set of source-backed Hebrew, Latin, German, English, and digital branches stored in [`data/transmission.json`](data/transmission.json). Broader Galenic influence is kept visually distinct from direct textual descent.
 2. **A roadmap** — a phased plan for translating the untranslated, with targets picked by public vote.
 3. **A working translation** — published chunk by chunk with the source text alongside, starting with Book 1 of *On the Composition of Drugs According to Places* (baldness cures, hair dyes, dandruff, lice — Kühn XII 378 ff.), which has waited ~1,800 years for English.
 

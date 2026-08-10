@@ -1,0 +1,401 @@
+{
+  "schema_version": 1,
+  "updated": "2026-08-10",
+  "status": "curated",
+  "methodology": {
+    "scope": "Every work in works.json and every Arabic file in the local manifest is discoverable in the interactive map. Later-language branches are a smaller, source-backed selection rather than a claim to completeness.",
+    "direct_relation": "A documented translation, summary, commentary, edition, or digital collation connected to a specific work or witness.",
+    "influence_relation": "A broader Galenic synthesis or teaching collection. It must not be read as descent from one specific Pergamap file."
+  },
+  "sources": [
+    {
+      "id": "dcgas-about",
+      "title": "A Digital Corpus for Graeco-Arabic Studies — About",
+      "publisher": "Digital Corpus for Graeco-Arabic Studies",
+      "url": "https://www.graeco-arabic-studies.org/about",
+      "accessed": "2026-08-10"
+    },
+    {
+      "id": "nlm-medieval-islam",
+      "title": "Medieval Islam",
+      "publisher": "U.S. National Library of Medicine",
+      "url": "https://www.nlm.nih.gov/hmd/arabic/med_islam.html",
+      "accessed": "2026-08-10"
+    },
+    {
+      "id": "nlm-alexandrian-summaries",
+      "title": "Catalogue: Alexandrian Summaries",
+      "publisher": "U.S. National Library of Medicine",
+      "url": "https://www.nlm.nih.gov/hmd/arabic/alexandrian.html",
+      "accessed": "2026-08-10"
+    },
+    {
+      "id": "galeno-latino-ars-parva",
+      "title": "Ars medica translated by Gerard of Cremona: Ars parva",
+      "publisher": "Galeno Latino",
+      "url": "https://www.galenolatino.com/traduzioni.php?id=124",
+      "accessed": "2026-08-10"
+    },
+    {
+      "id": "galeno-latino-aphorisms",
+      "title": "Commentary on Hippocrates' Aphorisms translated by Constantine the African",
+      "publisher": "Galeno Latino",
+      "url": "https://www.galenolatino.com/traduzioni.php?id=24",
+      "accessed": "2026-08-10"
+    },
+    {
+      "id": "galeno-latino-pulses",
+      "title": "On the Pulse for Beginners translated by Mark of Toledo",
+      "publisher": "Galeno Latino",
+      "url": "https://www.galenolatino.com/traduzioni.php?id=493",
+      "accessed": "2026-08-10"
+    },
+    {
+      "id": "galeno-latino-temperaments",
+      "title": "On Temperaments translated by Gerard of Cremona",
+      "publisher": "Galeno Latino",
+      "url": "https://www.galenolatino.com/traduzioni.php?id=19",
+      "accessed": "2026-08-10"
+    },
+    {
+      "id": "manchester-sects-hebrew",
+      "title": "The Alexandrian Summary of Galen's Sects for Beginners in Hebrew Translation",
+      "publisher": "University of Manchester Research Explorer",
+      "url": "https://research.manchester.ac.uk/en/publications/the-alexandrian-summary-of-galens-sects-for-beginner-in-hebrew-tr/",
+      "accessed": "2026-08-10"
+    },
+    {
+      "id": "ugr-hebrew-reception",
+      "title": "The Reception of Galen in Hebrew Medieval Scientific Writings",
+      "publisher": "University of Granada Research Repository",
+      "url": "https://digibug.ugr.es/handle/10481/99929",
+      "accessed": "2026-08-10"
+    },
+    {
+      "id": "wellcome-medical-experience",
+      "title": "Galen on Medical Experience: Arabic version with English translation",
+      "publisher": "Wellcome Collection",
+      "url": "https://wellcomecollection.org/works/hp9y54sp",
+      "accessed": "2026-08-10"
+    },
+    {
+      "id": "warwick-epidemics-ii",
+      "title": "Galen's Commentary on Hippocrates' Epidemics II, Arabic edition and English translation",
+      "publisher": "University of Warwick Research Archive Portal",
+      "url": "https://wrap.warwick.ac.uk/id/eprint/86880/",
+      "accessed": "2026-08-10"
+    },
+    {
+      "id": "wellcome-medical-names",
+      "title": "On Medical Names: Arabic text with German translation",
+      "publisher": "Wellcome Collection",
+      "url": "https://wellcomecollection.org/works/rva7gdhc",
+      "accessed": "2026-08-10"
+    },
+    {
+      "id": "goha-aphorisms",
+      "title": "Galen's Commentary on the Hippocratic Aphorisms",
+      "publisher": "Berlin-Brandenburg Academy of Sciences and Humboldt University",
+      "url": "https://goha.bbaw.de/",
+      "accessed": "2026-08-10"
+    },
+    {
+      "id": "nlm-articella",
+      "title": "Articella, Venice 1523",
+      "publisher": "U.S. National Library of Medicine",
+      "url": "https://www.ncbi.nlm.nih.gov/nlmcatalog/176312",
+      "accessed": "2026-08-10"
+    },
+    {
+      "id": "nlm-canon",
+      "title": "The Canon on Medicine by Ibn Sina",
+      "publisher": "U.S. National Library of Medicine",
+      "url": "https://www.nlm.nih.gov/hmd/arabic/E8.html",
+      "accessed": "2026-08-10"
+    },
+    {
+      "id": "pmc-razi",
+      "title": "Al-Razi and Islamic medicine in the 9th century",
+      "publisher": "Journal of the Royal Society of Medicine",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1420785/",
+      "accessed": "2026-08-10"
+    },
+    {
+      "id": "cambridge-mediterranean-pharmacology",
+      "title": "Medieval Mediterranean Pharmacology",
+      "publisher": "Cambridge University Press",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK606146/",
+      "accessed": "2026-08-10"
+    }
+  ],
+  "upstream": [
+    {
+      "id": "hippocratic-aphorisms",
+      "title": "Hippocrates, Aphorisms",
+      "date": "5th–4th century BCE",
+      "language": "greek",
+      "relation": "commented-on-by-galen",
+      "work_ids": [
+        "tlg092"
+      ],
+      "description": "Galen quotes each Hippocratic aphorism and then comments on it. The famous opening, 'Life is short, the art long,' therefore travels inside both the Greek and Arabic commentary traditions.",
+      "url": "https://goha.bbaw.de/",
+      "source_ids": [
+        "goha-aphorisms"
+      ]
+    }
+  ],
+  "receptions": [
+    {
+      "id": "latin-ars-parva",
+      "title": "Ars parva / Tegni",
+      "date": "late 12th century",
+      "language": "latin",
+      "kind": "translation",
+      "relation": "translation-from-arabic",
+      "certainty": "documented",
+      "work_ids": [
+        "tlg007"
+      ],
+      "witness_files": [
+        "gal_arsmed-transl-ar1.xml"
+      ],
+      "description": "Gerard of Cremona translated Galen's Art of Medicine from Ḥunayn's Arabic, interleaved with Ibn Riḍwān's commentary. It entered the Articella teaching collection in the thirteenth century.",
+      "url": "https://www.galenolatino.com/traduzioni.php?id=124",
+      "source_ids": [
+        "galeno-latino-ars-parva",
+        "nlm-articella"
+      ]
+    },
+    {
+      "id": "hebrew-small-art",
+      "title": "Melakhah qetanah (Small Art)",
+      "date": "1199 and 13th century",
+      "language": "hebrew",
+      "kind": "translation",
+      "relation": "translation-from-arabic-or-latin",
+      "certainty": "documented",
+      "work_ids": [
+        "tlg007"
+      ],
+      "witness_files": [
+        "gal_arsmed-transl-ar1.xml"
+      ],
+      "description": "Samuel ibn Tibbon translated the Art of Medicine and Ibn Riḍwān's commentary from Arabic into Hebrew in 1199. Other Hebrew versions used Latin, including Gerard's Arabic-derived version.",
+      "url": "https://digibug.ugr.es/handle/10481/99929",
+      "source_ids": [
+        "ugr-hebrew-reception",
+        "galeno-latino-ars-parva"
+      ]
+    },
+    {
+      "id": "latin-aphorisms-commentary",
+      "title": "Commenta super Aforismos Ypocratis",
+      "date": "late 11th century",
+      "language": "latin",
+      "kind": "translation",
+      "relation": "translation-from-arabic",
+      "certainty": "documented",
+      "work_ids": [
+        "tlg092"
+      ],
+      "witness_files": [
+        "gal_inhippaphor-transl-ar1.xml"
+      ],
+      "description": "Constantine the African's Latin translation of Galen's Commentary on the Aphorisms depends on Ḥunayn's ninth-century Arabic version and circulated in the Articella tradition.",
+      "url": "https://www.galenolatino.com/traduzioni.php?id=24",
+      "source_ids": [
+        "galeno-latino-aphorisms",
+        "nlm-articella"
+      ]
+    },
+    {
+      "id": "latin-pulse-beginners",
+      "title": "De tactu pulsus",
+      "date": "early 13th century",
+      "language": "latin",
+      "kind": "translation",
+      "relation": "translation-from-arabic",
+      "certainty": "documented",
+      "work_ids": [
+        "tlg058"
+      ],
+      "witness_files": [
+        "gal_depulsadtir-transl-ar1.xml"
+      ],
+      "description": "Mark of Toledo translated On the Pulse for Beginners from Arabic into Latin; manuscript colophons explicitly name the Greek-to-Arabic and Arabic-to-Latin stages.",
+      "url": "https://www.galenolatino.com/traduzioni.php?id=493",
+      "source_ids": [
+        "galeno-latino-pulses"
+      ]
+    },
+    {
+      "id": "latin-temperaments",
+      "title": "De complexionibus",
+      "date": "late 12th century",
+      "language": "latin",
+      "kind": "translation",
+      "relation": "translation-from-arabic",
+      "certainty": "documented",
+      "work_ids": [
+        "tlg009"
+      ],
+      "witness_files": [],
+      "description": "Gerard of Cremona produced a complete Latin translation of On Temperaments from Arabic. Pergamap currently holds Arabic summaries of this work, not the full Arabic version behind Gerard.",
+      "url": "https://www.galenolatino.com/traduzioni.php?id=19",
+      "source_ids": [
+        "galeno-latino-temperaments"
+      ]
+    },
+    {
+      "id": "hebrew-sects-summary",
+      "title": "Hebrew Alexandrian Summary of On Sects",
+      "date": "1322",
+      "language": "hebrew",
+      "kind": "translation",
+      "relation": "translation-from-arabic",
+      "certainty": "documented",
+      "work_ids": [
+        "tlg004"
+      ],
+      "witness_files": [
+        "anon_gal_desectis-summ_alexsumm-ar1.xml"
+      ],
+      "description": "Shimshon ben Shlomo translated the Alexandrian summary from Arabic into Hebrew in 1322. The very literal version survives in Vienna, Austrian National Library cod. hebr. 29.",
+      "url": "https://research.manchester.ac.uk/en/publications/the-alexandrian-summary-of-galens-sects-for-beginner-in-hebrew-tr/",
+      "source_ids": [
+        "manchester-sects-hebrew",
+        "nlm-alexandrian-summaries"
+      ]
+    },
+    {
+      "id": "english-medical-experience",
+      "title": "Galen on Medical Experience",
+      "date": "1944; reprinted 1996",
+      "language": "english",
+      "kind": "edition",
+      "relation": "modern-translation-from-arabic",
+      "certainty": "documented",
+      "work_ids": [
+        "tlg107"
+      ],
+      "witness_files": [],
+      "description": "Richard Walzer edited the Arabic version and translated it into English. The complete work survives only in Arabic, reached through Ḥubaysh's Arabic translation of Ḥunayn's Syriac version.",
+      "url": "https://wellcomecollection.org/works/hp9y54sp",
+      "source_ids": [
+        "wellcome-medical-experience"
+      ]
+    },
+    {
+      "id": "english-epidemics-ii",
+      "title": "Commentary on Hippocrates' Epidemics II",
+      "date": "2012–2016",
+      "language": "english",
+      "kind": "edition",
+      "relation": "modern-translation-from-arabic",
+      "certainty": "documented",
+      "work_ids": [
+        "x-epid2"
+      ],
+      "witness_files": [],
+      "description": "Uwe Vagelpohl and Simon Swain's critical edition translates Ḥunayn's Arabic into English. The Greek original is lost, making Arabic the only intact witness.",
+      "url": "https://wrap.warwick.ac.uk/id/eprint/86880/",
+      "source_ids": [
+        "warwick-epidemics-ii"
+      ]
+    },
+    {
+      "id": "german-medical-names",
+      "title": "Über die medizinischen Namen",
+      "date": "1931",
+      "language": "german",
+      "kind": "edition",
+      "relation": "modern-translation-from-arabic",
+      "certainty": "documented",
+      "work_ids": [
+        "x-nomin"
+      ],
+      "witness_files": [
+        "gal_denominibusmedicis-transl-ar1.xml"
+      ],
+      "description": "Max Meyerhof and Joseph Schacht published Ḥubaysh's Arabic text with a German translation. The Greek original is lost and no complete English translation is currently recorded by Pergamap.",
+      "url": "https://wellcomecollection.org/works/rva7gdhc",
+      "source_ids": [
+        "wellcome-medical-names"
+      ]
+    },
+    {
+      "id": "goha-bilingual-edition",
+      "title": "GoHA bilingual critical edition",
+      "date": "2025–2049 project",
+      "language": "multilingual",
+      "kind": "digital-project",
+      "relation": "bilingual-edition",
+      "certainty": "documented",
+      "work_ids": [
+        "tlg092"
+      ],
+      "witness_files": [
+        "gal_inhippaphor-transl-ar1.xml"
+      ],
+      "description": "The GoHA project is building a critical Greek-Arabic edition of the first four books with modern translations and digital access. It is a current scholarly destination for this branch.",
+      "url": "https://goha.bbaw.de/",
+      "source_ids": [
+        "goha-aphorisms"
+      ]
+    }
+  ],
+  "context": [
+    {
+      "id": "articella",
+      "title": "The Articella",
+      "date": "12th–16th centuries",
+      "language": "latin",
+      "relation": "teaching-collection",
+      "description": "A changing Latin teaching collection that placed Galen's short introductory works and commentaries beside Hippocratic and Arabic medical texts. Some components came through Arabic; others came directly from Greek or older Latin traditions.",
+      "url": "https://www.ncbi.nlm.nih.gov/nlmcatalog/176312",
+      "source_ids": [
+        "nlm-articella",
+        "cambridge-mediterranean-pharmacology"
+      ]
+    },
+    {
+      "id": "razi-hawi",
+      "title": "al-Rāzī, Comprehensive Book on Medicine",
+      "date": "late 9th–early 10th century",
+      "language": "arabic",
+      "relation": "galenic-synthesis",
+      "description": "Al-Rāzī's reading notes and case observations cite Greek authorities—especially Galen—alongside Islamic writers. It preserves reception and quotation, not a single lineal copy of one Galenic work.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1420785/",
+      "source_ids": [
+        "pmc-razi",
+        "nlm-medieval-islam"
+      ]
+    },
+    {
+      "id": "avicenna-canon",
+      "title": "Ibn Sīnā (Avicenna), Canon of Medicine",
+      "date": "c. 1025; Latin from the 12th century",
+      "language": "arabic",
+      "relation": "galenic-synthesis",
+      "description": "The Canon systematized, criticized, and extended Greek Galenic medicine. Gerard of Cremona's Latin translation became a European university text, but the Canon is an original synthesis rather than a translation of one Pergamap witness.",
+      "url": "https://www.nlm.nih.gov/hmd/arabic/E8.html",
+      "source_ids": [
+        "nlm-canon",
+        "nlm-medieval-islam"
+      ]
+    },
+    {
+      "id": "pantegni",
+      "title": "The Pantegni",
+      "date": "late 11th century",
+      "language": "latin",
+      "relation": "arabic-latin-synthesis",
+      "description": "Constantine the African adapted and translated ʿAlī ibn al-ʿAbbās al-Majūsī's Arabic Complete Book of the Medical Art into Latin. It carried an Islamicate synthesis of classical medicine into Europe, rather than one Galenic text unchanged.",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK606146/",
+      "source_ids": [
+        "cambridge-mediterranean-pharmacology"
+      ]
+    }
+  ]
+}
