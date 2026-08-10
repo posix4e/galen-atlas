@@ -122,6 +122,16 @@ def check() -> list[str]:
             errors.append("data/catalogue-metadata.json: invalid Dataset metadata")
     except (OSError, json.JSONDecodeError) as exc:
         errors.append(f"data/catalogue-metadata.json: cannot read: {exc}")
+    transmission_page = (ROOT / "transmission.html").read_text()
+    transmission_script = (ROOT / "assets" / "js" / "transmission.js").read_text()
+    for required in ("stage-composition", "stage-tradition", "stage-arabic", "source-language route not yet encoded"):
+        if required not in transmission_page:
+            errors.append(f"transmission.html: missing transmission distinction {required!r}")
+    for required in ("work identity", "Later Greek manuscript tradition", "source route not yet encoded"):
+        if required not in transmission_script:
+            errors.append(f"assets/js/transmission.js: missing transmission distinction {required!r}")
+    if "Galenic work" in transmission_page:
+        errors.append("transmission.html: ambiguous 'Galenic work' stage label has returned")
     return errors
 
 

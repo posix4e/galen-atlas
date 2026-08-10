@@ -136,6 +136,9 @@ class ValidatorTests(unittest.TestCase):
                 "scope": "Fixture scope",
                 "direct_relation": "Fixture direct relation",
                 "influence_relation": "Fixture influence relation",
+                "work_identity": "Fixture work identity distinction",
+                "surviving_tradition": "Fixture surviving tradition distinction",
+                "translation_route": "Fixture translation-route distinction",
             },
             "sources": [
                 {
@@ -245,6 +248,11 @@ class ValidatorTests(unittest.TestCase):
         self.transmission["receptions"][0]["witness_files"] = ["missing.xml"]
         self.save()
         self.assert_error_contains("witness_files contains an unknown Arabic file")
+
+    def test_transmission_requires_route_methodology(self):
+        self.transmission["methodology"]["translation_route"] = ""
+        self.save()
+        self.assert_error_contains("methodology is incomplete")
 
     def test_repository_data_is_valid(self):
         self.assertEqual(validate.validate(validate.ROOT), [])

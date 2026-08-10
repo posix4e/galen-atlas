@@ -34,7 +34,7 @@
 <main class="map-page">
   <p class="eyebrow">Transmission atlas · 2nd century to the present</p>
   <h1>How Galen's texts traveled</h1>
-  <p class="lead">Choose any catalogued work to follow the branch we can document: an ancient source when relevant, Galen's text, the Arabic translations or summaries held by Pergamap, and later Hebrew, Latin, German, English, or digital editions. Empty branches are shown honestly; absence from this map is not proof that no witness exists.</p>
+  <p class="lead">Choose any catalogued work to distinguish its ancient composition from the later manuscript traditions that preserve it, the Arabic translations or summaries held by Pergamap, and documented Hebrew, Latin, German, English, or digital branches. Empty branches are shown honestly; absence from this map is not proof that no witness exists.</p>
 
   <div class="stats map-stats" aria-label="Map coverage">
     <div class="stat"><b id="map-work-count">–</b><span>catalogued works</span></div>
@@ -45,6 +45,7 @@
 
   <div class="map-key" aria-label="Relationship key">
     <span><i class="key-line direct" aria-hidden="true"></i> documented textual route</span>
+    <span><i class="key-line uncertainty" aria-hidden="true"></i> source-language route not yet encoded</span>
     <span><i class="key-line influence" aria-hidden="true"></i> broader influence, not direct descent</span>
     <span><i class="key-dot local" aria-hidden="true"></i> text held locally</span>
   </div>
@@ -80,21 +81,27 @@
           <div id="selected-links" class="branch-links"></div>
         </div>
 
+        <p class="transmission-caveat"><strong>Work identity is not a manuscript.</strong> The Greek-manuscript and Arabic-witness panels are sibling branches from the ancient work—not steps in one automatic chain. A dashed Arabic branch means Pergamap has not yet established whether that witness came directly from Greek, through Syriac, or by another route.</p>
+
         <div class="tree-stages" id="tree-stages" aria-label="Historical transmission branch">
-          <section class="tree-stage" aria-labelledby="stage-source-title">
+          <section class="tree-stage stage-source" aria-labelledby="stage-source-title">
             <header><span>Before Galen</span><b id="stage-source-title">Source text</b></header>
             <div id="stage-source" class="tree-nodes"></div>
           </section>
-          <section class="tree-stage" aria-labelledby="stage-galen-title">
-            <header><span>2nd–3rd c.</span><b id="stage-galen-title">Galenic work</b></header>
-            <div id="stage-galen" class="tree-nodes"></div>
+          <section class="tree-stage stage-composition" aria-labelledby="stage-composition-title">
+            <header><span>2nd–3rd c. · Greek</span><b id="stage-composition-title">Ancient work identity</b></header>
+            <div id="stage-composition" class="tree-nodes"></div>
           </section>
-          <section class="tree-stage" aria-labelledby="stage-arabic-title">
-            <header><span>8th–14th c.</span><b id="stage-arabic-title">Arabic versions</b></header>
+          <section class="tree-stage stage-tradition" aria-labelledby="stage-tradition-title">
+            <header><span>Sibling branch A</span><b id="stage-tradition-title">Greek manuscript tradition</b></header>
+            <div id="stage-tradition" class="tree-nodes"></div>
+          </section>
+          <section class="tree-stage stage-arabic translation-route" aria-labelledby="stage-arabic-title">
+            <header><span>Sibling branch B · route varies</span><b id="stage-arabic-title">Arabic witnesses</b></header>
             <div id="stage-arabic" class="tree-nodes"></div>
           </section>
-          <section class="tree-stage" aria-labelledby="stage-later-title">
-            <header><span>11th c.–today</span><b id="stage-later-title">Later branches</b></header>
+          <section class="tree-stage stage-later" aria-labelledby="stage-later-title">
+            <header><span>From Arabic or bilingual sources</span><b id="stage-later-title">Later branches</b></header>
             <div id="stage-later" class="tree-nodes"></div>
           </section>
         </div>
@@ -128,7 +135,7 @@
     <p class="eyebrow">Evidence</p>
     <h2 id="map-sources-title">Sources and limits</h2>
     <p>The local Greek and Arabic links come from Pergamap's versioned datasets. Later connections are deliberately selective and cite library catalogues, scholarly repositories, or specialist transmission databases. Dates often describe a translation or surviving witness, not the date of the lost exemplar.</p>
-    <p>Many Arabic versions were translated directly from Greek, while others passed through Syriac. Because the local manifest does not encode that source-language route uniformly, this map does not insert a Syriac stage unless a cited record documents it for the specific work.</p>
+    <p>Many Arabic versions were translated directly from Greek, while others passed through Syriac. Pergamap therefore marks the source-language route as uncertain for each local Arabic file until a cited, work-specific route is encoded. A missing Syriac node must never be read as evidence that Syriac was not involved.</p>
     <div id="map-sources" class="source-grid"></div>
   </section>
 </main>

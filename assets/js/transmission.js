@@ -31,7 +31,8 @@ const elements = {
   selectedSubtitle: document.getElementById("selected-subtitle"),
   selectedLinks: document.getElementById("selected-links"),
   sourceStage: document.getElementById("stage-source"),
-  galenStage: document.getElementById("stage-galen"),
+  compositionStage: document.getElementById("stage-composition"),
+  traditionStage: document.getElementById("stage-tradition"),
   arabicStage: document.getElementById("stage-arabic"),
   laterStage: document.getElementById("stage-later"),
   detailKind: document.getElementById("detail-kind"),
@@ -202,6 +203,7 @@ function treeButton(item, classes) {
   button.appendChild(node("span", "tree-relation", item.meta || relationshipLabel(item)));
   button.appendChild(node("strong", "", item.title));
   if (item.subtitle) button.appendChild(node("span", "tree-subtitle", item.subtitle));
+  if (item.routePath) button.appendChild(node("span", "tree-route", item.routePath));
   if (item.local) button.appendChild(node("span", "local-marker", "Held by Pergamap"));
   button.addEventListener("click", () => {
     document.querySelectorAll(".tree-node.selected").forEach((candidate) => candidate.classList.remove("selected"));
@@ -215,18 +217,35 @@ function emptyStage(container, text) {
   container.replaceChildren(node("p", "tree-empty", text));
 }
 
-function workDetail(branch) {
+function compositionDetail(branch) {
   const work = branch.work;
-  const languages = (work.survival.languages || []).map((language) => LANGUAGE[language] || language).join(", ");
-  const digital = work.digital_texts.find((item) => safeUrl(item.url));
   return {
-    title: workTitle(work),
-    kicker: branch.synthetic ? "unmapped Arabic record" : "Galenic work",
-    meta: branch.synthetic ? "not yet keyed" : "Galen · 2nd–3rd c.",
-    subtitle: work.titles.latin,
-    description: work.notes || `Catalogued as surviving in ${languages || "an unspecified tradition"}. Select the surrounding nodes to follow only the routes currently documented in Pergamap.`,
+    title: `${workTitle(work)} — work identity`,
+    kicker: "ancient composition",
+    meta: "attributed work · 2nd–3rd c.",
+    subtitle: "Originally composed in Greek; no autograph survives",
+    description: "This node identifies the work attributed to Galen. It is not a manuscript, a translation, or a modern edition. The next node reports the languages in which the textual tradition now survives.",
+  };
+}
+
+function traditionDetail(branch) {
+  const work = branch.work;
+  const languages = work.survival.languages || [];
+  const labels = languages.map((language) => LANGUAGE[language] || language);
+  const greekSurvives = languages.includes("greek");
+  const digital = work.digital_texts.find((item) => languages.includes(item.language) && safeUrl(item.url));
+  const survival = labels.length ? labels.join(", ") : "not yet recorded";
+  const catalogueNote = work.notes ? ` Catalogue note: ${work.notes}` : "";
+  return {
+    title: greekSurvives ? "Later Greek manuscript tradition" : "Greek manuscript survival not listed",
+    kicker: "surviving textual tradition",
+    meta: greekSurvives ? "Greek survives in later copies" : "Greek not listed as a survival language",
+    subtitle: `Survival recorded in: ${survival}`,
+    description: greekSurvives
+      ? `The Greek work survives through manuscripts copied after Galen, not through his original document. A linked digital Greek text is a modern presentation of an edited manuscript tradition.${catalogueNote}`
+      : `Pergamap does not list Greek among this work's survival languages; that is not proof that no Greek fragment exists. The recorded survival in ${survival} does not reveal whether a translation was made directly from Greek or through an intermediary such as Syriac.${catalogueNote}`,
     url: digital?.url,
-    urlLabel: digital ? `Open ${LANGUAGE[digital.language] || digital.language} text ↗` : undefined,
+    urlLabel: digital ? `Open modern digital ${LANGUAGE[digital.language] || digital.language} text ↗` : undefined,
   };
 }
 
@@ -237,9 +256,16 @@ function witnessDetail(text) {
   return {
     title,
     kicker: role,
-    meta: text.kind,
-    subtitle: text.author && text.author !== "Galen" ? text.author : text.title_arabic,
-    description: `${role}; ${extent}. ${text.of_work ? `Connected in the manifest to ${text.of_work}.` : "No Galenic work title is assigned in the manifest."}`,
+    meta: text.kind === "catalogue" ? "catalogue record" : "source route not yet encoded",
+    subtitle: [text.kind, text.author && text.author !== "Galen" ? text.author : text.title_arabic].filter(Boolean).join(" · "),
+    routePath: text.kind === "translation"
+      ? "Greek → Arabic OR Greek → Syriac → Arabic"
+      : text.kind === "summary"
+        ? "Source text → intermediary? → Arabic summary"
+        : "Historical catalogue—not a translation",
+    description: text.kind === "catalogue"
+      ? `${role}; ${extent}. This is evidence about the catalogue of Galen's works, not a translated Galenic text.`
+      : `${role}; ${extent}. ${text.of_work ? `Connected in the manifest to ${text.of_work}.` : "No Galenic work title is assigned in the manifest."} Pergamap does not yet encode the source language or intermediary for this file, so this node claims no direct Greek-to-Arabic path.`,
     local: true,
     localUrl: `sources/arabic/${encodeURIComponent(text.file)}`,
     sourceUrl: text.source_url,
@@ -256,7 +282,9 @@ function renderBranch(branch) {
   if (!branch.synthetic) appendLink(elements.selectedLinks, "Open in corpus", `corpus.html?work=${encodeURIComponent(work.id)}`);
   work.digital_texts.forEach((digital) => appendLink(
     elements.selectedLinks,
-    `${digital.provider} (${LANGUAGE[digital.language] || digital.language}) ↗`,
+    (work.survival.languages || []).includes(digital.language)
+      ? `${digital.provider} — modern digital ${LANGUAGE[digital.language] || digital.language} text ↗`
+      : `${digital.provider} — ${LANGUAGE[digital.language] || digital.language} catalogue record ↗`,
     digital.url
   ));
 
@@ -272,18 +300,27 @@ function renderBranch(branch) {
     emptyStage(elements.sourceStage, "No earlier source work is encoded for this branch.");
   }
 
-  elements.galenStage.replaceChildren();
+  elements.compositionStage.replaceChildren();
+  elements.traditionStage.replaceChildren();
   if (branch.synthetic) {
-    emptyStage(elements.galenStage, "No matching work ID in the current catalogue.");
+    emptyStage(elements.compositionStage, "No matching work identity in the current catalogue.");
+    emptyStage(elements.traditionStage, "No survival-language record is available for this unmapped Arabic file.");
   } else {
-    elements.galenStage.appendChild(treeButton(workDetail(branch), "galen selected"));
+    elements.compositionStage.appendChild(treeButton(compositionDetail(branch), "composition selected"));
+    elements.traditionStage.appendChild(treeButton(traditionDetail(branch), "tradition"));
   }
 
   elements.arabicStage.replaceChildren();
   if (branch.witnesses.length) {
-    branch.witnesses.forEach((text) => elements.arabicStage.appendChild(treeButton(witnessDetail(text), "arabic")));
+    branch.witnesses.forEach((text) => elements.arabicStage.appendChild(treeButton(witnessDetail(text), "arabic route-uncertain")));
   } else {
-    emptyStage(elements.arabicStage, "No Arabic file for this work is held in the local manifest.");
+    const laterUsesArabic = branch.receptions.some((item) => String(item.relation).includes("arabic"));
+    emptyStage(
+      elements.arabicStage,
+      laterUsesArabic
+        ? "No Arabic file for this work is held locally; the later branch is documented from an external Arabic witness or edition."
+        : "No Arabic file for this work is held in the local manifest."
+    );
   }
 
   elements.laterStage.replaceChildren();
@@ -298,7 +335,7 @@ function renderBranch(branch) {
     emptyStage(elements.laterStage, "No later-language branch has yet been added to the curated map.");
   }
 
-  const initial = branch.synthetic && branch.witnesses.length ? witnessDetail(branch.witnesses[0]) : workDetail(branch);
+  const initial = branch.synthetic && branch.witnesses.length ? witnessDetail(branch.witnesses[0]) : compositionDetail(branch);
   setDetail(initial);
 }
 

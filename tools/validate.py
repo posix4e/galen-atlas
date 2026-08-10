@@ -409,7 +409,15 @@ def validate_transmission(
         errors.append("data/transmission.json: updated must be an ISO date")
     methodology = document.get("methodology")
     if not isinstance(methodology, dict) or any(
-        not methodology.get(field) for field in ("scope", "direct_relation", "influence_relation")
+        not methodology.get(field)
+        for field in (
+            "scope",
+            "direct_relation",
+            "influence_relation",
+            "work_identity",
+            "surviving_tradition",
+            "translation_route",
+        )
     ):
         errors.append("data/transmission.json: methodology is incomplete")
 
