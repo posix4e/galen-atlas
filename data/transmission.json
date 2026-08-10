@@ -5,7 +5,10 @@
   "methodology": {
     "scope": "Every work in works.json and every Arabic file in the local manifest is discoverable in the interactive map. Later-language branches are a smaller, source-backed selection rather than a claim to completeness.",
     "direct_relation": "A documented translation, summary, commentary, edition, or digital collation connected to a specific work or witness.",
-    "influence_relation": "A broader Galenic synthesis or teaching collection. It must not be read as descent from one specific Pergamap file."
+    "influence_relation": "A broader Galenic synthesis or teaching collection. It must not be read as descent from one specific Pergamap file.",
+    "work_identity": "The ancient-composition node is a catalogue identity for a work attributed to Galen, not an autograph, manuscript, translation, or edition.",
+    "surviving_tradition": "Survival languages describe the later textual traditions currently recorded for a work. A modern digital Greek text represents an edited tradition based on later witnesses, not Galen's original document.",
+    "translation_route": "An Arabic witness must not be displayed as a direct translation from Greek unless its source-language route is cited and encoded. Where the manifest does not distinguish direct Greek translation from a Syriac intermediary, the interface marks the route as uncertain."
   },
   "sources": [
     {
