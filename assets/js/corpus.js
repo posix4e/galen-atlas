@@ -6,6 +6,7 @@ const CONFIDENCE = { checked: "", recalled: "unverified", unknown: "needs resear
 let works = [];
 let activeFilter = "all";
 let query = "";
+let requestedWorkId = new URL(location.href).searchParams.get("work");
 
 const body = document.querySelector("#t tbody");
 const count = document.getElementById("count");
@@ -30,8 +31,14 @@ function safeUrl(value) {
 
 function addRow(work) {
   const row = document.createElement("tr");
+  row.dataset.workId = work.id;
+  if (work.id === requestedWorkId) row.classList.add("catalogue-highlight");
   const titleCell = row.appendChild(document.createElement("td"));
-  titleCell.appendChild(node("strong", "", work.titles.english || work.titles.latin));
+  const mapLink = node("a", "", work.titles.english || work.titles.latin);
+  mapLink.href = `transmission.html?work=${encodeURIComponent(work.id)}`;
+  const title = document.createElement("strong");
+  title.appendChild(mapLink);
+  titleCell.appendChild(title);
   if (work.titles.english) {
     titleCell.appendChild(document.createElement("br"));
     titleCell.appendChild(node("span", "lat", work.titles.latin));
@@ -83,6 +90,11 @@ function apply() {
   body.replaceChildren();
   shown.forEach(addRow);
   count.textContent = `${shown.length} of ${works.length} works shown.`;
+  if (requestedWorkId) {
+    const requestedRow = body.querySelector(`[data-work-id="${CSS.escape(requestedWorkId)}"]`);
+    if (requestedRow) requestAnimationFrame(() => requestedRow.scrollIntoView({ block: "center" }));
+    requestedWorkId = null;
+  }
 }
 
 fetch("data/works.json")
