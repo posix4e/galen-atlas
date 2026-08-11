@@ -40,11 +40,14 @@
   <h2>Phase 0 — Map the corpus <span class="chip full">live now</span></h2>
   <p>Publish the <a href="corpus.html">atlas</a>, with translation status flagged by confidence, and open it to corrections. The unglamorous foundation: you can't plan a rescue without a map.</p>
 
-  <h2>Phase 1 — Pilot: the hair &amp; scalp book <span class="chip partial">begun</span></h2>
-  <p>Book 1 of <em>On the Composition of Drugs According to Places</em> (Kühn XII 378–497): Galen's remedies for baldness, falling hair, <em>hair dye</em>, depilatories, dandruff, lice, and scalp sores. No published English rendering of these chapters is known; the <a href="translations/chunk.html?id=cml-1-1">preface is available as an unreviewed project draft</a>, and the remaining chapters follow in manageable, source-pinned chunks.</p>
+  <h2>Phase 1 — Pilot: the hair &amp; scalp book <span class="chip partial">one chapter, then paused</span></h2>
+  <p>Book 1 of <em>On the Composition of Drugs According to Places</em> (Kühn XII 378–497): Galen's remedies for baldness, falling hair, <em>hair dye</em>, depilatories, dandruff, lice, and scalp sores. No published English rendering of these chapters is known. The <a href="translations/chunk.html?id=cml-1-1">preface is drafted</a> and unreviewed; the remaining nine chapters are untouched. Work moved to the strand below before they were begun, and saying otherwise would misdescribe the state of the project.</p>
+
+  <h2>Phase 1b — Collation on a text with two traditions <span class="chip partial">where the work actually went</span></h2>
+  <p>The commentary on the <em>Aphorisms</em> survives in Greek and in Ḥunayn's Arabic, both anchored to the same Kühn pagination and to numbered Hippocratic lemmata, so the two collate mechanically. <a href="translations/aphorisms-1-1.html">One verse is published</a> with both traditions set out. This strand, not the drug book, is what tested the method — and what drew the correction that rewrote the <a href="https://github.com/posix4e/pergamap/blob/main/HARNESS.md#the-witness-protocol">witness protocol</a>, including an admission that our own showcase example had presented a construal as though it were a variant. It also means the Arabic path has already been exercised end to end, which Phase 3 below no longer waits on.</p>
 
   <h2>Phase 2 — First full campaign <span class="chip unknown">ballot under revision</span></h2>
-  <p>The first sustained translation effort will be chosen publicly after every candidate is rechecked against current translation catalogues. The provisional candidates are:</p>
+  <p>The first sustained translation effort will be chosen publicly, but the ballot is blocked on a specific and finishable task: <strong>every candidate below still carries <code>verification: recalled</code> in the catalogue</strong> — none has been checked against the <a href="https://cmg.bbaw.de/startseite/arbeitsmittel/werkverzeichnisse/galenus-uebersetzungen/">BBAW translation catalogue</a>. That check is what removed the pulse treatises from this ballot, after Johnston and Papavramidou's 2024 translation turned out to cover them; there is no reason to assume the remaining four are safer. Until each is verified, these are provisional:</p>
   <ul>
     <li><em>On the Composition of Drugs According to Places</em> — continue past Book 1 (eyes, ears, teeth, chest… ten books of ancient pharmacy).</li>
     <li><em>On Antidotes</em> — theriac, mithridatium, and the emperor's daily dose; the founding text of the antidote tradition.</li>
@@ -54,7 +57,7 @@
   <p><a href="https://github.com/posix4e/pergamap/issues/1"><strong>Follow the ballot revision →</strong></a></p>
 
   <h2>Phase 3 — The Arabic frontier <span class="chip unknown">later</span></h2>
-  <p>Works lost in Greek that survive in the Arabic of Ḥunayn ibn Isḥāq's ninth-century Baghdad workshop — some translated by scholars already, some (like <em>On Medical Names</em>) still without English. These need published Arabic editions and more careful hands; they come after the pipeline is proven on Greek.</p>
+  <p>Works lost in Greek that survive in the Arabic of Ḥunayn ibn Isḥāq's ninth-century Baghdad workshop — some translated by scholars already, some (like <em>On Medical Names</em>, which has only a German version of 1931) still without English. The tooling is no longer the obstacle: Phase 1b already reads Arabic alongside Greek. What these need is competence we do not have in-house, which is why the arrangement described under review below matters more here than anywhere else.</p>
 
   <h2>How a campaign runs</h2>
   <ol>
@@ -63,6 +66,12 @@
     <li>Draft, source text, citations, concise <em>translation rationale</em>, and notes are published side by side, flagged as a draft until a qualified human reviewer signs off.</li>
     <li>Anyone can challenge a rendering by opening an issue pointing at the Greek — the fastest way to improve the text.</li>
   </ol>
+
+  <h2>Review, and what is honestly in place <span class="chip partial">partly arranged</span></h2>
+  <p>Every draft on this site carries a flag saying it awaits a qualified reviewer. For a long time that was an aspiration rather than an arrangement, and the flag was doing more work than the reality behind it. The position now: one substantive correction has been taken from a specialist in the Greek-into-Arabic tradition and applied across the site, and paid occasional advice from a doctoral researcher with both Greek and Arabic is being arranged. Nothing here has yet been signed off by a reviewer, and every draft still says so.</p>
+
+  <h2>Infrastructure: recording divergences as data <span class="chip unknown">designed, not built</span></h2>
+  <p>Divergences between witnesses are currently prose. The intention is to record each as structured data — what every witness reads, which underlying Greek would account for it, and whether the claim is a <em>variant</em> in the text or a <em>construal</em> of it — so that the distinction is enforced by the format rather than by the drafter's memory, and so the corpus can answer questions like “where does the Arabic imply a variant?” at scale. This is the part of the work an amateur project is actually well placed to do: not philological judgement, but systematic and auditable bookkeeping.</p>
   <div class="notice medical-warning"><p><strong>Historical text only.</strong> Ancient remedies may be toxic or unsafe. Translations are not medical advice and must not be used as treatment instructions.</p></div>
   <p class="crumb">Details for contributors: <a href="https://github.com/posix4e/pergamap/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>.</p>
 </main>
