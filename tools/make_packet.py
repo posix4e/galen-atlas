@@ -174,7 +174,10 @@ def build_packet(
             },
             "arabic": {
                 "status": "unknown",
-                "note": "Identify and cite any relevant Arabic version before review.",
+                "note": "Identify and cite any relevant Arabic version before review. "
+                        "Versions are indirect tradition: where one diverges, state which "
+                        "underlying Greek reading would account for it, and whether you are "
+                        "claiming a variant or a construal.",
             },
         },
         "segmentation": "one segment per Kühn page; split or merge at argument boundaries",
