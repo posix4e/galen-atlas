@@ -1,0 +1,3728 @@
+{
+ "work": "tlg092",
+ "method": "positional alignment of Kühn page anchors; the Arabic index is sequential over the same span, so anchor i corresponds to Greek page i in document order. Sound only where the anchor counts agree.",
+ "sources": {
+  "greek": {
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/bfea9acd07ee1b7cea70cdd927c8f092d5637695/data/tlg0057/tlg092/tlg0057.tlg092.1st1K-grc1.xml",
+   "pinned_commit": "bfea9acd07ee1b7cea70cdd927c8f092d5637695",
+   "sha256": "d0c4d8e423210930465e0e8082d7ff3cd5829b2010adba6047814b4167694535",
+   "anchors": 738
+  },
+  "arabic": {
+   "file": "sources/arabic/gal_inhippaphor-transl-ar1.xml",
+   "sha256": "50b3bff0dcaec2daa2ddfab15c233273cf4fc569c55980d8fde79209854d535e",
+   "anchors": 738
+  }
+ },
+ "aligned": true,
+ "volumes": [
+  {
+   "label": "XVIIb",
+   "first": 345,
+   "last": 887,
+   "pages": 543
+  },
+  {
+   "label": "XVIIIa",
+   "first": 1,
+   "last": 195,
+   "pages": 195
+  }
+ ],
+ "pages": [
+  {
+   "arabic": 1,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 345
+  },
+  {
+   "arabic": 2,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 346
+  },
+  {
+   "arabic": 3,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 347
+  },
+  {
+   "arabic": 4,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 348
+  },
+  {
+   "arabic": 5,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 349
+  },
+  {
+   "arabic": 6,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 350
+  },
+  {
+   "arabic": 7,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 351
+  },
+  {
+   "arabic": 8,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 352
+  },
+  {
+   "arabic": 9,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 353
+  },
+  {
+   "arabic": 10,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 354
+  },
+  {
+   "arabic": 11,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 355
+  },
+  {
+   "arabic": 12,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 356
+  },
+  {
+   "arabic": 13,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 357
+  },
+  {
+   "arabic": 14,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 358
+  },
+  {
+   "arabic": 15,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 359
+  },
+  {
+   "arabic": 16,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 360
+  },
+  {
+   "arabic": 17,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 361
+  },
+  {
+   "arabic": 18,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 362
+  },
+  {
+   "arabic": 19,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 363
+  },
+  {
+   "arabic": 20,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 364
+  },
+  {
+   "arabic": 21,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 365
+  },
+  {
+   "arabic": 22,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 366
+  },
+  {
+   "arabic": 23,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 367
+  },
+  {
+   "arabic": 24,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 368
+  },
+  {
+   "arabic": 25,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 369
+  },
+  {
+   "arabic": 26,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 370
+  },
+  {
+   "arabic": 27,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 371
+  },
+  {
+   "arabic": 28,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 372
+  },
+  {
+   "arabic": 29,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 373
+  },
+  {
+   "arabic": 30,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 374
+  },
+  {
+   "arabic": 31,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 375
+  },
+  {
+   "arabic": 32,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 376
+  },
+  {
+   "arabic": 33,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 377
+  },
+  {
+   "arabic": 34,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 378
+  },
+  {
+   "arabic": 35,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 379
+  },
+  {
+   "arabic": 36,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 380
+  },
+  {
+   "arabic": 37,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 381
+  },
+  {
+   "arabic": 38,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 382
+  },
+  {
+   "arabic": 39,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 383
+  },
+  {
+   "arabic": 40,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 384
+  },
+  {
+   "arabic": 41,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 385
+  },
+  {
+   "arabic": 42,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 386
+  },
+  {
+   "arabic": 43,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 387
+  },
+  {
+   "arabic": 44,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 388
+  },
+  {
+   "arabic": 45,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 389
+  },
+  {
+   "arabic": 46,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 390
+  },
+  {
+   "arabic": 47,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 391
+  },
+  {
+   "arabic": 48,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 392
+  },
+  {
+   "arabic": 49,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 393
+  },
+  {
+   "arabic": 50,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 394
+  },
+  {
+   "arabic": 51,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 395
+  },
+  {
+   "arabic": 52,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 396
+  },
+  {
+   "arabic": 53,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 397
+  },
+  {
+   "arabic": 54,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 398
+  },
+  {
+   "arabic": 55,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 399
+  },
+  {
+   "arabic": 56,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 400
+  },
+  {
+   "arabic": 57,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 401
+  },
+  {
+   "arabic": 58,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 402
+  },
+  {
+   "arabic": 59,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 403
+  },
+  {
+   "arabic": 60,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 404
+  },
+  {
+   "arabic": 61,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 405
+  },
+  {
+   "arabic": 62,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 406
+  },
+  {
+   "arabic": 63,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 407
+  },
+  {
+   "arabic": 64,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 408
+  },
+  {
+   "arabic": 65,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 409
+  },
+  {
+   "arabic": 66,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 410
+  },
+  {
+   "arabic": 67,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 411
+  },
+  {
+   "arabic": 68,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 412
+  },
+  {
+   "arabic": 69,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 413
+  },
+  {
+   "arabic": 70,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 414
+  },
+  {
+   "arabic": 71,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 415
+  },
+  {
+   "arabic": 72,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 416
+  },
+  {
+   "arabic": 73,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 417
+  },
+  {
+   "arabic": 74,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 418
+  },
+  {
+   "arabic": 75,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 419
+  },
+  {
+   "arabic": 76,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 420
+  },
+  {
+   "arabic": 77,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 421
+  },
+  {
+   "arabic": 78,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 422
+  },
+  {
+   "arabic": 79,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 423
+  },
+  {
+   "arabic": 80,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 424
+  },
+  {
+   "arabic": 81,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 425
+  },
+  {
+   "arabic": 82,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 426
+  },
+  {
+   "arabic": 83,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 427
+  },
+  {
+   "arabic": 84,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 428
+  },
+  {
+   "arabic": 85,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 429
+  },
+  {
+   "arabic": 86,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 430
+  },
+  {
+   "arabic": 87,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 431
+  },
+  {
+   "arabic": 88,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 432
+  },
+  {
+   "arabic": 89,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 433
+  },
+  {
+   "arabic": 90,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 434
+  },
+  {
+   "arabic": 91,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 435
+  },
+  {
+   "arabic": 92,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 436
+  },
+  {
+   "arabic": 93,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 437
+  },
+  {
+   "arabic": 94,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 438
+  },
+  {
+   "arabic": 95,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 439
+  },
+  {
+   "arabic": 96,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 440
+  },
+  {
+   "arabic": 97,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 441
+  },
+  {
+   "arabic": 98,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 442
+  },
+  {
+   "arabic": 99,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 443
+  },
+  {
+   "arabic": 100,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 444
+  },
+  {
+   "arabic": 101,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 445
+  },
+  {
+   "arabic": 102,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 446
+  },
+  {
+   "arabic": 103,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 447
+  },
+  {
+   "arabic": 104,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 448
+  },
+  {
+   "arabic": 105,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 449
+  },
+  {
+   "arabic": 106,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 450
+  },
+  {
+   "arabic": 107,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 451
+  },
+  {
+   "arabic": 108,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 452
+  },
+  {
+   "arabic": 109,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 453
+  },
+  {
+   "arabic": 110,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 454
+  },
+  {
+   "arabic": 111,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 455
+  },
+  {
+   "arabic": 112,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 456
+  },
+  {
+   "arabic": 113,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 457
+  },
+  {
+   "arabic": 114,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 458
+  },
+  {
+   "arabic": 115,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 459
+  },
+  {
+   "arabic": 116,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 460
+  },
+  {
+   "arabic": 117,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 461
+  },
+  {
+   "arabic": 118,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 462
+  },
+  {
+   "arabic": 119,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 463
+  },
+  {
+   "arabic": 120,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 464
+  },
+  {
+   "arabic": 121,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 465
+  },
+  {
+   "arabic": 122,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 466
+  },
+  {
+   "arabic": 123,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 467
+  },
+  {
+   "arabic": 124,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 468
+  },
+  {
+   "arabic": 125,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 469
+  },
+  {
+   "arabic": 126,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 470
+  },
+  {
+   "arabic": 127,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 471
+  },
+  {
+   "arabic": 128,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 472
+  },
+  {
+   "arabic": 129,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 473
+  },
+  {
+   "arabic": 130,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 474
+  },
+  {
+   "arabic": 131,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 475
+  },
+  {
+   "arabic": 132,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 476
+  },
+  {
+   "arabic": 133,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 477
+  },
+  {
+   "arabic": 134,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 478
+  },
+  {
+   "arabic": 135,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 479
+  },
+  {
+   "arabic": 136,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 480
+  },
+  {
+   "arabic": 137,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 481
+  },
+  {
+   "arabic": 138,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 482
+  },
+  {
+   "arabic": 139,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 483
+  },
+  {
+   "arabic": 140,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 484
+  },
+  {
+   "arabic": 141,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 485
+  },
+  {
+   "arabic": 142,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 486
+  },
+  {
+   "arabic": 143,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 487
+  },
+  {
+   "arabic": 144,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 488
+  },
+  {
+   "arabic": 145,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 489
+  },
+  {
+   "arabic": 146,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 490
+  },
+  {
+   "arabic": 147,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 491
+  },
+  {
+   "arabic": 148,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 492
+  },
+  {
+   "arabic": 149,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 493
+  },
+  {
+   "arabic": 150,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 494
+  },
+  {
+   "arabic": 151,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 495
+  },
+  {
+   "arabic": 152,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 496
+  },
+  {
+   "arabic": 153,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 497
+  },
+  {
+   "arabic": 154,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 498
+  },
+  {
+   "arabic": 155,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 499
+  },
+  {
+   "arabic": 156,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 500
+  },
+  {
+   "arabic": 157,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 501
+  },
+  {
+   "arabic": 158,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 502
+  },
+  {
+   "arabic": 159,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 503
+  },
+  {
+   "arabic": 160,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 504
+  },
+  {
+   "arabic": 161,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 505
+  },
+  {
+   "arabic": 162,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 506
+  },
+  {
+   "arabic": 163,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 507
+  },
+  {
+   "arabic": 164,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 508
+  },
+  {
+   "arabic": 165,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 509
+  },
+  {
+   "arabic": 166,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 510
+  },
+  {
+   "arabic": 167,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 511
+  },
+  {
+   "arabic": 168,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 512
+  },
+  {
+   "arabic": 169,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 513
+  },
+  {
+   "arabic": 170,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 514
+  },
+  {
+   "arabic": 171,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 515
+  },
+  {
+   "arabic": 172,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 516
+  },
+  {
+   "arabic": 173,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 517
+  },
+  {
+   "arabic": 174,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 518
+  },
+  {
+   "arabic": 175,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 519
+  },
+  {
+   "arabic": 176,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 520
+  },
+  {
+   "arabic": 177,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 521
+  },
+  {
+   "arabic": 178,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 522
+  },
+  {
+   "arabic": 179,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 523
+  },
+  {
+   "arabic": 180,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 524
+  },
+  {
+   "arabic": 181,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 525
+  },
+  {
+   "arabic": 182,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 526
+  },
+  {
+   "arabic": 183,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 527
+  },
+  {
+   "arabic": 184,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 528
+  },
+  {
+   "arabic": 185,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 529
+  },
+  {
+   "arabic": 186,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 530
+  },
+  {
+   "arabic": 187,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 531
+  },
+  {
+   "arabic": 188,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 532
+  },
+  {
+   "arabic": 189,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 533
+  },
+  {
+   "arabic": 190,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 534
+  },
+  {
+   "arabic": 191,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 535
+  },
+  {
+   "arabic": 192,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 536
+  },
+  {
+   "arabic": 193,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 537
+  },
+  {
+   "arabic": 194,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 538
+  },
+  {
+   "arabic": 195,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 539
+  },
+  {
+   "arabic": 196,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 540
+  },
+  {
+   "arabic": 197,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 541
+  },
+  {
+   "arabic": 198,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 542
+  },
+  {
+   "arabic": 199,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 543
+  },
+  {
+   "arabic": 200,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 544
+  },
+  {
+   "arabic": 201,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 545
+  },
+  {
+   "arabic": 202,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 546
+  },
+  {
+   "arabic": 203,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 547
+  },
+  {
+   "arabic": 204,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 548
+  },
+  {
+   "arabic": 205,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 549
+  },
+  {
+   "arabic": 206,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 550
+  },
+  {
+   "arabic": 207,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 551
+  },
+  {
+   "arabic": 208,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 552
+  },
+  {
+   "arabic": 209,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 553
+  },
+  {
+   "arabic": 210,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 554
+  },
+  {
+   "arabic": 211,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 555
+  },
+  {
+   "arabic": 212,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 556
+  },
+  {
+   "arabic": 213,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 557
+  },
+  {
+   "arabic": 214,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 558
+  },
+  {
+   "arabic": 215,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 559
+  },
+  {
+   "arabic": 216,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 560
+  },
+  {
+   "arabic": 217,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 561
+  },
+  {
+   "arabic": 218,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 562
+  },
+  {
+   "arabic": 219,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 563
+  },
+  {
+   "arabic": 220,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 564
+  },
+  {
+   "arabic": 221,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 565
+  },
+  {
+   "arabic": 222,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 566
+  },
+  {
+   "arabic": 223,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 567
+  },
+  {
+   "arabic": 224,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 568
+  },
+  {
+   "arabic": 225,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 569
+  },
+  {
+   "arabic": 226,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 570
+  },
+  {
+   "arabic": 227,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 571
+  },
+  {
+   "arabic": 228,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 572
+  },
+  {
+   "arabic": 229,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 573
+  },
+  {
+   "arabic": 230,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 574
+  },
+  {
+   "arabic": 231,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 575
+  },
+  {
+   "arabic": 232,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 576
+  },
+  {
+   "arabic": 233,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 577
+  },
+  {
+   "arabic": 234,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 578
+  },
+  {
+   "arabic": 235,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 579
+  },
+  {
+   "arabic": 236,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 580
+  },
+  {
+   "arabic": 237,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 581
+  },
+  {
+   "arabic": 238,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 582
+  },
+  {
+   "arabic": 239,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 583
+  },
+  {
+   "arabic": 240,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 584
+  },
+  {
+   "arabic": 241,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 585
+  },
+  {
+   "arabic": 242,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 586
+  },
+  {
+   "arabic": 243,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 587
+  },
+  {
+   "arabic": 244,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 588
+  },
+  {
+   "arabic": 245,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 589
+  },
+  {
+   "arabic": 246,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 590
+  },
+  {
+   "arabic": 247,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 591
+  },
+  {
+   "arabic": 248,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 592
+  },
+  {
+   "arabic": 249,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 593
+  },
+  {
+   "arabic": 250,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 594
+  },
+  {
+   "arabic": 251,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 595
+  },
+  {
+   "arabic": 252,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 596
+  },
+  {
+   "arabic": 253,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 597
+  },
+  {
+   "arabic": 254,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 598
+  },
+  {
+   "arabic": 255,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 599
+  },
+  {
+   "arabic": 256,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 600
+  },
+  {
+   "arabic": 257,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 601
+  },
+  {
+   "arabic": 258,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 602
+  },
+  {
+   "arabic": 259,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 603
+  },
+  {
+   "arabic": 260,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 604
+  },
+  {
+   "arabic": 261,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 605
+  },
+  {
+   "arabic": 262,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 606
+  },
+  {
+   "arabic": 263,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 607
+  },
+  {
+   "arabic": 264,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 608
+  },
+  {
+   "arabic": 265,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 609
+  },
+  {
+   "arabic": 266,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 610
+  },
+  {
+   "arabic": 267,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 611
+  },
+  {
+   "arabic": 268,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 612
+  },
+  {
+   "arabic": 269,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 613
+  },
+  {
+   "arabic": 270,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 614
+  },
+  {
+   "arabic": 271,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 615
+  },
+  {
+   "arabic": 272,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 616
+  },
+  {
+   "arabic": 273,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 617
+  },
+  {
+   "arabic": 274,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 618
+  },
+  {
+   "arabic": 275,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 619
+  },
+  {
+   "arabic": 276,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 620
+  },
+  {
+   "arabic": 277,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 621
+  },
+  {
+   "arabic": 278,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 622
+  },
+  {
+   "arabic": 279,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 623
+  },
+  {
+   "arabic": 280,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 624
+  },
+  {
+   "arabic": 281,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 625
+  },
+  {
+   "arabic": 282,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 626
+  },
+  {
+   "arabic": 283,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 627
+  },
+  {
+   "arabic": 284,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 628
+  },
+  {
+   "arabic": 285,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 629
+  },
+  {
+   "arabic": 286,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 630
+  },
+  {
+   "arabic": 287,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 631
+  },
+  {
+   "arabic": 288,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 632
+  },
+  {
+   "arabic": 289,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 633
+  },
+  {
+   "arabic": 290,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 634
+  },
+  {
+   "arabic": 291,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 635
+  },
+  {
+   "arabic": 292,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 636
+  },
+  {
+   "arabic": 293,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 637
+  },
+  {
+   "arabic": 294,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 638
+  },
+  {
+   "arabic": 295,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 639
+  },
+  {
+   "arabic": 296,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 640
+  },
+  {
+   "arabic": 297,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 641
+  },
+  {
+   "arabic": 298,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 642
+  },
+  {
+   "arabic": 299,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 643
+  },
+  {
+   "arabic": 300,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 644
+  },
+  {
+   "arabic": 301,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 645
+  },
+  {
+   "arabic": 302,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 646
+  },
+  {
+   "arabic": 303,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 647
+  },
+  {
+   "arabic": 304,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 648
+  },
+  {
+   "arabic": 305,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 649
+  },
+  {
+   "arabic": 306,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 650
+  },
+  {
+   "arabic": 307,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 651
+  },
+  {
+   "arabic": 308,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 652
+  },
+  {
+   "arabic": 309,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 653
+  },
+  {
+   "arabic": 310,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 654
+  },
+  {
+   "arabic": 311,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 655
+  },
+  {
+   "arabic": 312,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 656
+  },
+  {
+   "arabic": 313,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 657
+  },
+  {
+   "arabic": 314,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 658
+  },
+  {
+   "arabic": 315,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 659
+  },
+  {
+   "arabic": 316,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 660
+  },
+  {
+   "arabic": 317,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 661
+  },
+  {
+   "arabic": 318,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 662
+  },
+  {
+   "arabic": 319,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 663
+  },
+  {
+   "arabic": 320,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 664
+  },
+  {
+   "arabic": 321,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 665
+  },
+  {
+   "arabic": 322,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 666
+  },
+  {
+   "arabic": 323,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 667
+  },
+  {
+   "arabic": 324,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 668
+  },
+  {
+   "arabic": 325,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 669
+  },
+  {
+   "arabic": 326,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 670
+  },
+  {
+   "arabic": 327,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 671
+  },
+  {
+   "arabic": 328,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 672
+  },
+  {
+   "arabic": 329,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 673
+  },
+  {
+   "arabic": 330,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 674
+  },
+  {
+   "arabic": 331,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 675
+  },
+  {
+   "arabic": 332,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 676
+  },
+  {
+   "arabic": 333,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 677
+  },
+  {
+   "arabic": 334,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 678
+  },
+  {
+   "arabic": 335,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 679
+  },
+  {
+   "arabic": 336,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 680
+  },
+  {
+   "arabic": 337,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 681
+  },
+  {
+   "arabic": 338,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 682
+  },
+  {
+   "arabic": 339,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 683
+  },
+  {
+   "arabic": 340,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 684
+  },
+  {
+   "arabic": 341,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 685
+  },
+  {
+   "arabic": 342,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 686
+  },
+  {
+   "arabic": 343,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 687
+  },
+  {
+   "arabic": 344,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 688
+  },
+  {
+   "arabic": 345,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 689
+  },
+  {
+   "arabic": 346,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 690
+  },
+  {
+   "arabic": 347,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 691
+  },
+  {
+   "arabic": 348,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 692
+  },
+  {
+   "arabic": 349,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 693
+  },
+  {
+   "arabic": 350,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 694
+  },
+  {
+   "arabic": 351,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 695
+  },
+  {
+   "arabic": 352,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 696
+  },
+  {
+   "arabic": 353,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 697
+  },
+  {
+   "arabic": 354,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 698
+  },
+  {
+   "arabic": 355,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 699
+  },
+  {
+   "arabic": 356,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 700
+  },
+  {
+   "arabic": 357,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 701
+  },
+  {
+   "arabic": 358,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 702
+  },
+  {
+   "arabic": 359,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 703
+  },
+  {
+   "arabic": 360,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 704
+  },
+  {
+   "arabic": 361,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 705
+  },
+  {
+   "arabic": 362,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 706
+  },
+  {
+   "arabic": 363,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 707
+  },
+  {
+   "arabic": 364,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 708
+  },
+  {
+   "arabic": 365,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 709
+  },
+  {
+   "arabic": 366,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 710
+  },
+  {
+   "arabic": 367,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 711
+  },
+  {
+   "arabic": 368,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 712
+  },
+  {
+   "arabic": 369,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 713
+  },
+  {
+   "arabic": 370,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 714
+  },
+  {
+   "arabic": 371,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 715
+  },
+  {
+   "arabic": 372,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 716
+  },
+  {
+   "arabic": 373,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 717
+  },
+  {
+   "arabic": 374,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 718
+  },
+  {
+   "arabic": 375,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 719
+  },
+  {
+   "arabic": 376,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 720
+  },
+  {
+   "arabic": 377,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 721
+  },
+  {
+   "arabic": 378,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 722
+  },
+  {
+   "arabic": 379,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 723
+  },
+  {
+   "arabic": 380,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 724
+  },
+  {
+   "arabic": 381,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 725
+  },
+  {
+   "arabic": 382,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 726
+  },
+  {
+   "arabic": 383,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 727
+  },
+  {
+   "arabic": 384,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 728
+  },
+  {
+   "arabic": 385,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 729
+  },
+  {
+   "arabic": 386,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 730
+  },
+  {
+   "arabic": 387,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 731
+  },
+  {
+   "arabic": 388,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 732
+  },
+  {
+   "arabic": 389,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 733
+  },
+  {
+   "arabic": 390,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 734
+  },
+  {
+   "arabic": 391,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 735
+  },
+  {
+   "arabic": 392,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 736
+  },
+  {
+   "arabic": 393,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 737
+  },
+  {
+   "arabic": 394,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 738
+  },
+  {
+   "arabic": 395,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 739
+  },
+  {
+   "arabic": 396,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 740
+  },
+  {
+   "arabic": 397,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 741
+  },
+  {
+   "arabic": 398,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 742
+  },
+  {
+   "arabic": 399,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 743
+  },
+  {
+   "arabic": 400,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 744
+  },
+  {
+   "arabic": 401,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 745
+  },
+  {
+   "arabic": 402,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 746
+  },
+  {
+   "arabic": 403,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 747
+  },
+  {
+   "arabic": 404,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 748
+  },
+  {
+   "arabic": 405,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 749
+  },
+  {
+   "arabic": 406,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 750
+  },
+  {
+   "arabic": 407,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 751
+  },
+  {
+   "arabic": 408,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 752
+  },
+  {
+   "arabic": 409,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 753
+  },
+  {
+   "arabic": 410,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 754
+  },
+  {
+   "arabic": 411,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 755
+  },
+  {
+   "arabic": 412,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 756
+  },
+  {
+   "arabic": 413,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 757
+  },
+  {
+   "arabic": 414,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 758
+  },
+  {
+   "arabic": 415,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 759
+  },
+  {
+   "arabic": 416,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 760
+  },
+  {
+   "arabic": 417,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 761
+  },
+  {
+   "arabic": 418,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 762
+  },
+  {
+   "arabic": 419,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 763
+  },
+  {
+   "arabic": 420,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 764
+  },
+  {
+   "arabic": 421,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 765
+  },
+  {
+   "arabic": 422,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 766
+  },
+  {
+   "arabic": 423,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 767
+  },
+  {
+   "arabic": 424,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 768
+  },
+  {
+   "arabic": 425,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 769
+  },
+  {
+   "arabic": 426,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 770
+  },
+  {
+   "arabic": 427,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 771
+  },
+  {
+   "arabic": 428,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 772
+  },
+  {
+   "arabic": 429,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 773
+  },
+  {
+   "arabic": 430,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 774
+  },
+  {
+   "arabic": 431,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 775
+  },
+  {
+   "arabic": 432,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 776
+  },
+  {
+   "arabic": 433,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 777
+  },
+  {
+   "arabic": 434,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 778
+  },
+  {
+   "arabic": 435,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 779
+  },
+  {
+   "arabic": 436,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 780
+  },
+  {
+   "arabic": 437,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 781
+  },
+  {
+   "arabic": 438,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 782
+  },
+  {
+   "arabic": 439,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 783
+  },
+  {
+   "arabic": 440,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 784
+  },
+  {
+   "arabic": 441,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 785
+  },
+  {
+   "arabic": 442,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 786
+  },
+  {
+   "arabic": 443,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 787
+  },
+  {
+   "arabic": 444,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 788
+  },
+  {
+   "arabic": 445,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 789
+  },
+  {
+   "arabic": 446,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 790
+  },
+  {
+   "arabic": 447,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 791
+  },
+  {
+   "arabic": 448,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 792
+  },
+  {
+   "arabic": 449,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 793
+  },
+  {
+   "arabic": 450,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 794
+  },
+  {
+   "arabic": 451,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 795
+  },
+  {
+   "arabic": 452,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 796
+  },
+  {
+   "arabic": 453,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 797
+  },
+  {
+   "arabic": 454,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 798
+  },
+  {
+   "arabic": 455,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 799
+  },
+  {
+   "arabic": 456,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 800
+  },
+  {
+   "arabic": 457,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 801
+  },
+  {
+   "arabic": 458,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 802
+  },
+  {
+   "arabic": 459,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 803
+  },
+  {
+   "arabic": 460,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 804
+  },
+  {
+   "arabic": 461,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 805
+  },
+  {
+   "arabic": 462,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 806
+  },
+  {
+   "arabic": 463,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 807
+  },
+  {
+   "arabic": 464,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 808
+  },
+  {
+   "arabic": 465,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 809
+  },
+  {
+   "arabic": 466,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 810
+  },
+  {
+   "arabic": 467,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 811
+  },
+  {
+   "arabic": 468,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 812
+  },
+  {
+   "arabic": 469,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 813
+  },
+  {
+   "arabic": 470,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 814
+  },
+  {
+   "arabic": 471,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 815
+  },
+  {
+   "arabic": 472,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 816
+  },
+  {
+   "arabic": 473,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 817
+  },
+  {
+   "arabic": 474,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 818
+  },
+  {
+   "arabic": 475,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 819
+  },
+  {
+   "arabic": 476,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 820
+  },
+  {
+   "arabic": 477,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 821
+  },
+  {
+   "arabic": 478,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 822
+  },
+  {
+   "arabic": 479,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 823
+  },
+  {
+   "arabic": 480,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 824
+  },
+  {
+   "arabic": 481,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 825
+  },
+  {
+   "arabic": 482,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 826
+  },
+  {
+   "arabic": 483,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 827
+  },
+  {
+   "arabic": 484,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 828
+  },
+  {
+   "arabic": 485,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 829
+  },
+  {
+   "arabic": 486,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 830
+  },
+  {
+   "arabic": 487,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 831
+  },
+  {
+   "arabic": 488,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 832
+  },
+  {
+   "arabic": 489,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 833
+  },
+  {
+   "arabic": 490,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 834
+  },
+  {
+   "arabic": 491,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 835
+  },
+  {
+   "arabic": 492,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 836
+  },
+  {
+   "arabic": 493,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 837
+  },
+  {
+   "arabic": 494,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 838
+  },
+  {
+   "arabic": 495,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 839
+  },
+  {
+   "arabic": 496,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 840
+  },
+  {
+   "arabic": 497,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 841
+  },
+  {
+   "arabic": 498,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 842
+  },
+  {
+   "arabic": 499,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 843
+  },
+  {
+   "arabic": 500,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 844
+  },
+  {
+   "arabic": 501,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 845
+  },
+  {
+   "arabic": 502,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 846
+  },
+  {
+   "arabic": 503,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 847
+  },
+  {
+   "arabic": 504,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 848
+  },
+  {
+   "arabic": 505,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 849
+  },
+  {
+   "arabic": 506,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 850
+  },
+  {
+   "arabic": 507,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 851
+  },
+  {
+   "arabic": 508,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 852
+  },
+  {
+   "arabic": 509,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 853
+  },
+  {
+   "arabic": 510,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 854
+  },
+  {
+   "arabic": 511,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 855
+  },
+  {
+   "arabic": 512,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 856
+  },
+  {
+   "arabic": 513,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 857
+  },
+  {
+   "arabic": 514,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 858
+  },
+  {
+   "arabic": 515,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 859
+  },
+  {
+   "arabic": 516,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 860
+  },
+  {
+   "arabic": 517,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 861
+  },
+  {
+   "arabic": 518,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 862
+  },
+  {
+   "arabic": 519,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 863
+  },
+  {
+   "arabic": 520,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 864
+  },
+  {
+   "arabic": 521,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 865
+  },
+  {
+   "arabic": 522,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 866
+  },
+  {
+   "arabic": 523,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 867
+  },
+  {
+   "arabic": 524,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 868
+  },
+  {
+   "arabic": 525,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 869
+  },
+  {
+   "arabic": 526,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 870
+  },
+  {
+   "arabic": 527,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 871
+  },
+  {
+   "arabic": 528,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 872
+  },
+  {
+   "arabic": 529,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 873
+  },
+  {
+   "arabic": 530,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 874
+  },
+  {
+   "arabic": 531,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 875
+  },
+  {
+   "arabic": 532,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 876
+  },
+  {
+   "arabic": 533,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 877
+  },
+  {
+   "arabic": 534,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 878
+  },
+  {
+   "arabic": 535,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 879
+  },
+  {
+   "arabic": 536,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 880
+  },
+  {
+   "arabic": 537,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 881
+  },
+  {
+   "arabic": 538,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 882
+  },
+  {
+   "arabic": 539,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 883
+  },
+  {
+   "arabic": 540,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 884
+  },
+  {
+   "arabic": 541,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 885
+  },
+  {
+   "arabic": 542,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 886
+  },
+  {
+   "arabic": 543,
+   "kuhn_volume": "XVIIb",
+   "kuhn_page": 887
+  },
+  {
+   "arabic": 544,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 1
+  },
+  {
+   "arabic": 545,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 2
+  },
+  {
+   "arabic": 546,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 3
+  },
+  {
+   "arabic": 547,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 4
+  },
+  {
+   "arabic": 548,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 5
+  },
+  {
+   "arabic": 549,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 6
+  },
+  {
+   "arabic": 550,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 7
+  },
+  {
+   "arabic": 551,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 8
+  },
+  {
+   "arabic": 552,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 9
+  },
+  {
+   "arabic": 553,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 10
+  },
+  {
+   "arabic": 554,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 11
+  },
+  {
+   "arabic": 555,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 12
+  },
+  {
+   "arabic": 556,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 13
+  },
+  {
+   "arabic": 557,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 14
+  },
+  {
+   "arabic": 558,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 15
+  },
+  {
+   "arabic": 559,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 16
+  },
+  {
+   "arabic": 560,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 17
+  },
+  {
+   "arabic": 561,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 18
+  },
+  {
+   "arabic": 562,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 19
+  },
+  {
+   "arabic": 563,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 20
+  },
+  {
+   "arabic": 564,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 21
+  },
+  {
+   "arabic": 565,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 22
+  },
+  {
+   "arabic": 566,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 23
+  },
+  {
+   "arabic": 567,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 24
+  },
+  {
+   "arabic": 568,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 25
+  },
+  {
+   "arabic": 569,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 26
+  },
+  {
+   "arabic": 570,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 27
+  },
+  {
+   "arabic": 571,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 28
+  },
+  {
+   "arabic": 572,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 29
+  },
+  {
+   "arabic": 573,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 30
+  },
+  {
+   "arabic": 574,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 31
+  },
+  {
+   "arabic": 575,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 32
+  },
+  {
+   "arabic": 576,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 33
+  },
+  {
+   "arabic": 577,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 34
+  },
+  {
+   "arabic": 578,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 35
+  },
+  {
+   "arabic": 579,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 36
+  },
+  {
+   "arabic": 580,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 37
+  },
+  {
+   "arabic": 581,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 38
+  },
+  {
+   "arabic": 582,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 39
+  },
+  {
+   "arabic": 583,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 40
+  },
+  {
+   "arabic": 584,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 41
+  },
+  {
+   "arabic": 585,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 42
+  },
+  {
+   "arabic": 586,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 43
+  },
+  {
+   "arabic": 587,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 44
+  },
+  {
+   "arabic": 588,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 45
+  },
+  {
+   "arabic": 589,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 46
+  },
+  {
+   "arabic": 590,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 47
+  },
+  {
+   "arabic": 591,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 48
+  },
+  {
+   "arabic": 592,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 49
+  },
+  {
+   "arabic": 593,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 50
+  },
+  {
+   "arabic": 594,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 51
+  },
+  {
+   "arabic": 595,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 52
+  },
+  {
+   "arabic": 596,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 53
+  },
+  {
+   "arabic": 597,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 54
+  },
+  {
+   "arabic": 598,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 55
+  },
+  {
+   "arabic": 599,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 56
+  },
+  {
+   "arabic": 600,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 57
+  },
+  {
+   "arabic": 601,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 58
+  },
+  {
+   "arabic": 602,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 59
+  },
+  {
+   "arabic": 603,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 60
+  },
+  {
+   "arabic": 604,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 61
+  },
+  {
+   "arabic": 605,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 62
+  },
+  {
+   "arabic": 606,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 63
+  },
+  {
+   "arabic": 607,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 64
+  },
+  {
+   "arabic": 608,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 65
+  },
+  {
+   "arabic": 609,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 66
+  },
+  {
+   "arabic": 610,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 67
+  },
+  {
+   "arabic": 611,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 68
+  },
+  {
+   "arabic": 612,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 69
+  },
+  {
+   "arabic": 613,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 70
+  },
+  {
+   "arabic": 614,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 71
+  },
+  {
+   "arabic": 615,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 72
+  },
+  {
+   "arabic": 616,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 73
+  },
+  {
+   "arabic": 617,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 74
+  },
+  {
+   "arabic": 618,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 75
+  },
+  {
+   "arabic": 619,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 76
+  },
+  {
+   "arabic": 620,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 77
+  },
+  {
+   "arabic": 621,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 78
+  },
+  {
+   "arabic": 622,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 79
+  },
+  {
+   "arabic": 623,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 80
+  },
+  {
+   "arabic": 624,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 81
+  },
+  {
+   "arabic": 625,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 82
+  },
+  {
+   "arabic": 626,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 83
+  },
+  {
+   "arabic": 627,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 84
+  },
+  {
+   "arabic": 628,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 85
+  },
+  {
+   "arabic": 629,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 86
+  },
+  {
+   "arabic": 630,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 87
+  },
+  {
+   "arabic": 631,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 88
+  },
+  {
+   "arabic": 632,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 89
+  },
+  {
+   "arabic": 633,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 90
+  },
+  {
+   "arabic": 634,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 91
+  },
+  {
+   "arabic": 635,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 92
+  },
+  {
+   "arabic": 636,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 93
+  },
+  {
+   "arabic": 637,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 94
+  },
+  {
+   "arabic": 638,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 95
+  },
+  {
+   "arabic": 639,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 96
+  },
+  {
+   "arabic": 640,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 97
+  },
+  {
+   "arabic": 641,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 98
+  },
+  {
+   "arabic": 642,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 99
+  },
+  {
+   "arabic": 643,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 100
+  },
+  {
+   "arabic": 644,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 101
+  },
+  {
+   "arabic": 645,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 102
+  },
+  {
+   "arabic": 646,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 103
+  },
+  {
+   "arabic": 647,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 104
+  },
+  {
+   "arabic": 648,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 105
+  },
+  {
+   "arabic": 649,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 106
+  },
+  {
+   "arabic": 650,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 107
+  },
+  {
+   "arabic": 651,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 108
+  },
+  {
+   "arabic": 652,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 109
+  },
+  {
+   "arabic": 653,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 110
+  },
+  {
+   "arabic": 654,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 111
+  },
+  {
+   "arabic": 655,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 112
+  },
+  {
+   "arabic": 656,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 113
+  },
+  {
+   "arabic": 657,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 114
+  },
+  {
+   "arabic": 658,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 115
+  },
+  {
+   "arabic": 659,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 116
+  },
+  {
+   "arabic": 660,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 117
+  },
+  {
+   "arabic": 661,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 118
+  },
+  {
+   "arabic": 662,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 119
+  },
+  {
+   "arabic": 663,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 120
+  },
+  {
+   "arabic": 664,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 121
+  },
+  {
+   "arabic": 665,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 122
+  },
+  {
+   "arabic": 666,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 123
+  },
+  {
+   "arabic": 667,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 124
+  },
+  {
+   "arabic": 668,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 125
+  },
+  {
+   "arabic": 669,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 126
+  },
+  {
+   "arabic": 670,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 127
+  },
+  {
+   "arabic": 671,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 128
+  },
+  {
+   "arabic": 672,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 129
+  },
+  {
+   "arabic": 673,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 130
+  },
+  {
+   "arabic": 674,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 131
+  },
+  {
+   "arabic": 675,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 132
+  },
+  {
+   "arabic": 676,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 133
+  },
+  {
+   "arabic": 677,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 134
+  },
+  {
+   "arabic": 678,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 135
+  },
+  {
+   "arabic": 679,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 136
+  },
+  {
+   "arabic": 680,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 137
+  },
+  {
+   "arabic": 681,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 138
+  },
+  {
+   "arabic": 682,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 139
+  },
+  {
+   "arabic": 683,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 140
+  },
+  {
+   "arabic": 684,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 141
+  },
+  {
+   "arabic": 685,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 142
+  },
+  {
+   "arabic": 686,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 143
+  },
+  {
+   "arabic": 687,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 144
+  },
+  {
+   "arabic": 688,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 145
+  },
+  {
+   "arabic": 689,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 146
+  },
+  {
+   "arabic": 690,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 147
+  },
+  {
+   "arabic": 691,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 148
+  },
+  {
+   "arabic": 692,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 149
+  },
+  {
+   "arabic": 693,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 150
+  },
+  {
+   "arabic": 694,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 151
+  },
+  {
+   "arabic": 695,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 152
+  },
+  {
+   "arabic": 696,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 153
+  },
+  {
+   "arabic": 697,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 154
+  },
+  {
+   "arabic": 698,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 155
+  },
+  {
+   "arabic": 699,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 156
+  },
+  {
+   "arabic": 700,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 157
+  },
+  {
+   "arabic": 701,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 158
+  },
+  {
+   "arabic": 702,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 159
+  },
+  {
+   "arabic": 703,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 160
+  },
+  {
+   "arabic": 704,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 161
+  },
+  {
+   "arabic": 705,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 162
+  },
+  {
+   "arabic": 706,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 163
+  },
+  {
+   "arabic": 707,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 164
+  },
+  {
+   "arabic": 708,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 165
+  },
+  {
+   "arabic": 709,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 166
+  },
+  {
+   "arabic": 710,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 167
+  },
+  {
+   "arabic": 711,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 168
+  },
+  {
+   "arabic": 712,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 169
+  },
+  {
+   "arabic": 713,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 170
+  },
+  {
+   "arabic": 714,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 171
+  },
+  {
+   "arabic": 715,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 172
+  },
+  {
+   "arabic": 716,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 173
+  },
+  {
+   "arabic": 717,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 174
+  },
+  {
+   "arabic": 718,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 175
+  },
+  {
+   "arabic": 719,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 176
+  },
+  {
+   "arabic": 720,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 177
+  },
+  {
+   "arabic": 721,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 178
+  },
+  {
+   "arabic": 722,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 179
+  },
+  {
+   "arabic": 723,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 180
+  },
+  {
+   "arabic": 724,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 181
+  },
+  {
+   "arabic": 725,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 182
+  },
+  {
+   "arabic": 726,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 183
+  },
+  {
+   "arabic": 727,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 184
+  },
+  {
+   "arabic": 728,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 185
+  },
+  {
+   "arabic": 729,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 186
+  },
+  {
+   "arabic": 730,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 187
+  },
+  {
+   "arabic": 731,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 188
+  },
+  {
+   "arabic": 732,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 189
+  },
+  {
+   "arabic": 733,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 190
+  },
+  {
+   "arabic": 734,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 191
+  },
+  {
+   "arabic": 735,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 192
+  },
+  {
+   "arabic": 736,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 193
+  },
+  {
+   "arabic": 737,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 194
+  },
+  {
+   "arabic": 738,
+   "kuhn_volume": "XVIIIa",
+   "kuhn_page": 195
+  }
+ ],
+ "lemmata": {
+  "arabic_numbered": 406,
+  "note": "Hippocratic lemma numbers are marked in the Arabic only. The Greek carries no corresponding markers in this digitisation, so lemma-level alignment is not derivable here and is not claimed."
+ }
+}
