@@ -4,7 +4,7 @@ Thirty-five TEI files: the Galen-related Arabic in the [Digital Corpus for Graec
 
 ## Why these matter here
 
-Ḥunayn and his circle worked at Baghdad in the ninth century from Greek exemplars that can preserve readings older than surviving direct witnesses. Arabic translation remains mediated evidence: its weight depends on translation technique, manuscript history, and the passage. These files are held for comparison with the direct Greek and other traditions under the [witness protocol](../../HARNESS.md#the-witness-protocol).
+Ḥunayn and his circle worked at Baghdad in the ninth century from Greek exemplars that can preserve readings older than surviving direct witnesses. In the language of textual criticism these versions are indirect tradition — evidence about the text rather than copies of it — but because their exemplars may antedate the surviving Greek, a versional reading can come from an independent branch of the stemma. Of any divergence, ask which underlying Greek reading would account for it, and whether it is a variant in the text or a construal of it. These files are held for comparison with the direct Greek and other traditions under the [witness protocol](../../HARNESS.md#the-witness-protocol).
 
 ## Alignment
 

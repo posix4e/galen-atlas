@@ -57,15 +57,25 @@ Every translated segment must carry a concise `rationale` that another reader ca
 
 ## The witness protocol
 
-Where a work survives in more than one tradition — Greek manuscripts, Arabic translations, medieval or Renaissance Latin — each can preserve valuable evidence. Their weight is passage-specific and depends on manuscript lineage, translation technique, editorial intervention, and date. Arabic versions may reflect Greek exemplars older than surviving direct witnesses, while also carrying a translator's interpretation.
+The Greek manuscripts are the **direct tradition**. The Arabic and Latin versions are **indirect tradition**: evidence about the text that is not itself a copy of it, in the same class as quotations in a commentary, and therefore part of the reception history. That classification does not put them out of textual play. The Arabic manuscripts descend from Greek exemplars that differ from — and may antedate — the earliest surviving Greek witnesses, so a versional reading can come from an independent branch or corroborate a variant already attested in Greek. A version accordingly belongs in the stemma wherever one can be constructed.
+
+The operative question is not how good the translator was. It is **which underlying Greek variant would account for the reading in front of you** — that is what places a version within the *stemma codicum*. Translation technique matters instrumentally rather than as a measure of worth: knowing how a particular translator worked is what makes retroversion to the Greek better than guesswork.
+
+Two things a version can give you, and they must not be confused:
+
+- **A variant.** The rendering is best explained by a Greek reading different from the printed text. This is stemmatic evidence and should be reported as such.
+- **A construal.** The Greek is not in doubt, and the version records how a learned reader took an ambiguous word or construction. This is evidence about meaning, not about text. It is often the more useful kind for a translator — and must not be dressed up as the first.
 
 1. **Enumerate the witnesses** for your work. The packet lists what's known; add what you find.
-2. **Work from all accessible witnesses side by side.** The packet's base text is whichever tradition is sufficiently edited and digitized, usually Greek. That is a practical starting point, not a verdict on every reading.
+2. **Work from all accessible witnesses side by side.** The packet's base text is whichever tradition is sufficiently edited and digitized, usually Greek. That is a practical starting point, not a verdict on any reading.
 3. **Compare every segment against every accessible witness** — not only where the base text looks wrong. Agreement is evidence too; record it.
-4. **Reference what you consulted.** Every consultation goes in `refs`, with its use explained in `rationale`, cited precisely enough to re-check.
-5. **Treat divergence as evidence.** When witnesses disagree, present the disagreement and argue for the selected reading without treating any tradition as automatically decisive.
+4. **Ask what Greek would produce this.** Where a version diverges, state whether you are claiming a variant or a construal, and say which Greek reading would explain the rendering.
+5. **Reference what you consulted.** Every consultation goes in `refs`, with its use explained in `rationale`, cited precisely enough to re-check.
+6. **Treat divergence as evidence.** Present the disagreement and argue for the selected reading without treating any tradition as automatically decisive.
 
-Two honest caveats. Access is asymmetric today: for most works the Greek is digitized while the Arabic sits in unedited manuscripts, so the Greek often ends up as the packet's base text by default — a practical limit to push against, imposed by the tooling rather than by any priority among the witnesses. And a translation-witness like Ḥunayn's carries its translator's interpretation — which is also its value: it preserves how a brilliant ninth-century reader, holding better manuscripts than ours, understood the sentence.
+One honest caveat about access. For most works the Greek is digitized while the Arabic sits in unedited manuscripts, so the Greek becomes the packet's base text by default — a limit imposed by the tooling, not a judgement about the traditions.
+
+*Revised August 2026 following guidance given in private correspondence by a scholar of the Greek-into-Arabic translation movement. We have not yet asked whether we may name them, so we do not. Any distortion of their advice is ours.*
 
 ## Validation
 
