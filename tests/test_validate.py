@@ -45,6 +45,13 @@ class ValidatorTests(unittest.TestCase):
                         "citations": [
                             {"label": "A translation", "url": "https://example.test/translation", "scope": "partial"}
                         ],
+                        "basis": {
+                            "kind": "catalogue-listed",
+                            "searched": [
+                                {"source": "Example catalogue", "url": "https://example.test/catalogue",
+                                 "date": "2026-08-09", "result": "listing found"}
+                            ],
+                        },
                         "verification": {
                             "status": "checked",
                             "checked_on": "2026-08-09",
@@ -201,6 +208,43 @@ class ValidatorTests(unittest.TestCase):
         self.works["works"][0]["digital_texts"][0]["url"] = "javascript:alert(1)"
         self.save()
         self.assert_error_contains("unsafe or invalid URL")
+
+    def test_english_status_may_not_cite_this_project(self):
+        self.works["works"][0]["english"]["citations"][0]["url"] = (
+            "https://pergamap.com/translations/chunk?id=cml-1-1"
+        )
+        self.save()
+        self.assert_error_contains("may not cite this project")
+
+    def test_basis_is_required(self):
+        del self.works["works"][0]["english"]["basis"]
+        self.save()
+        self.assert_error_contains("english.basis.kind is required")
+
+    def test_basis_kind_must_be_known(self):
+        self.works["works"][0]["english"]["basis"]["kind"] = "vibes"
+        self.save()
+        self.assert_error_contains("english.basis.kind is required")
+
+    def test_catalogue_basis_requires_a_search_record(self):
+        self.works["works"][0]["english"]["basis"]["searched"] = []
+        self.save()
+        self.assert_error_contains("requires at least one searched entry")
+
+    def test_search_record_requires_a_date(self):
+        del self.works["works"][0]["english"]["basis"]["searched"][0]["date"]
+        self.save()
+        self.assert_error_contains("a valid date is required")
+
+    def test_search_record_requires_a_result(self):
+        del self.works["works"][0]["english"]["basis"]["searched"][0]["result"]
+        self.save()
+        self.assert_error_contains("result is required")
+
+    def test_model_recall_may_not_claim_a_search(self):
+        self.works["works"][0]["english"]["basis"]["kind"] = "model-recall"
+        self.save()
+        self.assert_error_contains("nothing was consulted")
 
     def test_registry_packet_drift(self):
         self.packet["status"] = "reviewed"
