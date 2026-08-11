@@ -75,7 +75,7 @@ Two things a version can give you, and they must not be confused:
 
 One honest caveat about access. For most works the Greek is digitized while the Arabic sits in unedited manuscripts, so the Greek becomes the packet's base text by default — a limit imposed by the tooling, not a judgement about the traditions.
 
-*Revised August 2026 following guidance given in private correspondence by a scholar of the Greek-into-Arabic translation movement. We have not yet asked whether we may name them, so we do not. Any distortion of their advice is ours.*
+*The distinctions in this section — indirect tradition, placement in the stemma, and variant against construal — follow guidance given in private correspondence by Peter Adamson (LMU Munich and King's College London), who kindly agreed to be named on this point. The acknowledgement covers his advice on this question and nothing further: it is not an endorsement of this project, of its translations, or of AI-assisted work on ancient texts. Any distortion of what he said is ours.*
 
 ## Validation
 
