@@ -2,8 +2,15 @@
 
 const CHIP = { none: "no English", full: "translated", partial: "partial", unknown: "unknown" };
 const LANGUAGE = { greek: "Greek", arabic: "Arabic", latin: "Latin" };
-const CONFIDENCE = { checked: "", recalled: "unverified", unknown: "needs research" };
+// What was actually done to establish the row, said plainly. "recalled" used to
+// render as "unverified", which reads like a formality rather than a warning.
+const BASIS = {
+  "model-recall": "no source consulted — recalled, not checked",
+  "catalogue-listed": "found in a catalogue of translations, not seen",
+  "publication-verified": "translation itself consulted",
+};
 let works = [];
+let draftsByWork = new Map();
 let activeFilter = "all";
 let query = "";
 let requestedWorkId = new URL(location.href).searchParams.get("work");
@@ -52,8 +59,19 @@ function addRow(work) {
 
   const englishCell = row.appendChild(document.createElement("td"));
   englishCell.appendChild(node("span", `chip ${work.english.status}`, CHIP[work.english.status] || work.english.status));
-  const confidence = CONFIDENCE[work.english.verification.status];
-  if (confidence) englishCell.appendChild(node("span", "conf", ` · ${confidence}`));
+  const basis = work.english.basis || {};
+  const basisLabel = BASIS[basis.kind];
+  if (basisLabel) englishCell.appendChild(node("span", "conf", ` · ${basisLabel}`));
+  (basis.searched || []).forEach((entry) => {
+    englishCell.appendChild(node("span", "ref", `Searched ${entry.source}, ${entry.date}: ${entry.result}.`));
+  });
+  (draftsByWork.get(work.id) || []).forEach((chunk) => {
+    const draft = node("span", "ref");
+    const link = node("a", "", `Pergamap draft: ${chunk.kuhn_range || chunk.id} (${chunk.status})`);
+    link.href = `translations/chunk.html?id=${encodeURIComponent(chunk.id)}`;
+    draft.appendChild(link);
+    englishCell.appendChild(draft);
+  });
   work.english.citations.forEach((citation) => {
     const reference = node("span", "ref");
     const url = citation.url && safeUrl(citation.url);
@@ -97,7 +115,20 @@ function apply() {
   }
 }
 
-fetch("data/works.json")
+// The project's own drafts are deliberately not evidence about the published
+// record, so they live in the chunk registry and are shown as a separate badge.
+fetch("data/chunks.json")
+  .then((response) => (response.ok ? response.json() : null))
+  .then((registry) => {
+    const entries = Array.isArray(registry) ? registry : (registry && registry.chunks) || [];
+    entries.forEach((chunk) => {
+      if (!chunk.work) return;
+      if (!draftsByWork.has(chunk.work)) draftsByWork.set(chunk.work, []);
+      draftsByWork.get(chunk.work).push(chunk);
+    });
+  })
+  .catch(() => {})
+  .then(() => fetch("data/works.json"))
   .then((response) => {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     return response.json();
