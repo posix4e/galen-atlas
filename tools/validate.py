@@ -23,6 +23,10 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 STATUSES = {"open", "claimed", "draft", "reviewed"}
 ENGLISH_STATUSES = {"none", "full", "partial", "unknown"}
 CONFIDENCE = {"checked", "recalled", "unknown"}
+# How a row's English status was established, weakest first. "model-recall" means
+# nothing was consulted; "catalogue-listed" means a catalogue of translations was
+# searched; "publication-verified" means the translation itself was seen.
+BASIS_KINDS = {"model-recall", "catalogue-listed", "publication-verified"}
 LANGUAGES = {"greek", "arabic", "latin"}
 TRANSMISSION_LANGUAGES = LANGUAGES | {"hebrew", "english", "german", "multilingual"}
 TRANSMISSION_RELATIONS = {
@@ -179,6 +183,41 @@ def validate_works(root: pathlib.Path, errors: list[str]):
                 errors.append(f"{c_label}: invalid scope {citation.get('scope')!r}")
             if citation.get("url") is not None and not is_safe_url(citation.get("url")):
                 errors.append(f"{c_label}: unsafe or invalid URL {citation.get('url')!r}")
+            url = citation.get("url") or ""
+            if "pergamap.com" in url:
+                errors.append(
+                    f"{c_label}: a work's English status may not cite this project. "
+                    "Project drafts are recorded in data/chunks.json, not as evidence "
+                    "about the published record")
+        basis = english.get("basis")
+        if not isinstance(basis, dict) or basis.get("kind") not in BASIS_KINDS:
+            errors.append(
+                f"{label}: english.basis.kind is required and must be one of "
+                f"{sorted(BASIS_KINDS)} — every status must say how it was established")
+        else:
+            searched = basis.get("searched")
+            if not isinstance(searched, list):
+                errors.append(f"{label}: english.basis.searched must be a list")
+            elif basis["kind"] in {"catalogue-listed", "publication-verified"}:
+                if not searched:
+                    errors.append(
+                        f"{label}: basis {basis['kind']!r} requires at least one "
+                        "searched entry recording what was consulted and when")
+                for search_index, entry in enumerate(searched):
+                    s_label = f"{label} basis.searched {search_index}"
+                    if not isinstance(entry, dict):
+                        errors.append(f"{s_label}: must be an object")
+                        continue
+                    if not entry.get("source"):
+                        errors.append(f"{s_label}: source is required")
+                    if not is_date(entry.get("date")):
+                        errors.append(f"{s_label}: a valid date is required")
+                    if not entry.get("result"):
+                        errors.append(f"{s_label}: result is required")
+            elif basis["kind"] == "model-recall" and searched:
+                errors.append(
+                    f"{label}: basis 'model-recall' means nothing was consulted; "
+                    "record a searched entry only under a higher basis kind")
         verification = english.get("verification")
         if not isinstance(verification, dict) or verification.get("status") not in CONFIDENCE:
             errors.append(f"{label}: invalid english.verification")
