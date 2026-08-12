@@ -79,7 +79,7 @@ def target_for(page: pathlib.Path, href: str) -> pathlib.Path | None:
 
 def check() -> list[str]:
     errors = []
-    pages = sorted(ROOT.rglob("*.html"))
+    pages = sorted(page for page in ROOT.rglob("*.html") if "tests/fixtures" not in page.as_posix())
     for page in pages:
         parser = PageParser()
         try:
@@ -122,6 +122,14 @@ def check() -> list[str]:
             errors.append("data/catalogue-metadata.json: invalid Dataset metadata")
     except (OSError, json.JSONDecodeError) as exc:
         errors.append(f"data/catalogue-metadata.json: cannot read: {exc}")
+    try:
+        bbaw = json.loads((ROOT / "data" / "bbaw-galen-translations.json").read_text())
+        if bbaw.get("schema_version") != 1 or bbaw.get("record_count") != len(bbaw.get("records", [])):
+            errors.append("data/bbaw-galen-translations.json: invalid snapshot metadata")
+        if len(bbaw.get("records", [])) < 100:
+            errors.append("data/bbaw-galen-translations.json: unexpectedly short snapshot")
+    except (OSError, json.JSONDecodeError) as exc:
+        errors.append(f"data/bbaw-galen-translations.json: cannot read: {exc}")
     transmission_page = (ROOT / "transmission.html").read_text()
     transmission_script = (ROOT / "assets" / "js" / "transmission.js").read_text()
     for required in ("stage-composition", "stage-tradition", "stage-arabic", "source-language route not yet encoded"):

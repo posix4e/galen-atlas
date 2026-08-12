@@ -5,7 +5,7 @@
   "description": "A preliminary, source-aware catalogue of Galen's surviving works, textual witnesses, digitized texts, English translation coverage, and selected documented transmission routes.",
   "url": "https://pergamap.com/corpus",
   "version": "2",
-  "dateModified": "2026-08-10",
+  "dateModified": "2026-08-12",
   "license": "https://creativecommons.org/licenses/by-sa/4.0/",
   "creator": {
     "@type": "Person",
@@ -18,6 +18,11 @@
       "@type": "DataDownload",
       "encodingFormat": "application/json",
       "contentUrl": "https://pergamap.com/data/works.json"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://pergamap.com/data/bbaw-galen-translations.json"
     },
     {
       "@type": "DataDownload",
