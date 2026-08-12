@@ -6,7 +6,7 @@ const LANGUAGE = { greek: "Greek", arabic: "Arabic", latin: "Latin" };
 // render as "unverified", which reads like a formality rather than a warning.
 const BASIS = {
   "model-recall": "no source consulted — recalled, not checked",
-  "catalogue-listed": "found in a catalogue of translations, not seen",
+  "catalogue-listed": "translation catalogue checked; publication not inspected",
   "publication-verified": "translation itself consulted",
 };
 let works = [];

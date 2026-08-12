@@ -12,7 +12,7 @@ Then open an issue (or PR against `works.json`) with the work's `id`, what you f
 
 ## 2. Vote and propose
 
-- The first campaign ballot is being revised after new English translations were identified. Check [issue #1](https://github.com/posix4e/pergamap/issues/1) for its current status before voting.
+- The corrected first-campaign shortlist was checked against the BBAW translation catalogue on 12 August 2026. Vote on [issue #1](https://github.com/posix4e/pergamap/issues/1), and please report any overlooked or unlisted English translation.
 - Propose a different target by commenting there. The criteria (see the [roadmap](https://pergamap.com/roadmap.html)): no existing English, digitized source, finishable, humanly interesting.
 
 ## 3. Translate or review a chunk
