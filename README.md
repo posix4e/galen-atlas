@@ -18,6 +18,8 @@ The schema-v2 catalogue is explicitly marked `preliminary`. Every entry carries 
 
 The translation-status data is a living draft. If you find an error, [open an issue](https://github.com/posix4e/pergamap/issues) with your source — that's the project working as intended. Structured citations are preserved even when an older record has only a display label rather than complete bibliographic fields.
 
+The [BBAW/CMG catalogue browser](https://pergamap.com/bbaw-catalogue) loads a local metadata index refreshed weekly from the authoritative catalogue. The import records BBAW record numbers, titles, Kühn references, language-column presence, retrieval date, and source checksum; it does not republish BBAW's bibliographic strings or automatically change Pergamap's editorial status fields.
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md): verify a catalog entry, vote on the first campaign, or claim a translation chunk.
@@ -26,4 +28,5 @@ See [CONTRIBUTING.md](CONTRIBUTING.md): verify a catalog entry, vote on the firs
 
 - Greek texts: [First1KGreek](https://github.com/OpenGreekAndLatin/First1KGreek), pinned per translation packet; many are digitized from Kühn, *Claudii Galeni Opera Omnia* (1821–33, public domain; [scans](https://archive.org/details/b29339339_0012) via Wellcome Library).
 - Arabic texts: [Digital Corpus for Graeco-Arabic Studies](https://www.graeco-arabic-studies.org/) (CC BY-SA 4.0), with source and local checksums in the manifest.
+- Modern translation catalogue: [BBAW/CMG Galenus — Übersetzungen](https://cmg.bbaw.de/startseite/arbeitsmittel/werkverzeichnisse/galenus-uebersetzungen/), loaded as an attributed metadata index with bibliography retained on the authoritative site.
 - Site content and translations: [CC BY-SA 4.0](LICENSE). See [NOTICE.md](NOTICE.md) for provenance boundaries.

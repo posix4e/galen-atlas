@@ -1,0 +1,1504 @@
+{
+  "schema_version": 1,
+  "retrieved_on": "2026-08-12",
+  "source": {
+    "publisher": "Berlin-Brandenburg Academy of Sciences and Humanities (BBAW)",
+    "title": "Corpus Medicorum Graecorum: Galenus — Übersetzungen",
+    "url": "https://cmg.bbaw.de/startseite/arbeitsmittel/werkverzeichnisse/galenus-uebersetzungen/",
+    "terms_url": "https://cmg.bbaw.de/startseite/impressum/",
+    "sha256": "59991a040edc3384b95e9db850d0e19433f150f4c3270aff099cb65145b98657"
+  },
+  "language_columns": {
+    "german": "German",
+    "english": "English",
+    "french": "French",
+    "italian": "Italian",
+    "spanish": "Spanish",
+    "other": "Other languages"
+  },
+  "record_count": 114,
+  "records": [
+    {
+      "id": "001",
+      "title": "Exhortatio ad medicinam (Protrepticus)",
+      "kuhn": "I, 1–39 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": true,
+        "italian": true,
+        "spanish": true,
+        "other": true
+      }
+    },
+    {
+      "id": "002",
+      "title": "De optimo docendi genere",
+      "kuhn": "I, 40–52 K.",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": false,
+        "italian": true,
+        "spanish": true,
+        "other": true
+      }
+    },
+    {
+      "id": "003",
+      "title": "Quod optimus medicus sit quoque philosophus",
+      "kuhn": "I, 53–63 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": true,
+        "italian": true,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "004",
+      "title": "De sectis ad eos, qui introducuntur",
+      "kuhn": "I, 64–105 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": true,
+        "italian": true,
+        "spanish": true,
+        "other": true
+      }
+    },
+    {
+      "id": "006",
+      "title": "De constitutione artis medicae ad Patrophilum",
+      "kuhn": "I, 224–304 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": true,
+        "italian": true,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "007",
+      "title": "Ars medica",
+      "kuhn": "I, 305–412 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": true,
+        "italian": true,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "008",
+      "title": "De elementis ex Hippocratis sententia",
+      "kuhn": "I, 413–508 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": true,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "009",
+      "title": "De temperamentis",
+      "kuhn": "I, 509–694 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": true,
+        "italian": true,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "010",
+      "title": "De facultatibus naturalibus",
+      "kuhn": "II, 1–214 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": true,
+        "italian": true,
+        "spanish": true,
+        "other": true
+      }
+    },
+    {
+      "id": "011",
+      "title": "De anatomicis administrationibus (X–XV nur arab.)",
+      "kuhn": "II, 215–731 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": false,
+        "italian": true,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "012",
+      "title": "De ossibus ad tirones",
+      "kuhn": "II, 732–778 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": true,
+        "italian": false,
+        "spanish": false,
+        "other": true
+      }
+    },
+    {
+      "id": "013",
+      "title": "De venarum arteriarumque dissectione",
+      "kuhn": "II, 779–830 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": true,
+        "italian": false,
+        "spanish": false,
+        "other": true
+      }
+    },
+    {
+      "id": "014",
+      "title": "De nervorum dissectione",
+      "kuhn": "II, 831–856 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": true,
+        "italian": false,
+        "spanish": false,
+        "other": true
+      }
+    },
+    {
+      "id": "015",
+      "title": "De instrumento odoratus",
+      "kuhn": "II, 857–886 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "016",
+      "title": "De uteri dissectione",
+      "kuhn": "II, 887–908 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "017",
+      "title": "De usu partium",
+      "kuhn": "III, 1–939; IV, 1–366 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": true,
+        "italian": true,
+        "spanish": true,
+        "other": true
+      }
+    },
+    {
+      "id": "019",
+      "title": "De motu musculorum",
+      "kuhn": "IV, 367–464 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": true,
+        "italian": true,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "020",
+      "title": "De causis respirationis",
+      "kuhn": "IV, 465–469 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": true,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "021",
+      "title": "De usu respirationis",
+      "kuhn": "IV, 470–511 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "022",
+      "title": "De semine",
+      "kuhn": "IV, 512–651 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": true,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "023",
+      "title": "De foetuum formatione",
+      "kuhn": "IV, 652–702 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "024",
+      "title": "An in arteriis natura sanguis contineatur",
+      "kuhn": "IV, 703–736 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "025",
+      "title": "De optima corporis nostri constitutione",
+      "kuhn": "IV, 737–749 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": true,
+        "italian": true,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "026",
+      "title": "De bono habitu",
+      "kuhn": "IV, 750–756 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": true,
+        "italian": true,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "028",
+      "title": "Quod animi mores corporis temperamenta sequantur",
+      "kuhn": "IV, 767–822 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": true,
+        "italian": true,
+        "spanish": true,
+        "other": true
+      }
+    },
+    {
+      "id": "029",
+      "title": "De propriorum animi cuiuslibet affectuum dignotione et curatione",
+      "kuhn": "V, 1–57 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": true,
+        "italian": true,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "030",
+      "title": "De animi cuiuslibet peccatorum dignotione et curatione",
+      "kuhn": "V, 58–103 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": true,
+        "italian": true,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "031",
+      "title": "De atra bile",
+      "kuhn": "V, 104–148 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": true,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "032",
+      "title": "De usu pulsuum",
+      "kuhn": "V, 149–180 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "033",
+      "title": "De placitis Hippocratis et Platonis",
+      "kuhn": "V, 181–805 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "034",
+      "title": "Thrasybulus sive utrum medicinae sit an gymnasticae hygiene",
+      "kuhn": "V, 806–898 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "035",
+      "title": "De parvae pilae exercitio",
+      "kuhn": "V, 899–910 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": false,
+        "italian": true,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "037",
+      "title": "De sanitate tuenda",
+      "kuhn": "VI, 1–452 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "038",
+      "title": "De alimentorum facultatibus",
+      "kuhn": "VI, 453–748 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": true,
+        "italian": true,
+        "spanish": true,
+        "other": true
+      }
+    },
+    {
+      "id": "039",
+      "title": "De rebus boni malique suci",
+      "kuhn": "VI, 749–815 K.",
+      "translation_columns": {
+        "german": true,
+        "english": false,
+        "french": false,
+        "italian": true,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "040",
+      "title": "(?) De ptisana",
+      "kuhn": "VI, 816–831 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "042",
+      "title": "De differentiis morborum",
+      "kuhn": "VI, 836–880 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "043",
+      "title": "De morborum causis",
+      "kuhn": "VII, 1–41 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "044",
+      "title": "De symptomatum differentiis",
+      "kuhn": "VII, 42–84 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "045",
+      "title": "De symptomatum causis",
+      "kuhn": "VII, 85–272 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": true,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "048",
+      "title": "De differentiis febrium",
+      "kuhn": "VII, 273–405 K.",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "049",
+      "title": "De morborum temporibus",
+      "kuhn": "VII, 406–462 K.",
+      "translation_columns": {
+        "german": true,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "051",
+      "title": "De typis",
+      "kuhn": "VII, 463–474 K.",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "052",
+      "title": "Adversus eos, qui de typis scripserunt",
+      "kuhn": "VII, 475–512 K.",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "053",
+      "title": "De plenitudine",
+      "kuhn": "VII, 513–583 K.",
+      "translation_columns": {
+        "german": true,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "054",
+      "title": "De tremore, palpitatione, convulsione et rigore",
+      "kuhn": "VII, 584–642 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "055",
+      "title": "De comate secundum Hippocratem",
+      "kuhn": "VII, 643–665 K.",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "056",
+      "title": "De marcore",
+      "kuhn": "VII, 666–704 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "057",
+      "title": "De tumoribus praeter naturam",
+      "kuhn": "VII, 705–732 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "058",
+      "title": "De inaequali intemperie",
+      "kuhn": "VII, 733–752 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "059",
+      "title": "De difficultate respirationis",
+      "kuhn": "VII, 753–960 K.",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "060",
+      "title": "De locis affectis",
+      "kuhn": "VIII, 1–452 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": true,
+        "italian": false,
+        "spanish": true,
+        "other": true
+      }
+    },
+    {
+      "id": "061",
+      "title": "De pulsibus ad tirones",
+      "kuhn": "VIII, 453–492 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": true,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "062",
+      "title": "De pulsuum differentiis",
+      "kuhn": "VIII, 493–765 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "063",
+      "title": "De dignoscendis pulsibus",
+      "kuhn": "VIII, 766–961 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "064",
+      "title": "De causis pulsuum",
+      "kuhn": "IX, 1–204 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "065",
+      "title": "De praesagitione ex pulsibus",
+      "kuhn": "IX, 205–430 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "066",
+      "title": "(?) Synopsis librorum suorum de pulsibus",
+      "kuhn": "IX, 431–549 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "067",
+      "title": "De crisibus",
+      "kuhn": "IX, 550–768 K.",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "068",
+      "title": "De diebus decretoriis",
+      "kuhn": "IX, 769–941 K.",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "069",
+      "title": "Methodus medendi",
+      "kuhn": "X, 1–1021 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": true,
+        "italian": true,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "070",
+      "title": "Ad Glauconem de medendi methodo",
+      "kuhn": "XI, 1–146 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": true,
+        "italian": false,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "071",
+      "title": "De venae sectione adversus Erasistratum",
+      "kuhn": "XI, 147–186 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "072",
+      "title": "De venae sectione adversus Erasistrateos Romae degentes",
+      "kuhn": "XI, 187–249 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "073",
+      "title": "De curandi ratione per venae sectionem",
+      "kuhn": "XI, 250–316 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "074",
+      "title": "De hirudinibus, revulsione, cucurbitula, incisione, et scarificatione",
+      "kuhn": "XI, 317–322 K.",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "075",
+      "title": "De purgantium medicamentorum facultate",
+      "kuhn": "XI, 323–342 K.",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "077",
+      "title": "Puero epileptico consilium",
+      "kuhn": "XI, 357–378 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": false,
+        "italian": true,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "078",
+      "title": "De simplicium medicamentorum temperamentis et facultatibus",
+      "kuhn": "XI, 379–892; XII, 1–377 K.",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "080",
+      "title": "De compositione medicamentorum secundum locos",
+      "kuhn": "XII, 378–1007; XIII, 1–361 K.",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "082",
+      "title": "De compositione medicamentorum per genera",
+      "kuhn": "XIII, 362–1058 K.",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "083",
+      "title": "De antidotis",
+      "kuhn": "XIV, 1–209 K.",
+      "translation_columns": {
+        "german": true,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "087",
+      "title": "De captionibus penes dictionem",
+      "kuhn": "XIV, 582–598 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": true,
+        "italian": true,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "088",
+      "title": "De praecognitione",
+      "kuhn": "XIV, 599–673 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "090",
+      "title": "In Hippocratis De natura hominis commentaria",
+      "kuhn": "XV, 1–223 K.",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "093",
+      "title": "In Hippocratis De victu acutorum commentaria",
+      "kuhn": "XV, 418–919 K.",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": true,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "095",
+      "title": "In Hippocratis Prorrheticum I commentaria",
+      "kuhn": "XVI, 489–840 K.",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "096",
+      "title": "In Hippocratis Epidemias commentaria",
+      "kuhn": "XVIIA, 1–1009; XVIIB, 1–344 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": true,
+        "italian": true,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "101",
+      "title": "In Hippocratis Aphorismos commentaria",
+      "kuhn": "XVIIB, 345–887; XVIIIA, 1–195 K.",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": false,
+        "italian": true,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "103",
+      "title": "Adversus Lycum",
+      "kuhn": "XVIIIA, 196–245 K.",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "104",
+      "title": "Adversus ea quae Iuliano in Hippocratis aphorismos enuntiata sunt",
+      "kuhn": "XVIIIA, 246–299 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "105",
+      "title": "In Hippocratis De articulis commentaria",
+      "kuhn": "XVIIIA, 300–767 K.",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": false,
+        "italian": true,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "109",
+      "title": "In Hippocratis Prognosticum commentaria",
+      "kuhn": "XVIIIB, 1–317 K.",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "110",
+      "title": "In Hippocratis De fracturis commentaria",
+      "kuhn": "XVIIIB, 318–628 K.",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": false,
+        "italian": true,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "111",
+      "title": "In Hippocratis De officina medici commentaria",
+      "kuhn": "XVIIIB, 629–925 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "112",
+      "title": "De musculorum dissectione ad tirones",
+      "kuhn": "XVIIIB, 926–1026 K.",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": true,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "114",
+      "title": "De libris propriis",
+      "kuhn": "XIX, 8–48 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": true,
+        "italian": true,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "115",
+      "title": "De ordine librorum suorum ad Eugenianum",
+      "kuhn": "XIX, 49–61 K.",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": true,
+        "italian": true,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "116",
+      "title": "Vocum Hippocratis glossarium",
+      "kuhn": "XIX, 62–157 K.",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": false,
+        "italian": true,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "118",
+      "title": "De diaeta Hippocratis in morbis acutis (arab.)",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "160",
+      "title": "Compendium Timaei Platonis (arab.)",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "169",
+      "title": "De anatomia mortuorum (arab.)",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "187",
+      "title": "De causis contentivis (arab., lat.)",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "188",
+      "title": "De causis procatarcticis (lat.)",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "202",
+      "title": "De consuetudinibus",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": true,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "209",
+      "title": "/De demonstratione/",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "217",
+      "title": "De indolentia",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": true,
+        "italian": true,
+        "spanish": false,
+        "other": true
+      }
+    },
+    {
+      "id": "223",
+      "title": "De subfiguratione empirica (lat.)",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": true,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "232",
+      "title": "De optimo medico cognoscendo (arab.)",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "235",
+      "title": "De experientia medica (arab.)",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": true,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "247",
+      "title": "De partium homoeomerium differentia (arab.)",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": true,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "279",
+      "title": "De motibus dubiis (arab., lat.)",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "284",
+      "title": "De nominibus medicis (arab.)",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": true,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "291",
+      "title": "De partibus artis medicativae (arab., lat.)",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "309",
+      "title": "De propriis placitis",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": true,
+        "italian": true,
+        "spanish": true,
+        "other": false
+      }
+    },
+    {
+      "id": "323",
+      "title": "De septimestri partu (frg. gr./arab.)",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": true,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "349",
+      "title": "De victu attenuante",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": false,
+        "italian": true,
+        "spanish": false,
+        "other": true
+      }
+    },
+    {
+      "id": "358",
+      "title": "/De voce/",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": false,
+        "english": false,
+        "french": false,
+        "italian": true,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "372",
+      "title": "/Excerpta ex libris anatomicis Marini/",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": true,
+        "english": false,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "382",
+      "title": "In Hippocratis De aere aquis locis commentaria (arab.)",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "390",
+      "title": "/In Hippocratis Iusiurandum commentarii fragmenta/ (arab.)",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "396",
+      "title": "/In Platonis Timaeum commentarii fragmenta/",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": true,
+        "english": false,
+        "french": true,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    },
+    {
+      "id": "402",
+      "title": "Institutio logica",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": true,
+        "english": true,
+        "french": true,
+        "italian": true,
+        "spanish": true,
+        "other": true
+      }
+    },
+    {
+      "id": "412",
+      "title": "De moribus (arab.)",
+      "kuhn": "–",
+      "translation_columns": {
+        "german": false,
+        "english": true,
+        "french": false,
+        "italian": false,
+        "spanish": false,
+        "other": false
+      }
+    }
+  ]
+}

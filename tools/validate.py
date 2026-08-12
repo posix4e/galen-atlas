@@ -40,6 +40,7 @@ TRANSMISSION_RELATIONS = {
     "arabic-latin-synthesis",
 }
 TRANSMISSION_KINDS = {"translation", "edition", "digital-project"}
+BBAW_COLUMNS = {"german", "english", "french", "italian", "spanish", "other"}
 EXTENTS = {"unspecified", "full", "partial", "fragments", "unknown"}
 HEX40 = re.compile(r"^[0-9a-f]{40}$")
 HEX64 = re.compile(r"^[0-9a-f]{64}$")
@@ -561,12 +562,69 @@ def validate_transmission(
     return len(receptions)
 
 
+def validate_bbaw(root: pathlib.Path, errors: list[str]) -> int:
+    path = root / "data" / "bbaw-galen-translations.json"
+    if not path.exists():
+        return 0
+    document = load_json(path, errors, "data/bbaw-galen-translations.json")
+    if not isinstance(document, dict):
+        return 0
+    label = "data/bbaw-galen-translations.json"
+    if document.get("schema_version") != 1:
+        errors.append(f"{label}: schema_version must be 1")
+    if not is_date(document.get("retrieved_on")):
+        errors.append(f"{label}: retrieved_on must be an ISO date")
+    source = document.get("source")
+    if not isinstance(source, dict):
+        errors.append(f"{label}: source must be an object")
+    else:
+        for field in ("publisher", "title"):
+            if not source.get(field):
+                errors.append(f"{label}: source.{field} is required")
+        for field in ("url", "terms_url"):
+            if not is_safe_url(source.get(field)):
+                errors.append(f"{label}: source.{field} is unsafe or invalid")
+        if not HEX64.fullmatch(str(source.get("sha256", ""))):
+            errors.append(f"{label}: source.sha256 must be a full SHA-256")
+    records = document.get("records")
+    if not isinstance(records, list):
+        errors.append(f"{label}: records must be a list")
+        return 0
+    if len(records) < 100:
+        errors.append(f"{label}: expected at least 100 records")
+    if document.get("record_count") != len(records):
+        errors.append(f"{label}: record_count does not match records")
+    ids: set[str] = set()
+    for index, record in enumerate(records):
+        r_label = f"{label} record {index}"
+        if not isinstance(record, dict):
+            errors.append(f"{r_label}: must be an object")
+            continue
+        record_id = record.get("id")
+        if not isinstance(record_id, str) or not re.fullmatch(r"[0-9]{3}", record_id):
+            errors.append(f"{r_label}: invalid BBAW record id {record_id!r}")
+        elif record_id in ids:
+            errors.append(f"{label}: duplicate BBAW record id {record_id!r}")
+        else:
+            ids.add(record_id)
+        for field in ("title", "kuhn"):
+            if not isinstance(record.get(field), str) or not record[field].strip():
+                errors.append(f"{r_label}: {field} is required")
+        columns = record.get("translation_columns")
+        if not isinstance(columns, dict) or set(columns) != BBAW_COLUMNS:
+            errors.append(f"{r_label}: translation_columns must contain all six language flags")
+        elif any(not isinstance(value, bool) for value in columns.values()):
+            errors.append(f"{r_label}: translation column flags must be booleans")
+    return len(records)
+
+
 def validate(root: pathlib.Path = ROOT) -> list[str]:
     errors: list[str] = []
     work_ids, _, _ = validate_works(root, errors)
     validate_chunks(root, work_ids, errors)
     witness_files = validate_arabic(root, work_ids, errors)
     validate_transmission(root, work_ids, witness_files, errors)
+    validate_bbaw(root, errors)
     return errors
 
 
@@ -580,7 +638,11 @@ def main() -> None:
     works = json.loads((ROOT / "data" / "works.json").read_text())["works"]
     chunks = json.loads((ROOT / "data" / "chunks.json").read_text())["chunks"]
     manifest = json.loads((ROOT / "sources" / "arabic" / "manifest.json").read_text())
-    print(f"OK: {len(works)} works, {len(chunks)} chunks, {len(manifest['texts'])} Arabic witnesses validated")
+    bbaw = json.loads((ROOT / "data" / "bbaw-galen-translations.json").read_text())
+    print(
+        f"OK: {len(works)} works, {len(chunks)} chunks, "
+        f"{len(manifest['texts'])} Arabic witnesses, and {len(bbaw['records'])} BBAW records validated"
+    )
 
 
 if __name__ == "__main__":

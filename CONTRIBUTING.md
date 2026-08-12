@@ -15,6 +15,10 @@ Then open an issue (or PR against `works.json`) with the work's `id`, what you f
 - The corrected first-campaign shortlist was checked against the BBAW translation catalogue on 12 August 2026. Vote on [issue #1](https://github.com/posix4e/pergamap/issues/1), and please report any overlooked or unlisted English translation.
 - Propose a different target by commenting there. The criteria (see the [roadmap](https://pergamap.com/roadmap.html)): no existing English, digitized source, finishable, humanly interesting.
 
+## BBAW/CMG catalogue snapshot
+
+`python3 tools/sync_bbaw.py` downloads the BBAW/CMG Galen translation catalogue and rewrites `data/bbaw-galen-translations.json`. A weekly GitHub Actions job runs the same importer, validates the result, and commits an updated metadata index when the upstream catalogue changes. The index is source evidence; it deliberately does not overwrite the editorial judgments in `data/works.json`.
+
 ## 3. Translate or review a chunk
 
 A **chunk** is a passage anchored to Kühn page numbers (typically one chapter or a few pages). The pipeline — see [HARNESS.md](HARNESS.md) for full details:
