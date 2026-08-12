@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "updated": "2026-08-09",
+ "updated": "2026-08-12",
  "status": "preliminary",
  "sources": [
   {
@@ -13,7 +13,7 @@
    "id": "bbaw-galen-translations",
    "title": "Corpus Medicorum Graecorum: Galenus — Übersetzungen",
    "url": "https://cmg.bbaw.de/startseite/arbeitsmittel/werkverzeichnisse/galenus-uebersetzungen/",
-   "accessed": "2026-08-09"
+   "accessed": "2026-08-12"
   }
  ],
  "works": [
@@ -1863,17 +1863,26 @@
     "status": "none",
     "citations": [],
     "verification": {
-     "status": "recalled",
-     "checked_on": null,
-     "source_ids": []
+     "status": "checked",
+     "checked_on": "2026-08-12",
+     "source_ids": [
+      "bbaw-galen-translations"
+     ]
     },
     "basis": {
-     "kind": "model-recall",
-     "searched": [],
-     "note": "Asserted from a language model's recollection of the scholarship. No source was consulted to establish this row."
+     "kind": "catalogue-listed",
+     "searched": [
+      {
+       "source": "Corpus Medicorum Graecorum: Galenus — Übersetzungen (BBAW)",
+       "url": "https://cmg.bbaw.de/startseite/arbeitsmittel/werkverzeichnisse/galenus-uebersetzungen/",
+       "date": "2026-08-12",
+       "result": "work listed; English-translation column empty"
+      }
+     ],
+     "note": "The BBAW translation catalogue listed no English translation when checked. This is evidence about that catalogue, not proof that no translation exists elsewhere."
     }
    },
-   "notes": "A major clinical work; no published English known to us."
+   "notes": "A major clinical work. The BBAW translation catalogue listed no English translation when checked on 2026-08-12."
   },
   {
    "id": "tlg046",
@@ -2677,17 +2686,26 @@
     "status": "none",
     "citations": [],
     "verification": {
-     "status": "recalled",
-     "checked_on": null,
-     "source_ids": []
+     "status": "checked",
+     "checked_on": "2026-08-12",
+     "source_ids": [
+      "bbaw-galen-translations"
+     ]
     },
     "basis": {
-     "kind": "model-recall",
-     "searched": [],
-     "note": "Asserted from a language model's recollection of the scholarship. No source was consulted to establish this row."
+     "kind": "catalogue-listed",
+     "searched": [
+      {
+       "source": "Corpus Medicorum Graecorum: Galenus — Übersetzungen (BBAW)",
+       "url": "https://cmg.bbaw.de/startseite/arbeitsmittel/werkverzeichnisse/galenus-uebersetzungen/",
+       "date": "2026-08-12",
+       "result": "work listed; English-translation column empty"
+      }
+     ],
+     "note": "The BBAW translation catalogue listed no English translation when checked. This is evidence about that catalogue, not proof that no translation exists elsewhere."
     }
    },
-   "notes": "Critical edition Alexanderson (1967); no English known to us."
+   "notes": "Critical edition Alexanderson (1967). The BBAW translation catalogue listed no English translation when checked on 2026-08-12."
   },
   {
    "id": "tlg065",
@@ -3163,17 +3181,26 @@
     "status": "none",
     "citations": [],
     "verification": {
-     "status": "recalled",
-     "checked_on": null,
-     "source_ids": []
+     "status": "checked",
+     "checked_on": "2026-08-12",
+     "source_ids": [
+      "bbaw-galen-translations"
+     ]
     },
     "basis": {
-     "kind": "model-recall",
-     "searched": [],
-     "note": "Asserted from a language model's recollection of the scholarship. No source was consulted to establish this row."
+     "kind": "catalogue-listed",
+     "searched": [
+      {
+       "source": "Corpus Medicorum Graecorum: Galenus — Übersetzungen (BBAW)",
+       "url": "https://cmg.bbaw.de/startseite/arbeitsmittel/werkverzeichnisse/galenus-uebersetzungen/",
+       "date": "2026-08-12",
+       "result": "work listed; English-translation column empty"
+      }
+     ],
+     "note": "The BBAW translation catalogue listed no English translation when checked. This is evidence about that catalogue, not proof that no translation exists elsewhere."
     }
    },
-   "notes": "10 books of remedies, head to toe. OUR PILOT TEXT — see the first translated chunk."
+   "notes": "10 books of remedies, head to toe. Pergamap pilot text. The BBAW translation catalogue listed no English translation when checked on 2026-08-12."
   },
   {
    "id": "tlg077",
@@ -3237,17 +3264,26 @@
     "status": "none",
     "citations": [],
     "verification": {
-     "status": "recalled",
-     "checked_on": null,
-     "source_ids": []
+     "status": "checked",
+     "checked_on": "2026-08-12",
+     "source_ids": [
+      "bbaw-galen-translations"
+     ]
     },
     "basis": {
-     "kind": "model-recall",
-     "searched": [],
-     "note": "Asserted from a language model's recollection of the scholarship. No source was consulted to establish this row."
+     "kind": "catalogue-listed",
+     "searched": [
+      {
+       "source": "Corpus Medicorum Graecorum: Galenus — Übersetzungen (BBAW)",
+       "url": "https://cmg.bbaw.de/startseite/arbeitsmittel/werkverzeichnisse/galenus-uebersetzungen/",
+       "date": "2026-08-12",
+       "result": "work listed; English-translation column empty"
+      }
+     ],
+     "note": "The BBAW translation catalogue listed no English translation when checked. This is evidence about that catalogue, not proof that no translation exists elsewhere."
     }
    },
-   "notes": "Theriac, mithridatium, and the emperor’s daily dose. No English."
+   "notes": "Theriac, mithridatium, and the emperor’s daily dose. The BBAW translation catalogue listed no English translation when checked on 2026-08-12."
   },
   {
    "id": "tlg079",

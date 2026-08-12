@@ -301,6 +301,22 @@ class ValidatorTests(unittest.TestCase):
     def test_repository_data_is_valid(self):
         self.assertEqual(validate.validate(validate.ROOT), [])
 
+    def test_ballot_candidates_are_catalogue_checked(self):
+        document = json.loads((validate.ROOT / "data" / "works.json").read_text())
+        works = {work["id"]: work for work in document["works"]}
+        for work_id in ("tlg045", "tlg064", "tlg076", "tlg078"):
+            english = works[work_id]["english"]
+            self.assertEqual(english["verification"]["status"], "checked")
+            self.assertEqual(english["verification"]["checked_on"], "2026-08-12")
+            self.assertIn("bbaw-galen-translations", english["verification"]["source_ids"])
+            self.assertEqual(english["basis"]["kind"], "catalogue-listed")
+            self.assertTrue(
+                any(
+                    entry["result"] == "work listed; English-translation column empty"
+                    for entry in english["basis"]["searched"]
+                )
+            )
+
 
 if __name__ == "__main__":
     unittest.main()
