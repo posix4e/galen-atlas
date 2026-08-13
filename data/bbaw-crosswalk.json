@@ -1,0 +1,766 @@
+{
+  "schema_version": 1,
+  "updated": "2026-08-12",
+  "status": "curated",
+  "methodology": "This crosswalk identifies the same Galenic work across Pergamap and the BBAW/CMG translation index. Empty record lists mean that no corresponding row was found in the dated BBAW snapshot; they do not mean that BBAW rejects the work. A grouped relation records cases where BBAW combines material that Pergamap tracks separately.",
+  "mappings": [
+    {
+      "work_id": "tlg001",
+      "bbaw_record_ids": [
+        "001"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg002",
+      "bbaw_record_ids": [
+        "002"
+      ],
+      "relation": "same-work",
+      "english_status_review": {
+        "status": "needs-source-check",
+        "note": "Pergamap cites Singer (1997) for full English coverage, while BBAW record 002 has an empty English column."
+      }
+    },
+    {
+      "work_id": "tlg003",
+      "bbaw_record_ids": [
+        "003"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg004",
+      "bbaw_record_ids": [
+        "004"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg006",
+      "bbaw_record_ids": [
+        "006"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg007",
+      "bbaw_record_ids": [
+        "007"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg008",
+      "bbaw_record_ids": [
+        "008"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg009",
+      "bbaw_record_ids": [
+        "009"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg010",
+      "bbaw_record_ids": [
+        "010"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg011",
+      "bbaw_record_ids": [
+        "011"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg012",
+      "bbaw_record_ids": [
+        "012"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg013",
+      "bbaw_record_ids": [
+        "013"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg014",
+      "bbaw_record_ids": [
+        "014"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg015",
+      "bbaw_record_ids": [
+        "015"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg016",
+      "bbaw_record_ids": [
+        "016"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg017",
+      "bbaw_record_ids": [
+        "017"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg018",
+      "bbaw_record_ids": [
+        "019"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg019",
+      "bbaw_record_ids": [
+        "349"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg020",
+      "bbaw_record_ids": [
+        "021"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg021",
+      "bbaw_record_ids": [
+        "022"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg022",
+      "bbaw_record_ids": [
+        "023"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg023",
+      "bbaw_record_ids": [
+        "024"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg024",
+      "bbaw_record_ids": [
+        "025"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg025",
+      "bbaw_record_ids": [
+        "026"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg027",
+      "bbaw_record_ids": [
+        "028"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg028",
+      "bbaw_record_ids": [
+        "029"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg029",
+      "bbaw_record_ids": [
+        "030"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg030",
+      "bbaw_record_ids": [
+        "031"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg031",
+      "bbaw_record_ids": [
+        "032"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg032",
+      "bbaw_record_ids": [
+        "033"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg033",
+      "bbaw_record_ids": [
+        "034"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg034",
+      "bbaw_record_ids": [
+        "035"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg035",
+      "bbaw_record_ids": [],
+      "relation": "not-found",
+      "note": "No corresponding row was found in the 2026-08-12 BBAW snapshot."
+    },
+    {
+      "work_id": "tlg036",
+      "bbaw_record_ids": [
+        "037"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg037",
+      "bbaw_record_ids": [
+        "038"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg038",
+      "bbaw_record_ids": [
+        "039"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg039",
+      "bbaw_record_ids": [
+        "040"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg040",
+      "bbaw_record_ids": [],
+      "relation": "not-found",
+      "note": "No corresponding row was found in the 2026-08-12 BBAW snapshot."
+    },
+    {
+      "work_id": "tlg041",
+      "bbaw_record_ids": [
+        "042"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg042",
+      "bbaw_record_ids": [
+        "043"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg043",
+      "bbaw_record_ids": [
+        "044"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg044",
+      "bbaw_record_ids": [
+        "045"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg045",
+      "bbaw_record_ids": [
+        "048"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg046",
+      "bbaw_record_ids": [
+        "049"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg047",
+      "bbaw_record_ids": [],
+      "relation": "not-found",
+      "note": "No corresponding row was found in the 2026-08-12 BBAW snapshot."
+    },
+    {
+      "work_id": "tlg048",
+      "bbaw_record_ids": [
+        "051"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg049",
+      "bbaw_record_ids": [
+        "052"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg050",
+      "bbaw_record_ids": [
+        "053"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg051",
+      "bbaw_record_ids": [
+        "054"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg052",
+      "bbaw_record_ids": [
+        "055"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg053",
+      "bbaw_record_ids": [
+        "056"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg054",
+      "bbaw_record_ids": [
+        "057"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg055",
+      "bbaw_record_ids": [
+        "058"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg056",
+      "bbaw_record_ids": [
+        "059"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg057",
+      "bbaw_record_ids": [
+        "060"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg058",
+      "bbaw_record_ids": [
+        "061"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg059",
+      "bbaw_record_ids": [
+        "062"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg060",
+      "bbaw_record_ids": [
+        "063"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg061",
+      "bbaw_record_ids": [
+        "064"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg062",
+      "bbaw_record_ids": [
+        "065"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg063",
+      "bbaw_record_ids": [
+        "066"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg064",
+      "bbaw_record_ids": [
+        "067"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg065",
+      "bbaw_record_ids": [
+        "068"
+      ],
+      "relation": "same-work",
+      "english_status_review": {
+        "status": "needs-source-check",
+        "note": "Pergamap cites Cooper (2011) for a partial English translation of the medieval Arabic version, while BBAW record 068 has an empty English column."
+      }
+    },
+    {
+      "work_id": "tlg066",
+      "bbaw_record_ids": [
+        "069"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg067",
+      "bbaw_record_ids": [
+        "070"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg068",
+      "bbaw_record_ids": [
+        "071"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg069",
+      "bbaw_record_ids": [
+        "072"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg070",
+      "bbaw_record_ids": [
+        "073"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg071",
+      "bbaw_record_ids": [
+        "074"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg072",
+      "bbaw_record_ids": [
+        "075"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg073",
+      "bbaw_record_ids": [],
+      "relation": "not-found",
+      "note": "No corresponding row was found in the 2026-08-12 BBAW snapshot."
+    },
+    {
+      "work_id": "tlg074",
+      "bbaw_record_ids": [
+        "077"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg075",
+      "bbaw_record_ids": [
+        "078"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg076",
+      "bbaw_record_ids": [
+        "080"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg077",
+      "bbaw_record_ids": [
+        "082"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg078",
+      "bbaw_record_ids": [
+        "083"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg079",
+      "bbaw_record_ids": [],
+      "relation": "not-found",
+      "note": "No corresponding row was found in the 2026-08-12 BBAW snapshot."
+    },
+    {
+      "work_id": "tlg081",
+      "bbaw_record_ids": [
+        "402"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg082",
+      "bbaw_record_ids": [
+        "087"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg083",
+      "bbaw_record_ids": [
+        "088"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg084",
+      "bbaw_record_ids": [],
+      "relation": "not-found",
+      "note": "No corresponding row was found in the 2026-08-12 BBAW snapshot."
+    },
+    {
+      "work_id": "tlg085",
+      "bbaw_record_ids": [
+        "090"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg086",
+      "bbaw_record_ids": [],
+      "relation": "not-found",
+      "note": "No corresponding row was found in the 2026-08-12 BBAW snapshot."
+    },
+    {
+      "work_id": "tlg087",
+      "bbaw_record_ids": [
+        "093"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg089",
+      "bbaw_record_ids": [
+        "096"
+      ],
+      "relation": "part-of-grouped-record",
+      "note": "BBAW record 096 groups the Hippocratic Epidemics commentaries; Pergamap tracks this book separately."
+    },
+    {
+      "work_id": "tlg092",
+      "bbaw_record_ids": [
+        "101"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg093",
+      "bbaw_record_ids": [
+        "103"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg094",
+      "bbaw_record_ids": [
+        "104"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg095",
+      "bbaw_record_ids": [
+        "105"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg096",
+      "bbaw_record_ids": [],
+      "relation": "not-found",
+      "note": "No corresponding row was found in the 2026-08-12 BBAW snapshot."
+    },
+    {
+      "work_id": "tlg099",
+      "bbaw_record_ids": [
+        "109"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg100",
+      "bbaw_record_ids": [
+        "110"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg101",
+      "bbaw_record_ids": [
+        "111"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg102",
+      "bbaw_record_ids": [
+        "112"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg103",
+      "bbaw_record_ids": [
+        "202"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg107",
+      "bbaw_record_ids": [
+        "235"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "tlg114",
+      "bbaw_record_ids": [
+        "020"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "x-indol",
+      "bbaw_record_ids": [
+        "217"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "x-optmed",
+      "bbaw_record_ids": [
+        "232"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "x-nomin",
+      "bbaw_record_ids": [
+        "284"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "x-epid2",
+      "bbaw_record_ids": [
+        "096"
+      ],
+      "relation": "part-of-grouped-record",
+      "note": "BBAW record 096 groups the Hippocratic Epidemics commentaries; Pergamap tracks this book separately."
+    },
+    {
+      "work_id": "x-partmed",
+      "bbaw_record_ids": [
+        "291"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "x-motdub",
+      "bbaw_record_ids": [
+        "279"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "x-demonst",
+      "bbaw_record_ids": [
+        "209"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "x-causproc",
+      "bbaw_record_ids": [
+        "188"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "x-subfig",
+      "bbaw_record_ids": [
+        "223"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "x-libprop",
+      "bbaw_record_ids": [
+        "114"
+      ],
+      "relation": "same-work"
+    },
+    {
+      "work_id": "x-ordlib",
+      "bbaw_record_ids": [
+        "115"
+      ],
+      "relation": "same-work"
+    }
+  ]
+}

@@ -130,6 +130,12 @@ def check() -> list[str]:
             errors.append("data/bbaw-galen-translations.json: unexpectedly short snapshot")
     except (OSError, json.JSONDecodeError) as exc:
         errors.append(f"data/bbaw-galen-translations.json: cannot read: {exc}")
+    try:
+        crosswalk = json.loads((ROOT / "data" / "bbaw-crosswalk.json").read_text())
+        if crosswalk.get("schema_version") != 1 or len(crosswalk.get("mappings", [])) != 108:
+            errors.append("data/bbaw-crosswalk.json: invalid crosswalk metadata")
+    except (OSError, json.JSONDecodeError) as exc:
+        errors.append(f"data/bbaw-crosswalk.json: cannot read: {exc}")
     transmission_page = (ROOT / "transmission.html").read_text()
     transmission_script = (ROOT / "assets" / "js" / "transmission.js").read_text()
     for required in ("stage-composition", "stage-tradition", "stage-arabic", "source-language route not yet encoded"):

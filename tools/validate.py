@@ -562,13 +562,13 @@ def validate_transmission(
     return len(receptions)
 
 
-def validate_bbaw(root: pathlib.Path, errors: list[str]) -> int:
+def validate_bbaw(root: pathlib.Path, errors: list[str]) -> set[str]:
     path = root / "data" / "bbaw-galen-translations.json"
     if not path.exists():
-        return 0
+        return set()
     document = load_json(path, errors, "data/bbaw-galen-translations.json")
     if not isinstance(document, dict):
-        return 0
+        return set()
     label = "data/bbaw-galen-translations.json"
     if document.get("schema_version") != 1:
         errors.append(f"{label}: schema_version must be 1")
@@ -589,7 +589,7 @@ def validate_bbaw(root: pathlib.Path, errors: list[str]) -> int:
     records = document.get("records")
     if not isinstance(records, list):
         errors.append(f"{label}: records must be a list")
-        return 0
+        return set()
     if len(records) < 100:
         errors.append(f"{label}: expected at least 100 records")
     if document.get("record_count") != len(records):
@@ -615,7 +615,92 @@ def validate_bbaw(root: pathlib.Path, errors: list[str]) -> int:
             errors.append(f"{r_label}: translation_columns must contain all six language flags")
         elif any(not isinstance(value, bool) for value in columns.values()):
             errors.append(f"{r_label}: translation column flags must be booleans")
-    return len(records)
+    return ids
+
+
+def validate_bbaw_crosswalk(
+    root: pathlib.Path, work_ids: set[str], bbaw_ids: set[str], errors: list[str]
+) -> int:
+    path = root / "data" / "bbaw-crosswalk.json"
+    if not path.exists():
+        if bbaw_ids:
+            errors.append("data/bbaw-crosswalk.json: file is missing")
+        return 0
+    document = load_json(path, errors, "data/bbaw-crosswalk.json")
+    if not isinstance(document, dict):
+        return 0
+    label = "data/bbaw-crosswalk.json"
+    if document.get("schema_version") != 1:
+        errors.append(f"{label}: schema_version must be 1")
+    if document.get("status") != "curated":
+        errors.append(f"{label}: status must be 'curated'")
+    if not is_date(document.get("updated")):
+        errors.append(f"{label}: updated must be an ISO date")
+    if not isinstance(document.get("methodology"), str) or not document["methodology"].strip():
+        errors.append(f"{label}: methodology is required")
+    mappings = document.get("mappings")
+    if not isinstance(mappings, list):
+        errors.append(f"{label}: mappings must be a list")
+        return 0
+
+    mapped_work_ids: set[str] = set()
+    record_uses: dict[str, list[dict]] = {}
+    for index, mapping in enumerate(mappings):
+        m_label = f"{label} mapping {index}"
+        if not isinstance(mapping, dict):
+            errors.append(f"{m_label}: must be an object")
+            continue
+        work_id = mapping.get("work_id")
+        if not isinstance(work_id, str) or work_id not in work_ids:
+            errors.append(f"{m_label}: unknown work_id {work_id!r}")
+        elif work_id in mapped_work_ids:
+            errors.append(f"{label}: duplicate work_id {work_id!r}")
+        else:
+            mapped_work_ids.add(work_id)
+        refs = mapping.get("bbaw_record_ids")
+        if not isinstance(refs, list) or any(
+            not isinstance(ref, str) or ref not in bbaw_ids for ref in refs
+        ):
+            errors.append(f"{m_label}: bbaw_record_ids contains an unknown BBAW record")
+            refs = []
+        if len(refs) != len(set(refs)):
+            errors.append(f"{m_label}: duplicate BBAW record id")
+        relation = mapping.get("relation")
+        if relation == "same-work" and len(refs) != 1:
+            errors.append(f"{m_label}: same-work requires exactly one BBAW record")
+        elif relation == "part-of-grouped-record" and not refs:
+            errors.append(f"{m_label}: grouped relation requires a BBAW record")
+        elif relation == "not-found" and refs:
+            errors.append(f"{m_label}: not-found may not reference a BBAW record")
+        elif relation not in {"same-work", "part-of-grouped-record", "not-found"}:
+            errors.append(f"{m_label}: invalid relation {relation!r}")
+        note = mapping.get("note")
+        if relation in {"part-of-grouped-record", "not-found"} and (
+            not isinstance(note, str) or not note.strip()
+        ):
+            errors.append(f"{m_label}: {relation} requires a note")
+        for ref in refs:
+            record_uses.setdefault(ref, []).append(mapping)
+        review = mapping.get("english_status_review")
+        if review is not None and (
+            not isinstance(review, dict)
+            or review.get("status") not in {"needs-source-check", "explained"}
+            or not isinstance(review.get("note"), str)
+            or not review["note"].strip()
+        ):
+            errors.append(f"{m_label}: english_status_review is incomplete")
+        elif review is not None and not refs:
+            errors.append(f"{m_label}: english_status_review requires a BBAW record")
+
+    missing = work_ids - mapped_work_ids
+    if missing:
+        errors.append(f"{label}: missing work mappings for {sorted(missing)}")
+    for record_id, uses in record_uses.items():
+        if len(uses) > 1 and any(use.get("relation") != "part-of-grouped-record" for use in uses):
+            errors.append(
+                f"{label}: BBAW record {record_id!r} is reused without grouped relations"
+            )
+    return len(mappings)
 
 
 def validate(root: pathlib.Path = ROOT) -> list[str]:
@@ -624,7 +709,8 @@ def validate(root: pathlib.Path = ROOT) -> list[str]:
     validate_chunks(root, work_ids, errors)
     witness_files = validate_arabic(root, work_ids, errors)
     validate_transmission(root, work_ids, witness_files, errors)
-    validate_bbaw(root, errors)
+    bbaw_ids = validate_bbaw(root, errors)
+    validate_bbaw_crosswalk(root, work_ids, bbaw_ids, errors)
     return errors
 
 

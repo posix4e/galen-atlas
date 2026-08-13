@@ -17,7 +17,7 @@ Then open an issue (or PR against `works.json`) with the work's `id`, what you f
 
 ## BBAW/CMG catalogue snapshot
 
-`python3 tools/sync_bbaw.py` downloads the BBAW/CMG Galen translation catalogue and rewrites `data/bbaw-galen-translations.json`. A weekly GitHub Actions job runs the same importer, validates the result, and commits an updated metadata index when the upstream catalogue changes. The index is source evidence; it deliberately does not overwrite the editorial judgments in `data/works.json`.
+`python3 tools/sync_bbaw.py` downloads the BBAW/CMG Galen translation catalogue and rewrites `data/bbaw-galen-translations.json`. A weekly GitHub Actions job runs the same importer and opens or updates a reviewable PR when the upstream catalogue changes. `data/bbaw-crosswalk.json` connects Pergamap work IDs to BBAW record IDs, and `python3 tools/check_bbaw_drift.py` flags new English-status disagreements. The index is source evidence; it deliberately does not overwrite the editorial judgments in `data/works.json`.
 
 ## 3. Translate or review a chunk
 

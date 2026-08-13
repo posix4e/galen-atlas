@@ -1,8 +1,11 @@
 "use strict";
 
 let records = [];
+let worksById = new Map();
+let pergamapByRecord = new Map();
 let query = "";
 let activeFilter = "all";
+let requestedRecordId = new URL(location.href).searchParams.get("record");
 
 const body = document.querySelector("#bbaw-table tbody");
 const search = document.getElementById("bbaw-q");
@@ -25,6 +28,8 @@ function otherTranslations(record) {
 
 function addRow(record) {
   const row = document.createElement("tr");
+  row.dataset.recordId = record.id;
+  if (record.id === requestedRecordId) row.classList.add("catalogue-highlight");
   row.appendChild(node("td", "", record.id));
   const title = row.appendChild(node("td"));
   title.appendChild(node("strong", "", record.title));
@@ -37,6 +42,19 @@ function addRow(record) {
     englishCell.appendChild(node("span", "chip unknown", "column empty"));
   }
   row.appendChild(node("td", "bbaw-other", otherTranslations(record) || "—"));
+  const pergamapCell = row.appendChild(document.createElement("td"));
+  const mappings = pergamapByRecord.get(record.id) || [];
+  mappings.forEach((mapping, index) => {
+    if (index) pergamapCell.appendChild(document.createElement("br"));
+    const work = worksById.get(mapping.work_id);
+    const link = node("a", "", work ? (work.titles.english || work.titles.latin) : mapping.work_id);
+    link.href = `corpus.html?work=${encodeURIComponent(mapping.work_id)}`;
+    pergamapCell.appendChild(link);
+    if (mapping.english_status_review) {
+      pergamapCell.append(` · ${mapping.english_status_review.status}`);
+    }
+  });
+  if (!mappings.length) pergamapCell.textContent = "—";
   body.appendChild(row);
 }
 
@@ -46,12 +64,22 @@ function apply() {
     const hasEnglish = record.translation_columns.english;
     if (activeFilter === "english" && !hasEnglish) return false;
     if (activeFilter === "no-english" && hasEnglish) return false;
-    const haystack = `${record.title} ${record.kuhn}`.toLocaleLowerCase();
+    const localTitles = (pergamapByRecord.get(record.id) || [])
+      .map((mapping) => worksById.get(mapping.work_id))
+      .filter(Boolean)
+      .map((work) => `${work.titles.latin} ${work.titles.english || ""}`)
+      .join(" ");
+    const haystack = `${record.title} ${record.kuhn} ${localTitles}`.toLocaleLowerCase();
     return !normalized || haystack.includes(normalized);
   });
   body.replaceChildren();
   shown.forEach(addRow);
   count.textContent = `${shown.length} of ${records.length} BBAW records shown.`;
+  if (requestedRecordId) {
+    const requested = body.querySelector(`[data-record-id="${CSS.escape(requestedRecordId)}"]`);
+    if (requested) requestAnimationFrame(() => requested.scrollIntoView({ block: "center" }));
+    requestedRecordId = null;
+  }
 }
 
 buttons.forEach((button) => button.addEventListener("click", () => {
@@ -69,13 +97,27 @@ search.addEventListener("input", () => {
   apply();
 });
 
-fetch("data/bbaw-galen-translations.json")
-  .then((response) => {
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+Promise.all([
+  fetch("data/bbaw-galen-translations.json").then((response) => {
+    if (!response.ok) throw new Error(`BBAW index HTTP ${response.status}`);
     return response.json();
-  })
-  .then((catalogue) => {
+  }),
+  fetch("data/bbaw-crosswalk.json").then((response) => {
+    if (!response.ok) throw new Error(`crosswalk HTTP ${response.status}`);
+    return response.json();
+  }),
+  fetch("data/works.json").then((response) => {
+    if (!response.ok) throw new Error(`works HTTP ${response.status}`);
+    return response.json();
+  }),
+])
+  .then(([catalogue, crosswalk, works]) => {
     records = catalogue.records;
+    worksById = new Map(works.works.map((work) => [work.id, work]));
+    crosswalk.mappings.forEach((mapping) => mapping.bbaw_record_ids.forEach((recordId) => {
+      if (!pergamapByRecord.has(recordId)) pergamapByRecord.set(recordId, []);
+      pergamapByRecord.get(recordId).push(mapping);
+    }));
     document.getElementById("record-total").textContent = String(records.length);
     document.getElementById("english-total").textContent = String(
       records.filter((record) => record.translation_columns.english).length
