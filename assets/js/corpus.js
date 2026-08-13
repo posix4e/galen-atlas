@@ -11,6 +11,7 @@ const BASIS = {
 };
 let works = [];
 let draftsByWork = new Map();
+let bbawByWork = new Map();
 let activeFilter = "all";
 let query = "";
 let requestedWorkId = new URL(location.href).searchParams.get("work");
@@ -72,6 +73,15 @@ function addRow(work) {
     draft.appendChild(link);
     englishCell.appendChild(draft);
   });
+  const bbaw = bbawByWork.get(work.id);
+  if (bbaw) {
+    const reference = node("span", "ref");
+    const link = node("a", "", `BBAW record ${bbaw.recordIds.join(", ")}`);
+    link.href = `bbaw-catalogue.html?record=${encodeURIComponent(bbaw.recordIds[0])}`;
+    reference.appendChild(link);
+    if (bbaw.review) reference.append(` · ${bbaw.review.status}`);
+    englishCell.appendChild(reference);
+  }
   work.english.citations.forEach((citation) => {
     const reference = node("span", "ref");
     const url = citation.url && safeUrl(citation.url);
@@ -115,19 +125,26 @@ function apply() {
   }
 }
 
-// The project's own drafts are deliberately not evidence about the published
-// record, so they live in the chunk registry and are shown as a separate badge.
-fetch("data/chunks.json")
-  .then((response) => (response.ok ? response.json() : null))
-  .then((registry) => {
+// Drafts and the BBAW crosswalk are separate evidence layers; neither silently
+// changes the editorial conclusions stored in works.json.
+Promise.all([
+  fetch("data/chunks.json").then((response) => (response.ok ? response.json() : null)).catch(() => null),
+  fetch("data/bbaw-crosswalk.json").then((response) => (response.ok ? response.json() : null)).catch(() => null),
+]).then(([registry, crosswalk]) => {
     const entries = Array.isArray(registry) ? registry : (registry && registry.chunks) || [];
     entries.forEach((chunk) => {
       if (!chunk.work) return;
       if (!draftsByWork.has(chunk.work)) draftsByWork.set(chunk.work, []);
       draftsByWork.get(chunk.work).push(chunk);
     });
+    ((crosswalk && crosswalk.mappings) || []).forEach((mapping) => {
+      if (!mapping.bbaw_record_ids.length) return;
+      bbawByWork.set(mapping.work_id, {
+        recordIds: mapping.bbaw_record_ids,
+        review: mapping.english_status_review || null,
+      });
+    });
   })
-  .catch(() => {})
   .then(() => fetch("data/works.json"))
   .then((response) => {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);

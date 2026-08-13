@@ -27,6 +27,11 @@
     {
       "@type": "DataDownload",
       "encodingFormat": "application/json",
+      "contentUrl": "https://pergamap.com/data/bbaw-crosswalk.json"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/json",
       "contentUrl": "https://pergamap.com/data/transmission.json"
     },
     {

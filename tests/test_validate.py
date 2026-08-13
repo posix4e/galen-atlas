@@ -301,6 +301,53 @@ class ValidatorTests(unittest.TestCase):
     def test_repository_data_is_valid(self):
         self.assertEqual(validate.validate(validate.ROOT), [])
 
+    def test_repository_crosswalk_covers_every_work(self):
+        works = json.loads((validate.ROOT / "data" / "works.json").read_text())["works"]
+        mappings = json.loads((validate.ROOT / "data" / "bbaw-crosswalk.json").read_text())["mappings"]
+        self.assertEqual({work["id"] for work in works}, {mapping["work_id"] for mapping in mappings})
+        self.assertEqual(sum(bool(mapping["bbaw_record_ids"]) for mapping in mappings), 100)
+
+    def test_crosswalk_rejects_missing_and_unknown_mappings(self):
+        write_json(
+            self.root / "data/bbaw-crosswalk.json",
+            {
+                "schema_version": 1,
+                "updated": "2026-08-12",
+                "status": "curated",
+                "methodology": "Curated by title and edition reference.",
+                "mappings": [
+                    {
+                        "work_id": "missing-work",
+                        "bbaw_record_ids": ["999"],
+                        "relation": "same-work",
+                    }
+                ],
+            },
+        )
+        errors = []
+        validate.validate_bbaw_crosswalk(self.root, {"known-work"}, {"001"}, errors)
+        self.assertTrue(any("unknown work_id" in error for error in errors))
+        self.assertTrue(any("unknown BBAW record" in error for error in errors))
+        self.assertTrue(any("missing work mappings" in error for error in errors))
+
+    def test_crosswalk_rejects_unmarked_record_reuse(self):
+        write_json(
+            self.root / "data/bbaw-crosswalk.json",
+            {
+                "schema_version": 1,
+                "updated": "2026-08-12",
+                "status": "curated",
+                "methodology": "Curated by title and edition reference.",
+                "mappings": [
+                    {"work_id": "one", "bbaw_record_ids": ["001"], "relation": "same-work"},
+                    {"work_id": "two", "bbaw_record_ids": ["001"], "relation": "same-work"},
+                ],
+            },
+        )
+        errors = []
+        validate.validate_bbaw_crosswalk(self.root, {"one", "two"}, {"001"}, errors)
+        self.assertTrue(any("reused without grouped relations" in error for error in errors))
+
     def test_ballot_candidates_are_catalogue_checked(self):
         document = json.loads((validate.ROOT / "data" / "works.json").read_text())
         works = {work["id"]: work for work in document["works"]}
