@@ -311,3 +311,9 @@ main.map-page { max-width: 92rem; }
   .node-detail .eyebrow, .node-detail h3, .node-detail > p:not(.eyebrow), .node-detail .detail-links { grid-column: 1; grid-row: auto; }
   .context-grid { grid-template-columns: 1fr; }
 }
+/* zcorner (unlisted working page) */
+.locus { border-top: 1px solid var(--border); padding-top: 1.2rem; margin-top: 1.8rem; }
+.locus h3 { margin: 0 0 0.2rem; }
+.ask { background: var(--bg2); border-radius: 8px; padding: 0.7rem 1rem; font-size: 0.95rem; }
+.tag { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); }
