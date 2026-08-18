@@ -70,6 +70,50 @@ has it, that branch is his; if not, it waits.
 We hold them, and nobody knows how they relate to the full works — what they compress,
 what they drop, whether they follow the same lemma divisions.
 
+
+### 10. Risāla §20 — what is it?
+Our copy divides into 130 sections. Section lengths average 394 Arabic characters, but
+**§20 runs to 2,975 — seven and a half times the mean**, with §16 and the preface close
+behind. Ḥunayn wrote most where he had most to explain, and in the *Risāla* that usually
+means the transmission was difficult: manuscripts he could not find, copies in poor
+condition, translations he had to redo.
+
+**Ask Zack:** which work is §20, and is the length doing what we think it is? If the
+longest sections really do mark the messiest transmission, section length becomes a cheap
+way to rank the whole corpus by how much trouble Ḥunayn had — which is a proxy, however
+rough, for where the Greek tradition was already unstable in the ninth century.
+
+### 11. *De crisibus* has no Ḥunayn translation in our holdings — only an epitome
+Directly relevant to the ballot. For six works we hold an Alexandrian summary but **not**
+Ḥunayn's full translation: *Adhortatio*, *De anatomicis administrationibus*, *De crisibus*,
+*De naturalibus facultatibus*, *De temperamentis*, *De victu attenuante*.
+
+*De crisibus* is the one that matters, because it is a live Phase 2 candidate **and** has
+no English. If it wins the ballot, our Arabic support for it is a compressed teaching
+epitome, not a translation — which is a much weaker witness and changes what collation
+can even mean there. Worth knowing before the vote rather than after.
+
+**Ask Zack:** does a Jawāmiʿ epitome carry any textual weight at all, or is it purely
+reception? Peter's framing suggests the latter, but a summary made from a good exemplar
+might still preserve something.
+
+### 12. Six works where we hold both the translation and its epitome
+*Ad Glauconem*, *De elementis*, *De pulsibus ad tirones*, *De sectis*, the *Aphorisms*
+commentary, and *In Hipp. De officina medici*. Those pairs allow a controlled question:
+what does an Alexandrian epitome actually drop? Same work, same language, two levels of
+compression — and the *Aphorisms* pair is already lemma-aligned on our side.
+
+---
+
+## Our own bugs, for us not him
+
+### 13. The manifest joins to the catalogue on free-text Latin titles
+Cross-referencing Arabic holdings against the catalogue nearly produced a false report
+that *De victu attenuante* was missing entirely. It isn't — the catalogue stores
+`De Victu Attenuante` and the manifest `De victu attenuante`, and the join is
+case-sensitive string equality on a human-typed field. Should join on work id. Caught
+before it reached anyone, but it would have been an embarrassing thing to hand a scholar.
+
 ---
 
 ## Method questions worth his opinion
