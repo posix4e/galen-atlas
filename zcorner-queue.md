@@ -103,6 +103,48 @@ commentary, and *In Hipp. De officina medici*. Those pairs allow a controlled qu
 what does an Alexandrian epitome actually drop? Same work, same language, two levels of
 compression — and the *Aphorisms* pair is already lemma-aligned on our side.
 
+
+### 14. The drug book is mostly numbers — and numbers are what manuscripts break
+The strongest thing we have found, and it reframes what the pharmacological work is for.
+
+Counting across *On the Composition of Drugs According to Places*: **4,037 abbreviated
+drachma marks and 5,551 alphabetic numerals in 142,727 words — a quantity mark every 14
+words.** In Galen's *Aphorisms* commentary the same measure is one every 1,601 words.
+A hundred-fold difference in register: one text argues, the other doses.
+
+Two consequences follow, and the second is the interesting one.
+
+**Quantities are the most corruptible information in a manuscript and the least
+self-correcting.** Greek numerals are single letters with a keraia — α΄ β΄ ι΄ ιβ΄ — so a
+slip of one stroke changes a dose, and unlike corrupted prose it produces no detectable
+nonsense: the sentence still reads perfectly. In a recipe book the load-bearing content is
+exactly the content that decays silently.
+
+**A translator has to spell numbers out, and words are far more robust than symbols.**
+We checked: the Arabic *Ad Glauconem* writes its numbers as words — 61 occurrences of
+*wāḥid* alone — against 29 digit strings. So for quantities specifically, a version may be
+a *better* witness than the Greek manuscripts, which is close to the opposite of the
+default assumption about indirect tradition.
+
+**Honest limitation:** we hold no Arabic for the drug book itself, so we cannot test this
+where it would matter most. What we can do is test the principle on works where we hold
+both traditions, and the six translation-plus-epitome pairs in item 12 are the obvious
+place.
+
+**Ask Zack:** is this already known and handled — do editors of pharmacological texts
+routinely collate the versions for numerals? And is "recipes as a special textual class,
+where the versions outrank the direct tradition on the numbers" a real position or a
+naive one? If it holds, it says something about where an amateur project should aim: not
+at elegant English, but at getting the quantities right.
+
+### 15. The pharmacological register is nearly a separate language
+240 words occur 25 times or more in the drug book and **never once** in the *Aphorisms*
+commentary — saffron, opium, pepper, frankincense, nard, henbane, vinegar, gum — alongside
+a recipe grammar of imperatives and participles (*take up*, *apply*, *having ground*,
+*having mixed*). Worth raising because it bears on difficulty: the drug book is not the
+same translation problem as the commentary, and our pilot chose the harder one without
+realising it.
+
 ---
 
 ## Our own bugs, for us not him
