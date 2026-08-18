@@ -145,6 +145,34 @@ a recipe grammar of imperatives and participles (*take up*, *apply*, *having gro
 same translation problem as the commentary, and our pilot chose the harder one without
 realising it.
 
+
+### 16. Where NOT to spend his hours — the unresearched entries
+Eighteen works still carry `english: unknown`. It would be natural to hand those to a
+specialist and ask him to settle them. That would be a waste of him.
+
+**None of the eighteen overlaps with our Arabic holdings** — not one. They are also
+missing Kühn references entirely, so they are doubly untouched. Settling them is
+bibliographic work: catalogues, library access, WorldCat, publisher lists. It needs
+patience and a good library, not Greek and Arabic.
+
+Recording this as a boundary. His hours should go where the language is the binding
+constraint, and here it isn't.
+
+**The exception worth asking about:** six of the eighteen are Hippocratic commentaries —
+*In Hipp. De natura hominis*, *De victu acutorum*, *Prognosticum*, *De salubri victu*,
+*De comate*, *De humero*. Ḥunayn's circle translated a great deal of that commentary
+tradition, and we hold Arabic for none of them. Whether Arabic versions exist in the
+manuscript record is a question about the Arabic Galen tradition rather than a library
+errand — and that is squarely his.
+
+### 17. Our Arabic holdings and our knowledge gaps do not overlap at all
+Falls out of the item above and is worth saying aloud: every work we hold Arabic for
+already has a known English status, and every work whose status is unknown is one we hold
+no Arabic for. The two sets are disjoint. That is presumably an accident of what DCGAS
+chose to digitise, but it means our best material and our worst-documented corners are in
+completely different places — and it is an argument for widening the Arabic holdings
+rather than deepening what we already have.
+
 ---
 
 ## Our own bugs, for us not him
