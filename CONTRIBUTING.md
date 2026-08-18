@@ -12,7 +12,7 @@ Then open an issue (or PR against `works.json`) with the work's `id`, what you f
 
 ## 2. Vote and propose
 
-- The corrected first-campaign shortlist was checked against the BBAW translation catalogue on 12 August 2026. Vote on [issue #1](https://github.com/posix4e/pergamap/issues/1), and please report any overlooked or unlisted English translation.
+- The first-campaign shortlist was checked against the BBAW translation catalogue on 12 August 2026, and again outside it on 17 August, which removed two candidates whose translations exist only as unpublished theses. Vote on [issue #18](https://github.com/posix4e/pergamap/issues/18), and please report any overlooked or unlisted English translation — a catalogue of published work does not see them all.
 - Propose a different target by commenting there. The criteria (see the [roadmap](https://pergamap.com/roadmap.html)): no existing English, digitized source, finishable, humanly interesting.
 
 ## BBAW/CMG catalogue snapshot
