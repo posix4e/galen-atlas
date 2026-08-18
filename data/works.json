@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "updated": "2026-08-12",
+ "updated": "2026-08-17",
  "status": "preliminary",
  "sources": [
   {
@@ -14,6 +14,18 @@
    "title": "Corpus Medicorum Graecorum: Galenus — Übersetzungen",
    "url": "https://cmg.bbaw.de/startseite/arbeitsmittel/werkverzeichnisse/galenus-uebersetzungen/",
    "accessed": "2026-08-12"
+  },
+  {
+   "id": "era-ware-1928",
+   "title": "John Ware, Galen's De differentiis febrium & De temperamentis (University of Edinburgh PhD thesis, 1928), Edinburgh Research Archive",
+   "url": "https://era.ed.ac.uk/handle/1842/20280",
+   "accessed": "2026-08-17"
+  },
+  {
+   "id": "wrap-mucci-2023",
+   "title": "Simone Mucci, A study of Galen's De antidotis, book 1 (University of Warwick PhD thesis, 2023), Warwick Research Archive Portal",
+   "url": "https://wrap.warwick.ac.uk/id/eprint/180856/",
+   "accessed": "2026-08-17"
   }
  ],
  "works": [
@@ -1860,29 +1872,42 @@
     }
    ],
    "english": {
-    "status": "none",
-    "citations": [],
+    "status": "full",
+    "citations": [
+     {
+      "label": "John Ware, “Galen's De differentiis febrium & De temperamentis” (University of Edinburgh PhD thesis, 1928): both books in English, never published, freely downloadable.",
+      "url": "https://era.ed.ac.uk/handle/1842/20280",
+      "scope": "full"
+     }
+    ],
     "verification": {
      "status": "checked",
-     "checked_on": "2026-08-12",
+     "checked_on": "2026-08-17",
      "source_ids": [
-      "bbaw-galen-translations"
+      "bbaw-galen-translations",
+      "era-ware-1928"
      ]
     },
     "basis": {
-     "kind": "catalogue-listed",
+     "kind": "publication-verified",
      "searched": [
       {
        "source": "Corpus Medicorum Graecorum: Galenus — Übersetzungen (BBAW)",
        "url": "https://cmg.bbaw.de/startseite/arbeitsmittel/werkverzeichnisse/galenus-uebersetzungen/",
        "date": "2026-08-12",
-       "result": "work listed; English-translation column empty"
+       "result": "work listed; every translation column empty, English among them"
+      },
+      {
+       "source": "Edinburgh Research Archive, WareJ_1928redux.pdf (42 MB scan with an OCR text layer)",
+       "url": "https://era.ed.ac.uk/handle/1842/20280",
+       "date": "2026-08-17",
+       "result": "translation read: Book I opens at Kühn VII 273, Book II at VII 347, and the work closes at VII 405; De temperamentis follows"
       }
      ],
-     "note": "The BBAW translation catalogue listed no English translation when checked. This is evidence about that catalogue, not proof that no translation exists elsewhere."
+     "note": "The translation itself was read, not a catalogue entry about it. BBAW lists this work as untranslated into any language because it indexes published translations, and a thesis is not one."
     }
    },
-   "notes": "A major clinical work. The BBAW translation catalogue listed no English translation when checked on 2026-08-12."
+   "notes": "A major clinical work, and translated into English once already: John Ware's 1928 Edinburgh thesis renders both books and continues into De temperamentis. It was never published, which is why catalogues of published translations show this work as untouched."
   },
   {
    "id": "tlg046",
@@ -2705,7 +2730,7 @@
      "note": "The BBAW translation catalogue listed no English translation when checked. This is evidence about that catalogue, not proof that no translation exists elsewhere."
     }
    },
-   "notes": "Critical edition Alexanderson (1967). The BBAW translation catalogue listed no English translation when checked on 2026-08-12."
+   "notes": "Critical edition Alexanderson (1967). The BBAW translation catalogue listed a Spanish translation and no English when checked on 2026-08-12."
   },
   {
    "id": "tlg065",
@@ -3200,7 +3225,7 @@
      "note": "The BBAW translation catalogue listed no English translation when checked. This is evidence about that catalogue, not proof that no translation exists elsewhere."
     }
    },
-   "notes": "10 books of remedies, head to toe. Pergamap pilot text. The BBAW translation catalogue listed no English translation when checked on 2026-08-12."
+   "notes": "10 books of remedies, head to toe. Pergamap pilot text. The BBAW translation catalogue listed a Spanish translation and no English when checked on 2026-08-12."
   },
   {
    "id": "tlg077",
@@ -3261,29 +3286,42 @@
     }
    ],
    "english": {
-    "status": "none",
-    "citations": [],
+    "status": "partial",
+    "citations": [
+     {
+      "label": "Simone Mucci, “A study of Galen's De antidotis, book 1” (University of Warwick PhD thesis, 2023), pp. 182–195: Book 1, chapters 1–5 and 7, in English; never published.",
+      "url": "https://wrap.warwick.ac.uk/id/eprint/180856/",
+      "scope": "partial"
+     }
+    ],
     "verification": {
      "status": "checked",
-     "checked_on": "2026-08-12",
+     "checked_on": "2026-08-17",
      "source_ids": [
-      "bbaw-galen-translations"
+      "bbaw-galen-translations",
+      "wrap-mucci-2023"
      ]
     },
     "basis": {
-     "kind": "catalogue-listed",
+     "kind": "publication-verified",
      "searched": [
       {
        "source": "Corpus Medicorum Graecorum: Galenus — Übersetzungen (BBAW)",
        "url": "https://cmg.bbaw.de/startseite/arbeitsmittel/werkverzeichnisse/galenus-uebersetzungen/",
        "date": "2026-08-12",
-       "result": "work listed; English-translation column empty"
+       "result": "work listed; German column filled (Winkler 1980), English column empty"
+      },
+      {
+       "source": "Warwick Research Archive Portal, WRAP_Theses_Mucci_2023.pdf",
+       "url": "https://wrap.warwick.ac.uk/id/eprint/180856/",
+       "date": "2026-08-17",
+       "result": "translation read: running English for Book 1, chapters 1–5 and 7; chapter 6 (Andromachus' poem in verse) and the whole of Book 2 are untranslated"
       }
      ],
-     "note": "The BBAW translation catalogue listed no English translation when checked. This is evidence about that catalogue, not proof that no translation exists elsewhere."
+     "note": "No published English translation. What exists is a doctoral thesis, which a catalogue of publications does not record."
     }
    },
-   "notes": "Theriac, mithridatium, and the emperor’s daily dose. The BBAW translation catalogue listed no English translation when checked on 2026-08-12."
+   "notes": "Theriac, mithridatium, and the emperor's daily dose. No published English; the only complete modern-language version BBAW records is Winkler's German of 1980. Mucci's 2023 Warwick thesis translates Book 1, chapters 1–5 and 7 — about a fifth of the work."
   },
   {
    "id": "tlg079",

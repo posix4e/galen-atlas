@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-08-12",
+  "updated": "2026-08-17",
   "status": "curated",
   "methodology": "This crosswalk identifies the same Galenic work across Pergamap and the BBAW/CMG translation index. Empty record lists mean that no corresponding row was found in the dated BBAW snapshot; they do not mean that BBAW rejects the work. A grouped relation records cases where BBAW combines material that Pergamap tracks separately.",
   "mappings": [
@@ -305,7 +305,11 @@
       "bbaw_record_ids": [
         "048"
       ],
-      "relation": "same-work"
+      "relation": "same-work",
+      "english_status_review": {
+        "status": "explained",
+        "note": "Pergamap records a complete English translation — John Ware's 1928 Edinburgh thesis, read directly — while BBAW record 048 shows an empty English column. BBAW indexes published translations; this one was never published."
+      }
     },
     {
       "work_id": "tlg046",
@@ -538,7 +542,11 @@
       "bbaw_record_ids": [
         "083"
       ],
-      "relation": "same-work"
+      "relation": "same-work",
+      "english_status_review": {
+        "status": "explained",
+        "note": "Pergamap records a partial English translation — Mucci's 2023 Warwick thesis, read directly — while BBAW record 083 lists only Winkler's German. The thesis is unpublished, so a catalogue of publications does not carry it."
+      }
     },
     {
       "work_id": "tlg079",

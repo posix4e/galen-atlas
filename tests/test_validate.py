@@ -1,6 +1,7 @@
 import hashlib
 import json
 import pathlib
+import re
 import tempfile
 import unittest
 
@@ -348,20 +349,42 @@ class ValidatorTests(unittest.TestCase):
         validate.validate_bbaw_crosswalk(self.root, {"one", "two"}, {"001"}, errors)
         self.assertTrue(any("reused without grouped relations" in error for error in errors))
 
-    def test_ballot_candidates_are_catalogue_checked(self):
+    def test_ballot_candidates_are_checked_against_sources(self):
         document = json.loads((validate.ROOT / "data" / "works.json").read_text())
         works = {work["id"]: work for work in document["works"]}
         for work_id in ("tlg045", "tlg064", "tlg076", "tlg078"):
             english = works[work_id]["english"]
             self.assertEqual(english["verification"]["status"], "checked")
-            self.assertEqual(english["verification"]["checked_on"], "2026-08-12")
+            self.assertGreaterEqual(english["verification"]["checked_on"], "2026-08-12")
             self.assertIn("bbaw-galen-translations", english["verification"]["source_ids"])
-            self.assertEqual(english["basis"]["kind"], "catalogue-listed")
+            self.assertIn(english["basis"]["kind"], {"catalogue-listed", "publication-verified"})
             self.assertTrue(
                 any(
-                    entry["result"] == "work listed; English-translation column empty"
+                    entry["date"] == "2026-08-12" and "BBAW" in entry["source"]
                     for entry in english["basis"]["searched"]
-                )
+                ),
+                f"{work_id}: no dated BBAW catalogue check recorded",
+            )
+
+    def test_shortlist_excludes_works_already_translated(self):
+        """A candidate with a full English translation must come off the ballot.
+
+        The catalogue check alone once put On the Differences of Fevers on the
+        shortlist, because BBAW indexes published translations and Ware's 1928
+        Edinburgh thesis was never published. This is that mistake in CI.
+        """
+        roadmap = (validate.ROOT / "roadmap.html").read_text()
+        section = roadmap.split("<h2>Phase 2")[1].split("<h2>")[0]
+        candidates = re.findall(r"corpus\.html\?work=(tlg\d+)", section)
+        self.assertTrue(candidates, "no shortlist candidates found in roadmap.html")
+        document = json.loads((validate.ROOT / "data" / "works.json").read_text())
+        works = {work["id"]: work for work in document["works"]}
+        for work_id in candidates:
+            english = works[work_id]["english"]
+            self.assertNotEqual(
+                english["status"],
+                "full",
+                f"{work_id} is on the shortlist but already has a full English translation",
             )
 
 
