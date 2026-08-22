@@ -1,4 +1,5 @@
 "use strict";
+(() => {
 
 const CHIP = { none: "no English", full: "translated", partial: "partial", unknown: "unknown" };
 const LANGUAGE = { greek: "Greek", arabic: "Arabic", latin: "Latin" };
@@ -16,10 +17,11 @@ let activeFilter = "all";
 let query = "";
 let requestedWorkId = new URL(location.href).searchParams.get("work");
 
-const body = document.querySelector("#t tbody");
-const count = document.getElementById("count");
-const search = document.getElementById("q");
-const buttons = [...document.querySelectorAll(".controls button")];
+const root = document.getElementById("view-works");
+const body = root.querySelector("#works-table tbody");
+const count = root.querySelector("#works-count");
+const search = root.querySelector("#works-q");
+const buttons = [...root.querySelectorAll(".controls button")];
 
 function node(tag, className, text) {
   const result = document.createElement(tag);
@@ -173,3 +175,5 @@ buttons.forEach((button) => button.addEventListener("click", () => {
   activeFilter = button.dataset.f;
   apply();
 }));
+
+})();

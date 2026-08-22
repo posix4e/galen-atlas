@@ -1,4 +1,5 @@
 "use strict";
+(() => {
 
 let records = [];
 let worksById = new Map();
@@ -10,7 +11,7 @@ let requestedRecordId = new URL(location.href).searchParams.get("record");
 const body = document.querySelector("#bbaw-table tbody");
 const search = document.getElementById("bbaw-q");
 const count = document.getElementById("bbaw-count");
-const buttons = [...document.querySelectorAll(".controls button")];
+const buttons = [...document.getElementById("view-bbaw").querySelectorAll(".controls button")];
 
 function node(tag, className, text) {
   const result = document.createElement(tag);
@@ -132,3 +133,5 @@ Promise.all([
     link.href = "data/bbaw-galen-translations.json";
     count.appendChild(link);
   });
+
+})();
