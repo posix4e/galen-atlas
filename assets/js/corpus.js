@@ -79,7 +79,7 @@ function addRow(work) {
   if (bbaw) {
     const reference = node("span", "ref");
     const link = node("a", "", `BBAW record ${bbaw.recordIds.join(", ")}`);
-    link.href = `bbaw-catalogue.html?record=${encodeURIComponent(bbaw.recordIds[0])}`;
+    link.href = `library.html?record=${encodeURIComponent(bbaw.recordIds[0])}`;
     reference.appendChild(link);
     if (bbaw.review) reference.append(` · ${bbaw.review.status}`);
     englishCell.appendChild(reference);

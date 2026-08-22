@@ -36,7 +36,7 @@ fetch("data/works.json")
       spine.href = `library.html?work=${encodeURIComponent(work.id)}`;
       const title = work.titles.english || work.titles.latin;
       spine.title = `${title} — ${status === "none" ? "no English known" : status}`;
-      spine.setAttribute("aria-label", spine.title);
+      spine.tabIndex = -1;
       frag.appendChild(spine);
     }
     shelf.appendChild(frag);

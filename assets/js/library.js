@@ -1,4 +1,5 @@
 "use strict";
+(() => {
 
 // View router for the library's three registers. Hash picks the view;
 // ?work= and ?record= deep links (inherited from the old standalone pages)
@@ -19,9 +20,11 @@ function show(view) {
     const tab = document.getElementById(`tab-${name}`);
     const on = name === view;
     if (section) section.hidden = !on;
-    if (tab) tab.setAttribute("aria-selected", on ? "true" : "false");
+    if (tab) if (on) { tab.setAttribute("aria-current", "true"); } else { tab.removeAttribute("aria-current"); }
   }
 }
 
 show(currentView());
 window.addEventListener("hashchange", () => show(currentView()));
+
+})();

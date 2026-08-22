@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /zcorner
 
 Sitemap: https://pergamap.com/sitemap.xml
